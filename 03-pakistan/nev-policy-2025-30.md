@@ -26,7 +26,16 @@ policy favours it" has to answer why idle capacity has not already absorbed the 
 
 ---
 
-## 🔴 The concessions had an expiry date, and it has passed
+## 🔴 The concessions had an expiry date — but read the correction first
+
+> ⚠️ **SUPERSEDED IN PART, 25-Aug-2026.** The quotes below are accurate, but the conclusion
+> drawn from them — "K7 has already fired" — was wrong. The **Finance Act 2026 extended the EV
+> CKD concessions by one year, to 30 June 2027.** The regime did not lapse. See
+> [`tariff-structure-current.md`](tariff-structure-current.md) for what actually governs.
+>
+> **The lesson is worth more than the error:** a policy document's stated end date is not the
+> law in force. The annual finance act overtakes it, and must be checked before concluding
+> anything expired.
 
 > "existing incentives for NEVs as provided under the AIDEP 2021–26 shall remain in effect till
 > the end of the policy period i.e **June 30, 2026**. Thereafter, all applicable tariffs

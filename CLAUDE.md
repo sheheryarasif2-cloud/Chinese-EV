@@ -250,6 +250,15 @@ later. Save the file, and record where and when it came from.
   regimes phased out by 2030. **A withdrawn figure:** the "~8–9% electric penetration" number
   was mine and was wrong — PAMA's membership excludes almost every electric maker, so the
   numerator and denominator counted different populations.
+- **25-Aug-2026** — 🟢 **K6 UNBLOCKED. Tariff structure found** →
+  `03-pakistan/tariff-structure-current.md`. Electric motorcycle = **PCT 8711.6040**;
+  **1% CD on EV-specific CKD components**, 10–15% non-localised, under Table-II to Part-V(A),
+  **Fifth Schedule, Customs Act 1969**. 🔴 **The 1% requires EDB certification and quota — it
+  is not automatic.** The successor policy AIDEP 2026-31 is **still draft**, awaiting the PM
+  and the IMF. **A correction to a correction:** the earlier "K7 already fired / concessions
+  expired 30-Jun-2026" was wrong — the **Finance Act 2026 extended them one year to
+  30-Jun-2027** ("sunset" is FBR's own word). **A policy's stated end date is not the law in
+  force; the annual finance act overtakes it.** The cliff is now ~10 months out.
 - **25-Aug-2026** — promoted to a full standalone workspace, named **Chinese EV Research**.
   Folder renamed to `Documents\Chinese-EV-Research`; its own memory folder created and
   committed to a local git repo on branch `memory-chinese-ev-research`. **No remote yet** —
