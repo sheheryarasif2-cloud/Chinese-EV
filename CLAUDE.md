@@ -238,6 +238,18 @@ later. Save the file, and record where and when it came from.
   recorded at `03-pakistan/import-volumes.md`: China→Pakistan HS 871160 exports grew from 888
   units (2020) to **46,716 units / US$16.3m FOB (2024)**, with average weight rising 30.9 →
   94.7 kg/unit — the mix moving out of the bicycle class into this project's actual segment.
+- **25-Aug-2026** — first research pass. `02-supply/china-manufacturers.md` (top 10 Chinese
+  makers = **94% of a 3.5m-unit market**, which is why no 5,000-company list exists) and three
+  Pakistan files. Brief published as an Artifact and saved at `brief-2026-08-25.html`;
+  Artifact URL `https://claude.ai/code/artifact/0fe92297-6716-461a-9678-be70ef67d5b8`.
+- **25-Aug-2026** — 🔴 **primary sources reversed the headline conclusion.** The NEV Policy
+  2025-30 says Pakistan already holds **~2m units/yr of e-2W/3W assembly capacity, "heavily
+  underutilized"** — so local assembly is *not* the scarce input, and the earlier
+  "CKD assembly is the surviving route" conclusion was withdrawn. The policy also puts the
+  incentive regime's expiry at **30 June 2026 — already passed** — with all special duty
+  regimes phased out by 2030. **A withdrawn figure:** the "~8–9% electric penetration" number
+  was mine and was wrong — PAMA's membership excludes almost every electric maker, so the
+  numerator and denominator counted different populations.
 - **25-Aug-2026** — promoted to a full standalone workspace, named **Chinese EV Research**.
   Folder renamed to `Documents\Chinese-EV-Research`; its own memory folder created and
   committed to a local git repo on branch `memory-chinese-ev-research`. **No remote yet** —

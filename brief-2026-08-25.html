@@ -1,0 +1,721 @@
+<title>Pakistan E-Bike Entry Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+  /* ---- Light palette: cool paper, biased green toward the Pakistan accent ---- */
+  :root {
+    --ground:   #EFF2F0;
+    --surface:  #FFFFFF;
+    --sunk:     #E4E9E5;
+    --ink:      #121716;
+    --ink-soft: #3A4441;
+    --muted:    #64726C;
+    --line:     #D2DAD5;
+    --line-hard:#B4C0BA;
+
+    --pk:       #06674A;   /* Pakistan side — demand */
+    --pk-soft:  #E0EEE8;
+    --cn:       #A82C22;   /* China side — supply */
+    --cn-soft:  #F6E3E1;
+
+    --good:     #1E6B4F;
+    --warn:     #8A5A0B;
+    --crit:     #A82C22;
+    --warn-soft:#F7EBD6;
+    --crit-soft:#F6E3E1;
+    --good-soft:#E0EEE8;
+
+    --shadow: 0 1px 2px rgba(18,23,22,.05), 0 8px 24px -12px rgba(18,23,22,.16);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:   #0D1211;
+      --surface:  #151C1A;
+      --sunk:     #1D2624;
+      --ink:      #E7EEEA;
+      --ink-soft: #BAC7C1;
+      --muted:    #8B9A93;
+      --line:     #263230;
+      --line-hard:#3A4744;
+
+      --pk:       #4FBF95;
+      --pk-soft:  #123027;
+      --cn:       #E4796D;
+      --cn-soft:  #35201E;
+
+      --good:     #4FBF95;
+      --warn:     #D9A441;
+      --crit:     #E4796D;
+      --warn-soft:#31280F;
+      --crit-soft:#35201E;
+      --good-soft:#123027;
+
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 30px -14px rgba(0,0,0,.7);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground:   #0D1211;
+    --surface:  #151C1A;
+    --sunk:     #1D2624;
+    --ink:      #E7EEEA;
+    --ink-soft: #BAC7C1;
+    --muted:    #8B9A93;
+    --line:     #263230;
+    --line-hard:#3A4744;
+
+    --pk:       #4FBF95;
+    --pk-soft:  #123027;
+    --cn:       #E4796D;
+    --cn-soft:  #35201E;
+
+    --good:     #4FBF95;
+    --warn:     #D9A441;
+    --crit:     #E4796D;
+    --warn-soft:#31280F;
+    --crit-soft:#35201E;
+    --good-soft:#123027;
+
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 30px -14px rgba(0,0,0,.7);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 20px 96px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 1080px; margin: 0 auto; }
+  .col  { max-width: 68ch; }
+
+  h1, h2, h3, .eyebrow, .num, th, .chip, .tag, .btn {
+    font-family: Archivo, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  h1 {
+    font-size: clamp(2.1rem, 5.2vw, 3.4rem);
+    font-weight: 800;
+    letter-spacing: -.028em;
+    line-height: 1.04;
+    margin: 0 0 .5rem;
+    text-wrap: balance;
+  }
+  h2 {
+    font-size: clamp(1.35rem, 2.6vw, 1.85rem);
+    font-weight: 700;
+    letter-spacing: -.018em;
+    line-height: 1.15;
+    margin: 0 0 .35rem;
+    text-wrap: balance;
+  }
+  h3 {
+    font-size: 1.03rem;
+    font-weight: 700;
+    letter-spacing: -.008em;
+    margin: 0 0 .4rem;
+  }
+  p { margin: 0 0 1rem; }
+  a { color: var(--pk); text-underline-offset: 2px; }
+  a:focus-visible, .btn:focus-visible { outline: 2px solid var(--pk); outline-offset: 3px; border-radius: 3px; }
+
+  .eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: .69rem;
+    font-weight: 500;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 .55rem;
+  }
+
+  /* ---------- masthead ---------- */
+  header.masthead {
+    padding: 72px 0 34px;
+    border-bottom: 2px solid var(--ink);
+  }
+  .kicker {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: .72rem;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--cn);
+    display: flex;
+    flex-wrap: wrap;
+    gap: .55rem;
+    align-items: center;
+    margin-bottom: 1.1rem;
+  }
+  .kicker .sep { color: var(--line-hard); }
+  .kicker .pkbit { color: var(--pk); }
+  .standfirst {
+    font-size: clamp(1.05rem, 1.9vw, 1.24rem);
+    color: var(--ink-soft);
+    max-width: 60ch;
+    margin: .9rem 0 0;
+  }
+  .byline {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: .74rem;
+    color: var(--muted);
+    margin-top: 1.5rem;
+    letter-spacing: .02em;
+  }
+
+  section { padding: 52px 0 0; }
+
+  /* ---------- callouts ---------- */
+  .panel {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 22px 24px;
+    box-shadow: var(--shadow);
+  }
+  .panel + .panel { margin-top: 14px; }
+
+  .flag {
+    border-left: 3px solid var(--crit);
+    background: var(--crit-soft);
+    border-radius: 0 4px 4px 0;
+    padding: 16px 20px;
+    margin: 20px 0;
+  }
+  .flag.warn { border-left-color: var(--warn); background: var(--warn-soft); }
+  .flag.good { border-left-color: var(--good); background: var(--good-soft); }
+  .flag p:last-child { margin-bottom: 0; }
+  .flag .lbl {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: .68rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: .4rem;
+    color: var(--crit);
+  }
+  .flag.warn .lbl { color: var(--warn); }
+  .flag.good .lbl { color: var(--good); }
+
+  /* ---------- stat row ---------- */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(168px, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 26px 0;
+  }
+  .stat { background: var(--surface); padding: 18px 20px; }
+  .stat .v {
+    font-family: Archivo, sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -.03em;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.1;
+    display: block;
+  }
+  .stat .v.cn { color: var(--cn); }
+  .stat .v.pk { color: var(--pk); }
+  .stat .k {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: .68rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: .45rem;
+    display: block;
+    line-height: 1.45;
+  }
+
+  /* ---------- tables ---------- */
+  .scroll { overflow-x: auto; margin: 22px 0; border: 1px solid var(--line); border-radius: 4px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; font-size: .93rem; min-width: 640px; }
+  th {
+    text-align: left;
+    font-size: .68rem;
+    font-weight: 600;
+    letter-spacing: .11em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding: 13px 14px;
+    border-bottom: 1px solid var(--line-hard);
+    white-space: nowrap;
+    background: var(--sunk);
+  }
+  td { padding: 12px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  .n { font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; font-family: "IBM Plex Mono", monospace; font-size: .86rem; }
+  .co { font-weight: 600; font-family: Archivo, sans-serif; letter-spacing: -.01em; }
+  .cn-zh { color: var(--muted); font-size: .84rem; display: block; font-weight: 400; font-family: "Source Serif 4", serif; }
+
+  /* share bar inside table */
+  .bar { display: block; height: 4px; border-radius: 2px; background: var(--cn); margin-top: 6px; opacity: .85; }
+  .bar.pk { background: var(--pk); }
+
+  /* ---------- chips ---------- */
+  .chip {
+    display: inline-block;
+    font-size: .63rem;
+    font-weight: 600;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    padding: 3px 7px;
+    border-radius: 3px;
+    white-space: nowrap;
+    border: 1px solid transparent;
+  }
+  .chip.audited { background: var(--good-soft); color: var(--good); border-color: var(--good); }
+  .chip.assoc   { background: var(--warn-soft); color: var(--warn); border-color: var(--warn); }
+  .chip.press   { background: var(--crit-soft); color: var(--crit); border-color: var(--crit); }
+  .chip.none    { background: var(--sunk); color: var(--muted); border-color: var(--line-hard); }
+
+  .tag {
+    display: inline-block;
+    font-size: .66rem;
+    font-weight: 600;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: var(--sunk);
+    color: var(--ink-soft);
+    border: 1px solid var(--line-hard);
+  }
+  .tag.open   { background: var(--good-soft); color: var(--good); border-color: var(--good); }
+  .tag.closed { background: var(--crit-soft); color: var(--crit); border-color: var(--crit); }
+  .tag.maybe  { background: var(--warn-soft); color: var(--warn); border-color: var(--warn); }
+
+  /* ---------- verdict ladder ---------- */
+  .ladder { display: flex; flex-direction: column; gap: 12px; margin: 24px 0; }
+  .rung {
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    gap: 16px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--line-hard);
+    border-radius: 0 4px 4px 0;
+    padding: 16px 20px;
+  }
+  .rung.a { border-left-color: var(--crit); }
+  .rung.b { border-left-color: var(--warn); }
+  .rung.c { border-left-color: var(--muted); }
+  .rung.d { border-left-color: var(--good); }
+  .rung .num {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--line-hard);
+    letter-spacing: -.04em;
+    line-height: 1;
+  }
+  .rung.d .num { color: var(--good); }
+  .rung p { margin: .35rem 0 0; font-size: .95rem; color: var(--ink-soft); }
+  .rung h3 { display: flex; gap: .6rem; align-items: baseline; flex-wrap: wrap; }
+
+  ul.tight { margin: 0 0 1rem; padding-left: 1.15rem; }
+  ul.tight li { margin-bottom: .45rem; }
+
+  .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; margin: 22px 0; }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 26px;
+    border-top: 1px solid var(--line-hard);
+    font-size: .84rem;
+    color: var(--muted);
+  }
+  footer h3 { color: var(--ink); }
+  footer ul { padding-left: 1.1rem; }
+  footer li { margin-bottom: .3rem; }
+
+  hr.rule { border: none; border-top: 1px solid var(--line); margin: 0; }
+
+  @media (max-width: 640px) {
+    body { font-size: 16px; padding: 0 16px 72px; }
+    header.masthead { padding-top: 44px; }
+    .rung { grid-template-columns: 1fr; gap: 4px; }
+    .rung .num { font-size: 1.1rem; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="kicker">
+      <span>Supply · China</span>
+      <span class="sep">→</span>
+      <span class="pkbit">Demand · Pakistan</span>
+      <span class="sep">/</span>
+      <span>Electric two-wheelers</span>
+    </div>
+    <h1>Who actually builds these, and who is already selling them in Pakistan</h1>
+    <p class="standfirst">
+      A market-entry brief for electric motorcycles and scooters — the segment that competes
+      with the 70cc commuter. Built from public sources, with the strength of each figure marked.
+    </p>
+    <p class="byline">Compiled 25 August 2026 · Desk research · No supplier contacted</p>
+  </header>
+
+  <!-- ============ SCOPE ============ -->
+  <section>
+    <p class="eyebrow">Read this first</p>
+    <h2>There is no list of 5,000 companies to find</h2>
+    <div class="col">
+      <p>
+        The request was for 5,000 players. The industry does not contain them, and one number settles it:
+        in 2025 the ten largest Chinese makers of licence-plated electric motorcycles shipped
+        <strong>94.0%</strong> of the entire national market. The remaining 6% is split among a long tail of
+        small workshops and rebadgers with no published volumes, no export operation, and nothing to verify.
+      </p>
+      <p>
+        A 5,000-row list could be generated. It would be mostly trading-company listings scraped from B2B
+        storefronts, self-declared and unverifiable — and it would read as authoritative while being noise.
+        What follows is the part that is real and checkable.
+      </p>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><span class="v cn">3,506,200</span><span class="k">China · licence-plated e-motorcycles sold 2025</span></div>
+      <div class="stat"><span class="v cn">94.0%</span><span class="k">Held by the top ten makers</span></div>
+      <div class="stat"><span class="v cn">56.5%</span><span class="k">Held by the top three alone</span></div>
+      <div class="stat"><span class="v pk">1.93m</span><span class="k">Pakistan · all motorcycles sold FY26</span></div>
+    </div>
+
+    <div class="flag warn">
+      <span class="lbl">Segment boundary — the most misread figure here</span>
+      <p>
+        The 3.5m unit market above is <strong>licence-plated electric motorcycles</strong>, a specific
+        registered-vehicle segment. China's broader electric two-wheeler output — including e-bikes and
+        light mopeds — runs to tens of millions of units on a different statistical basis. The two are
+        routinely quoted interchangeably. They are not the same market, and the difference decides which
+        manufacturers are even relevant.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ CHINA ============ -->
+  <section>
+    <p class="eyebrow">Supply side</p>
+    <h2>The Chinese manufacturers, ranked by units</h2>
+    <div class="col">
+      <p>
+        Licence-plated electric motorcycles, calendar 2025, per the China Chamber of Commerce for the
+        Motorcycle Industry. The ten rows below sum to <strong>3,292,900</strong> against a stated market of
+        3,506,200 — the arithmetic closes exactly, which is a good sign for the source.
+      </p>
+    </div>
+
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th><th>Manufacturer</th><th class="n">Units 2025</th><th class="n">Share</th><th>Evidence</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="n">1</td><td class="co">Yadea Technology Group<span class="cn-zh">雅迪 · listed, Hong Kong</span></td><td class="n">921,100</td><td class="n">26.3%<span class="bar" style="width:100%"></span></td><td><span class="chip assoc">Association</span></td></tr>
+          <tr><td class="n">2</td><td class="co">Zhejiang Luyuan<span class="cn-zh">绿源 · listed, Hong Kong</span></td><td class="n">591,500</td><td class="n">16.9%<span class="bar" style="width:64%"></span></td><td><span class="chip assoc">Association</span></td></tr>
+          <tr><td class="n">3</td><td class="co">Zongshen<span class="cn-zh">宗申 · legacy motorcycle group</span></td><td class="n">465,100</td><td class="n">13.3%<span class="bar" style="width:50%"></span></td><td><span class="chip assoc">Association</span></td></tr>
+          <tr><td class="n">4</td><td class="co">Jiangsu Huaihai<span class="cn-zh">淮海 · OEM/ODM operation</span></td><td class="n">344,900</td><td class="n">9.8%<span class="bar" style="width:37%"></span></td><td><span class="chip assoc">Association</span></td></tr>
+          <tr><td class="n">5</td><td class="co">CFMOTO — ZEEHO<span class="cn-zh">春风 · premium performance</span></td><td class="n">300,300</td><td class="n">8.6%<span class="bar" style="width:33%"></span></td><td><span class="chip assoc">Association</span></td></tr>
+          <tr><td class="n">6</td><td class="co">Jiangsu Xinri<span class="cn-zh">新日 · listed, Shanghai</span></td><td class="n">262,900</td><td class="n">7.5%<span class="bar" style="width:29%"></span></td><td><span class="chip assoc">Association</span></td></tr>
+          <tr><td class="n">7</td><td class="co">Bus New Energy<span class="cn-zh">立马 / 台铃-adjacent group</span></td><td class="n">206,900</td><td class="n">5.9%<span class="bar" style="width:22%"></span></td><td><span class="chip assoc">Association</span></td></tr>
+          <tr><td class="n">8</td><td class="co">Wuxing Vehicle<span class="cn-zh">五星 · mid-tier</span></td><td class="n">75,500</td><td class="n">2.2%<span class="bar" style="width:8%"></span></td><td><span class="chip assoc">Association</span></td></tr>
+          <tr><td class="n">9</td><td class="co">Loncin<span class="cn-zh">隆鑫 · legacy motorcycle group</span></td><td class="n">66,900</td><td class="n">1.9%<span class="bar" style="width:7%"></span></td><td><span class="chip assoc">Association</span></td></tr>
+          <tr><td class="n">10</td><td class="co">Tailing<span class="cn-zh">台铃</span></td><td class="n">57,800</td><td class="n">1.6%<span class="bar" style="width:6%"></span></td><td><span class="chip assoc">Association</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col">
+      <p>
+        Two names below the table matter more than their rank suggests. <strong>Jiangsu Huaihai</strong> runs an
+        explicit OEM/ODM business — it builds under other people's badges, which is exactly the relationship a
+        first-time importer can actually obtain. <strong>Zongshen</strong> and <strong>Loncin</strong> are legacy
+        combustion-motorcycle giants with decades of export plumbing already in place for markets like Pakistan.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ PAKISTAN DEMAND ============ -->
+  <section>
+    <p class="eyebrow">Demand side</p>
+    <h2>Pakistan is not an emerging market for this. It is an exploding one.</h2>
+
+    <div class="stats">
+      <div class="stat"><span class="v pk">112,000</span><span class="k">Electric 2W sold · all of 2025</span></div>
+      <div class="stat"><span class="v pk">90,000</span><span class="k">Electric 2W sold · Apr–Jun 2026 alone</span></div>
+      <div class="stat"><span class="v pk">+173%</span><span class="k">Electric 2W growth · H1 2026 YoY</span></div>
+      <div class="stat"><span class="v pk">2,054,677</span><span class="k">Govt 2-wheeler adoption target, 2025–30 total</span></div>
+    </div>
+
+    <div class="col">
+      <p>
+        A single quarter of 2026 came within a fifth of the whole of 2025. The overall two-wheeler market hit an
+        all-time high of <strong>1.93 million units</strong> in FY26, with the first half of 2026 up 33.8% — so
+        electric is growing against a rising base, not cannibalising a flat one.
+      </p>
+      <p>
+        The government's own <strong>New Energy Vehicles Policy 2025–30</strong> targets 116,053 electric
+        two-wheelers in 2025-26 rising to 740,898 by 2029-30, and sets cost-sharing at a reference
+        <strong>PKR 65,000 per two-wheeler</strong> against a five-year budget of PKR 85 billion.
+      </p>
+    </div>
+
+    <div class="flag warn">
+      <span class="lbl">Read the targets with the policy's own admission attached</span>
+      <p>
+        The policy opens by stating that <em>“the 2019 policy failed to meet its five years targets”</em> and
+        that its supply-side measures <em>“have not been fully implemented till now.”</em> A target set by a
+        ministry that missed the last one is an intention, not a forecast. It must never become a demand
+        assumption in a cost model. The subsidy is also designed to shrink — to 80% of face value in year three,
+        60% in year four, 40% in year five.
+      </p>
+    </div>
+
+    <div class="flag">
+      <span class="lbl">K7 has already fired — this is not a future risk</span>
+      <p>
+        The policy states that NEV incentives under AIDEP 2021–26 <em>“shall remain in effect till the end of
+        the policy period i.e <strong>June 30, 2026</strong>”</em>, after which customs duty, additional customs
+        duty and regulatory duty <em>“shall be gradually adjusted”</em>, with the special duty regimes under the
+        5th Schedule to the Customs Act <em>“gradually phased out by 2030”</em> and preferential sales-tax
+        treatment <em>“gradually withdrawn by 2030.”</em>
+      </p>
+      <p>
+        <strong>That date passed nearly two months ago.</strong> Every favourable duty figure in circulation
+        describes the expired regime. The replacement tariff structure was promised but has not been located.
+        <strong>No landed-cost model is possible until it is found</strong> — and the written direction of travel
+        is the removal of every concession, so the case must be modelled with none.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ WHO IS ALREADY THERE ============ -->
+  <section>
+    <p class="eyebrow">The incumbents</p>
+    <h2>Who is already importing and assembling in Pakistan</h2>
+    <div class="col">
+      <p>
+        This is the closest available answer to “who is bringing the units in”. Shipment-level customs records —
+        which exporter shipped to which importer — sit behind paid subscriptions and were deliberately not bought.
+        What follows is the licensed and publicly-trading field instead.
+      </p>
+    </div>
+
+    <div class="grid2">
+      <div class="panel">
+        <h3>The licensing picture</h3>
+        <p style="font-size:.94rem;color:var(--ink-soft);margin-bottom:.6rem">
+          The Engineering Development Board has issued <strong>50+ manufacturing licences</strong>, mostly for
+          electric bikes and rickshaws. At an earlier count of 31 licences, only about <strong>six</strong> were
+          actually manufacturing.
+        </p>
+        <p style="font-size:.94rem;color:var(--ink-soft);margin:0">
+          Press reporting puts roughly <strong>84 companies</strong> in the space — a mix of shoestring operations,
+          venture-backed startups and existing industrial groups. A licence is not a factory.
+        </p>
+      </div>
+      <div class="panel">
+        <h3>The confirmed China → Pakistan link</h3>
+        <p style="font-size:.94rem;color:var(--ink-soft);margin-bottom:.6rem">
+          <strong>Yadea — the world's largest maker — is already in Pakistan</strong>, via a partnership with
+          <strong>Road Prince</strong>, with the T5 retailing around PKR 245,000.
+        </p>
+        <p style="font-size:.94rem;color:var(--ink-soft);margin:0">
+          Treat the market leader's territory as spoken for until proven otherwise. That is a K3 finding and it
+          removes the most obvious target from the list.
+        </p>
+      </div>
+    </div>
+
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr><th>Pakistani player</th><th>Position</th><th>Note</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="co">Jolta Electric</td><td>Early licensed assembler</td><td>Among the first approved to assemble locally; 50+ service points claimed</td></tr>
+          <tr><td class="co">MS Jaguar <span class="cn-zh">MS Group of Industries</span></td><td>In-house manufacturer</td><td>Group trading since 1984; EV line from 2021, built under MS Automobiles</td></tr>
+          <tr><td class="co">Vlektra</td><td>Karachi, founded 2020</td><td>Positioned on higher performance and an integrated ecosystem</td></tr>
+          <tr><td class="co">Sazgar Engineering</td><td>Listed industrial group</td><td>Established two- and three-wheeler manufacturer moving into EV</td></tr>
+          <tr><td class="co">Road Prince</td><td>Distribution partner</td><td>Route by which Yadea reaches the Pakistani market</td></tr>
+          <tr><td class="co">Okla · Crown · United Auto · Metro · ELFA · Pakzon · E-Turbo · EcoDost</td><td>Active brands</td><td>Repeatedly listed among established local suppliers; individual volumes unpublished</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="flag">
+      <span class="lbl">Checked against PAMA and EDB — and one figure did not survive</span>
+      <p>
+        <strong>PAMA does not count these companies.</strong> Its membership was checked directly: of every
+        electric two-wheeler name above, <strong>only Sazgar is a member.</strong> Jolta, Vlektra, MS Jaguar,
+        Road Prince, Metro, Pakzon, Crown, Okla and EcoDost are all absent, so their volumes are not in PAMA's
+        statistics.
+      </p>
+      <p>
+        An earlier version of this brief put electric penetration at “~8–9% of the two-wheeler market”.
+        <strong>That figure is withdrawn.</strong> It divided a press-sourced electric number by a total-market
+        number that is essentially PAMA-member sales — overwhelmingly combustion, and excluding almost every
+        electric maker. Numerator and denominator came from different populations, which makes the ratio
+        meaningless however reasonable it looked.
+      </p>
+      <p>
+        <strong>The EDB publishes no licence register</strong> that could be found. The counts in circulation —
+        “31 licences, about six actually manufacturing”, later “50+” — are press attributions to EDB officials,
+        not documents. They may be right; they are not sourced.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ THE FILTER ============ -->
+  <section>
+    <p class="eyebrow">The filter</p>
+    <h2>Which of them could a first-time entrant actually work with</h2>
+    <div class="col">
+      <p>
+        Filtered against the constraints already set for this project: roughly <strong>PKR 50m</strong> of capital
+        that can be lost entirely, no existing trade relationships, and a policy regime that taxes assembly inputs
+        at a fraction of finished-vehicle rates. Ranked by whether a deal is plausible, not by how impressive the
+        manufacturer is.
+      </p>
+    </div>
+
+    <div class="ladder">
+      <div class="rung a">
+        <span class="num">A</span>
+        <div>
+          <h3>Yadea <span class="tag closed">Likely closed</span></h3>
+          <p>
+            Market leader at 26.3% and already partnered with Road Prince in Pakistan. The obvious target is
+            almost certainly the unavailable one. Worth one confirming question, not a strategy.
+          </p>
+        </div>
+      </div>
+      <div class="rung c">
+        <span class="num">B</span>
+        <div>
+          <h3>CFMOTO / ZEEHO <span class="tag">Wrong segment</span></h3>
+          <p>
+            Premium performance machines. Real volume, but aimed nowhere near a 70cc-commuter replacement.
+            Excluded on product fit rather than availability.
+          </p>
+        </div>
+      </div>
+      <div class="rung b">
+        <span class="num">C</span>
+        <div>
+          <h3>Luyuan · Zongshen · Xinri · Loncin · Tailing <span class="tag maybe">Ask</span></h3>
+          <p>
+            Large enough to be credible, and — for Zongshen and Loncin especially — already running export
+            operations into markets like Pakistan. The open question is whether any will appoint a first-time
+            buyer at this capital scale. That is answered by asking, and by nothing else.
+          </p>
+        </div>
+      </div>
+      <div class="rung d">
+        <span class="num">D</span>
+        <div>
+          <h3>Jiangsu Huaihai and the OEM/ODM tier <span class="tag open">Most plausible</span></h3>
+          <p>
+            Huaihai is a top-five maker that explicitly builds under other badges. Below it sits a working layer of
+            ODM houses — Wuxi MDKA, Wuxi Legend, Zhejiang Taiya among those advertising openly — that quote
+            <strong>CKD and SKD kits</strong> and deal below container scale. Less prestige, far more likely to
+            return the email.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flag">
+      <span class="lbl">Correction — the obvious plan does not survive the primary source</span>
+      <p>
+        An earlier version of this brief concluded that CKD assembly with a mid-tier or ODM partner was the
+        configuration that survived every constraint. Reading the NEV Policy directly removes that conclusion.
+        The policy states that <em>“local assembly and production capacity of electric two and three-wheeler has
+        risen to two 2 million vehicles per annum. <strong>However, much of this capacity is heavily
+        underutilized.</strong>”</em>
+      </p>
+      <p>
+        <strong>Pakistan does not need another assembly line.</strong> It has roughly two million units a year of
+        installed capacity standing idle, and the government's demand-side measures exist to fill capacity that
+        already exists. Adding supply to a market whose stated problem is underutilisation is not a strategy — and
+        the fact that idle capacity has not already captured this opportunity is the single most important thing
+        to understand before committing anything.
+      </p>
+    </div>
+
+    <div class="flag good">
+      <span class="lbl">So where does that leave the entry question</span>
+      <p>
+        If capacity is not scarce, the scarce things are what capacity cannot supply: <strong>demand generation,
+        distribution reach, brand trust, after-sales and parts, and consumer financing.</strong> An entry thesis
+        should be built on one of those, or on <strong>using someone else's idle line rather than building
+        one</strong> — a far lighter call on capital, and one that fits the constraints better than importing or
+        assembling ever did.
+      </p>
+      <p>
+        That reframing does not weaken the case. It relocates it. But it cannot be costed until the post-June-2026
+        tariff structure is found, and it cannot be confirmed until a manufacturer is actually asked.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ LIMITS ============ -->
+  <section>
+    <p class="eyebrow">Limits</p>
+    <h2>What this brief does not establish</h2>
+    <div class="col">
+      <ul class="tight">
+        <li><strong>No supplier has been contacted.</strong> Every availability judgement above is inference from public evidence. Whether a manufacturer will supply you is answerable only by asking.</li>
+        <li><strong>No shipment-level records.</strong> Which exporter shipped to which Pakistani importer requires a paid customs-data subscription that was deliberately not purchased.</li>
+        <li><strong>The Chinese table is one segment.</strong> Licence-plated electric motorcycles, calendar 2025. Not e-bikes, not mopeds, not the broader tens-of-millions market.</li>
+        <li><strong>Pakistani market figures remain press-reported.</strong> PAMA's own data files were not obtained — only its membership, which is what exposed the denominator problem. A defensible penetration rate needs registration data, where numerator and denominator count the same population.</li>
+        <li><strong>The current tariff regime is unknown.</strong> The concessions everyone quotes expired on 30 June 2026 and the replacement has not been located. This blocks any landed-cost model outright.</li>
+        <li><strong>PKR 65,000 versus PKR 80,000 is unresolved.</strong> The policy says 65,000; press reporting says 80,000 for a separate programme. Until that is settled, only the policy figure is sourced.</li>
+      </ul>
+      <p style="color:var(--muted);font-size:.9rem">
+        Official bilateral trade statistics were also pulled for this work. They are held privately in the project
+        workspace and are deliberately not reproduced here — the licence governing them prohibits redistribution.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <h3>Evidence grades used above</h3>
+    <p style="margin-bottom:1rem">
+      <span class="chip audited">Audited</span> filings and statutory accounts ·
+      <span class="chip assoc">Association</span> industry-body statistics ·
+      <span class="chip press">Press</span> trade media, unverified ·
+      <span class="chip none">None</span> self-declared
+    </p>
+    <h3>Principal sources</h3>
+    <ul>
+      <li><strong>New Energy Vehicles Policy 2025-30</strong>, Ministry of Industries &amp; Production — primary; read in full. Source of the capacity, expiry, subsidy and target figures, quoted verbatim above</li>
+      <li><strong>PAMA membership roster</strong>, pama.org.pk — checked directly; the basis of the withdrawn penetration figure</li>
+      <li>China Chamber of Commerce for the Motorcycle Industry — 2025 licence-plated e-motorcycle rankings</li>
+      <li>PakWheels / MotorCyclesData — Pakistan motorcycle and electric two-wheeler sales, FY26 and H1 2026</li>
+      <li>Arab News PK, Business Recorder — EDB licensing counts (press-attributed, no register found)</li>
+      <li>Made-in-China / Alibaba supplier listings — CKD and SKD kit availability (self-declared)</li>
+    </ul>
+    <p style="margin-top:1.4rem">
+      Compiled 25 August 2026 for a personal go/no-go on entering the electric two-wheeler business in Pakistan.
+      <strong>Revised the same day after checking the primary sources</strong> — which withdrew one figure and
+      reversed the central recommendation. Every figure carries its evidence grade because the decision depends
+      on which ones are load-bearing, and the two that mattered most did not survive contact with the documents.
+    </p>
+  </footer>
+
+</div>

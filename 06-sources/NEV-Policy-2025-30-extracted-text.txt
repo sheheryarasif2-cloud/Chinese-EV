@@ -1,0 +1,1813 @@
+NEW ENERGY VEHICLES POLICY
+                2025-30
+
+
+
+
+    Ministry Of Industries & Production
+                              TABLE OF CONTENTS
+
+                                                                      Page No.
+
+Acknowledgment                                                           3
+List of Acronyms                                                         4
+Executive Summary                                                        6
+
+Chapter 1: Introduction
+1.1    The Context                                                       8
+1.2    Current State of New Energy Vehicles                              8
+1.3    Key Policy Gaps                                                   9
+1.4    Policy Objectives                                                10
+1.5    Scope of the Policy                                              10
+
+Chapter 2: Policy Targets and Key Interventions
+2.1    Policy Targets                                                   12
+2.2    Climate Goals and Emission Reduction                             12
+2.3    Oil Import Savings                                               13
+24     Health and Safety Benefits                                       13
+2.5    Opportunity for Development of New Industry and Green Jobs       13
+2.6    Lowering Operating Costs and Energy Flexibility                  14
+2.7    Key Interventions                                                14
+
+Chapter 3: Managing the Supply Side
+3.1    Local Production of New Energy Vehicles                          15
+3.2    Fair Market Principles                                           15
+3.3    Ease of Doing Business Commitment                                16
+3.4    National Vehicle Emission Efficiency Standards                   16
+3.5    Critical Mineral Resourcing                                      16
+3.6    New Energy Apprenticeship and New Energy Skills Programme        17
+3.7    Access to Green Financing, Trade and Investment Facilitation     17
+
+Chapter 4: Charging Infrastructure
+4.1    Charging Infrastructure Targets                                  18
+4.2    Power Tariff                                                     18
+4.3    Charging Regulations                                             19
+4.4    Viability Gap Funding                                            19
+4.5    National Charging Stations Mapping Tool                          20
+
+Chapter 5: Augmenting NEV Demand
+5.1    Cost Sharing Scheme                                              21
+5.2    Free Registration and Exemption from Tolls                       22
+5.3    Easing Access to Credit for NEVs                                 22
+5.4    Funding the Tranistion                                           23
+5.5    Model Electric Mobility Cities                                   24
+5.6    Public Procurement of NEVs                                       24
+5.7    Transition of Public Transport                                   24
+5.8    Public Awareness and Communication                               25
+5.9    Vehicles Replacement Scheme                                      25
+
+
+                                         1
+5.10    Buyers Rights                                      25
+
+Chapter 6: Institutional Support
+6.1    New Energy Vehicle Center                           27
+6.2    Vehicles Testing Facilities                         27
+
+Chapter 7: Regulations, Safety and Performance Standards
+7.1    Vehicles Safety and Performance Standards           28
+7.2    Licensing Requirement                               29
+
+Chapter 8: Climate Change and Environmental Aspects
+8.1    Environmental Safeguards and End of Life Planning   30
+8.2    Leveraging Carbon Credits and Climate Finance       30
+
+Chapter 9: Implementation Framework
+9.1    National Action Plan                                31
+9.2    Policy Ownership, Measuring and Reporting Success   31
+9.3    Continuous Review and Course Correction             31
+9.4    Developing Synergies                                32
+9.5    Supplementary Measures                              33
+
+Appendix: National Action Plan                             35
+
+
+
+
+                                         2
+                                     ACKNOWLEDGEMENT
+
+
+This policy is the result of a collaborative effort of various ministries and departments of the federal
+and provincial governments, automobile industry, battery manufacturers, academia, development
+partners, financial institutions and public at large. We at the Ministry of Industries & Production
+acknowledge their invaluable contribution in this regard.
+
+We also extend our gratitude to the Steering Committee constituted by the Prime Minister for their
+leadership and guidance throughout the development of this policy. Special appreciation is also
+extended to the members of Working Groups constituted by the Steering Committee for developing a
+deeper understanding into various thematic areas of the policy. Their dedication had been instrumental
+in shaping a comprehensive and forward-looking framework.
+
+We also recognize the support provided by international and local experts from REMIT, Sustainable
+Development Policy Institute (SDPI) and Lahore University of Management Sciences (LUMS) who
+provided critical technical assistance and shared insights to ensure the policy aligns with global best
+practices and local aspirations.
+
+
+
+
+                                                   3
+                                 LIST OF ACRONYMS
+
+ADB                Asian Development Bank
+AIDEP              Automotive Industry Development and Export Policy
+AIIB               Asian Infrastructure Investment Bank
+AJK                Azad Jammu and Kashmir
+BEVs               Battery Electric Vehicles
+CAGR               Compound Annual Growth Rate
+CC                 Cubic Centimetre
+CCP                Competition Commission of Pakistan
+CDA                Capital Development Authority
+CSR                Corporate Social Responsibility
+CTF                Climate Transformation Fund
+CVT                Capital Value Tax
+                   Development Mechanism
+DISCOs             Distribution Companies
+e-Waste            Electronic Waste
+EDB                Engineering Development Board
+EVs                Electric Vehicles
+FCEVs              Fuel Cell Electric Vehicles
+FD                 Federal Government
+FED                Federal Excise Duty
+GB                 Gilgit Baltistan
+GCF                Green Climate Fund
+GEF                Global Environment Facility
+GHG                Greenhouse Gas
+GST                General Sales Tax
+GVG                Green Vehicles Guide
+HEC                Higher Education Commission
+ICE                Internal Combustion Engine
+IEA                International Energy Agency
+IKI                International Climate Initiative
+IMF                International Monetary Fund
+IoT                Internet of Things
+IsDB               Islamic Development Bank
+IT                 Information Technology
+KIBOR              Karachi Interbank Offer Rate
+KPIs               Key Performance Indicators
+kW                 Kilo Watt
+LCEVs              Light Commercial Electric Vehicles
+Level 1 Charging   Slowest charging option, utilizing a standard 220-240V outlet and can
+                   delivers 1-3 kW of power, suitable for overnight home-based charging
+Level 2 Charging   Requires a dedicated 220-240V outlet and delivers power at 4-22 kW,
+                   depending on the system's capabilities, suitable for workplaces, shopping
+                   centres etc.
+Level 3 Charging   Fastest charging option, utilizing direct current (DC) at 400-800V or higher,
+                   power output ranges from 50 kW to over 350 kW, depending on the charger
+                   and vehicle capabilities. Level 3 charging can replenish 80% of a vehicle's
+                   battery in 20-40 minutes, making it suitable for highway and quick stops.
+MAF                Mitigation Action Facility
+MoIB               Ministry of Information and Broadcasting
+MoIP               Ministry of Industries and Production
+NAP                National Action Plan
+NAVTTC             National Vocational and Technical Training Commission
+NDCs               Nationally Determined Contributions
+
+
+                                             4
+NEAP         New Energy Apprenticeship Programme
+NEECA        National Energy Efficiency and Conservation Authority
+NESP         New Energy Skills Programme
+NEV          New Energy Vehicle
+NEVC         New Energy Vehicles Centre
+NHA          National Highway Authority
+NTP          National Tarif Policy
+NVEES        National Vehicle Emission Efficiency Standard
+OEMs         Original Equipment Manufactures
+P3A          Public Private Partnership Authority
+PD           Power Division
+PES          Pakistan Economic Survey
+PG           Provincial Government
+PHEVs        Plug-in Hybrid Electric Vehicles
+PM           Particulate Matter
+PPP          Public Private Partnership
+PSQCA        Pakistan Standards and Quality Control Authority
+PSW          Pakistan Single Window
+PTA          Punjab Transport Authority
+REEVs        Range Extended Electric Vehicles
+ROI          Return on Investment
+RSF          Resilience and Sustainability Facility
+SBP          State Bank of Pakistan
+SC           Steering Committee
+tCO2         Tons of Carbon Dioxide
+TEVTA        Technical Education and Vocational Training Authority
+TWh          Terawatt-hour
+UN           United Nations
+UNFCCC       United Nations Framework Convention on Climate Change
+UNFCCC-CDM   United Nations Framework Convention on Climate Change – Clean
+VGF          Viability Gap Funding
+WHT          Withholding Tax
+ZEVs         Zero-Emission Vehicle
+
+
+
+
+                                    5
+                                      EXECUTIVE SUMMARY
+
+The New Energy Vehicles (NEV) Policy 2025-30 aims at reduction of vehicular emissions,
+improvement of air quality, enhancing the productive use of excess electricity generation capacity in
+the system and lowering oil import. It also seeks to lay the foundations for development of a competitive
+local NEV industry, transfer of technology and creating green jobs. It also intends to foster synergies
+among the federal and provincial governments to ensure a cohesive approach toward sustainable
+transportation.
+
+This policy builds on the earlier 2019 National Electric Vehicles Policy. The 2019 policy had an
+ambitious goal to bring electric vehicular sales to 30% of new vehicles sales by 2030. Due to various
+implementation challenges and the COVID-19 pandemic, the policy fell short of this target. Adoption
+of electric vehicles picked up marginally with the promulgation of Automotive Industry Development
+and Export Policy (AIDEP) 2021-26. However, it was viewed that no significant improvement will be
+achieved in the absence of a comprehensive policy framework.
+
+The NEV Policy envisions converting 30% of new sales of bikes, rikshaws, passenger cars, light
+commercial vehicles, buses and trucks to new energy vehicles by 2030. Beyond the policy period, the
+country has ambitions in reaching NEV sales to 50% by 2040 and aiming for a net-zero transport fleet
+by 2060. To set a clear path toward the 2030 goals and to make up for the lost time, yearly NEV sales
+targets are determined for each vehicular segment during the policy period.
+
+The NEV Policy team at the Ministry of Industries & Production undertook extensive consultation with
+over on hundred stakeholders from industry, government entities, academia, development partners, civil
+society, and others. These consultations concluded that while the supply-side interventions from the
+2019 policy and AIDEP 2021-26 have not been fully implemented, these should continue with
+necessary corrections to address overlooked issues. It was also recognized that given their simpler
+design and existing level of technical capacities in the automobile industry, there is a real potential to
+achieve a high level of localization for electric bikes and rikshaws within the next two years if right
+policy interventions are applied. A major barrier to NEV adoption is their high upfront cost. This
+necessitates measures to reduce prices closer to those of internal combustion engine (ICE) vehicles in
+line with regional and global practices. Consultations also highlighted the need for stronger coordination
+and synergy between various federal and provincial entities to streamline NEV adoption. Additionally,
+the current power tariff structure for commercial charging offers low returns on investment, requiring
+immediate adjustments to encourage the growth of charging infrastructure. Lastly, stakeholders called
+for a review of State Bank of Pakistan's conservative auto-finance guidelines to better support NEV
+adoption and improve financing options.
+
+To address the key policy gaps and implementation barriers, NEV Policy has four key interventions to
+reach the 2030 targets:
+
+        (a)     Supply side management: To support local production, the policy encourages
+                investment in NEV manufacturing, ensures fair market practices, and introduces ease-
+                of-doing-business measures. It also aims to establish a National Vehicle Emission
+                Efficiency Standard and promote the sourcing of critical minerals for production of
+                batteries and other electric parts.
+        (b)     Charging infrastructure development: A robust charging network is critical for NEV
+                adoption. The policy plans for setting up of 3,000 charging stations by 2030, including
+                Level 3 fast chargers and Level 2 chargers. It also introduces power tariff structures,
+                regulatory frameworks, and the use of viability gap funding (VGF) to encourage private
+                sector investment for setting up of charging stations which may not be commercially
+                viable initially due to less than optimal demand or other reasons.
+        (c)     Augmenting NEV demand: To make NEVs more accessible, the policy proposes a
+                revenue neutral cost-sharing scheme, rationalized registration and token fees structure,
+
+
+                                                    6
+                and toll exemptions. It also emphasizes public procurement of NEVs, the establishment
+                of model electric mobility cities, and gradual transition of public transport fleets to
+                NEVs.
+        (d)     Institutional support: The policy envisages establishment of a New Energy Vehicles
+                Center (NEVC) to inter alia promote research and innovation, keep an account of
+                emissions reduction achieved through adoption of NEVs under the policy for
+                leveraging green funds, render advise on the development of safety and performance
+                standards for NEVs and tracking progress toward policy goals.
+
+The policy also addresses following key areas which are critical for the adoption of NEVs in Pakistan:
+
+        (a)     Regulations and standards: The policy aims at adoption of safety, quality and
+                performance standards for NEVs. It also aims at setting up regulations for battery
+                safety, recycling, and disposal to mitigate environmental risks associated with NEVs.
+        (b)     Climate change and environmental safeguards: The policy addresses environmental
+                concerns related to NEVs, particularly the recycling and disposal of batteries and
+                electronic waste. It aims to leverage carbon credits and access international climate
+                finance to support the NEV transition.
+        (c)     Implementation framework: A National Action Plan given at the end of the policy,
+                overseen by a steering committee, will ensure implementation of the policy in
+                coordination with the relevant federal and provincial government entities and other
+                stakeholders. The plan includes regular reviews and updates to align with technological
+                advancements and market trends. The policy also encourages provincial and regional
+                governments to develop their action plans and work towards common goals.
+        (d)     Supplemental initiatives: The policy also lists down the legal and regulatory
+                framework that will be developed subsequently to address areas such as enforceable
+                standards, environmental safeguards and vehicle registration process. It also
+                emphasises on the need for raising public awareness and integration of NEVs into
+                public transport systems. These initiatives will support the overall goal of creating a
+                sustainable and efficient NEV ecosystem in Pakistan.
+
+In summary, the NEV Policy 2025-30 is an ambitious, forward-looking policy designed to transform
+Pakistan's transport sector through the adoption of NEVs, contributing to environmental sustainability,
+economic growth, and energy efficiency in the transport sector.
+
+
+
+
+                                                  7
+                                            CHAPTER 1
+                                          INTRODUCTION
+
+
+1.1     The Context
+
+Automobile industry holds strategic significance for Pakistan due to its potential to attract investment,
+drive growth, support technology transfer and create employment opportunities. In Pakistan, the
+automobile sector has grown rapidly over the past decade. In 2010, the total number of vehicles, was
+approximately 9 million only. This number increased significantly to nearly 36 million by 2023 with
+Compound Annual Growth Rate (CAGR) of 11%.
+
+At the same time however, as per 2012 Emissions Inventory of Pakistan, nearly 10% of the 374 million
+metric tons of carbon dioxide (tCO2) emissions in Pakistan originated from the transport sector. This
+figure increased to 60 million tCO2 in FY2019-20 showing a CAGR of 5.3%. These emissions are a
+serious cause of concern as they materially burden the economy through reduced productivity and
+increased healthcare expenditures.
+
+Worldwide, there is a significant movement towards decarbonizing the road transport sector. The main
+driver of this transformation are the electric vehicles (EVs). However, hydrogen fuel cells and other
+zero emission-based technologies are also catching up. Both the EVs and other technologies are
+witnessing rapid advancement with the aim of achieving reliability, greater range and reduction in the
+life cycle cost of vehicles. Further, on the supply side, a vast number of governments are taking
+affirmative actions to accelerate adoption of New Energy Vehicles (NEVs). As a result, globally the
+EVs accounted for 18% of all vehicles sold in 2023, a notable rise from 2% in 2018 marking substantial
+growth over the five years period. However, Pakistan is lacking behind many emerging and regional
+economies in the uptake of EVs.
+
+In Pakistan’s context, besides achieving reduction in emissions, the adoption of NEVs in Pakistan will
+also trigger productive use of surplus power and marked reduction in oil import bill.
+
+Pakistan's electricity generation capacity has grown steadily in the recent years, but its utilization
+remains significantly low. In the fiscal year 2023-24, the system had an available capacity of 253 TWh,
+yet only 126.5 TWh was utilized, reflecting a utilization rate of around 50%. Likewise, in FY 2022-23,
+the available energy stood at 232 TWh, with only 131 TWh (56%) being utilized. With an additional
+30 TWh of capacity expected to come online between 2024 and 2027, the gap between capacity and
+demand may widen further. NEVs offer a promising solution to increase productive and sustainable
+electricity demand, as the existing system is reasonably equipped to support their additional load.
+
+In 2024, Pakistan spent over USD 16 billion on import of petroleum products. Pakistan Economic
+Survey (PES) 2023-2024 indicates that transport sector was the largest consumer of oil, comprising
+77.3% of total demand in FY 2023. This demand further increased by 2.59%, reaching 79% in FY 2024,
+necessitating even higher oil imports and intensifying the country’s foreign exchange challenges.
+Adoption of NEVs can substantially reduce the need for oil import and foreign exchange requirement,
+thus helping balance of payment situation for Pakistan.
+
+
+1.2     Current State of New Energy Vehicles
+
+Adoption of NEVs will require a medium to long-term policy framework featuring a detailed transition
+mechanism. In 2019, the Ministry of Climate Change and Environmental Coordination (MoCC&EC)
+introduced Pakistan’s first Electric Vehicles Policy. This policy set ambitious targets on adoption of
+electric vehicles and provided specific measures and incentives for their achievement. However, these
+measures and incentives could not be implemented for various reasons Additionally, COVID-19
+pandemic severely disrupted progress on EVs. Hence, the policy targets were missed by a large margin.
+
+
+                                                   8
+                    Table 1: EV Policy 2019 EV Adoption Targets and Achieved Numbers
+
+                               Medium Term Targets          Long Term Targets        Ultimate Targets
+ EV Penetration Targets
+                                    (5-years)                     (2030)                  (2040)
+                                 Target - 500,000
+ Two & Three Wheelers
+                                Achieved - 50,000
+                                  Target - 1,000            50% of the new sales
+ Buses
+                                  Achieved - 200             in 2/3W and Buses         90% of all new
+                                 Target - 100,000          30% of the new sale in       vehicle sale
+ Four-Wheelers
+                                 Achieved – 3,000           4W (Cars) & Trucks
+                                  Target - 1,000
+ Trucks
+                                 Achieved - <10
+
+Finally, certain incentives of the 2019 policy were integrated into the Auto Industry Development and
+Export Policy 2021-2026 (AIDEP) of the Ministry of Industries & Production (MoIP) and became
+effective partially. With these incentives in place, the number of electric vehicles has risen from a mere
+567 in 2021 to over 80,000 by June 2025. Further, Pakistani manufacturers have resumed efforts
+towards local production of EVs especially in the two and three wheeler segment. These efforts have
+intensified with the expectation of the promulgation of this new and comprehensive policy. As a result,
+by July 2025, a total of 65 manufacturers have secured certificates to produce electric two and three
+wheelers locally, while two certificates have been issued for local assembly of electric cars and SUVs.
+Besides this, several other large manufacturers of electric cars with global presence have shown interest
+in entering into Pakistan’s market as well. Further, expecting that the policy will lead to increased
+electric vehicles volumes, investment in electric battery assembly and manufacturing is also picking up.
+
+Given this context, the need for a new policy to accelerate adoption of NEVs and development of
+ancillary infrastructure is evident. In order to set out the right policy interventions, a concerted effort
+was made to critically review the 2019 policy to determine gaps, and hear all stakeholders, most
+importantly the budding EVs industry. MoIP, in collaboration with the Engineering Development Board
+(EDB), held over eighty (80) meetings with the key stakeholders, including federal agencies, provincial
+governments, financial institutions, regulatory bodies, original equipment manufacturers (OEMs),
+vehicle parts manufacturers, service providers, battery manufacturers, academia, research institutions
+and private businesses.
+
+
+1.3      Key Policy Gaps
+
+Stakeholders’ consultation and internal review indicates the need for additional efforts in the following
+areas:
+
+         (a)     Although these have not been fully implemented till now, the supply side interventions
+                 of the 2019 policy adopted under AIDEP, 2021-26 were favoured for continuation.
+                 However, a higher rate of sales tax has been applied on sale of a locally manufactured
+                 part as compared to a similar imported part. This situation adversely impacts local part
+                 manufacturers and needs rectification by bringing the rate of sales tax applied on
+                 imported parts at par with the rate applicable to locally manufactured part.
+         (b)     With the given capacity of the automobile industry, it is possible to achieve a very high
+                 percentage of localization in two and three wheelers NEVs in a few years with right
+                 policy interventions, however, necessary safeguards will be required to ensure that the
+                 nascent NEV industry remains competitive internationally and open to new entrants
+                 right from the beginning.
+         (c)     Key obstacle in NEV adoption is the high upfront cost of acquisition, which raises the
+                 need for taking affirmative measures to bring their prices as near to the prices of ICE
+                 vehicles as possible in line with the regional and global practice.
+
+
+
+                                                    9
+        (d)     There is a need for deeper coordination and developing synergies between various
+                entities within the federal government as well as the federal government and provinces.
+        (e)     Power tariff structure for commercial charging offers very low return on investment in
+                setting up of charging stations; attractive power tariff structure is urgently required to
+                encourage charging infrastructure growth; and
+        (f)     The current auto-finance regime imposes a credit limit of PKR. 3 million and a tenor
+                limit of 3 to 5 years. Since the prices of NEVs cars exceed this limit, it will be
+                appropriate for the State Bank of Pakistan (SBP) to review this regime in case of NEVs
+                especially since cars are not likely to attract a subsidy under the policy.
+
+This policy, inter alia, intends to build on these identified areas, comprehensively reassess the current
+industry landscape, set aggressive but achievable targets, and establish an enhanced incentive
+framework to sustain long-term growth in Pakistan's NEV sector.
+
+
+1.4     Policy Objectives
+
+Through a combination of regulatory framework, supply and demand incentivization, and with a whole
+of the government approach, this policy intends to achieve the following objectives:
+
+      (a)       Help achieve Pakistan’s Nationally Determined Contributions (NDCs) in reducing
+                GHG emissions, leading inter alia to improved air quality and mitigation of seasonal
+                smog;
+      (b)       Enhance sustainable and productive use of excess electric power generation capacity
+                throughout the year while enhancing road transport efficiency to reduce the oil import
+                bill;
+      (c)       Develop a wider ecosystem for adoption of NEVs including establishing a network of
+                charging stations, workforce development, promoting innovation and entrepreneurship;
+      (d)       Develop NEV and parts industry to reduce production cost and exploit potential for
+                export;
+      (e)       Develop and enforce NEV quality, performance and safety regulations and
+                environmental safeguards including battery and electronics recycling and safe disposal;
+      (f)       Foster synergies within the federal government as well as between the federal and
+                provincial entities, including Gilgit Baltistan (GB) and Azad Jammu & Kashmir (AJK);
+                and
+      (g)       Implement a robust mechanism to monitor progress and to review and realign the policy
+                in view of emerging needs.
+
+
+1.5     Scope of the Policy
+
+Sustainable mobility encompasses a broad spectrum of advanced vehicle technologies aimed at
+reducing emissions and minimizing reliance on conventional fuels. These technologies include Battery
+Electric Vehicles (BEVs), Plug-in Hybrid Electric Vehicles (PHEVs), Range-extended Electric
+Vehicles (REEVs) and Fuel Cell Electric Vehicles (FCEVs). For ease, all these categories have been
+collectively referred to as NEVs in this policy.
+
+For the purpose of this policy, in two and three wheelers category, only fully BEVs will be considered
+as NEVs. For four wheelers, buses, vans, Light Commercial Vehicles (LCVs), and trucks, PHEVs will
+also qualify, provided they achieve a minimum range of 50 kilometres in pure electric mode on a single
+
+
+
+                                                   10
+battery charge with zero tailpipe emissions. Moreover, during the policy period, the definition of NEVs
+in this document may be revised based on technological advancement in Zero Emission Vehicles
+(ZEVs) as and when they emerge.
+
+Furthermore, the policy outlines a phased deployment plan for the required charging infrastructure for
+different segments of NEVs. It also includes provisions for establishing a NEV Center to support NEV
+transition, foster research on emerging technologies, and build institutional capacity in the sector.
+
+The policy also suggests amendments to existing laws or introduction of new laws to provide a sound
+and sustainable foundation for the NEV ecosystem.
+
+
+
+
+                                                  11
+                                        CHAPTER 2
+                           POLICY TARGETS AND KEY INTERVENTIONS
+
+
+2.1     Policy Targets
+
+The 2019 policy failed to meet its five years targets. Despite this setback the NEV Policy 2025-30 aims
+at making up the lost ground and achieve the target of taking NEVs sale to 30% of new vehicle sales
+by 2030. Beyond the policy period, Pakistan aims to achieve an ‘ambition’ of NEVs sale to reach 50%
+of new vehicle sales by 2040, and 100% of new vehicle sales by 2050 across all segments. To this end,
+Pakistan has ambition to reach 100% Zero-Emission Vehicle (ZEVs) fleet by 2060.
+
+                                      Table 2: NEV Adoption Targets 2025-30
+
+ Type                        2025-26         2026-27         2027-28     2028-29     2029-30      Total
+ 2-wheelers                  116,053         246,728         393,408     557,590     740,898     2,054,677
+ 3-wheelers                   3,171           6,644          10,442      14,588      19,106       53,951
+ 4-wheelers.                  5,947           12,369         19,296      26,758      34,785       99,155
+ Buses, vans etc.              144             291            443         599         760         2,237
+ Trucks, vans, LCVs            186             382            588         806         1,034       2,996
+ Total vehicles              125,501         266,414         424,177     600,341     796,583     2,213,016
+
+For charging infrastructure deployment, in the first phase, the policy focuses exclusively on installing
+Level 3 fast-charging stations at 40 strategically located sites, primarily along the motorways and N5,
+to be completed within six months of the policy approval. This will be achieved in close collaboration
+with Ministry of Communication, National Highway Authority, Oil Marketing Companies (OMC) and
+service providers of the motorways.
+
+Subsequently, the policy outlines a gradual approach for deployment of 3,000 charging stations by 2030.
+This expanded network will include a mix of Level 3 fast chargers, Level 2 chargers, swapping stations
+for two and three wheelers, and Level 1 chargers in parking lots for two and three wheelers. The plan
+also emphasizes covering urban infrastructure by integrating charging stations within cities and
+prioritizing gradual deployment of charging facilities at the existing fuel stations in cities and along
+highways. Table 3 below provides the number of public charging station to be deployed each year.
+
+                  Table 3: Planned Deployment of Charging Stations to match Adoption Targets
+
+                                  2025-26       2026-27        2027-28     2028-29     2029-30      Total
+
+Public Charging Stations              240         380            550          800       1,030       3,000
+
+
+
+2.2     Climate Goals and Emission Reduction
+
+Transport makes up more than a quarter of the total emissions and has the highest reliance on fossil
+fuels. A recent study illustrates that emissions contribution from transport sector in the larger cities is
+much higher and is a leading cause of environmental degradation, health issues and related economic
+cost. This also constitutes a major reason behind periodic episodes of smog. It is expected that
+decarbonizing road transport system can help reverse this trend.
+
+Pakistan's climate goal, as outlined in its NDCs, intends to set a cumulative ambitious target of overall
+50% reduction of its projected emissions by 2030, with 15% from the country’s own resources and 35%
+subject to provision of international grant financing.
+
+
+                                                        12
+This policy intends to reduce approximately 4.5 million tCO2e from the transport sector by 2030. This
+corresponds to a potential accrual of USD 58.53 million in revenue through a certified carbon credit
+mechanism.
+
+                       Table 4: Yearly Emission Saved with NEVs Adoption (million tCO2e)
+
+      2025-26            2026-27           2027-28          2028-29           2029-30            Total
+       0.12                0.36              0.74             1.29               2.0                 4.51
+
+
+
+2.3      Oil Import Savings
+
+Pakistan Economic Survey (PES) 2023-24 indicates that Pakistan consumed 16.7 million tons of oil,
+with about 77% of it used by the transport sector in the year 2023. The oil consumption in the transport
+sector alone is projected to rise to 18 million tons by 2030, driven by growing economic demands and
+a young population with a median age of less than 21 years, leading to more people vying for vehicles.
+Transitioning to NEVs offers a significant opportunity to reduce oil imports and outflow of foreign
+exchange. By achieving its NEV adoption targets, Pakistan could potentially save up to USD 0.95
+billion or 1.823 million tons of oil equivalent by 2030, strengthening its economy and enhancing energy
+security.
+
+
+2.4      Health and Safety Benefits
+
+Air quality in larger cities in Pakistan is significantly impacted by particulate matter (PM), particularly
+PM2.5, which poses severe health risks. These fine particles, originating from various sources such as
+vehicle emissions and industrial activities, can penetrate deep into the lungs and bloodstream,
+exacerbating respiratory issues, cardiovascular diseases, and other health problems. Different data
+sources indicate that in cities like Lahore, PM2.5 levels can exceed safe limits significantly, contributing
+to the formation of smog, which reduces visibility and aggravates health conditions like asthma and
+allergies especially for children, elderly and pregnant women. The main contributor to these harmful
+emissions is the on-road vehicles. Transitioning to NEVs offers a solution by eliminating tailpipe
+emissions, significantly reducing the release of harmful PM and other pollutants. As more NEVs are
+adopted, air quality will improve, leading to a reduction in smog and health-related issues, while also
+helping Pakistan meet its clean air targets and lower its disease burden from air pollution. This shift not
+only enhances public health but also contributes to a more sustainable and environmentally friendly
+transportation system.
+
+              Table 5: Better Air Quality Impact on Health and Economy due to NEVs in PKR. Billion
+
+      2025-26            2026-27           2027-28           2028-29           2029-30               Total
+         6                  13                20                28               38                  105
+
+
+
+2.5      Opportunity for Development of New Industry and Green Jobs
+
+Transition to NEVs can catalyze development of additional jobs and new skillsets in Pakistan across
+the NEV ecosystem including manufacturing, charging infrastructure development, Internet of Things
+(IoT) and innovation.
+
+One of the significant new opportunities is the possible transition of the existing lead battery
+manufacturing industry into advanced battery assembling and manufacturing. Simultaneously, it could
+help advance the existing motor making industry to accommodate the specific demands of NEVs. This
+
+
+                                                      13
+transition will not only generate new employment opportunities but also encourage the development of
+high-quality motors, batteries, and other critical components. Furthermore, the growing importance of
+software in the NEV value chain presents a significant opportunity for Pakistan, particularly in the
+development of Information Technology (IT) and IoT devices and sophisticated software solutions that
+enhance the overall driving experience, vehicle performance and fleet management.
+
+There is also an opportunity for significant localization of NEVs and their parts, especially in the two
+and three wheelers category.
+
+
+2.6     Lower Operating Cost and Energy Flexibility
+
+Studies indicate that at a petrol price of PKR 260 per litre, an internal combustion engine (ICE) vehicle
+averaging 10 litres per 100 km incurs a running cost of PKR 26 per km. In comparison, an equivalent
+electric vehicle consuming 14 kWh per 100 km and charged at PKR 60 per kWh has a running cost of
+PKR 8.4 per km, making it approximately 68% cheaper per km than the ICE vehicle.
+
+Further, Battery Electric Vehicles (BEVs) are more efficient as these can turn over 70% of electrical
+energy into kinetic energy. On the contrary, ICE vehicles can only convert around a quarter (25%) of
+energy from chemical energy to kinetic energy. Hence adoption of NEVs will bring benefits not only
+for individual users but also for the economy at large.
+
+Moreover, meeting electric vehicle adoption targets will create an additional demand for 1544 GWh of
+energy over the policy period. This will allow productive use of excess power available in the grid
+system leading to reduction in capacity payments.
+
+At the same time, it will allow energy efficiency by adjusting demand to off-peak hours. NEVs are
+inherently a year-round load and will therefore provide a much-needed boost to augment productive
+energy demand on the grid. Additionally, flexible nature of the NEV load will improve the load factor
+of the national grid which leads to improved economic viability of the power sector.
+
+
+2.7     Key Interventions
+
+This policy aims to achieve its targets through various interventions in four key areas (a) increasing the
+supply of quality but affordable NEVs, (b) establishing infrastructure to support use of NEVs, (c)
+incentivizing demand, and (d) establishing an institutional basis to enable adoption of NEVs. These
+interventions in turn rely on a number of actions.
+
+The planned outcomes of the policy are (a) enhanced availability of NEVs, (b) reduction in road
+transport emissions, (c) increased access to charging facilities to remove range anxiety, (d) increased
+local manufacturing and recycling, (e) reduction in cost of acquisition and thus increased affordability,
+and (f) reduction in cost of operation and availability of after sale services to influence users’ preference.
+
+This policy’s implementation period will be till the end of FY 2030. However, it intends to also lay the
+foundation for future direction beyond its stipulated timeframe. It is a national policy and will be
+delivered in collaboration with provinces, regional governments, industry, businesses and citizens at
+large.
+For this purpose, policy provides for a comprehensive framework for regular progress reviews and
+annual comprehensive reviews. The aim is to bridge up coordination gaps and ensure timely
+adjustments in the delivery framework to suit emerging needs.
+
+The key interventions and actions are elaborated in the subsequent chapters.
+
+
+
+
+                                                     14
+                                        CHAPTER 3
+                                  MANAGING THE SUPPLY SIDE
+
+
+3.1     Local Production of New Energy Vehicles
+
+NEVs technology is relatively new and has not been adopted in Pakistan. Therefore, most of the NEVs,
+especially in the cars and public service vehicles category, entering in Pakistan’s market during the
+initial years of this policy will be imported. However, this approach may not be sustainable in the longer
+run as it will further worsen the balance of trade on the one hand and lead to higher cost of NEVs on
+the other, thus inhibiting their widespread adoption. This necessitates production of NEV and their parts
+inside Pakistan. It is also clear that Pakistan has a very narrow window of opportunity to capitalize on
+the emerging demand for NEV production and assembling and their key components locally.
+
+Experience has shown that vehicle prices have reduced considerably through localization especially in
+areas where Pakistan has a competitive advantage. The possibility of successful localization of NEV is
+high due to large number of common parts with ICE based vehicle. Pakistan has already achieved more
+than 90% localization in respect of ICE two and three wheelers and around 50% in case of ICE cars.
+Further, Pakistan has an established industrial base for manufacturing of traction motors, electric and
+electronic equipment and ancillary modules, battery systems and IT and IoT systems which are the key
+components of any NEV. It is considered that this competitive advantage can be quickly, and cost
+effectively diverted towards this NEV market.
+
+Considering these factors, Pakistan’s automobile industry is poised for localization of NEVs. In this
+context, as of July, 2025, fifty-six (56) certificates for local assembly and manufacturing of two and
+nine (9) certificates for three-wheeler have been issued. There is an equal interest in NEV cars and
+SUVs market. As of July, 2025 two (2) certificates have been issued for assembling plug-in-hybrid
+SUVs while two (2) certificates have been obtained for local assembly of NEV cars. The existing total
+local assembly and production capacity of electric two and three-wheeler has risen to two 2 million
+vehicles per annum. However, much of this capacity is heavily underutilized. It is viewed that the
+demand side interventions of this policy will contribute to full utilization of this capacity.
+
+At the same time, it is understood that tariff protection for the automobile sector are extensive, result in
+distortion and thus need to be brought down. However, to ensure a smooth transition and policy
+continuity, existing incentives for NEVs as provided under the AIDEP 2021–26 shall remain in effect
+till the end of the policy period i.e June 30, 2026. Thereafter, all applicable tariffs including customs
+duty, additional customs duty, and regulatory duty shall be gradually adjusted in accordance with the
+principles laid out in the NTP 2025–30. In this context, special duty regimes currently applicable to the
+auto sector, including those under the 5th Schedule to the Customs Act, 1969 will be gradually phased
+out by 2030. Furthermore, any preferential sales tax treatment extended to localized components shall
+also be gradually withdrawn by 2030. Further, the lower rate of sales tax applied on sale of certain
+imported parts will be adjusted to bring it at par with the rate applicable to similar locally manufactured
+parts.
+
+To support industry adjustment and maintain a stable investment environment, MoIP will develop and
+publish a detailed transition roadmap well before the conclusion of AIDEP 2021-26 as part of a new
+policy for the automobile sector which will inter alia include post June 2026 tariff structure for NEVs.
+
+
+3.2     Fair Market Principles
+
+While encouraging localization, it will be ensured that there are no entry barriers to otherwise eligible
+businesses. This principle will be strictly enforced to avoid market monopolization.
+
+
+
+
+                                                    15
+The Competition Commission of Pakistan (CCP) will ensure that the NEV market remains competitive.
+It is expected that competition will not only bring the prices down but will also force businesses to
+innovate resulting in additional gains for the customers. Thus, a competitive market will enhance overall
+economic efficiency and benefit both the industry and users.
+
+Further, steps will be taken as and where needed to avoid price dumping in the NEV market. This will
+in turn require a review of existing mechanism for maintain market vigilance and brining efficiency in
+procedures for effectively and expeditiously handling individual cases.
+
+
+3.3     Ease of Doing Business Commitment
+
+With a view to ease doing of business, EDB will provide single window services for aspirant importers,
+assemblers and manufacturers of NEVs. For this purpose, EDB will also act as an interface for any
+approval required from any other federal and provincial agency. EDB will define time lines for grant of
+various regulatory approvals which will be strictly followed.
+
+To create transparent process that ensures accountability, the EDB will revamp and digitalize its
+processes immediately after promulgation of the policy.
+
+Furthermore, Pakistan Single Window (PSW), Pakistan’s digital platform for trade, will be made
+available for the automobile manufacturers and assemblers for import or export related procedures,
+including issuance of licences and certificates, quota allocation and adjustments, import authorization,
+levying of duties and taxes and annual reconciliations. EDB will also automate its processes for obtain
+statistics on industrial production and compliance with vehicles safety, quality and environmental
+standards under WP 29 regime.
+
+The ease of doing business aspect will be overseen by the steering committee. The steering committee
+will establish a system to receive grievances and to address these in an expeditious manner.
+
+
+3.4     National Vehicle Emission Efficiency Standard
+
+By 2028, Pakistan will introduce National Vehicle Emission Efficiency Standard under which
+automobile manufacturers and assemblers will be encouraged to supply automobiles that are more fuel
+efficient, including the NEVs. The standards will help set up an average target of carbon emissions per
+kilometer for the fleet of new vehicles sold each year. Any automobile manufacturer or assembler who
+exceeds the target will earn credits.
+
+As in case of several other jurisdictions where such an arrangement has been applied, adoption of
+standard is likely to assist in increased supply of lower and Zero Emission Vehicles (ZEVs) in Pakistan.
+This intervention is important given transport sector’s large contribution to the deteriorating air quality,
+especially in the larger cities.
+
+
+3.5     Critical Minerals Resourcing
+
+Due to their unique electronic and magnetic properties, critical minerals such as rare earth metals,
+lithium, zinc and cobalt form the basis for the most, if not all, technologies which underpin NEVs and
+batteries. The International Energy Agency (IEA) forecasts that demand for minerals to use in EVs and
+battery storage could grow at least 30 times by 2040.
+
+Pakistan’s indigenous critical mineral sources can provide a foundation for its decarbonisation efforts.
+Accordingly, Pakistan will develop a strategy to carry out geological studies to validate deposits,
+
+
+
+                                                    16
+explore alternate sources of critical minerals and how these could be used for expanding downstream
+processing industry.
+
+
+3.6     New Energy Apprenticeship and New Energy Skills Program
+
+MoIP in collaboration with the National Vocational & Technical Training Commission (NAVTTC) will
+initiate the New Energy Apprenticeships Program (NEAP) to create 10,000 new energy apprentices and
+the New Energy Skills Program (NESP) to create 5,000 people strong workforce to help Pakistan to
+transit to clean energy technologies and create a trained work force for related jobs both for the domestic
+market and abroad. Additionally, the Higher Education Commission (HEC) will look into the possibility
+of integrating NEV technology related curriculum into the existing education programs offered to
+students at universities.
+
+Similarly, provincial governments will also be encouraged to establish trainings programs on battery
+technologies, electric traction motors, power electronics and charging systems etc through their
+agencies.
+
+
+3.7     Access to Green Financing and Investment Facilitation
+
+Proliferation of NEVs will hinge upon the ability of manufacturers and assemblers in particular and the
+automotive sector supply chain in general, to supply sufficient number of vehicles and parts to meet
+policy targets for each vehicle segment. This may require upgradation of manufacturing facilities and
+hence the need for low cost financing.
+
+For this purpose, MoIP shall work with relevant ministries and stakeholders to explore multilateral and
+bi-lateral climate fund financing options. Efforts will also be made to solicit funding from Multilateral
+Developments Partners and other agencies.
+
+Further, MoIP will develop a robust database of global climate and green financing funds and work on
+a marketing plan to ensure that relevant funds remain abreast of financing and investment opportunities
+in the Pakistan’s NEV market. Further, it is critical that such funds are offered best-in-class business
+facilitation services. This will require close coordination amongst a number of government entities and
+regulatory bodies such as the State Bank of Pakistan (SBP) and Securities and Exchange Commission
+of Pakistan (SECP).
+
+
+
+
+                                                    17
+                                        CHAPTER 4
+                                 CHARGING INFRASTRUCTURE
+
+
+4.1       Charging Infrastructure Targets
+
+For quick up-take of NEVs, need for charging stations is essential. As an immediate measure, the
+National Highway Authority (NHA) will establish forty Level 3 charging stations in six months
+following the policy approval. These charging stations will be located along all motorways and selected
+sections of N5 at an average gap of around 120 kilometres. These stations will enable use of NEVs
+between major cities in Pakistan.
+
+The policy further aims to established 3,000 charging stations including fast chargers, level 2 chargers,
+swapping stations for two and three wheelers, and Level 1 charging in parking lots, in a phased manner
+during the policy period.
+
+                     Table 6: Planned Deployment of Charging Stations 2025-2030
+  Type of charging station        2025-26     2026-27     2027-28      2028-29     2029-30      Total
+  Level 3 charging stations          84         133         193          280         360        1,050
+  Level 2 charging stations          60          95         137          200         258         750
+  Level 1 charging stations          48          76         110          160         206         600
+  Swappable battery stations         48          76         110          160         206         600
+  Total                             240         380         550          800        1,030       3,000
+
+Above numbers are indicative and may be modified by the steering committee as per emerging needs
+remaining within the indicative fiscal space for VGF.
+
+The number of roadside charging stations will be gradually increased, with the goal of establishing one
+charging station every 50 kilometres along major highways by 2030.
+
+The main responsibility for establishing the target number of charging stations will rest with the NHA
+and respective authorities of the four provincial governments as well as the governments of Gilgit
+Baltistan (GB) and Azad Jammu & Kashmir (AJK).
+
+It will be mandatory for all oil marketing companies to ensure that 10% of their oil dispensation stations
+in each province, where they hold a license to operate, must be equipped with a Level 3 charging station.
+
+
+4.2       Power Tariff
+
+A new power tariff of PKR. 39.7/kWh for commercial charging stations has been fixed which allows
+sufficient profit margins to attract investment on the one hand and affordable charging services for the
+users on the other. Effort will also be made to allow bus and fleet operators that have established their
+own charging stations eligible for this rate to encourage adoption of electric public service vehicles.
+
+Power Division and relevant Distribution Company (DISCO) will work to integrate all charging stations
+with smart metering systems to ensure efficiency and cost-effectiveness.
+
+Furthermore, Power Division and the relevant DISCO will also take necessary steps to ensure a
+continuous and reliable electricity supply to charging stations, keeping them operational 24/7.
+Additionally, all requests for new electricity connections to charging stations will be processed and
+
+
+
+                                                   18
+completed within three weeks. The installation and consistent operation of electricity connections to
+charging stations will be part of DISCO's Key Performance Indicators (KPIs), which will be reviewed
+as part of the policy implementation framework.
+
+Additionally, Power Division will encourage DISCOs to regularly study the future growth of NEVs and
+their impact on the electricity grid. The findings should be included in their medium-term load forecasts
+to guide investment planning and infrastructure expansion.
+
+
+4.3     Charging Regulations
+
+National Energy Efficiency and Conversation Authority (NEECA) has developed regulations to
+promote a more efficient and simplified licensing process for installation of commercial public charging
+stations. While charging ports will be designed to accommodate various types of NEVs, NEECA will
+ensure that a standardized charging port is used across all stations in the interest of promoting
+consistency and interoperability between different vehicle models and charging stations.
+
+NEECA and EDB will work closely to establish national standards for the swappable batteries to ensure
+compatibility, safety, and efficiency across the industry. This framework is critical for the uptake of
+battery-swapping systems in Pakistan and shall be adopted within three months of the promulgation of
+this policy.
+
+To increase access to charging facilities, MoIP will work with the four provincial governments as well
+as the governments of GB and AJK on updating the relevant building regulations to ensure that all new
+and existing buildings, especially multi-residential and office buildings, are designed, constructed and
+fitted out to enable the installation of renewable energy and charging stations. An effort will be made
+to provide charging facilities at parking stations and other public places. MoIP will share a model
+regulation with the provincial and regional governments in this regard. The regulation will also focus
+on ensuring the safety of charging at designated locations, and will address safety concerns at non-
+designated charging areas, particularly in multi-residential buildings.
+
+
+4.4     Viability Gap Funding
+
+The new power tariff is expected to provide sufficient Return on Investment (RoI) to attract investment
+for setting up of charging stations on commercial basis. However, feasibility of setting up charging
+stations is expected to vary on a case-to-case basis, contingent upon several factors including location,
+vehicle throughput and the number of stations in close proximity that may influence price charged to
+the end-customer. Therefore, a scheme will be offered to assist businesses in developing charging
+stations on Public-Private Partnership (PPP) basis. Under this scheme, private sector proposals will be
+assessed on a case-to-case basis to determine the need for Viability Gap Funding (VGF) to make
+commercially unattractive proposals viable to the extent they are required for the overall development
+of the charging infrastructure network. For this purpose, the estimated VGF requirement for 15% of
+total stations develop each year is given at Table 7 below.
+
+                 Table7: Estimated VGF Requirement for Deployment of Charging Stations
+
+                                  2025-26     2026-27     2027-28     2028-29     2029-30      Total
+
+  Number of charging stations       36          57          82          120         155         450
+
+  Indicative VGF (PKR. Million)     180         285         410         600         775        2,250
+
+While the eligibility framework and procedural requirements for Viability Gap Funding (VGF) are
+already provided under the Public-Private Partnership Authority Act, 2017 and its associated
+
+
+
+                                                     19
+regulations, MoIP will work with Public Private Partnership Authority (P3A) to establish a framework
+to further strengthen governance and risk management associated with the VGF for charging stations.
+This framework will inter alia provide for an open, competitive and transparent process which is
+consistent with international good practice and minimizes contingent liability risk for the federal
+government. This framework will also provide a clear criteria for eligibility of projects for VGF. In the
+interest of transparency, invitations for VGF, list of interested bidders and successful bidders will be
+published. Such strengthening and risk management of public private partnership framework,
+particularly quantification of related contingent liabilities will be a precondition for the roll out of the
+VGF.
+
+The initial funding for VGF shall be allocated through the federal budget, while opportunities for
+blended financing shall be actively pursued in collaboration with international development partners
+and green finance initiatives. The VGF framework and its implementation will adhere to international
+best practices, ensuring fiscal discipline and minimizing contingent liabilities for the government.
+
+
+4.5     National Mapping Tool
+
+Range anxiety associated with minimum charging options is another main barrier to NEV adoption.
+While the deployment of a suitably dense network of charging stations will ease this problem, it is
+essential to equip an NEV user with a capacity to easily locate a particular charging facility. Hence,
+MoIP will develop and deploy a national mapping tool to provide spatial and other relevant information
+on the commercial charging stations across Pakistan. Apart from assisting NEV owners, by fetching
+data on current travel patterns and future demand, the national map will facilitate in planning and
+optimizing the deployment of charging infrastructure as well.
+
+
+
+
+                                                    20
+                                        CHAPTER 5
+                                  AUGMENTING NEV DEMAND
+
+
+5.1     Cost Sharing Scheme
+
+The policy sets ambitious targets for NEV adoption. To this end, a major challenge in adoption of NEVs
+is their higher upfront acquisition cost relative to ICE vehicles. A comparison of cost of NEV and ICE
+vehicles for Pakistan indicates that NEV prices for end user are higher than those of the ICE vehicles
+by approximately 47-100% in case of two wheelers, 123% for three wheelers, 20-65% for four wheelers
+and LCVs, and 40-90% for buses. This price difference is in line with the global trends.
+
+To realize long term economic and environmental benefits of NEVs adoption, worldwide governments
+offer subsidies, tax rebates and other concessions to bridge the gap between the price of an electric and
+ICE vehicle in as much as possible to incentivize demand by influencing users’ preferences.
+
+In line with global practices, Pakistan will incentivize demand for NEV to achieve policy targets.
+However, the emphasis will be on two and three wheelers as these mainly serve low-income groups and
+constitute around 87% of the vehicle population. The other focus areas will be public transport and
+commercial vehicles. The selected NEV categories will be incentivized through a gradually declining
+cost sharing scheme. The funds required to implement cost sharing scheme will be provided through
+the federal budget.
+
+Further, within the four-wheeler category, cars which are used as public service vehicles such as taxi,
+which represent around 5% of this segment, will be eligible for cost-sharing benefits.
+
+The cost sharing will be reduced gradually as the prices of NEVs, particularly for two and three
+wheelers, are expected to reach price parity with ICE vehicles by the end of policy period as a result of
+localization and development in technology. However, this approach is tentative and may be reviewed
+as market conditions evolve.
+
+In order to maintain value for money, only those NEVs which meet a minimum performance, safety,
+environment protection and after sales service provision criteria approved by the steering committee
+will be eligible to participate in the cost sharing scheme.
+
+EDB will develop be an end to end digitalized system for access to cost sharing scheme to ensure
+transparency, enable timely reimbursement of subsidies, and prevent duplication of cost sharing claims
+from various schemes across the provinces.
+
+The cost sharing may be offered in accordance with any of the following methods:
+
+        (a)     At the point-of-sale under which cost share will be directly deducted from vehicle's
+                selling price, price difference will be reimbursed to the manufacturers after third-party
+                verification;
+        (b)     Direct bank transfer to the buyer after third party verification of vehicle purchase and
+                registration; and
+        (c)     Subsidized financing through partner financial institutions.
+
+No person shall be allowed to obtain more than one NEV in the same vehicle category under the scheme
+within a stipulated period as set by the steering committee. Further, any NEV obtained under the scheme
+shall not be transferred for a minimum time as approved by the steering committee. In addition, the
+steering committee may, from time to time, decide who shall be eligible for participating in the scheme
+or otherwise impose any additional condition for access to the cost sharing scheme.
+
+
+
+                                                   21
+The steering committee shall also determine the exact amount of cost sharing for a particular category
+or type of vehicle and the method of its transfer in view of appertaining circumstances. However, the
+initial reference amount for cost sharing shall be PKR 65,000 and PKR. 400,000 for two and three
+wheelers respectively. In the case of four wheelers, vans, light commercial vehicles, trucks and buses,
+it will be PKR.15,000 per kWh battery or 5% of invoice value, whichever is lower.
+
+An estimate of the total of amount of subsidy required during a particular year for all vehicles based on
+the aforesaid reference price is as given at Table 8 below.
+
+                          Table 8: Yearly Cost Sharing on NEVs (in PKR. Billion)
+
+              Type                  2025-26     2026-27     2027-28     2028-29    2029-30    Total 2030
+ Two wheelers @PKR 65,000             7.54       16.04       20.46       21.75      19.26       85.05
+ Three wheelers @ PKR 400,000         1.27        2.66        3.34       3.50        3.06       13.83
+ Car taxis etc. @ PKR 200,000         0.06        0.12        0.15       0.16        0.14        0.63
+ Buses, vans, etc. @PKR700,000        0.05        0.10        0.12       0.13        0.11        0.51
+ Trucks, LCVs etc. @ PKR300,000       0.03        0.07        0.08       0.09        0.07        0.34
+ Total                                8.95       18.99       24.15       25.63      22.64       100.36
+
+Anticipating that larger volumes and technology advancement will result in reduction of NEV price,
+the subsidy per vehicle will be gradually reduced from the second year of the policy onward. It will be
+reduced to 80% in the third year of the policy, 60% in the fourth year and 40% in the fifth year. However,
+the need and extent of reduction shall be reviewed by the steering committee and if required adjustment
+may be made in the interest of achieving policy targets.
+
+
+5.2      Free Registration and Exemption from Tolls
+
+To encourage their adoption no vehicle registration fee will be charged for all NEVs registered in
+Islamabad. Additionally, NEVs registered in Islamabad will be exempted from the annual token fee.
+
+In the like manner, provincial governments, as well as the governments of GB and AJK, will be
+encouraged to waive off motor vehicle registration charge and annual token fees for NEVs.
+
+In addition, NHA will be encouraged to exempt NEVs from toll on motorways and national highways.
+As the thrust of this policy is on the faster adoption of intra-city two and three-wheeler NEVs, the
+revenue loss from these exemptions is expected to be minimal
+
+It is expected that these measures will help further reduce recurring costs associated with owning an
+NEV making them a more attractive and affordable option for users.
+
+
+5.3      Easing access to credit for NEVs
+
+Presently, SBP regulations impose two restrictions on automobile financing i.e. maximum financing
+limit of PKR 3 million and the maximum tenor of three years for vehicles with engine capacity of more
+than 1000 cc and five years for vehicles with engine capacity up to 1000 cc. Moreover, minimum down
+payment is capped at 30% of the price. This has resulted in dampening automobile demand as end-
+customers have to furnish higher equity on vehicle purchase and service larger Equal Monthly
+Instalments (EMI) due to restricted tenor requirements. In order to propagate the demand for NEVs,
+MoIP will work with SBP to explore the possibility of revising aforesaid limits in respect of NEVs.
+Such a review will be informed by the overarching need for maintaining financial stability. Further, an
+equal emphasis will be laid on developing systems to assess credit worthiness of borrowers of NEVs.
+
+
+
+                                                   22
+Further all Pakistani banks have green banking targets and will be encouraged to include NEV financing
+in their green financing portfolio.
+
+
+5.4     Funding the Transition
+
+In order to create fiscal space for supporting cost sharing scheme and the viability gap funding for
+charging infrastructure, a levy on the first sale and import internal combustion engine vehicles will be
+imposed through an Act of Parliament in accordance with their engine capacity and use i.e. for private
+or public service purposes. For removal of any ambiguity, it is clarified that this levy shall apply to both
+new and old imported internal combustion engine vehicles. Although the additional revenues from this
+levy will be transferred to the federal government, however, Finance Division will take measures to
+ring fence this amount for the envisaged purpose. This is critical for the success of the policy, achieving
+envisaged targets and thus ultimately reaping the benefits from transition to new energy vehicles in the
+mid to long term.
+
+If applied at @ 1% of the invoice price of vehicles with engine capacity less than 1300 cc as well as
+public service vehicles such as buses, trucks, vans etc. @ 2% with engine capacity of 1300 cc to 1800
+cc, @ 3% with engine capacity of more than 1800cc, the levy can result in additional estimated revenue
+of PKR. 122 billion for the policy period. As indicated by Table 9 below, the total fiscal space resulting
+from the proposed levy will be sufficient to meet year on year requirement of the cost sharing scheme.
+
+                   Table 9: Estimated Revenues from NEV Adoption Levy (in PKR. Billion)
+
+ ICE Engine Capacity, Levy Rate           2025-26    2026-27    2027-28     2028-29    2029-30      Total
+ Less than 1300 cc @ 1%                     6.24         6.19     6.12        6.04        5.92      30.51
+ From 1300 cc to 1800 cc @2%                3.82         3.81     3.79        3.76        3.72      18.90
+ More than 1800 cc @ 3%                    11.36      11.33       11.27      11.18        11.08     56.22
+ Buses, trucks vans etc. @ 1%               3.30         3.28     3.27        3.25        3.24      16.34
+ Total revenues                            24.72      24.61       24.45      24.23        23.96    121.97
+
+The steering committee will continuously review the rate of the proposed levy during the policy period
+to compensate for any shortfall in the revenue against requirement for cost sharing scheme and other
+valid charges related to adoption of NEVs given under this policy including NEV related skills
+development, building institutional capacity and setting up necessary apparatus and regime for testing
+of vehicles against approved safety, quality and environmental standards. If needed, any adjustment will
+be affected after obtaining permission from the Federal Government.
+
+The adoption of NEVs presents opportunities to generate new revenue streams, such as increased use
+of electricity present in the grid, reductions in the oil import bill, revenue from selling carbon credits,
+and savings from minimized environmental impacts. Collectively, these factors contribute to a positive
+fiscal impact. It is viewed that while the proposed levy will ensure that the policy is revenue neutral,
+the net fiscal impact of NEV adoption far exceeds the cost if savings likely to accrue on the aforesaid
+account and health and productivity gains due are taken into consideration. An estimate in this regard
+is given at Table 10 below.
+
+In order to create capacity for maintaining a verifiable record of GHG and carbon mitigation through
+this policy for access to carbon credits and similar funds Further, a New Energy Vehicles Center
+(NEVC) will be established. For this purpose, NEVC will work closely with the Ministry of Climate
+Change (MoCC) which is the designated authority responsible for establishing a centralized mechanism
+to monetize these carbon credits.
+
+
+
+
+                                                    23
+NEVC will also support MoIP in implementing this policy as well as rendering advise on NEV related
+technologies.
+
+                           Table 10: Net Positive Fiscal Impact of NEV Adoption Targets
+
+ Type                                        2025-26    2026-27    2027-28    2028-29     2029-30   Total
+ Savings in fuel                              13.83      42.96      88.96      153.54     238.57    537.86
+ Revenues from use of surplus power            4.54      14.04      28.98       49.86      77.21    174.63
+ Health & productivity gains                   6.03      12.76      20.25       28.59      37.83    105.46
+ Possible carbon credits                       0.39         1.21     2.51       4.34       6.76     15.21
+ Total savings                                24.79      70.97      140.70     236.33     360.37    833.16
+ Fiscal impact of cost sharing scheme          8.95      18.99      24.15       25.63      22.64    100.36
+ Net impact                                   15.84      51.98      116.55     210.70     337.73    732.80
+
+
+
+5.5     Model Electric Mobility Cities
+
+To facilitate quick adoption of NEVs, Islamabad will be designated as a model electric mobility city.
+In the first phase, suitable areas within the Islamabad will be designated as NEVs zones.
+
+The Capital Development Authority (CDA) will take measures to establish a suitably dense
+infrastructure of fast-charging stations, battery swapping facilities, and free NEV-only parking lots.
+Similarly, CDA will work with businesses to augment options for electric buses and ridesharing electric
+taxis, that will enhance public transport. These zones will also host EV-friendly commercial spaces and
+public awareness hubs to educate citizens.
+
+These zones will serve as pilot areas for testing and showcasing NEV projects, acting as role models
+for future expansion of the infrastructure across other areas in the city. The lessons learned from these
+pilot zones will guide broader implementation strategies, ensuring a scalable and efficient transition. A
+separate five-year budgeted plan for this purpose will be prepared and implemented by CDA.
+
+MoIP will work closely with the provincial governments including GB and AJK, to encourage them to
+create similar model cities within their jurisdictions.
+
+
+5.6     Public Procurement of New Energy Vehicles
+
+Immediately after promulgation of this policy, all new purchase of two and three wheelers in the federal
+government entities shall be NEVs. After 2027, the federal government shall purchase only NEVs.
+However, this condition shall not apply in case a suitable NEV is not available in the required category
+of vehicles.
+
+Furthermore, to promote sustainable transportation, the federal government will mandate installation of
+at least one electric vehicle charging station at all its offices and apartment buildings by 2027.
+
+MoIP will work closely with the provincial governments including GB and AJK, to encourage them to
+adopt a similar system for public procurement of NEVs.
+
+
+5.7     Transition of Public Transport
+
+Almost the entire intra-city public transport system is owned and run by the provincial governments.
+MoIP will work closely with the provincial governments to encourage them to prepare roadmaps for
+
+
+                                                       24
+transitioning public transportation fleets to NEVs. This transition will lower operating costs for public
+transport, reduce the need for subsidies in this sector, and promote sustainable transportation within the
+provinces.
+
+For Islamabad, CDA will take measures to transit to all NEVs intra-city public transport system by
+2030. Ride-hailing companies and taxi service providers in Islamabad will be also encouraged to
+implement projects for the use of NEVs. A separate five years budgeted plan for this purpose will be
+prepared and implemented by CDA.
+
+
+5.8     Public Awareness and Communication
+
+The Ministry of Information and Broadcasting (MoIB) will take measures to raise awareness, promote
+participation, and influence users’ preferences towards NEVs, ensuring that the message reaches a
+broader audience across all sections of society.
+
+The MoIP will publish a Green Vehicles Guide (GVG) to provide easy to understand information and
+tools on environmental impacts of various types of vehicles available in Pakistan, including electric and
+hybrid vehicles, as well as their running cost. The GVC will assist buyers to choose vehicles which are
+more environment friendly as well as lead to cost saving for them. The GVC will be updated quarterly
+and will also be made available on the internet.
+
+
+5.9     Vehicle Replacement Scheme
+
+As and when after December 2027, the Steering Committee considers it appropriate, it may, with the
+approval of the Federal Government, introduce a scheme allowing exchange of ICE vehicles with
+NEVs. While in the initial years of its implementation, this policy focuses only on infusion of NEVs, it
+will also focus on reduction of the then existing ICE vehicle population depending upon the success
+achieved during the initial years. The broader structure of the scheme will be that any owner of an ICE
+vehicle who wishes to swap it for a NEV will be offered a credit on the basis of the original value of
+his vehicle. The old vehicle will subsequently be seized and scrapped by the government, removing it
+from the road. As a general principle, in order to maximize environmental advantage, the scheme will
+focus on the older and most pollutant vehicles first.
+
+
+5.10    Buyer’s rights
+
+Experience of the automobile market in Pakistan indicates that the buyers faced several problems in
+relation to delays in the delivery of automobiles despite advance payment. There are also complaints in
+respect of non-provision of information on the delivery schedule by the suppliers. This lack of
+transparency leads undesirable practices including opportunity for middlemen to buy and hold a large
+number of automobile stock and charge a premium for prompt delivery.
+
+To arrest such a repeat in case of NEVs, MoIP shall through the EDB, take measures to ensure that all
+NEVs manufacturing and supplying companies display the status of all vehicles booked by them along
+with advance payments received and tentative delivery schedule online. For this purpose, a central
+database will be established by the EDB. This database will fetch information from manufactures and
+suppliers. Similarly, all manufacturers and suppliers will develop their database as well which will
+integrate with central data base. Both the databases will be available for public view.
+
+In addition, in case the price of a NEV has been paid in advance in full or in part, any later change in
+the price shall be charged to the buyer only to the extent of the remaining payment. If, for example,
+full payment of a vehicle has been made at the time of booking, there shall be no change in the price.
+However, if a duty or tax is varied in between the advance payment and delivery of the vehicle, such
+
+
+                                                   25
+variation may be affected being not in the control of the manufacturer or supplier. It may be noted that
+such variation may, in certain cases, result in lesser price for the buyer if the duty or tax rate is revised
+downward. Further, no manufacturer or supplier shall link booking of a NEV to advance payment
+exceeding 20% of the maximum retail price.
+
+It will be most desirable that sufficient NEVs are available in stock ready to be delivered. If for any
+reason, vehicles are to be delivered after booking, these shall be delivered within a maximum period
+sixty days of the booking or such other period as is considered appropriate by the steering committee.
+In case the delivery is delayed beyond the allowed period, the manufacturer or supplier booking the
+order shall compensate the buyer by reimbursing him or making adjustments in the final price a penalty
+worked out @ KIBOR+3% on the advance payment received. Further, after the lapse of allowed
+delivery period, the buyer shall have an option either to continue the order or ask the manufacturer or
+supplier for reimbursement of the advance payment plus penalty amount. In case of the latter, the
+penalty amount shall be worked out from the date of initial booking till the date of final payment
+received by the buyer @ KIBOR+3% on the advance payment received.
+
+The enforcement of aforesaid measures shall be the responsibility of EDB. All manufacturers and
+suppliers shall be liable to assist the EDB in this respect including supply of any information required
+by it from time to time.
+
+The manufacturers and suppliers shall amend their booking order forms accordingly under intimation
+to the EDB.
+
+The MoIP will bring a suitable legislation to provide necessary legal cover for effective implementation
+of this part. Such a legislation shall also include suitable pecuniary and other penalties to curb violation.
+
+
+
+
+                                                     26
+                                           CHAPTER 6
+                                     INSTITUTIONAL SUPPORT
+
+
+6.1     New Energy Vehicles Center
+
+The federal government will also establish the New Energy Vehicles Center (NEVC) with the objective
+of developing a hub for research, development, and innovation to support sustainable transportation,
+proliferation of local NEVs industry, attracting local and foreign investment, and emissions reduction
+from the transport sector.
+
+The NEVC will be expected to render policy and expert advice to the MoIP as well as the industry and
+other stakeholders. It would also assist in setting quality and safety standards as well as environmental
+safeguards in relation to NEVs. NEVC will work with appropriate academic and technical training
+institutions in developing qualified workforce in the field of batteries, motors, electronics, software etc.,
+to meet automotive sector’s emerging requirements locally and internationally.
+
+The NEVC will inter alia have facilities for testing and standardization, data analytics and simulation
+laboratories.
+
+The NEVC will also handle carbon accounting and track annual carbon savings from NEV usage. This
+data will be used for monitoring, evaluation, and further initiatives such as earning carbon credits or
+meeting NDC targets.
+
+Further, NEVC will remain responsible for continuous monitoring and evaluating the impact of its
+interventions to gauge their efficacy, make adjustment where required and submit regular reports to the
+MoIP.
+
+
+6.2     Vehicles Testing Facility
+
+Pakistan commenced manufacturing of automobiles in 1953. On the average, now Pakistan produces
+1.7 million vehicles out of which 1.5 million are motorcycles. However, Pakistan does not have any
+facility for testing vehicles for safety, quality and environmental impact at the manufacturing stage. As
+indicated by Table 9, it is expected that sufficient surplus funds collected through levy on ICE vehicles
+will remain available after satisfying the need of the cost sharing scheme. This surplus fund will be used
+to create sufficiently adequate and economically viable vehicles testing facility, focusing primarily on
+two and three wheelers which constitute the bulk of local production.
+
+
+
+
+                                                     27
+                                  CHAPTER 7
+               REGULATIONS, SAFETY AND PERFORMANCE STANDARDS
+
+
+7.1     Vehicle Safety and Performance Standards
+
+Pakistan is a signatory to the Agreement concerning the Adoption of Uniform Conditions of Approval
+and Reciprocal Recognition of Approval for Motor Vehicle Equipment and Parts done at Geneva on
+20th March 1958, commonly known as the 1958 Convention. Pakistan acceded to the Agreement on 24th
+February, 2020. The Agreement provides a legal framework wherein acceding countries have agreed
+on a common set of technical prescriptions and protocols for “type approval” of vehicles and
+components and their reciprocal recognition. Type approval or certificate of conformity is granted to a
+product that meets a minimum set of regulatory, technical and safety requirements. Once any acceding
+country grants a type of approval, every other acceding country is obliged to accept that type approval
+and regard that vehicle or item of motor vehicle equipment as legal for import, sale and use. Currently,
+there are 168 UN Regulations appended to the 1958 Agreement; most regulations cover a single vehicle
+component or technology.
+
+Pakistan however, has not promulgated any law to enforce any safety, quality and environmental
+standards for the manufacturing of vehicles. Pursuant to item number 3, Part II of the Federal Legislative
+List of the Constitution, allows the Federal Government to enact a law to promote the automobile
+manufacturing as an industry. This will enable the adoption of uniform national standards and otherwise
+support countrywide development of automobile industry including NEVs.
+
+The key question in this regard is the extent of regulatory control. While extensive regulatory control
+will lead to high quality vehicles it will also lead to a high regulatory burden and consequent increase
+in costs. To strike a balance between the two, a phased approach to regulatory control will be
+implemented in the medium-term. In terms of regulatory control this will mean that:
+
+      (a)    any vehicle that is compliant with the minimum UN or equivalent vehicle safety and
+             performance standards will be allowed for import without further regulatory approvals;
+      (b)    any vehicle that is compliant with the minimum UN or equivalent vehicle safety and
+             performance standards will be allowed to be manufactured in Pakistan without further
+             regulatory approvals;
+      (c)    any vehicle component or system that is compliant with the minimum UN or equivalent
+             vehicle safety and performance standards shall be allowed to be manufactured in Pakistan
+             without further regulatory approvals;
+      (d)    any vehicle that is compliant with national regulatory standards shall be allowed to be
+             manufactured in Pakistan subject to obtaining of type approval, stage approvals or
+             component or system approvals from the EDB or any other authority designated by the
+             federal government; and
+      (e)    any vehicle that is destined exclusively for export shall be allowed to be manufactured in
+             Pakistan provided it is compliant with standards of the country of export.
+
+MoIP will place the aforesaid statute before the National Assembly for promulgation, preferably within
+three months of the promulgation of the policy.
+
+With a view to allow flexibility, specific safety and performance standards will be promulgated through
+regulations. Such regulations shall among other things provide for:
+
+      (a)    minimum requirements with respect to structural strength and integrity, crash worthiness,
+             impact resistance, speed cap, weight and stability restrictions for different types of NEVs.
+
+
+
+                                                   28
+      (b)    requirement that NEVs to carry or provide information on (i) energy consumption and
+             efficiency, (ii) electric range, (iii) battery performance, (iv) battery durability, safety,
+             recycling and safe disposal, (v) off-board charging standards, and (vi) a permanent NEV
+             label for easy identification as a special category vehicle in case of an accident, or for road
+             usage purposes.
+      (c)    minimum safety standards for battery safety, including thermal management and fire
+             prevention measures to reduce risks of overheating and ensure battery durability;
+      (d)    labelling requirement for batteries including (i) safety standards including thermal
+             management and fire prevention measures, (ii) unique identification number, (iii)
+             chemistry, rating, capacity (Ah & Wh), expected number of cycles, temperature range,
+             form factors, number of cells, types of cells, and (iv) recycling and/or disposal methods.
+
+The statute and the regulations shall also put in place appropriate testing requirements The federal
+government shall therefore provide for the setting up of adequate testing facilities.
+
+Since the EDB has already been declared as secretariat for the 1958 Convention, the enforcement and
+control in this respect shall continue to rest with it.
+
+National Energy Efficiency and Conservation Authority (NEECA) shall develop standards for charging
+infrastructure including those related to electrical and fire safety, power plugs to serve different types
+of NEVs.
+
+
+7.2     Licensing Requirement
+
+All automobiles are manufactured in Pakistan under a certificate from the EDB. This arrangement
+ensures appropriate regulatory oversight and direction and shall continue in the case of NEVs as well.
+Licenses will be issued in three categories viz. (a) for the purpose of import, (b) for the purpose of
+assembling and manufacturing of a foreign vehicle, and (c) for the purpose of manufacturing of an
+indigenous vehicle.
+
+EDB will ensure that all local value addition commitments are met, and suitable corrective measures
+will be taken in case of non-compliance.
+
+
+
+
+                                                    29
+                                   CHAPTER 8
+                   CLIMATE CHANGE AND ENVIRONMENTAL ASPECTS
+
+
+8.1     Environmental Safeguards and End of Life Cycle Planning
+
+From the environmental point of view, the main concern around NEVs is the mining of rare earth metals
+viz. lithium and cobalt, for manufacturing of battery cells. Since battery cells are unlikely to be
+manufactured domestically any soon, most serious environmental concerns do not apply to Pakistan.
+However, battery operations and end of life treatment of batteries and other electronic components
+impose a considerable environmental challenge, especially when the number of NEVs in Pakistan rises
+as per targets given in the policy.
+
+In order to address this issue, MoIP will put in place required regulations to establish environmental
+standards for the recycling processes, ensuring that these operations minimize risks and protect the
+environment. It will also outline clear instructions for the disposal, refurbishing, and material extraction
+from batteries and electronic equipment, promoting sustainable practices and responsible management
+of materials throughout their lifecycle.
+
+Additionally, there is a need to encourage the industry as well as the end users to reuse and repurpose
+valuable materials from discarded electronics, contributing to a circular economy. This approach will
+not only reduce waste but also help conserve resources, fostering a more sustainable and efficient
+system for managing electronic products throughout their lifecycle. For this purpose, this policy
+proposes a separate framework to cover a broad spectrum of batteries and electronic components, with
+a particular focus on lithium-ion batteries, which are now most commonly used in the NEVs. The
+framework will outline various stages of recycling, including collection, transportation, and assessment
+of battery packs and individual cells. It will also detail the disassembly process, recycling methods,
+repurposing opportunities, and the final disposal procedures to ensure an environmentally responsible
+and efficient handling of these materials. Ultimate aim will be to establish a nationwide network of
+collection and recycling centers to reinforce each other.
+
+For this purpose, the federal government will collaborate with a wide range of stakeholders, including
+provincial governments, NEVs and parts manufacturers, industry at large, persons involved in
+recycling, environmental organizations and consumer groups to ensure that production and waste cycles
+are aligned.
+
+The framework will also focus on developing effective incentives and penalties to support success.
+
+
+8.2     Leveraging Carbon Credits and Climate Finance
+
+In this policy, Pakistan has set ambitious targets of NEV penetration to achieve GHG mitigation. While
+the country has set ambitious targets, it has limited availability of financial resources. Therefore, to
+cover the gap in financing, Pakistan will resort to international climate finance opportunities. This
+includes leveraging carbon credits, accessing climate funds such as GCF, MAF, IKI, CTF, GEF, and
+other relevant funding windows from multi-lateral development partners.
+
+Pakistan will also seek technical support from various multilateral and bilateral, and other funding
+organizations in setting up the support system for NEVs. This includes but not limited to supporting the
+NEVC, testing facilities, certification modalities, project development, and other support necessary to
+achieve the accelerated adoption of NEVs.
+
+
+
+
+                                                    30
+                                       CHAPTER 9
+                               IMPLEMENTATION FRAMEWORK
+
+
+9.1     National Action Plan
+
+The success of this policy requires a whole of the government approach and a concerted effort by a host
+of agencies both within and outside the government. Further, these government agencies are placed at
+both the federal and provincial levels. In order to coordinate their effort and to clearly delineate
+responsibility for achieving envisaged policy objectives, outcomes and targets, a matrix indicating time
+bound action plan for each agency is at Appendix to this policy.
+
+Each agency will be expected to complete its respective work while adhering to the timelines indicating
+in this plan. The steering committee may, in view of appertaining circumstances modify the timelines
+as it deems fit. Further the steering committee may add any other action in the National Action Plan
+which it considers is relevant to the adoption of NEVs in Pakistan at any stage.
+
+All relevant agencies shall submit quarterly progress reports to the MoIP which will act as a focal
+Ministry for the implementation of the policy and the National Action Plan.
+
+
+9.2     Policy Ownership, Measuring and Reporting Success
+
+The overall responsibility for the delivery of policy objectives and targets and to bring all agencies and
+partners together for this purpose shall rest with the Steering Committee. The Committee will be headed
+by the Minister for Industries & Production, or as directed by him by Special Assistant to Prime
+Minister, on Industries & Production. The other members of the committee shall be (a) federal ministers
+for Finance, Climate Change, Energy (Power Division) and Communication, (b) federal secretaries of
+these Ministries and Divisions; (c) head of the EDB (e) any co-opted member deem appropriate to assist
+the committee in its functions. The Committee shall consult with relevant provincial government at an
+appropriate level in relation to any action which pertains to it. Further, Secretary Industries shall also
+work as the Secretary of the Committee. Within these broad parameters, the exact composition of the
+committee shall be decided by the MoIP. The committee may constitute one or more working groups
+to assist it in implementation of National Action Plan. It may also constitute panels of experts to seek
+advice on a matter of interest.
+
+In the first six months after approval of the policy the steering committee will meet once each month.
+Thereafter, the steering committee will meet at least on a quarterly basis.
+
+The working groups will report progress on policy outcomes and targets inter alia against the indicators
+given in the implementation matrix listed at Appendix 3 to the Steering Committee on monthly basis in
+the first six months after the policy approval and on quarterly basis thereafter.
+
+The Steering Committee will in turn report progress to the Prime Minister at least on a half yearly basis.
+
+
+9.3     Continuous Review and Course Correction
+
+The NEV sector is evolving rapidly, driven by advancements in technology, consumer preferences, and
+global best practices. Regular reviews will ensure that the policy adapts to these changes and addresses
+these gaps or barriers and will align the government’s vision for sustainable transportation. The scope
+of review includes the following:
+
+        (a)     Cost sharing schemes: Evaluating the financial sustainability and effectiveness of
+                public-private cost-sharing mechanisms for infrastructure development and vehicle
+
+
+                                                   31
+                subsidies. This will include revisiting funding allocations, incentives, and partnerships
+                with private stakeholders.
+        (b)     Market trends and technology advancements: Reviewing progress in vehicle adoption
+                rates, advancements in NEV technologies, and their integration with renewable energy
+                sources like solar and biogas.
+        (c)     Environmental and social impact: Assessing the reduction in greenhouse gas emissions
+                and the socio-economic benefits, particularly for marginalized communities.
+
+A total of three comprehensive reviews will be conducted, in first three calendar months of the year
+2026, 2028 and 2030 – spanning the policy period, to address barriers, incorporate feedbacks, and
+propose actionable adjustments.
+
+
+9.4     Developing Synergies
+
+Success in the promotion of NEVs will depend upon the work of a number of agencies and partners
+both within and outside the government. Even within the government, there are agencies that are placed
+at the federal and provincial levels. Hence, it is important that all these agencies and partners work in
+close coordination and with a unity of purpose.
+
+For effective implementation, all the four provinces and the governments of GB and AJK will be
+encouraged to develop their own detailed action plans with specific targets, timelines, and
+responsibilities. These plans could address their unique needs and challenges, considering factors like
+infrastructure, transportation patterns, and economic development priorities.
+
+In the interest of uniformity, all NEVs will comply to national standards in relation to safety and
+performance requirements. It is viewed that such uniformity will ensure inter-provincial operability as
+well create room for export in future. However, on road implementation of the standards shall largely
+rest with the provinces and regional governments.
+
+Currently, there is no standard procedure for registration of NEV. Motor vehicle registration authorities
+in some provinces register EVs using a conversion formula that equates vehicles battery capacity in
+kilowatt (kW) rating to an equivalent internal combustion engine capacity in cubic centimetre (cc)
+value. This approach is problematic as it attempts to fit EVs into the existing registration framework
+designed for ICE vehicles, that are categorized based on engine displacement (cc). To accurately reflect
+different categories of NEVs in line with international practice, MoIP will share a suggested set of
+registration rules with all provincial and regional governments within four months of the policy
+approval, and they will be encouraged to adopt it. From the user’s point of view, uniformity in
+registration procedures will assist in operability and re-registration of vehicles across the provinces. It
+will also ensure collection of accurate de-segregated data for analysis and effective decision making.
+
+The proposed registration procedure will inter alia examine the possibility for providing distinctive
+number plates for NEVs. Such a distinction will be helpful in allowing their users access to exemptions
+on road tolls as envisaged in the policy. Further, this can facilitate the creation of ultra-low emission
+zones in major cities by easing access control by drawing a visible distinction from ICE vehicles.
+
+The provincial motor vehicles laws also require revision to address inconsistencies and ambiguities. For
+instance, the standards set by the Pakistan Standards and Quality Control Authority (PSQCA) for 3-
+wheelers differ significantly from those enforced by Punjab Transport Authority (PTA). This disparity
+creates challenges, as compliance with PSQCA standards may not align with Punjab's requirements.
+Therefore, it is essential to resolve these inconsistencies in standards and laws, to streamline and
+accelerate the adoption of NEVs.
+
+
+
+
+                                                    32
+Provincial governments will also be encouraged to train their emergency services provision department
+such as Rescue 1122, to train their first responders in effectively handling of NEV battery fires,
+including those occurring within vehicles, at charging stations, and at battery swapping stations. These
+incidents require specialized protocols and extinguishers to ensure safe and efficient management.
+Proper training will equip rescue teams with the skills and resources needed to effectively manage and
+control such fires, ensuring safety and minimizing risks. Similarly, in unfortunate incidents of NEV
+fires, first responders must be trained in providing the right medical treatment, initiating a need for
+updated training manuals and training programs in dealing with such medical emergencies.
+
+Further, in the interest of lowering the cost of their acquisition and use, all provincial and regional
+governments will be encouraged to not to charge any fee for registration and annual renewal of
+registration of NEVs.
+
+Another area requiring effective cooperation is the development of charging stations in multi-storied
+and apartment buildings, offices and parking lots. As it falls within their jurisdiction, the provincial and
+regional governments will be encouraged to amend their building rules, regulations and codes to
+introduce binding restrictions in this respect. MoIP will share a suggested set of rules with all provincial
+and regional governments for this purpose.
+
+Moreover, federal government will develop Islamabad as a model electric mobility city. All provincial
+governments will be encouraged to develop at least one of their cities as a model electric mobility city.
+The NEVC could provide technical advice and other assistance for this purpose.
+
+Provincial and regional governments will also be encouraged to transit procure NEVs as against ICE
+vehicles for their internal use. Further, they will be encouraged to transit to NEVs in meeting their
+requirements of intra-city public transport services. Such a transition is likely to result in cost savings
+when calculated in term of life cycle of the NEV.
+
+
+9.5     Supplementary Measures
+
+In addition to the primary NEV Policy, a set of supplemental documents will be developed to address
+critical areas and facilitate the effective implementation and uptake of NEVs across the country. These
+documents will focus on key verticals that complement the policy framework and provide clarity on
+associated regulations and standards.
+
+        (a)     Battery Disposal and Recycling Policy: The transition to NEVs will result in the
+                widespread use of batteries, necessitating a dedicated framework for their recycling and
+                safe disposal. The battery disposal and recycling policy will outline a safe disposal
+                practice to mitigate environmental risks associated with improperly discarded batteries,
+                while clearly defining the roles and responsibilities of manufacturers, consumers, and
+                recycling companies to ensure compliance and promote sustainable battery
+                management.
+        (b)     E-Waste Management Policy: The mass adoption of NEVs will also generate
+                electrical and electronic waste (e-waste) from broken, outdated, or obsolete
+                components. To cater that e-waste, the supplemental policy will establish standards for
+                the proper disposal of NEV-related e-waste, including electronic components and
+                systems, while implementing measures to prevent soil and water contamination from
+                hazardous materials. Additionally, it will promote recycling initiatives to recover
+                valuable resources and minimize landfill waste, ensuring an environmentally
+                sustainable approach to managing electronic waste.
+        (c)     Revamping Licensing Regime by EDB: The existing manufacturing license process
+                and quota allocation system managed by the EDB will be revamped to enhance
+                efficiency and transparency. A key focus will be on digitizing business processes,
+
+
+                                                    33
+      creating a streamlined and accessible platform for manufacturers. This modernization
+      will not only simplify application and approval procedures but also ensure equitable
+      distribution of quotas and licenses, fostering a competitive and innovation-driven
+      manufacturing landscape. In line with the new policy EDB will also develop a regime
+      to promote NEV specific vendor industry such as advanced batteries, motors,
+      electronics and IoT, software and others.
+(d)   Regulations and Standardization Development: The development of regulations and
+      standardization for NEVs will be tailored to the local context, taking into account
+      Pakistan’s unique dynamics and parameters. These standards will ensure the
+      compatibility, safety, and reliability of NEV components, vehicles, and infrastructure
+      while fostering alignment with international benchmarks.
+(e)   Establishment of NEV Testing Center & Certification Regime: The need to test
+      vehicles against performance, quality and environmental standards is obvious. For this
+      purpose, EDB will establish testing facilities. The guiding principle in this regard will
+      be to seek collaboration with existing testing facilities in private sector as well as
+      establish critical facilities which cannot be accessed in the private sector through public
+      funding.
+(f)   Vehicle Registration Regime: A new licensing and registration regime will be
+      developed to address the issue of registration of NEVs as mentioned in section 9.4
+      which will focus on introducing a new registration criteria tailored to unique attributes
+      of NEVs such as motor power, torque, and battery capacity. The policy will also foster
+      provincial integration through a standardized framework to streamline registration
+      processes across the country.
+(g)   Roadmap for achieving zero-emission transport for Pakistan: A structured and
+      phased approach will be adopted, focusing on policy implementation, achieving
+      milestones, and setting progressively ambitious targets to transition Pakistan to a zero-
+      emission transport fleet by 2060. This plan will be reinforced by established policies
+      and initiatives designed to ensure the successful realization of the roadmap.
+
+
+
+
+                                         34
+                                           Appendix
+                                 NATIONAL ACTION PLAN
+
+Ser   Lead Agency           Required Action(s)                                      Tentative
+                                                                                    Timeline
+A. Federal Ministries and other Entities
+1     Ministry of          Submission of draft legal framework for constituting     3 months
+      Industries &         NEVC before the Federal Cabinet
+      Production,          Submission of draft legal framework for providing        6 months
+      supported by         statutory status to EDB
+      Engineering          Revamping manufacturing license processes and            6 months
+      Development          quota allocation by EDB
+      Board, New Energy Adoption of relevant UNECE/equivalent regulations           6 months
+      Vehicles Center      on NEV quality, performance and safety
+                           Development of national standards on NEV quality,        6 months
+                           performance and safety
+                           Regulations on internal combustion engine vehicles       1 year
+                           emissions and performance standards
+                           Establishment of New Energy Vehicles Center              6 months
+                           (NEVC)
+                           Setting up a system for collection and management of     8 months
+                           NEV carbon mitigation data
+                           Establishment of standardization and calibration         2 years
+                           facilities for testing quality, performance and safety
+                           of NEVs
+                           Updated vehicles purchasers invoice template for         6 months
+                           transfer of ownership of carbon credit rights
+                           Coordination with UNFCCC on carbon credit                3 months
+                           registration
+                           Revised business processes for grant of regulatory       6 months
+                           approvals in relation to NEVs industry as well as
+                           charging stations by key federal and provincial
+                           entities
+                           Establishment of single window for facilitating NEVs     6 months
+                           regulatory permissions
+                           Digitalization of EDB business processes                 1 year
+                           Policy, standards and regulation for environmental       1 year
+                           safeguards in relation to NEVs, especially end-of-life
+                           treatment of batteries
+                           Circulation of model regulations for registration of     6 months
+                           NEVS to all provinces, AJK and GB
+                           New automobile policy including tariff structure for     June, 2026
+                           NEVs
+2     Ministry of Energy Approval of charging infrastructure related                3 months
+      - Power Division     regulations
+                           Ensuring expedient provision of electric connection      On-going
+                           to charging stations
+                           Inclusion of time taken in approval and provision of     3 months
+                           electric connection to charging stations as a KPI for
+                           DISCOs
+3     Ministry of Finance Timely allocation of budget for cost sharing scheme       On-going
+      (MoF)                and VGF as per policy targets
+
+
+                                               35
+Ser   Lead Agency           Required Action(s)                                        Tentative
+                                                                                      Timeline
+4     Federal Board of      Bringing rate of sales tax applied on imported parts at   Next financial
+      Revenue               par with the rate applicable to locally manufactured      year
+5     State Bank of         Consider including NEVs manufacturing and                 3 months
+      Pakistan              procurement in the green financing portfolio
+                            Re-evaluate existing auto finance regime for NEVs to      3 months
+                            increase financing and tenure limit
+6     Ministry of Climate   Monetization of carbon credits                            2 years
+      Change & EC           NDC reporting                                             On-going
+                            Facilitating climate finance                              On-going
+7     Public-Private         Promote PP investment in NEVs                            On-going
+      Partnership           Assist in rolling out of NEV PPP infrastructure           On-going
+      Authority             projects
+                            Development of procedures for roll out of VGF for         3 months
+                            charging stations
+8     Ministry of           Launch New Energy Apprenticeship Program                  6 months
+      Education/            Development of NEV related skilled workforce to           On-going
+      NEVTAC                meet domestic needs and possible export
+9     Ministry of           Tariff rationalization as indicated in the policy by      3 months
+      Commerce              Tariff Policy Board
+                            Notification of import and export conditions              3 months
+10    Ministry of           Development of budgeted plan for establishing             6 months
+      Interior/ Capital     Islamabad as a model NE city
+      Development           Phased implementation of plan                             5 years
+      Authority             Revamp approval process for charging stations             3 months
+                            Updated building codes to support charging                3 months
+                            infrastructure
+                            Develop NEV fire handling procedures and conduct          3 months
+                            training in these procedures
+                            NEV fire handling training                                3 months
+                            Training on safe handling of NEV accidents                3 months
+11    Ministry of           40 charging stations on motorways and highways            3 months
+      Communication         Rationalization in toll taxes                             3 months
+                            Training on NEV safety                                    3 months
+                            Safe handling of NEV accidents                            3 months
+                            First responder training on handling fire burns           3 months
+12    Ministry of Energy    Action plan for proliferation of charging station at      6 months
+      - Petroleum           OMC locations
+      Division              Conduct geological surveys for rare earth metals,         5 years
+                            lithium, zinc and cobalt
+                            Mandate that all new fuel stations will have charging     3 months
+                            infrastructure
+13    Ministry of           Public awareness campaigns                                On-going
+      information &
+      Broadcasting
+B. Provincial Government Departments and other Entities
+14    Excise & Taxation  Revamped registration regime for NEVs, consider              3 months
+      Departments        model regulations circulated by federal government
+                         in this respect
+
+
+
+                                                36
+Ser   Lead Agency           Required Action(s)                                    Tentative
+                                                                                  Timeline
+                            Removal or reduction of registration fee and annual   3 months
+                            renewal charges for NEVs
+                            Distinctive number plate for NEV                      6 months
+15    Transport             Consider implementing demand incentivization          On-going
+      Departments           scheme on the lines of federal scheme
+                            Update road worthiness framework for NEVs             6 months
+16    Local Government      Update building bylaws to facilitate NEV charging     6 months
+      Departments,          Improve procedures for grant of approvals for         3 months
+      relevant building     establishment of charging stations
+      control authorities   Consider establishing NEV model cities in line with   5 years
+                            Islamabad
+17    Emergency service,    Develop NEV fire handling procedures                  3 months
+      traffic police and    Training on battery and NEV safety                    3 months
+      civil defence
+                            Safe handling of NEV accidents                        6 months
+      authorities
+                            First responder training on handling fire burns       6 months
+
+
+
+
+                                               37
+
