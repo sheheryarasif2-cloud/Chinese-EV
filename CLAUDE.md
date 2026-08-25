@@ -175,11 +175,34 @@ is the main discipline of this project:
   rate and the date used — a PKR figure with no rate and no date is not a figure.
 - ⚠️ **A projection is never presented as a fact.** Forecasts are labelled, with their
   assumptions written beside them.
+- 🔴 **UN Comtrade data must never be published.** Its licence prohibits redistribution —
+  local use only. It may live in this private repo; it must **not** go into an Artifact, a
+  shared page, or anything else that leaves this machine. **This constrains the deliverable
+  itself:** if the roadmap is ever shared, the Comtrade-derived figures come out first.
+- ⚠️ **Never average two mirror statistics.** China's reported exports and Pakistan's reported
+  imports will disagree. Record both, say which is better evidenced, and leave the gap visible.
+
+## Tools available
+
+**`un-comtrade`** — MCP connector installed 25-Aug-2026, registered globally in `.claude.json`.
+Nine `comtrade_*` tools giving official country-to-country trade volumes by HS code.
+**Anchor code: HS 871160**, confirmed from the API as *"Motorcycles (including mopeds) and
+cycles; fitted with auxiliary motor, with electric motor for propulsion"*.
+
+🔴 **Two limits of the keyless free tier, both found the hard way:** only **one period per
+call** — a multi-year query fails outright, so series are built year by year — and it
+**rate-limits with HTTP 429** on rapid successive calls, needing roughly 15 seconds between
+them. A free key from `comtradedeveloper.un.org` removes both; the owner would create that
+account, and the key goes in the `env` block of the `.claude.json` entry.
+
+⚠️ **Comtrade is country-to-country only.** It can never say which exporter shipped to which
+importer. That is company-level shipment data, it sits behind paid services, and it has been
+deliberately deferred.
 
 ## Where things live
 
-`CLAUDE.md` and `01-question/` exist. The rest below is the intended shape — each folder
-gets created the first time it is actually needed, not up front.
+`CLAUDE.md`, `01-question/`, `03-pakistan/` and `06-sources/` exist. The rest below is the
+intended shape — each folder gets created the first time it is actually needed, not up front.
 
 | Path | Holds |
 |---|---|
@@ -205,7 +228,16 @@ later. Save the file, and record where and when it came from.
 - **25-Aug-2026** — kill criteria drafted at `01-question/kill-criteria.md`: 11 criteria in
   four tiers, cheapest-and-most-lethal first. **Five thresholds are still blank and only
   Sheheryar can set them (K1, K2, K5, K8, K9).** Two items are marked `[VERIFY]` — stated
-  from general knowledge and not yet sourced. No research has started.
+  from general knowledge and not yet sourced.
+- **25-Aug-2026** — 🔴 **scope narrowed to electric TWO-WHEELERS** (motorcycles and scooters,
+  not cars, and assumed not pedal-assist bicycles). **The kill criteria still carry car-shaped
+  assumptions and have NOT yet been recalibrated — K5 especially**, which was set against car
+  economics and may fire on almost any two-wheeler configuration. Do not lean on K5 until it
+  is re-reasoned for this segment.
+- **25-Aug-2026** — `un-comtrade` connector installed and verified. First sourced dataset
+  recorded at `03-pakistan/import-volumes.md`: China→Pakistan HS 871160 exports grew from 888
+  units (2020) to **46,716 units / US$16.3m FOB (2024)**, with average weight rising 30.9 →
+  94.7 kg/unit — the mix moving out of the bicycle class into this project's actual segment.
 - **25-Aug-2026** — promoted to a full standalone workspace, named **Chinese EV Research**.
   Folder renamed to `Documents\Chinese-EV-Research`; its own memory folder created and
   committed to a local git repo on branch `memory-chinese-ev-research`. **No remote yet** —
