@@ -1,0 +1,147 @@
+# Chinese EV Research
+
+*Global research on Chinese EV manufacturers, and an implementation roadmap for Pakistan.*
+
+**Standalone workspace. Run Claude Code from this folder.**
+
+The folder you start Claude in is the workspace selector. Started here, this project gets
+its own memory and its own instructions, and **no other project's context loads** — not the
+Supreme / Sentinel ERP memory, not Al Milhan, not the SR website. The only other thing that
+loads is the small global `~/.claude/CLAUDE.md`, which is identity and universal rules only,
+with no project detail in it. That is by design and cannot be switched off per-folder.
+
+This project is not part of the Supreme group filing, and nothing here should be assumed to
+belong to Supreme Renewables, ExaSnap, or any existing client unless this file says so.
+
+## Memory
+
+This workspace's memory lives at, and only at:
+
+`~/.claude/projects/C--Users-ESHOP-Documents-Chinese-EV-Research/memory/`
+
+Created 25-Aug-2026 and indexed by its own `MEMORY.md`. It is **separate from every other
+workspace's memory** and shares nothing with them. A memory here that talks about Supreme,
+the Sentinel ERP, Al Milhan or ExaSnap is in the wrong workspace — move it, don't keep it.
+
+### Backup status
+
+The memory folder is a **local git repository** on branch `memory-chinese-ev-research`,
+with an initial commit. That protects against accidental edits and deletions.
+
+🔴 **It has no remote, so it is not backed up off this disk.** Every other workspace pushes
+to a branch of the `Supreme-Sentinel` repo and mirrors into the Supreme Obsidian vault. This
+one deliberately does not, because the project is meant to stay separate from Supreme. The
+consequence is real: if this disk fails, the memory is gone.
+
+Two ways to close that, whenever it is worth it:
+
+- **Its own private repo** — keeps the separation intact. Needs a new repo created first.
+- **A branch on `Supreme-Sentinel`** — the Al Milhan pattern, already working on this
+  machine, but it puts this project's history inside the Supreme repo and its mirror inside
+  the Supreme vault.
+
+Until one is chosen, treat this memory as single-copy.
+
+## Who and what for
+
+- **Owner and only audience:** Sheheryar Asif. Nobody else reads this unless that changes.
+  Write for a reader who already has the context — no executive framing, no polish, no
+  restating the previous section. Blunt is correct here. If something looks like a bad
+  idea, say so in the document rather than softening it.
+- **Deliverable:** a **living roadmap document** — a phased plan revised as policy, pricing
+  and the competitive field move, not a report that gets finished and filed. It carries a
+  last-revised date, and each section states how stale it is willing to be before it must
+  be re-checked.
+- **The decision it informs:** whether to **enter the EV business** — as importer,
+  distributor, assembler, charging operator, or parts and service. A **go / no-go**, and if
+  go, in which form.
+
+## What this is
+
+A standing, revisable answer to one question: **is there a business here for me, and if so
+which one?** Chinese manufacturers are the supply side; Pakistan is the market and the
+binding constraint. The document exists to reach a defensible go or no-go on entry, and
+then — only if go — to say in what form, in what order, and against what capital.
+
+## What "go / no-go" changes about the work
+
+This is not a market study, and the difference is not cosmetic:
+
+- 🔴 **A cheap, well-evidenced NO is a success, not a wasted project.** The expensive failure
+  mode is a maybe that never resolves and quietly turns into spending.
+- 🔴 **Write the kill criteria before the research, not after.** Name, in advance, the finding
+  that would end this — a duty structure that kills the margin, a territory already locked
+  by an existing distributor, a parts pipeline that cannot be made to work. Criteria written
+  after the fact bend to the conclusion you already want.
+- 🔴 **Front-load the deal-breakers.** Answer the questions most likely to produce a NO first.
+  Market sizing is the last thing to do, not the first — it is only worth doing if nothing
+  upstream has already disqualified the idea.
+- ⚠️ **Name the entry mode before costing anything.** Importing built-up units, assembling,
+  holding a dealership, running charging infrastructure and selling parts are five different
+  businesses with different capital, different regulation and different competitors. A figure
+  that does not say which one it belongs to means nothing.
+
+## The two halves
+
+The title implies two halves with **different evidence standards**, and keeping them apart
+is the main discipline of this project:
+
+1. **Global research** — what Chinese EV manufacturers actually do: model line-ups, pricing,
+   battery chemistry, export strategy, joint ventures, after-sales networks. Desk research
+   against published sources.
+2. **Pakistan implementation roadmap** — what any of that means here: import duties and SROs,
+   EV policy, grid capacity, charging infrastructure, financing, local assembly, servicing.
+   Judgement built on Pakistani regulation and local conditions. Goes stale fastest.
+
+## Hard constraints
+
+- 🔴 **Never invent a figure.** No price, tariff, market share, unit sale, subsidy rate,
+  range or charging time is written without a source and the date that source was published.
+  `[PLACEHOLDER]` marks a genuinely unknown number — it is not a prompt to estimate one.
+- 🔴 **Separate "true in China" from "true in Pakistan."** A Chinese sticker price is not a
+  landed Pakistani price. A Chinese charging assumption presumes a grid Pakistan does not
+  have. Never carry a figure across the border without stating what changes on the way.
+- 🔴 **Date every policy claim.** Pakistani duty structures, SROs and EV incentives move by
+  budget cycle. An undated tariff or incentive is worse than no number at all.
+- ⚠️ **Three currencies, every one labelled.** Chinese-side figures stay **CNY**. Pakistani
+  duties, prices and financing stay **PKR**. Global comparisons stay **USD**. Nothing is
+  silently converted. Where a figure actually drives the decision, show all three, with the
+  rate and the date used — a PKR figure with no rate and no date is not a figure.
+- ⚠️ **A projection is never presented as a fact.** Forecasts are labelled, with their
+  assumptions written beside them.
+
+## Where things live
+
+`CLAUDE.md` and `01-question/` exist. The rest below is the intended shape — each folder
+gets created the first time it is actually needed, not up front.
+
+| Path | Holds |
+|---|---|
+| `ROADMAP.md` | **The living document.** Everything else is working material feeding it. |
+| `01-question/` | The go/no-go framing, the kill criteria, and what has been settled so far. |
+| `02-supply/` | The Chinese side — manufacturers, models, pricing, export and JV behaviour. |
+| `03-pakistan/` | Regulation, duty structure, EV policy, grid and charging, financing, demand. |
+| `04-entry-modes/` | One file per candidate mode: import, assembly, dealership, charging, parts. |
+| `05-numbers/` | Landed-cost workings, capital requirements, the assumptions behind each. |
+| `06-sources/` | Saved copies of anything that could vanish — policy PDFs, price pages, tariff notifications. |
+
+🔴 **`06-sources/` is not optional.** Pakistani SROs, budget documents and manufacturer price
+pages get replaced without notice, and a roadmap resting on a dead link cannot be re-checked
+later. Save the file, and record where and when it came from.
+
+## Status
+
+- **25-Aug-2026** — folder and this file created, then renamed from
+  `Chinese EV Global Research And implementation roadmap in pakistan` to drop the spaces.
+  The rename happened before any memory existed, so nothing was orphaned. No research yet.
+- **25-Aug-2026** — scope settled: personal go/no-go on entering the EV business, kept as a
+  living roadmap. Audience is the owner only.
+- **25-Aug-2026** — kill criteria drafted at `01-question/kill-criteria.md`: 11 criteria in
+  four tiers, cheapest-and-most-lethal first. **Five thresholds are still blank and only
+  Sheheryar can set them (K1, K2, K5, K8, K9).** Two items are marked `[VERIFY]` — stated
+  from general knowledge and not yet sourced. No research has started.
+- **25-Aug-2026** — promoted to a full standalone workspace, named **Chinese EV Research**.
+  Folder renamed to `Documents\Chinese-EV-Research`; its own memory folder created and
+  committed to a local git repo on branch `memory-chinese-ev-research`. **No remote yet** —
+  see Backup status above. Not wired into `Sync-Memory.ps1` and not mirrored into the
+  Supreme vault, deliberately.
