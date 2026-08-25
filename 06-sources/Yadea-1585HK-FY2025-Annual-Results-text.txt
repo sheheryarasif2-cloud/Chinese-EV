@@ -1,0 +1,1270 @@
+Hong Kong Exchanges and Clearing Limited and The Stock Exchange of Hong Kong
+Limited take no responsibility for the contents of this announcement, make no
+representation as to its accuracy or completeness and expressly disclaim any liability
+whatsoever for any loss howsoever arising from or in reliance upon the whole or any part
+of the contents of this announcement.
+
+
+
+
+                       Yadea Group Holdings Ltd.
+                       雅迪集團控股有限公司
+                   (Incorporated in the Cayman Islands with limited liability)
+                                    (Stock Code: 1585)
+
+                ANNOUNCEMENT OF ANNUAL RESULTS
+               FOR THE YEAR ENDED 31 DECEMBER 2025
+The board (the “Board”) of directors (the “Directors”) of Yadea Group Holdings Ltd.
+(雅迪集團控股有限公司) (the “Company” or “Yadea”) hereby presents the audited
+consolidated annual results of the Company and its subsidiaries (collectively, the
+“Group”, “our Group”, “we” or “us”) for the year ended 31 December 2025 (the
+“Reporting Period”), together with the comparative figures for the year ended
+31 December 2024 as follows:
+
+ FINANCIAL HIGHLIGHTS
+
+ For the Reporting Period:
+
+ •   Revenue increased by approximately 31.1% to RMB37,008.2 million, as compared
+     with the year ended 31 December 2024.
+
+ •   Profit attributable to owners of the Company increased by approximately 128.8%
+     to RMB2,911.6 million, as compared with the year ended 31 December 2024.
+
+ •   Basic earnings per share increased by approximately 127.0% to RMB95.8 cents, as
+     compared with the year ended 31 December 2024.
+
+ •   The Company proposed a 2025 final dividend of 53.0 HK cents per ordinary share.
+
+
+
+
+                                             –1–
+CONSOLIDATED STATEMENT OF PROFIT OR LOSS
+For the year ended 31 December 2025
+
+                                                                 Year ended 31 December
+                                                                       2025         2024
+                                                         Notes    RMB’000       RMB’000
+
+Revenue                                                    4      37,008,236     28,236,246
+Cost of sales                                              6     (29,936,822)   (23,947,265)
+
+Gross profit                                                       7,071,414      4,288,981
+Selling and distribution expenses                          6      (1,619,627)    (1,215,311)
+Administrative expenses                                    6      (1,118,610)      (904,468)
+Research and development costs                             6      (1,404,469)    (1,146,828)
+Other income and gains — net                               5         710,046        642,922
+
+Operating profit                                                  3,638,754      1,665,296
+Finance costs                                              7        (46,160)       (35,957)
+Share of profits/(losses) of investments accounted for
+  using the equity method                                              1,767        (45,944)
+
+Profit before income tax                                          3,594,361      1,583,395
+Income tax expense                                         8       (682,754)      (311,021)
+
+Profit for the year                                               2,911,607      1,272,374
+
+
+Profit for the year is attributable to
+  — Owners of the Company                                         2,911,585      1,272,374
+  — Non-controlling interests                                            22              –
+
+                                                                  2,911,607      1,272,374
+
+
+Earnings per share
+  — Basic (RMB cents per share)                           10            95.8           42.2
+
+  — Diluted (RMB cents per share)                         10            95.5           42.1
+
+
+
+
+                                           –2–
+CONSOLIDATED STATEMENT OF PROFIT OR LOSS AND OTHER
+COMPREHENSIVE INCOME
+For the year ended 31 December 2025
+
+                                                                Year ended 31 December
+                                                                      2025         2024
+                                                                 RMB’000       RMB’000
+
+Profit for the year                                              2,911,607    1,272,374
+
+
+Other comprehensive (loss)/income
+Item that will not be reclassified subsequently to
+   profit or loss:
+Exchange difference arising on translation from functional
+   currency to presentation currency                               (23,618)      39,105
+Item that may be reclassified subsequently to profit or loss:
+Exchange differences arising on translation of foreign
+   operations                                                      (63,630)      21,161
+
+Other comprehensive (loss)/income for the year, net of
+  income tax                                                       (87,248)      60,266
+
+Total comprehensive income for the year                          2,824,359    1,332,640
+
+
+Total comprehensive income is attributable to
+  — Owners of the Company                                        2,824,337    1,332,640
+  — Non-controlling interests                                           22            –
+
+                                                                 2,824,359    1,332,640
+
+
+
+
+                                           –3–
+CONSOLIDATED STATEMENT OF FINANCIAL POSITION
+As at 31 December 2025
+
+                                                                 As at 31 December
+                                                                     2025          2024
+                                                        Notes   RMB’000       RMB’000
+
+ASSETS
+Non-current assets
+Property, plant and equipment                                    5,280,622    4,904,517
+Right-of-use assets                                              1,033,386    1,083,022
+Intangible assets                                                  993,150    1,040,018
+Investments accounted for using the equity method                      484       25,389
+Equity investments at fair value through other
+  comprehensive income (“FVTOCI”)                                     352           360
+Prepayments, deposits and other receivables                       777,452     1,016,592
+Prepayment for acquisition of property, plant and
+  equipment and right-of-use assets                                109,988     108,813
+Deferred income tax assets                                         218,949     207,311
+Pledged bank deposits                                            1,456,041     500,000
+Term deposits                                                    3,131,441      60,000
+
+Total non-current assets                                        13,001,865    8,946,022
+
+Current assets
+Inventories                                              11      1,426,556    1,279,385
+Trade receivables                                        12        470,286      457,747
+Prepayments, deposits and other receivables                        730,335      535,647
+Financial assets at fair value through profit or loss
+  (“FVTPL”)                                              13      4,765,986    2,471,164
+Debt instruments at FVTOCI                                          15,091        3,974
+Pledged bank deposits                                            2,903,764    2,976,071
+Term deposits                                                      691,440       80,000
+Cash and cash equivalents                                        5,991,384    7,868,883
+
+Total current assets                                            16,994,842   15,672,871
+
+Total assets                                                    29,996,707   24,618,893
+
+
+
+
+                                           –4–
+                                                          As at 31 December
+                                                              2025          2024
+                                                 Notes   RMB’000       RMB’000
+
+LIABILITIES
+Non-current liabilities
+Deferred income tax liabilities                            137,351        92,523
+Lease liabilities                                           94,598        87,263
+Deferred income                                             64,342        66,145
+Other non-current liabilities                              361,104       541,271
+Other payables, accruals and liabilities                     4,876        26,994
+
+Total non-current liabilities                              662,271       814,196
+
+Current liabilities
+Trade and bills payables                          14     14,099,472    11,871,433
+Other payables, accruals and liabilities                  2,601,684     1,780,082
+Contract liabilities                                        317,773       414,235
+Borrowings                                                1,462,379       898,806
+Lease liabilities                                            34,102        62,092
+Income tax liabilities                                      357,105        19,975
+
+Total current liabilities                                18,872,515    15,046,623
+
+Net current (liabilities)/assets                         (1,877,673)     626,248
+
+Total liabilities                                        19,534,786    15,860,819
+
+
+Net Assets                                               10,461,921     8,758,074
+
+
+EQUITY
+Share capital                                                   195           195
+Share premium and reserves                               10,461,482     8,757,657
+
+Equity attributable to owners of the Company             10,461,677     8,757,852
+Non-controlling interests                                       244           222
+
+Total Equity                                             10,461,921     8,758,074
+
+
+
+
+                                           –5–
+NOTES TO FINANCIAL STATEMENTS
+
+1   GENERAL INFORMATION
+
+    The Company is an exempted company incorporated in the Cayman Islands with limited liability
+    under the Companies Law of the Cayman Islands. The registered office address of the Company is
+    Windward 3, Regatta Office Park, P.O. Box 1350, Grand Cayman KY1-1108, Cayman Islands. The
+    principal place of business of the Company is 31/F, Tower Two, Times Square, 1 Matheson Street,
+    Causeway Bay, Hong Kong. The Company’s shares have been listed on The Stock Exchange of Hong
+    Kong Limited (the “Hong Kong Stock Exchange”) with effect from 19 May 2016.
+
+    The Company is an investment holding company. The Group is principally engaged in the
+    development, manufacture and sale of electric vehicles, batteries and related accessories in the
+    People’s Republic of China (the “PRC”).
+
+    In the opinion of the Directors, the ultimate holding company of the Company is DQ Prosperity
+    Group Limited, which is incorporated in the British Virgin Islands, and is beneficially and wholly
+    owned by a discretionary trust. The ultimate controlling shareholders of the Company are Mr. Jinggui
+    Dong and Ms. Jinghong Qian (collectively the “Controlling Shareholders”).
+
+    The functional currency of the Company is Hong Kong dollar (“HKD”) which is the currency of the
+    primary environment in which the Company operates. The functional currency of the Group entities
+    located in the PRC is Renminbi (“RMB”) in which most of the transactions are denominated. The
+    consolidated financial statements are presented in RMB.
+
+2   APPLICATION OF NEW AND AMENDMENTS TO HONG KONG FINANCIAL REPORTING
+    STANDARDS (“HKFRSs”)
+
+    Amendments adopted by the Group
+
+    The Group has applied the following amended standards for its annual reporting period commencing
+    1 January 2025. The adoption of these new amendments did not have any impact on the amounts
+    recognised in prior periods and are not expected to significantly affect the current or future periods.
+
+                                                                                              Effective for
+                                                                                            annual periods
+                                                                                      beginning on or after
+
+    Amendments to HKAS 21 Lack of Exchangeability                                          1 January 2025
+
+
+
+
+                                                  –6–
+    New standards and interpretations not yet adopted
+
+    The Group has not early applied the following new and amendments to HKFRS Accounting
+    Standards that have been issued but are not yet effective:
+
+                                                                                           Effective for
+                                                                                         annual periods
+                                                                                   beginning on or after
+
+    Amendments to HKAS 21 Translation to a Hyperinflationary Presentation                  1 January 2027
+     Currency
+    Amendments to HKFRS 9 and HKFRS 7 Classification and Measurement of                    1 January 2026
+     Financial Instruments
+    Amendments to HKFRS 9 and HKFRS 7 Contracts referencing nature-                        1 January 2026
+     dependent electricity
+    Annual Improvements to HKFRS Accounting Standards — Volume 11                          1 January 2026
+    HKFRS 18 Presentation and Disclosure in Financial Statements                           1 January 2027
+    HKFRS 10 (Amendment) and HKAS 28 (Amendment) Sale or contribution of                 To be determined
+     Assets between an Investor and its Associate or Joint Venture
+
+3   MATERIAL ACCOUNTING POLICIES
+
+    The consolidated financial statements have been prepared in accordance with HKFRS Accounting
+    Standards issued by the Hong Kong Institute of Certified Public Accountants. In addition, the
+    consolidated financial statements include applicable disclosures required by the Rules Governing the
+    Listing of Securities on the Hong Kong Stock Exchange (“Listing Rules”) and the Hong Kong
+    Companies Ordinance (Cap. 622).
+
+    The consolidated financial statements have been prepared on the historical cost basis except for
+    certain financial instruments that are measured at fair values at the end of each reporting period.
+
+4   REVENUE AND SEGMENT INFORMATION
+
+    4.1   Disaggregation of revenue from contract with customers
+
+                                                                            Year ended 31 December
+                                                                                 2025            2024
+                                                                             RMB’000         RMB’000
+
+          Types of goods
+          Electric bicycles                                                 16,208,695         12,244,215
+          Batteries and chargers                                            10,523,089          7,995,475
+          Electric scooters                                                  9,045,907          7,090,602
+          Electric two-wheeled vehicle parts                                 1,230,545            905,954
+
+                                                                            37,008,236         28,236,246
+
+
+          Timing of revenue recognition
+          At point in time                                                  37,008,236         28,236,246
+
+
+
+
+                                                 –7–
+4.2   Segment information
+
+      The Group’s business activities, for which discrete financial information is available, are
+      regularly reviewed and evaluated by the chief operating decision maker (the “CODM”). The
+      CODM, who is responsible for allocating resources and assessing performance of the operating
+      segment, has been identified as the executive Directors that make strategic decisions. The
+      CODM considers the business primarily from product perspective.
+
+      The Group’s operation has the following reportable segments for the years ended 31 December
+      2025 and 2024:
+
+      –        Electric two-wheeled vehicles and related accessories; and
+
+      –        Batteries and electric drives.
+
+      The “Electric two-wheeled vehicles and related accessories” segment is mainly engaged in the
+      development, manufacture and sales of electric two-wheeled vehicles and related accessories. The
+      “Batteries and electric drives” segment is mainly engaged in the production and sales of batteries
+      and electric drives.
+
+      The CODM assesses the performance of the operating segments mainly based on segment
+      revenue and gross profit of each operating segment. The revenues from inter-segment and
+      external customers reported to the CODM are measured in a manner consistent with that
+      applied in the consolidated statement of profit or loss.
+
+      Other information, together with the segment information, provided to the CODM, is measured
+      in a manner consistent with that applied in this financial information. There were no segment
+      assets and segment liabilities information provided to the CODM, as the CODM does not use
+      this information to allocate resources to or evaluate the performance of the operating segments.
+
+
+
+
+                                                –8–
+The segment information provided to the CODM for the reportable segments for the years
+ended 31 December 2025 and 2024 is as follows:
+
+                                      Year ended 31 December 2025                                 Year ended 31 December 2024
+                             Electric                                                    Electric
+                         two-wheeled                                                two-wheeled
+                         vehicles and                                               vehicles and
+                              related Batteries and                                       related Batteries and
+                          accessories electric drives Elimination       Total         accessories electric drives Elimination      Total
+                           RMB’000        RMB’000       RMB’000       RMB’000          RMB’000        RMB’000      RMB’000       RMB’000
+
+Total segment revenue     35,466,222     7,466,036     (5,924,022)    37,008,236     27,726,357      5,009,952    (4,500,063)    28,236,246
+Total segment cost       (29,015,706)   (6,844,703)     5,923,587    (29,936,822)   (23,979,051)    (4,446,727)    4,478,513    (23,947,265)
+
+
+Gross profit               6,450,516       621,333                    7,071,414       3,747,306       563,225                    4,288,981
+
+
+Other material expense
+   items
+Raw materials and
+   consumables used       27,768,998     6,518,298     (5,923,587)   28,363,709      23,160,560      4,069,061    (4,478,513)   22,751,108
+Employee benefits
+   expenses                2,389,544       275,042              –     2,664,586       1,754,001       253,514              –     2,007,515
+Depreciation of
+   property, plant and
+   equipment                300,197         56,922              –       357,119         268,518        44,051              –       312,569
+
+Geographical information
+
+Since over 90% of the Group’s revenue from external customers were generated in the PRC and
+over 90% of the Group’s non-current assets (not including financial assets and deferred income
+tax assets) were located in the PRC, no geographical information is presented in accordance with
+HKFRS 8 Operating Segments .
+
+Information about major customers
+
+Since no revenue from sale to a single customer amounted to 10% or more of the Group’s
+revenue for the reporting period, no major customer information is presented in accordance with
+HKFRS 8 Operating Segments .
+
+
+
+
+                                                         –9–
+5   OTHER INCOME AND GAINS – NET
+
+                                                                           Year ended 31 December
+                                                                                2025            2024
+                                                                            RMB’000         RMB’000
+
+    Other income
+      Government grants                                                      228,501          203,938
+      Bank interest income                                                   180,732          248,654
+      Super-deduction of VAT (i)                                             172,576          136,928
+      Others                                                                   3,425            4,297
+
+                                                                             585,234          593,817
+
+    Other gains — net
+      Net fair value gains on financial assets at FVTPL                      179,527            91,112
+      Net foreign exchange loss                                              (21,809)          (37,869)
+      Net loss on disposal of property, plant and equipment and other
+        long-term assets                                                      (16,165)         (13,039)
+      Others                                                                  (16,741)           8,901
+
+                                                                             124,812            49,105
+
+                                                                             710,046          642,922
+
+    (i)   This represents the additional input VAT which is allowed by tax authorities for further VAT
+          output deduction.
+
+
+
+
+                                                – 10 –
+6   EXPENSES BY NATURE
+
+                                                                   Year ended 31 December
+                                                                        2025            2024
+                                                                    RMB’000         RMB’000
+
+    Raw materials and consumables used                             28,363,709     22,751,108
+    Employee benefits expenses                                      2,664,586      2,007,515
+    Outsourcing labour fee                                            562,203        353,776
+    Advertising expenses                                              452,449        353,234
+    Travelling expenses                                               366,096        308,340
+    Depreciation of property, plant and equipment                     357,119        312,569
+    Mould costs                                                       237,237        194,341
+    Freight expenses                                                  163,590        147,124
+    Consulting and professional service expenses                      123,741        111,886
+    Depreciation of right-of-use assets                                74,425         90,662
+    Amortisation of intangible assets                                  52,118         57,108
+    Product design fee                                                 40,588         34,888
+    Short-term and low-value lease                                     13,631         11,374
+    Auditor’s remuneration                                              5,986          6,300
+      – Audit services                                                  5,590          6,300
+      – Non-audit services                                                396              –
+    Other expenses                                                    602,050        473,647
+
+    Total cost of sales, selling and distribution expenses,
+      administrative expenses and research and development costs   34,079,528     27,213,872
+
+7   FINANCE COSTS
+
+                                                                   Year ended 31 December
+                                                                        2025            2024
+                                                                    RMB’000         RMB’000
+
+    Interest charge for borrowings                                    21,433          11,313
+    Interest charges for lease liabilities                             6,831           7,172
+    Other interest expenses                                           17,896          17,472
+
+                                                                      46,160          35,957
+
+
+
+
+                                                – 11 –
+8    INCOME TAX EXPENSE
+
+     This note provides an analysis of the Group’s income tax expense, and shows how the tax expense is
+     affected by non-assessable and non-deductible items. It also explains significant estimates made in
+     relation to the Group’s tax position.
+
+                                                                              Year ended 31 December
+                                                                                   2025            2024
+                                                                               RMB’000         RMB’000
+
+     Current PRC Enterprise Income Tax                                           649,564           329,724
+     Deferred income tax                                                          33,190           (18,703)
+
+     Total tax charge for the year                                               682,754           311,021
+
+9    DIVIDENDS
+
+                                                                              Year ended 31 December
+                                                                                   2025            2024
+                                                                               RMB’000         RMB’000
+
+     A final dividend of 22.0 HK cents and a special dividend of 23.0
+       HK cents for the year ended 31 December 2024 (2023 — final
+       dividend 48.0 HK cents) per fully paid share                            1,250,582         1,316,081
+
+     Subsequent to the end of the Reporting Period, a final dividend to external shareholders in respect of
+     the year ended 31 December 2025 of 53.0 HK cents (2024: a final dividend of 22.0 HK cents and a
+     special dividend of 23.0 HK cents) per ordinary share, equivalent to RMB1,453,424,000 (2024:
+     HKD1,368,222,000 equivalent to RMB1,250,582,000), has been proposed by the Directors and are
+     subject to approval by the shareholders in the forthcoming annual general meeting of the Company
+     (the “AGM”).
+
+10   EARNINGS PER SHARE
+
+     (a)   Basic earnings per share
+
+           Basic earnings per share (“EPS”) is calculated by dividing the profit of the Group attributable
+           to the owners of the Company by the weighted average number of ordinary shares in issue
+           during each period.
+
+                                                                              Year ended 31 December
+                                                                                   2025            2024
+
+           Profit attributable to owners of the Company (RMB’000)              2,911,585         1,272,374
+
+           Weighted average number of ordinary shares in issue
+            (thousand shares)                                                  3,038,679         3,017,794
+
+           Basic EPS (in RMB cents/share)                                            95.8             42.2
+
+
+
+
+                                                 – 12 –
+     (b)   Diluted earnings per share
+
+           Diluted earnings per share is calculated by adjusting the weighted average number of ordinary
+           shares outstanding to assume conversion of all dilutive potential ordinary shares.
+
+           For the years ended 31 December 2025 and 2024, the Company has the dilutive potential
+           ordinary shares of restricted share units (“RSUs”) granted to employees. For the RSUs, the
+           calculation is done to determine the number of shares that could have been acquired at fair
+           value (determined as the average annual market share price of the Company’s shares) based on
+           the monetary value of the subscription rights attached to the outstanding RSUs. The RSUs are
+           assumed to have been fully vested and released from restrictions with no impact on earnings.
+
+           The share options granted in January 2023 are not included in the calculation of diluted
+           earnings per share because they have no diluted impact for the years ended 31 December 2025
+           and 2024. These options could potentially dilute basic EPS in the future.
+
+                                                                            Year ended 31 December
+                                                                                 2025            2024
+
+           Profit attributable to owners of the Company arising
+             from (RMB’000):                                                 2,911,585         1,272,374
+
+           Weighted average number of ordinary shares in issue
+            (thousand shares)                                                3,038,679         3,017,794
+           Adjustments for share based compensation – RSUs
+            (thousand shares)                                                   10,163             1,591
+
+           Weighted average number of ordinary shares for the
+            calculation of diluted EPS (thousand shares)                     3,048,842         3,019,385
+
+           Diluted EPS (in RMB cents/share)                                         95.5            42.1
+
+11   INVENTORIES
+
+                                                                              As at 31 December
+                                                                                 2025           2024
+                                                                             RMB’000        RMB’000
+
+     Raw materials                                                             537,379          474,012
+     Work in progress                                                          279,010          292,842
+     Finished goods                                                            610,167          512,531
+
+                                                                             1,426,556         1,279,385
+
+     The inventory provisions as of 31 December 2025 and 2024 were insignificant.
+
+
+
+
+                                                 – 13 –
+12   TRADE RECEIVABLES
+
+                                                                                As at 31 December
+                                                                                   2025           2024
+                                                                               RMB’000        RMB’000
+
+     Trade receivables                                                           486,732           477,940
+     Less: allowance for credit losses                                           (16,446)          (20,193)
+
+                                                                                 470,286           457,747
+
+     The following is an ageing analysis of trade receivables net of allowance for credit losses, presented
+     based on the invoice dates:
+
+                                                                                As at 31 December
+                                                                                   2025           2024
+                                                                               RMB’000        RMB’000
+
+     Within 6 months                                                             425,164           424,029
+     Over 6 months                                                                45,122            33,718
+
+                                                                                 470,286           457,747
+
+13   FINANCIAL ASSETS AT FAIR VALUE THROUGH PROFIT OR LOSS
+
+                                                                                As at 31 December
+                                                                                   2025           2024
+                                                                               RMB’000        RMB’000
+
+     Wealth management products and structured deposits                        4,600,791         2,299,890
+     Unlisted equity investment                                                   83,724            82,248
+     Listed equity investment                                                     74,722            67,478
+     Bond investment                                                               6,749             6,279
+     Other financial assets                                                            –            15,269
+
+                                                                               4,765,986         2,471,164
+
+14   TRADE AND BILLS PAYABLES
+
+                                                                                As at 31 December
+                                                                                   2025           2024
+                                                                               RMB’000        RMB’000
+
+     Trade payables                                                            4,246,981         3,630,925
+     Bills payable                                                             9,852,491         8,240,508
+
+                                                                              14,099,472        11,871,433
+
+
+
+
+                                                 – 14 –
+An ageing analysis of the trade payables as at the end of the Reporting Period, based on the invoice
+date, is as follows:
+
+                                                                          As at 31 December
+                                                                             2025           2024
+                                                                         RMB’000        RMB’000
+
+Within 3 months                                                           4,212,346          3,582,310
+3 to 12 months                                                               19,073             32,936
+Over 12 months                                                               15,562             15,679
+
+                                                                          4,246,981          3,630,925
+
+Trade payables are non-interest-bearing and generally have a credit term of 30 to 90 days.
+
+
+
+
+                                            – 15 –
+MANAGEMENT DISCUSSION AND ANALYSIS
+
+BUSINESS REVIEW
+
+Driven by its long-term vision and commitment to operational excellence, Yadea
+delivered a strong performance in 2025. The Group reported revenue of RMB37,008.2
+million for the year, representing an increase of 31.1% compared with RMB28,236.2
+million in 2024. This growth was primarily attributable to (i) higher sales volumes
+supported by favourable market sentiment and government policies boosted demand, (ii)
+the continued optimization of the Group’s product mix, and (iii) positive effect brought
+by increased investments in research and development, marketing and brand-building
+initiatives. Total sales of electric scooters and electric bicycles increased from
+approximately 13.0 million units in 2024 to approximately 16.3 million units in 2025.
+
+In 2025, China’s electric two-wheeled vehicle industry continued to undergo technological
+upgrading and market landscape reshaping, driven by the implementation of the New
+National Standard and evolving consumer preferences. The electric two-wheeler industry
+in China is increasingly transitioning from a functional mode of transportation to smart,
+design-oriented and lifestyle-focused mobility products. Younger consumers are emerging
+as a key customer segment, driving upgrades in product aesthetics, intelligent connectivity
+and personalized riding experiences. In response to these market trends, Yadea
+implemented a series of strategic initiatives aimed at strengthening its core business,
+reinforcing its market leadership and driving sustainable long-term growth.
+
+Technological innovation remained core of Yadea’s strategy in 2025. The Group
+continued to invest in research and development, prioritizing in new product innovation
+and advanced technologies for core components, enabling it to meet evolving customer
+preference while upholding compliance with the New National Standard. During the year,
+the Group launched several product series/models targeting different consumer segments.
+For example, the Modern Series was designed to meet the needs of female riders, while
+the Guanneng Series, particularly the White Shark model, attracted younger riders
+seeking stylish design and improved riding performance. These models contributed to the
+continued optimization of the Group’s product portfolio and supported the shift toward
+higher value-added products. Leveraging its strong in-house technological capabilities,
+Yadea also achieved a major breakthrough in sustainable mobility with the launch of its
+first sodium-ion battery-powered electric bicycles, which entered mass production in early
+January 2025. Sodium-ion batteries bring key advantages, including abundant raw
+materials, better performance in cold-weather condition, and environmentally friendly
+production and recycling, all of which help diversify supply chains and reduce carbon
+impact. Compared with traditional lead-acid battery models, sodium-ion battery-powered
+vehicles offer lighter weight, longer riding range and advanced energy supply ecosystem.
+This milestone represents an important step in advancing Yadea’s green mobility
+technologies and addressing key challenges related to energy efficiency, cost effectiveness
+and environmental sustainability.
+
+
+
+
+                                          – 16 –
+At the same time, the Group continued to strengthen its brand positioning and
+engagement with younger consumers. Leveraging the strong influence of its brand
+ambassador, Mr. Dylan Wang (王鶴棣), among younger audiences and integrating social
+media engagement with product marketing, Yadea further enhanced its brand visibility
+and strengthened its connection with the next generation of riders. The Group also
+continued to expand cross-industry collaborations to boost brand exposure. Yadea
+partnered with the popular variety show Keep Running 《         ( 奔跑吧》), integrating its
+electric two-wheelers into the program through innovative marketing initiatives. On
+Lunar New Year’s Eve, CCTV’s 2025 “Young in the Spring Festival Gala”, in which
+Yadea served as the exclusive sponsor, brought a “younger and more participatory” way
+of celebrating the Spring Festival around the world through live broadcast. These
+marketing initiatives significantly increase Yadea’s product visibility while reinforcing the
+brand’s youthful, energetic and dynamic image.
+
+Building on the global momentum toward sustainable mobility, the Group also
+accelerated its international expansion with a strategic focus on Southeast Asia. The
+region represents one of the most promising growth markets for electric two-wheelers,
+supported by its large motorcycle user base, rapid urbanization and increasing
+government support for green mobility. With the market expected to grow at a
+double-digit rate in the coming years, countries such as Vietnam, Indonesia and
+Philippines are emerging as key growth engines for the adoption of electric scooters and
+electric bicycles. Yadea’s revenue from Southeast Asia recorded strong growth during the
+year, supported by continued investments in overseas manufacturing capacity and supply
+chain capabilities. In early 2026, Yadea officially inaugurated its US$100 million smart
+manufacturing plant in Băc Ninh, Vietnam, marking a major milestone in its regional
+expansion strategy. The facility has an initial annual production capacity of one million
+units and will serve as a key manufacturing hub supporting both local demand and
+exports. This investment reflects Yadea’s commitment to deepening localization,
+strengthening supply chain resilience and enhancing smart manufacturing capabilities
+across the region.
+
+OUTLOOK
+
+Looking ahead to 2026, the management remains cautiously optimistic about the
+long-term prospects of the electric two-wheeler industry. Supported by ongoing global
+de-carbonization initiatives, supportive government policies and growing consumer
+interest in smart and environmentally friendly mobility solutions, the industry is expected
+to continue its steady development.
+
+The Group expects its future growth to be supported by several key factors, including
+stable demand for its core product categories, the gradual expansion of certain
+higher-growth product segments, continued development of its overseas markets, and the
+ongoing growth of its battery and aftersales ecosystem. In the coming year, the Group
+will continue to invest in research and development, particularly in areas such as battery
+technologies, intelligent connectivity and smart riding systems, while continuing to refine
+
+
+
+                                           – 17 –
+its product offerings. At the same time, the Group will remain focused on improving
+manufacturing efficiency, strengthening supply chain management and maintaining
+disciplined cost control. With its established brand, ongoing innovation efforts and
+expanding international presence, the Group believes it is well positioned to respond to
+evolving market dynamics and pursue sustainable and balanced growth in 2026 and the
+years ahead.
+
+FINANCIAL REVIEW
+
+Revenue
+
+The Group recorded revenue of RMB37,008.2 million in 2025, representing an increase
+of approximately 31.1% from RMB28,236.2 million in 2024, primarily due to (i) higher
+sales volume driven by favorable market sentiment and government policies boosted
+demand; (ii) continued optimization of the Group’s product mix, and (iii) positive effect
+brought by increased investments in research and development, marketing and
+brand-building initiatives.
+
+The table below sets out the breakdown of the Group’s revenue for the periods
+indicated.
+
+                           For the year ended 31 December 2025        For the year ended 31 December 2024
+                            Revenue      % of total        Volume      Revenue      % of total       Volume
+                          RMB’000                       ’000 units    RMB’000                     ’000 units
+
+Product Type
+Electric bicycles         16,208,695          43.8        11,453.5    12,244,215         43.4        9,089.5
+Electric scooters          9,045,907          24.4         4,815.7     7,090,602         25.1        3,931.0
+
+Subtotal                  25,254,602          68.2        16,269.2    19,334,817         68.5       13,020.5
+
+Batteries and chargers    10,523,089          28.4       Batteries:    7,995,475         28.3      Batteries:
+                                                          18,275.1                                  14,125.8
+                                                         Chargers:                                 Chargers:
+                                                          17,005.8                                  14,496.2
+Electric two-wheeled
+   vehicle parts           1,230,545           3.4              —       905,954           3.2             —
+
+Total                     37,008,236         100.0        51,550.1    28,236,246        100.0       41,642.5
+
+Sales volume of electric scooters increased by approximately 22.5% from approximately
+3,931,000 units in 2024 to approximately 4,815,700 units in 2025, and the sales volume of
+electric bicycles increased by approximately 26% from approximately 9,089,500 units in
+2024 to approximately 11,453,500 units in 2025.
+
+
+
+
+                                              – 18 –
+Segment information
+
+For management purpose, the Group is organised into two operating segments from a
+product perspective. The “Electric two-wheeled vehicles and related accessories” segment
+is mainly engaged in the development, manufacture and sales of electric two-wheeled
+vehicles and related accessories, and the “Batteries and electric drives” segment is mainly
+engaged in the production and sales of batteries and electric drives.
+
+The segment information for the reportable segments for the years ended 31 December
+2025 and 2024 is as follows:
+
+                                            Year ended 31 December 2025                                    Year ended 31 December 2024
+                                 Electric                                                       Electric
+                             two-wheeled                                                   two-wheeled
+                             vehicles and                                                  vehicles and
+                                  related Batteries and                                          related Batteries and
+                              accessories electric drives    Elimination        Total        accessories electric drives   Elimination       Total
+                               RMB’000        RMB’000         RMB’000        RMB’000          RMB’000        RMB’000        RMB’000        RMB’000
+
+Total segment revenue         35,466,222        7,466,036     (5,924,022)    37,008,236      27,726,357       5,009,952     (4,500,063)    28,236,246
+Total segment cost           (29,015,706)      (6,844,703)     5,923,587    (29,936,822)    (23,979,051)     (4,446,727)     4,478,513    (23,947,265)
+
+Gross profit                   6,450,516         621,333                     7,071,414       3,747,306          563,225                    4,288,981
+
+
+Other material expense
+   items
+Raw materials and
+   consumables used           27,768,998       6,518,298      (5,923,587)   28,363,709      23,160,560        4,069,061     (4,478,513)   22,751,108
+Employee benefits expenses     2,389,544         275,042               –     2,664,586       1,754,001          253,514              –     2,007,515
+Depreciation of property,
+   plant and equipment           300,197          56,922               –       357,119         268,518           44,051              –       312,569
+
+Cost of sales
+
+Cost of sales of the Group increased by approximately 25.0% from RMB23,947.3 million
+in 2024 to RMB29,936.8 million in 2025. Such increase was primarily due to the
+increase in sales volume of electric two-wheeled vehicles and in line with the increase in
+revenue.
+
+
+
+
+                                                                      – 19 –
+Gross profit and gross profit margin
+
+As a result of the foregoing, gross profit for the Group increased by approximately
+64.9% from RMB4,289.0 million in 2024 to RMB7,071.4 million in 2025. The gross
+profit margin increased by approximately 25.7% from approximately 15.2% in 2024 to
+approximately 19.1% in 2025, primarily attributable to the optimization of product
+portfolio catering different customer segments and vertical integration of the supply
+chain.
+
+Other income and gains, net
+
+Other income and gains of the Group increased by approximately 10.4% from RMB642.9
+million in 2024 to RMB710.0 million in 2025, primarily attributable to the increase in net
+fair value gains on financial assets at FVTPL, government grants and super-deduction of
+value-added-tax.
+
+Selling and distribution expenses
+
+Selling and distribution expenses increased by approximately 33.3% from RMB1,215.3
+million in 2024 to RMB1,619.6 million in 2025, primarily attributable to the increase in
+the employee benefits expenses, advertising expenses and promotional campaigns.
+
+Administrative expenses
+
+Administrative expenses of the Group increased by approximately 23.7% from RMB904.5
+million in 2024 to RMB1,118.6 million in 2025, primarily attributable to the increase in
+employee benefits expenses and outsourcing labour fees.
+
+Research and development costs
+
+Research and development costs increased by approximately 22.5% from RMB1,146.8
+million in 2024 to RMB1,404.5 million in 2025, primarily attributable to the increase in
+employee benefits expenses, mould costs, and raw materials and consumables used,
+relating to new products and new technologies for intelligent platform and connectivity,
+batteries and chargers.
+
+Finance costs
+
+Finance costs of the Group consist of interest charges for borrowings, lease liabilities and
+other interest expenses. Finance costs increased by approximately 28.4% from RMB36.0
+million in 2024 to RMB46.2 million in 2025, primarily attributable to the increase in
+interest charge for borrowings resulting from the increase in bank borrowing.
+
+
+
+
+                                           – 20 –
+Income tax expense
+
+Income tax expense increased by approximately 119.5% from RMB311.0 million in 2024
+to RMB682.8 million in 2025, primarily attributable to the increase in current PRC
+enterprise income tax as a result of profit increase.
+
+Profit for the year
+
+As a result of the cumulative effect of the foregoing, profit of the Group increased by
+approximately 128.8% from RMB1,272.4 million in 2024 to RMB2,911.6 million in 2025.
+
+LIQUIDITY AND FINANCIAL RESOURCES
+
+Cash flow
+
+As of 31 December 2025, cash and cash equivalents amounted to approximately
+RMB5,991.4 million, representing a decrease of approximately 23.9% from approximately
+RMB7,868.9 million as of 31 December 2024. As at 31 December 2025, the cash and
+cash equivalents of the Group were substantially denominated in RMB.
+
+The Group’s primary uses of cash were daily operating expenses, payment for marketing
+and advertising expenses and funding of working capital. The Group financed its
+liquidity requirements through operating cash flows and existing cash and cash
+equivalents.
+
+Net cash inflow generated from operating activities was approximately RMB5,989.8
+million in 2025, as compared with approximately RMB298.9 million in 2024. Net cash
+outflow used in investing activities was approximately RMB6,983.6 million in 2025, as
+compared with net cash inflow generated from investing activities of approximately
+RMB92.5 million in 2024. Net cash outflow used in financing activities was
+approximately RMB833.8 million in 2025, as compared with net cash outflow used in
+financing activities of approximately RMB465.5 million in 2024.
+
+The Group’s primary source of funding comes from cash flows generated from its
+operating activities. As at 31 December 2025, the Group recorded borrowings of
+approximately RMB1,462.4 million with fixed interests at a range of 0.55% to 2.83%.
+
+The Group has adopted a prudent financial management approach towards its treasury
+policy and thus maintained a healthy liquidity position for the year ended 31 December
+2025. Taking into account the Group’s existing cash and cash equivalents, anticipated
+cash flow from its operating activities, it is anticipated that the Group should have
+adequate financial resources to meet its ongoing operating and development
+requirements.
+
+
+
+
+                                        – 21 –
+Net current liabilities
+
+As at 31 December 2025, the Group had net current liabilities of RMB1,877.7 million, as
+compared with net current assets of RMB626.2 million as at 31 December 2024. This
+change was mainly attributable to term deposits of RMB3,131.4 million and pledged
+bank deposits of RMB1,456.0 million, both with maturities exceeding one year, which
+have been classified as non-current assets. Taking into consideration of the Company’s
+current level of cash and cash equivalents, management undertook proactive treasury
+management measures by placing more bank deposits with maturities over one year to
+capture higher interest rates.
+
+Inventories
+
+The Group’s inventories consist of raw materials, work in progress and finished goods.
+The Group’s inventories increased by approximately 11.5% from RMB1,279.4 million as
+at 31 December 2024 to RMB1,426.6 million as at 31 December 2025, primarily
+attributable to the increase in the stock reserve of raw materials and finished goods for
+the anticipated demand for the Chinese New Year holiday in the PRC. The average
+inventory turnover days decreased from 17.03 days in 2024 to 16.5 days in 2025.
+
+Trade receivables
+
+Trade receivables increased by approximately 2.7% from RMB457.7 million as at
+31 December 2024 to RMB470.3 million as at 31 December 2025, primarily because the
+increase in sales revenue.
+
+Financial assets at FVTPL
+
+The financial assets at FVTPL held by the Group mainly consist of wealth management
+products and structured deposits with relatively low level of risk purchased from the PRC
+state-owned banks and the PRC large-scale commercial banks, with variable returns
+linked to gold price or foreign exchange rates or floating interest rates and investment
+terms/maturity dates within six months after the purchasing date. As at 31 December
+2025, each of such investments (both on a standalone and an aggregated basis by each
+bank) has a value of less than 5% of the total assets of the Group and none of such
+investments constituted a notifiable transaction of the Company. The aggregated value of
+the financial assets at FVTPL increased by approximately 92.9% from RMB2,471.2
+million as at 31 December 2024 to RMB4,766.0 million as at 31 December 2025, which
+was primarily attributable to the increase in structured deposits purchased from various
+banks, partially offset by the disposal of other financial assets of RMB15.3 million. The
+changes in financial assets at FVTPL, other than wealth management products and
+structured deposits and other financial assets, are not significant and mainly due to fair
+value changes. The Company’s subscription for the wealth management products and
+structured deposits is for treasury management purpose in order to maximise the
+utilisation of its surplus cash received from its business operations, with a view to
+
+
+
+
+                                          – 22 –
+achieving balanced yields whilst maintaining high liquidity and a low level of risk. For
+the year ended 31 December 2025, the Company recorded a gain in fair value of the
+financial assets at FVTPL of approximately RMB179.5 million in the consolidated
+statement of profit or loss and other comprehensive income. The breakdown for the
+financial assets at FVTPL for the years ended 31 December 2025 and 2024 is as follows:
+
+                                                                As at 31 December
+                                                                   2025         2024
+                                                               RMB’000      RMB’000
+
+Wealth management products and structured deposits              4,600,790     2,299,890
+Unlisted equity investment                                         83,724        82,248
+Listed equity investment                                           74,722        67,478
+Bond investment                                                     6,749         6,279
+Other financial assets                                                  –        15,269
+
+                                                                4,764,509     2,471,164
+
+Trade and bills payables
+
+Trade and bills payables increased by approximately 18.8% from RMB11,871.4 million as
+at 31 December 2024 to RMB14,099.5 million as at 31 December 2025, primarily
+attributable to the increase in bills payables owing to the suppliers as a result of the
+increase in purchases of raw materials.
+
+Gearing Ratio
+
+Gearing ratio is calculated by other non-current liabilities and borrowings divided by
+total equity. As at 31 December 2025, the gearing ratio of the Group is 17.4%
+(31 December 2024: 16.4%), mainly because the increase in borrowings.
+
+
+
+
+                                         – 23 –
+Currency risk
+
+The Group operates in the PRC with most of the transactions settled in RMB except for
+certain sales to international market that are conducted in United States dollar (“USD”).
+Foreign currency risk arises when commercial transactions or recognised assets or
+liabilities are denominated in currency other than the entities’ functional currency. The
+Group is exposed to foreign currency risk primarily with respect to USD.
+
+The Group manages its foreign currency risk by performing regular reviews of the
+Group’s net foreign currency exposures and may enter into currency forward contracts,
+when necessary, to manage its foreign exchange exposure.
+
+As at 31 December 2025, substantially all of the Group’s assets and liabilities were
+denominated in RMB. The Group did not use any derivative financial instruments to
+hedge its exposure to the foreign exchange rate risks during the Reporting Period.
+
+Human resources
+
+As at 31 December 2025, the Group had 11,245 employees, as compared with 12,002
+employees as at 31 December 2024. Total employees costs, including outsourcing cost but
+excluding the Directors’ remunerations, were RMB3,133.9 million in 2025, representing
+an increase of approximately 33.0% from RMB2,355.6 million in 2024, such increase was
+primarily due to the increase in employees bonus. The remuneration of employees was
+based on their performance, skills, knowledge, experience and market trend. The Group
+reviews the remuneration policies and packages on a regular basis and will make
+necessary adjustment commensurate with the pay level in the industry. In addition to
+basic salaries, employees may be offered with discretionary bonus, cash awards and share
+awards based on individual performance. The Group provides trainings for its employees
+so that new employees can master the basic skills required to perform their functions and
+existing employees can upgrade or improve their relevant skills.
+
+Contingent liabilities
+
+As at 31 December 2025, the Group did not have any material contingent liabilities or
+guarantees.
+
+Pledge of the Group’s assets
+
+The Group pledged its assets as securities for bills payable which were used to finance
+daily business operation. As at 31 December 2025, the pledged assets of the Group
+amounted to RMB4,359.8 million (2024: RMB3,599.3 million).
+
+
+
+
+                                         – 24 –
+PLACING OF NEW SHARES UNDER GENERAL MANDATE
+
+During the year ended 31 December 2025, the Group did not place any new shares under
+general mandate.
+
+SIGNIFICANT INVESTMENT, ACQUISITIONS AND DISPOSAL OF
+SUBSIDIARIES AND ASSOCIATED COMPANIES
+
+There was no significant investment, material acquisition and disposal of subsidiaries and
+associated companies by the Group, nor was there any plan authorised by the Board for
+other material investments or additions of capital assets, during the year ended 31
+December 2025.
+
+USE OF NET PROCEEDS
+
+Use of Net Proceeds from Placing
+
+On 31 May 2022, the Company issued 68,800,000 new shares (the “Placing Share(s)”) at
+a price of HKD12.58 per Placing Share (the “Placing Price”) by placement of the Placing
+Shares to not less than six independent professional, institutional and/or other placees
+procured by the placing agents pursuant to the placing agreement dated 24 May 2022
+(the “Placing Agreement”) entered into between the Company and the placing agents (the
+“Placing”). The Placing Shares were issued under the general mandate granted by the
+shareholders (the “Shareholders”) of the Company to the Directors pursuant to the
+resolution of the Shareholders passed at the annual general meeting of the Company held
+on 18 June 2021. Based on the par value of USD0.00001 per share, the aggregate
+nominal value of the Placing Shares is USD688. The Placing Price represents a discount
+of approximately 10.0% to the closing price of HKD13.98 per share as quoted on the
+Hong Kong Stock Exchange on 23 May 2022, being the last full trading day immediately
+prior to the execution of the Placing Agreement. The net proceeds from the Placing (after
+deducting all related costs, commission and expenses by the Company in connection with
+the Placing) amounted to approximately HKD857.6 million (equivalent to approximately
+RMB727.8 million) (the “Net Proceeds from Placing”). The net Placing Price is
+approximately HKD12.46 per share.
+
+The Net Proceeds from Placing were intended to be applied for expansion of the Group’s
+overseas business through building overseas research and development centers,
+manufacturing facilities, distribution networks, as well as potential mergers and
+acquisitions. For further details, please refer to the announcements of the Company
+dated 24 May 2022 and 31 May 2022, respectively.
+
+
+
+
+                                          – 25 –
+As at 31 December 2025, the analysis of the utilisation of the Net Proceeds from Placing
+is as follows:
+
+                                                                            Remaining
+                                                                              balance
+                                                                         (RMB million)
+
+Net Proceeds from Placing                                                         727.8
+Balance unutilised as at 1 January 2025                                           123.3
+Amount utilised during the year ended 31 December 2025
+  Building overseas research and development centers,
+    manufacturing facilities, distribution networks                               123.3
+  Potential mergers and acquisitions                                                  –
+
+Balance unutilised as at 31 December 2025                                             0
+
+The Company has fully utilised the Net Proceeds from Placing during the year ended 31
+December 2025.
+
+PURCHASE, SALE OR REDEMPTION OF THE COMPANY’S LISTED
+SECURITIES
+
+Pursuant to the rules of share award scheme adopted by the Company on 23 July 2019
+(the “Scheme”), the delegated administrators for the administration of the Scheme
+purchased on the Hong Kong Stock Exchange a total of 4,346,000 shares at a total
+consideration of approximately HKD53.0 million (highest price per share: HKD12.84;
+lowest price per share: HKD11.72) in 2025.
+
+Save as disclosed above, during the year ended 31 December 2025, neither the Company
+nor any of its subsidiaries purchased, sold or redeemed any of the Company’s listed
+securities (including sale of treasury shares).
+
+There were no treasury shares held by the Company as at 31 December 2025 and the
+date of this announcement.
+
+EVENTS AFTER THE REPORTING PERIOD
+
+There were no significant subsequent events relevant to the business or financial
+performance of the Group that has come to the attention of the Directors since the end
+of the Reporting Period up to the date of this annual results announcement.
+
+
+
+
+                                         – 26 –
+COMPLIANCE WITH THE CORPORATE GOVERNANCE CODE
+
+The Company has adopted the code provisions set out in the Corporate Governance
+Code (“CG Code”) as set out in Part 2 of Appendix C1 to the Listing Rules and has also
+put in place certain recommended best practices as set out in the CG Code. Throughout
+the year ended 31 December 2025, the Company has fully complied with the code
+provisions set out in the CG Code. The Board will continue to review and monitor the
+corporate governance status of the Company for the purpose of complying with the CG
+Code and maintaining a high standard of corporate governance of the Company.
+
+Further information of the corporate governance practice of the Company will be set out
+in the corporate governance report in the annual report of the Company for the year
+ended 31 December 2025.
+
+COMPLIANCE WITH THE MODEL CODE FOR SECURITIES TRANSACTIONS
+
+The Company has adopted the Model Code for Securities Transactions by Directors of
+Listed Issuers (the “Model Code”) set out in Appendix C3 to the Listing Rules as its own
+code of conduct regarding securities transactions of the Directors. Specific enquiries have
+been made to all the Directors who have confirmed that they have complied with the
+Model Code throughout the year ended 31 December 2025. The Board has also adopted
+the Model Code as guidelines for its relevant employees who are likely to be in
+possession of unpublished inside information of the Company in respect of their dealings
+in the securities of the Company. No incident of non-compliance of the Model Code by
+the relevant employees was noted by the Company.
+
+DIVIDENDS
+
+The Board resolved to recommend the payment of a final dividend of 53.0 HK cents per
+ordinary share for the year ended 31 December 2025 (for the year ended 31 December
+2024: 22.0 HK cents). Subject to the approval of the Shareholders at the forthcoming
+AGM to be held on Wednesday, 17 June 2026, the final dividends are expected to be
+paid on Thursday, 16 July 2026 to the Shareholders whose names appear on the register
+of members of the Company on Tuesday, 30 June 2026 (record date).
+
+ANNUAL GENERAL MEETING
+
+It is proposed that the AGM will be held on Wednesday, 17 June 2026. A notice
+convening the AGM will be published and despatched to the Shareholders in the manner
+required by the Listing Rules in due course.
+
+
+
+
+                                          – 27 –
+CLOSURE OF REGISTER OF MEMBERS
+
+For the purposes of ascertaining the members’ eligibility to attend and vote at the AGM,
+the Company’s register of members will be closed during the following period:
+
+Latest time to lodge transfer documents
+ for registration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4:30 p.m. on Thursday,
+                                                                                                            11 June 2026
+
+Closure of register of members . . . . . . . . . . . . . . . . . . . . . . . . . . . Friday, 12 June 2026 to
+                                                                                   Wednesday, 17 June 2026
+                                                                                        (both days inclusive)
+
+For determining the members’ entitlement of the proposed final dividend, the register of
+members of the Company will be closed during the following period:
+
+Latest time to lodge transfer documents
+ for registration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4:30 p.m. on Wednesday,
+                                                                                                          24 June 2026
+
+Closure of register of members . . . . . . . . . . . . . . . . . . . . . . . . . Thursday, 25 June 2026 to
+                                                                                    Tuesday, 30 June 2026
+                                                                                      (both days inclusive)
+
+For purposes mentioned above, all properly completed transfer forms accompanied by the
+relevant share certificates must be lodged for registration with the Company’s branch
+share registrar and transfer office in Hong Kong, Tricor Investor Services Limited, at
+17/F, Far East Finance Centre, 16 Harcourt Road, Hong Kong, no later than the
+aforementioned latest time.
+
+AUDIT COMMITTEE
+
+As at the date of this announcement, the audit committee of the Company (the “Audit
+Committee”) comprising four independent non-executive Directors, namely Mr. Chen
+Mingyu (chairman), Mr. Wong Lung Ming, Ms. Ma Chenguang and Ms. Liang Qin. The
+Audit Committee has reviewed the annual results for the year ended 31 December 2025
+of the Company. The Audit Committee and the Company’s management have also
+reviewed the accounting principles and practices adopted by the Group and discussed
+matters in relation to risk management, internal control and financial reporting.
+
+
+
+
+                                                        – 28 –
+SCOPE OF WORK OF DELOITTE TOUCHE TOHMATSU
+
+The figures in respect of the Group’s consolidated statement of financial position,
+consolidated statement of profit or loss, consolidated statement of profit or loss and
+other comprehensive income and the related notes thereto for the year ended
+31 December 2025 as set out in the preliminary announcement have been agreed by the
+Group’s auditor, Messrs. Deloitte Touche Tohmatsu, to the amounts set out in the
+audited consolidated financial statements of the Group for the year as approved by the
+Board of Directors on 30 March 2026. The work performed by Messrs. Deloitte Touche
+Tohmatsu in this respect did not constitute an assurance engagement and consequently
+no opinion or assurance conclusion has been expressed by Messrs. Deloitte Touche
+Tohmatsu on the preliminary announcement.
+
+PUBLICATION OF ANNUAL RESULTS AND ANNUAL REPORT
+
+This annual results announcement is published on the websites of the Hong Kong Stock
+Exchange (http://www.hkex.com.hk) and the Company (http://www.yadea.com.cn). The
+annual report of the Company for the year ended 31 December 2025 containing all the
+information required by the Listing Rules will be despatched to the Shareholders and
+made available for review on the same websites in due course.
+
+                                                             By order of the Board
+                                                           Yadea Group Holdings Ltd.
+                                                                 Dong Jinggui
+                                                                  Chairman
+
+Hong Kong, 30 March 2026
+
+As of the date of this announcement, Mr. Dong Jinggui, Ms. Qian Jinghong and
+Mr. Shen Yu are the executive Directors; and Mr. Wong Lung Ming, Mr. Chen Mingyu,
+Ms. Ma Chenguang and Ms. Liang Qin are the independent non-executive Directors.
+
+
+
+
+                                        – 29 –
+
