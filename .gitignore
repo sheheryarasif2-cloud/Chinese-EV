@@ -1,0 +1,7 @@
+# The hourly wrapper writes this. It lives inside the repo, so without this rule every run
+# would commit a log that changed only because the last run wrote to it - an endless commit
+# loop that would bury the actual project history.
+Sync-Workspace.log
+
+# Obsidian, if this folder is ever opened as a vault.
+.obsidian/
