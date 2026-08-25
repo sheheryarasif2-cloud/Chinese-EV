@@ -65,7 +65,13 @@ and returns a non-zero exit:
 - **Wrong branch** — refuses rather than pushing the wrong tree. *Proven to refuse.*
 - **Remote ahead of this machine** — stops and tells you to pull. **It will never
   force-push.** *Proven to refuse.*
-- **Unexpected `origin`** — refuses to push somewhere it does not recognise.
+- **Unexpected `origin`** — refuses to push somewhere it does not recognise. *Proven to
+  refuse, tested with origin pointed at `Supreme-Sentinel` — the exact mistake it exists to
+  stop.*
+
+All three were tested by making them fire, not by watching them pass. A gate that has only
+ever been seen succeeding has not been tested. When this script is changed, re-prove each
+one — the guards are the whole value, the happy path is trivial.
 
 The memory path is **derived** from this folder's path, not hardcoded, so renaming the
 project folder cannot silently back up a stale memory directory — it fails loudly instead.
