@@ -22,5 +22,8 @@ vault, and `Sync-Memory.ps1`. Keep it that way.
 remote SHAs against local. Run `-Check` to verify without changing anything.
 
 It refuses to push on a wrong branch, an unexpected `origin`, or a remote that is ahead of
-this machine — it never force-pushes. Nothing runs it on a schedule, so unpushed work is
-unbacked work.
+this machine — it never force-pushes.
+
+`Run-Sync-Hourly.ps1` is the scheduled-task wrapper. The Windows task **`Chinese EV Research
+Sync`** runs it hourly at :39 past the hour and logs one line per run to `Sync-Workspace.log`
+(gitignored). `FAIL` lines name the folder and the cause.

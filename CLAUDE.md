@@ -79,7 +79,34 @@ project folder cannot silently back up a stale memory directory — it fails lou
 ⚠️ **Never merge the two branches into each other.** They are unrelated trees that happen to
 share one remote — `main` is the project, `memory-chinese-ev-research` is the memory folder.
 
-🔴 **Nothing runs this on a schedule.** Unpushed work is unbacked work.
+### The scheduled task
+
+**`Chinese EV Research Sync`** — a Windows scheduled task, hourly at **:39 past the hour**,
+running `Run-Sync-Hourly.ps1` in this folder. It is deliberately offset from the Supreme
+`Claude Memory Sync` task at :19 so two git-heavy jobs never run at once.
+
+The wrapper writes **one line per run** to `Sync-Workspace.log` (gitignored — without that
+rule each run would commit the log the previous run wrote, forever). Check it with:
+
+```powershell
+Get-Content "C:\Users\ESHOP\Documents\Chinese-EV-Research\Sync-Workspace.log" -Tail 10
+```
+
+`OK` means both folders were confirmed on the remote. `FAIL` names the folder and the cause.
+
+🔴 **A green log is only worth something because the red path was tested.** On 25-Aug-2026
+the wrapper logged `OK` while the memory repo sat on the wrong branch — it ignored the sync
+script's exit code, and its sha check passed because the wrong branch pointed at the same
+commit. Both holes are fixed: it now honours the exit code **and** checks the branch by name.
+**If you change this wrapper, break it on purpose and confirm it goes red before trusting it
+again.**
+
+🔴 **This workspace is invisible to the Supreme backup, by design.** Creating its memory
+folder initially broke `Run-SyncMemory-Hourly.ps1`, which scans every folder under
+`~\.claude\projects\` and would have reported `no-mirror` on every hourly run. That script
+now carries an `$externallyManaged` list naming this workspace's branch. **If this branch is
+ever renamed, update that list too**, or the Supreme monitor goes permanently red and stops
+meaning anything.
 
 ## Who and what for
 
