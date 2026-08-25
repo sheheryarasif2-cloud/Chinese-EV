@@ -45,27 +45,35 @@ colliding with anything.
 are pushed and both were verified by re-reading the remote SHAs, not by trusting the push
 output. Both local branches track their remote.
 
-🔴 **There is no sync script for this workspace, by design.** `Sync-Memory.ps1` covers only
-the three Supreme workspaces and this one is deliberately absent from it. **Committing and
-pushing here is manual, and unpushed work is unbacked work.**
+### Syncing
 
-Two folders, so two pushes. The memory one is the one that gets forgotten:
+**`Sync-Workspace.ps1`, in this folder, does both folders in one run.** It is this
+workspace's own script and it covers only this workspace. `Supreme-Vault\Sync-Memory.ps1`
+covers the three Supreme workspaces and this one is deliberately absent from it — never add
+it there, and never extend this script to cover anything else.
 
-```bash
-git -C ~/Documents/Chinese-EV-Research add -A && \
-  git -C ~/Documents/Chinese-EV-Research commit -m "..." && \
-  git -C ~/Documents/Chinese-EV-Research push
-
-git -C ~/.claude/projects/C--Users-ESHOP-Documents-Chinese-EV-Research/memory add -A && \
-  git -C ~/.claude/projects/C--Users-ESHOP-Documents-Chinese-EV-Research/memory commit -m "..." && \
-  git -C ~/.claude/projects/C--Users-ESHOP-Documents-Chinese-EV-Research/memory push
+```powershell
+powershell -File "C:\Users\ESHOP\Documents\Chinese-EV-Research\Sync-Workspace.ps1"
 ```
 
-⚠️ **Never merge the two branches into each other.** They are unrelated trees that happen to
-share a remote — `main` is the project, `memory-chinese-ev-research` is the memory folder.
+`-Check` verifies against the remote without committing or pushing anything.
 
-⚠️ A push reporting success is not proof. Re-read the remote (`git ls-remote`) and compare
-SHAs before believing a backup happened.
+It commits both folders, pushes both branches, then **re-reads the remote and compares SHAs**
+— a push that prints success is not evidence. Three guards, each of which stops that folder
+and returns a non-zero exit:
+
+- **Wrong branch** — refuses rather than pushing the wrong tree. *Proven to refuse.*
+- **Remote ahead of this machine** — stops and tells you to pull. **It will never
+  force-push.** *Proven to refuse.*
+- **Unexpected `origin`** — refuses to push somewhere it does not recognise.
+
+The memory path is **derived** from this folder's path, not hardcoded, so renaming the
+project folder cannot silently back up a stale memory directory — it fails loudly instead.
+
+⚠️ **Never merge the two branches into each other.** They are unrelated trees that happen to
+share one remote — `main` is the project, `memory-chinese-ev-research` is the memory folder.
+
+🔴 **Nothing runs this on a schedule.** Unpushed work is unbacked work.
 
 ## Who and what for
 
