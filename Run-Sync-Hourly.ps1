@@ -36,6 +36,12 @@ function Measure-Repo {
     if (-not (Test-Path (Join-Path $Path '.git'))) { return "no-repo" }
     Push-Location $Path
     try {
+        # Check the BRANCH, not just the commit. A wrong branch can point at the same sha as
+        # the right one, in which case a sha-only check passes while the repo is misconfigured.
+        # That exact false pass was live here on 25-Aug-2026 and only showed up because the
+        # failure path was tested deliberately.
+        $onBranch = (& git rev-parse --abbrev-ref HEAD)
+        if ($onBranch -ne $Branch) { return "on-branch-$onBranch" }
         $head  = (& git rev-parse HEAD)
         $dirty = @(& git status --porcelain).Count
         $line  = (& git ls-remote origin "refs/heads/$Branch")
@@ -51,8 +57,15 @@ function Measure-Repo {
 
 try {
     & (Join-Path $PSScriptRoot 'Sync-Workspace.ps1') | Out-Null
+    $rc = $LASTEXITCODE
 
     $bad = @()
+
+    # Honour the inner script's exit code. Measuring the result is not a substitute for
+    # this: the measurement can only catch what it thinks to look for, so a sync that
+    # failed for some other reason would otherwise be logged OK.
+    if ($rc -ne 0) { $bad += "sync-script-exit-$rc" }
+
     foreach ($t in $targets) {
         $problem = Measure-Repo -Path $t.Path -Branch $t.Branch
         if ($problem) { $bad += "$($t.Name):$problem" }
