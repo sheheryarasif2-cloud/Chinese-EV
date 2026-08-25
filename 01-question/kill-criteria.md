@@ -38,7 +38,11 @@ These cost nothing but honesty, and either can end the project before a single e
 - **The question:** what is the most capital you can commit and still be fine if it returns
   zero?
 - **Kills the project if:** minimum viable entry in every remaining mode needs more than
-  `[SET: PKR ____ / USD ____]`.
+  **PKR 50,000,000** *(set 25-Aug-2026)*.
+- **Precision:** recorded as a floor, not an exact figure — the answer given was "50 million
+  or more". If a mode's requirement lands anywhere near that line, pin the number down before
+  deciding on it. USD equivalent deliberately left blank: it needs a rate and a date, and an
+  undated conversion is not a figure.
 - **Test:** your own numbers. No research required.
 - **Note:** set this as money you can *lose*, not money you could *raise*. A ceiling set at
   the maximum you could theoretically assemble is not a ceiling.
@@ -49,12 +53,33 @@ These cost nothing but honesty, and either can end the project before a single e
 - **Scope:** kills everything.
 - **The question:** how much of your week can this have, sustainably, alongside existing
   commitments?
-- **Kills the project if:** the mode needs more than `[SET: ____ hours/week]`, or requires
-  giving up current income before it is cash-positive.
+- **Kills the project if:** the mode needs more than **30 hours/week** *(set 25-Aug-2026)*,
+  or requires giving up current income before it is cash-positive.
+- 🔴 **The second clause is untested and does not go away.** A ceiling of 30+ hours a week
+  alongside a Supreme Renewables role and ExaSnap does not add up as stated. Either it
+  assumes stepping back from one of them — which is exactly the income clause — or the truly
+  sustainable number is lower than the ceiling recorded here. **Settle which before using
+  this threshold to justify an operationally heavy entry mode.**
 - **Test:** your own judgement, honestly applied.
 - **Note:** importing and distribution are operationally heavy — inventory, customs, dealers,
   warranty claims. Parts or charging may be lighter. If K2 is tight it may not kill the
   project so much as pre-select the mode.
+
+### What these two thresholds being high actually means
+
+Both Tier 0 ceilings were set high on 25-Aug-2026. **Neither is going to kill anything**, and
+that moves where the discipline has to come from.
+
+- **Tier 0 was meant to be the cheap filter, and it is now effectively open.** The go/no-go
+  therefore rests on **Tier 1** — territory, ability to import, battery warranty. Those are
+  still phone calls, so the project remains cheap to kill, but nothing is free any more.
+- **Capital has stopped being the constraint, so K11 carries more weight than it otherwise
+  would.** Being able to afford entry is not a reason to enter. With K1 non-binding, the
+  question "what stops a larger player taking this position" is doing most of the real work,
+  and it is the criterion easiest to wave through.
+- **Watch for the ceilings drifting upward.** Rule 2 of this document allows one documented
+  move per threshold. A ceiling set at the top of the range has nowhere to go except into
+  money that was not supposed to be at risk.
 
 ---
 
@@ -206,8 +231,8 @@ talks its way past its own gates.
 
 | Ref | Threshold | Value | Set on |
 |---|---|---|---|
-| K1 | Capital you can lose entirely | `[SET]` | |
-| K2 | Sustainable hours per week | `[SET]` | |
+| K1 | Capital you can lose entirely | **PKR 50,000,000** (floor; USD pending a dated rate) | 25-Aug-2026 |
+| K2 | Sustainable hours per week | **30** — income clause still unanswered | 25-Aug-2026 |
 | K5 | Per-unit margin vs pack replacement cost | `[SET]` | |
 | K8 | Ceiling for parts stock + training | `[SET]` | |
 | K9 | Breakeven volume (falls out of K6) | `[SET]` | |
@@ -219,4 +244,5 @@ it killed. This is the audit trail that stops the same ground being re-argued in
 
 | Date | Ref | Finding | Source | Killed |
 |---|---|---|---|---|
-| | | *nothing tested yet* | | |
+| 25-Aug-2026 | K1 | Ceiling set at PKR 50m floor. Capital does not bind. | Owner | nothing |
+| 25-Aug-2026 | K2 | Ceiling set at 30 hrs/week. Hours do not bind. **Income clause not tested.** | Owner | nothing |
