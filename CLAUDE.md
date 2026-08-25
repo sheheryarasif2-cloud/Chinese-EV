@@ -259,6 +259,18 @@ later. Save the file, and record where and when it came from.
   expired 30-Jun-2026" was wrong — the **Finance Act 2026 extended them one year to
   30-Jun-2027** ("sunset" is FBR's own word). **A policy's stated end date is not the law in
   force; the annual finance act overtakes it.** The cliff is now ~10 months out.
+- **26-Aug-2026** — 🔴 **EDB certification decoded** → `03-pakistan/edb-certification.md`.
+  **SRO 656(I)/2006 has NO electric-vehicle provisions** — the only "electric" in it is a crane
+  hoist. The motorcycle schedule (Section D) an e-bike assembler is judged against mandates an
+  **engine assembly line** (crankcases, crankshaft, spark plug, tappets, oil filling) and an
+  **emission tester**. **An electric bike has none of those**, so certification rests on EDB
+  discretion applying an obsolete instrument — **eligibility, cost and timeline cannot be
+  self-assessed before applying.** Also required: Sales Tax Act registration; on-site facility
+  verification; component lists approved by EDB/IOCO and uploaded to WeBOC; **annual input
+  reconciliation by 15 August or the certificate is not revalidated.** 🟢 **Found an on-ramp:**
+  AIDEP allowed **10 CBU/variant at 50% duty, max 200 units/company**, with manufacturing
+  compulsory within 2 years — **but AIDEP expired 30-Jun-2026 and the two-wheeler pilot's
+  survival is unconfirmed.**
 - **25-Aug-2026** — promoted to a full standalone workspace, named **Chinese EV Research**.
   Folder renamed to `Documents\Chinese-EV-Research`; its own memory folder created and
   committed to a local git repo on branch `memory-chinese-ev-research`. **No remote yet** —
