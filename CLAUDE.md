@@ -40,17 +40,32 @@ shape `Supreme-Sentinel` uses, applied to this project alone:
 The branch keeps its long name so it could be transplanted into another repo later without
 colliding with anything.
 
-🔴 **Status: both repos are committed locally, neither has a remote yet.** The GitHub repo
-has to be created by hand — there is no `gh` CLI on this machine, so it cannot be scripted.
-**Until the remotes are added and pushed, everything here exists on one disk only.**
+🟢 **Live since 25-Aug-2026.** Remote is
+`https://github.com/sheheryarasif2-cloud/Chinese-EV-Research.git` (private). Both branches
+are pushed and both were verified by re-reading the remote SHAs, not by trusting the push
+output. Both local branches track their remote.
 
-To finish: create an **empty private** repo named `Chinese-EV-Research` (no README, no
-`.gitignore`, no licence — an initial commit on GitHub's side causes a divergence), then add
-it as `origin` to both repos and push each branch. Git's credential manager already holds
-the GitHub login, so no new authentication is needed.
+🔴 **There is no sync script for this workspace, by design.** `Sync-Memory.ps1` covers only
+the three Supreme workspaces and this one is deliberately absent from it. **Committing and
+pushing here is manual, and unpushed work is unbacked work.**
 
-There is no sync script for this workspace. Committing and pushing is manual until one is
-written, and unpushed work is unbacked work.
+Two folders, so two pushes. The memory one is the one that gets forgotten:
+
+```bash
+git -C ~/Documents/Chinese-EV-Research add -A && \
+  git -C ~/Documents/Chinese-EV-Research commit -m "..." && \
+  git -C ~/Documents/Chinese-EV-Research push
+
+git -C ~/.claude/projects/C--Users-ESHOP-Documents-Chinese-EV-Research/memory add -A && \
+  git -C ~/.claude/projects/C--Users-ESHOP-Documents-Chinese-EV-Research/memory commit -m "..." && \
+  git -C ~/.claude/projects/C--Users-ESHOP-Documents-Chinese-EV-Research/memory push
+```
+
+⚠️ **Never merge the two branches into each other.** They are unrelated trees that happen to
+share a remote — `main` is the project, `memory-chinese-ev-research` is the memory folder.
+
+⚠️ A push reporting success is not proof. Re-read the remote (`git ls-remote`) and compare
+SHAs before believing a backup happened.
 
 ## Who and what for
 
