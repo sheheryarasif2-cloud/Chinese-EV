@@ -23,24 +23,34 @@ Created 25-Aug-2026 and indexed by its own `MEMORY.md`. It is **separate from ev
 workspace's memory** and shares nothing with them. A memory here that talks about Supreme,
 the Sentinel ERP, Al Milhan or ExaSnap is in the wrong workspace — move it, don't keep it.
 
-### Backup status
+### Backup
 
-The memory folder is a **local git repository** on branch `memory-chinese-ev-research`,
-with an initial commit. That protects against accidental edits and deletions.
+**Decided 25-Aug-2026: this project gets its own private GitHub repo.** Nothing of it goes
+into `Supreme-Sentinel` or the Supreme Obsidian vault, and it is not wired into
+`Sync-Memory.ps1`. The separation is the point, and it is deliberate.
 
-🔴 **It has no remote, so it is not backed up off this disk.** Every other workspace pushes
-to a branch of the `Supreme-Sentinel` repo and mirrors into the Supreme Obsidian vault. This
-one deliberately does not, because the project is meant to stay separate from Supreme. The
-consequence is real: if this disk fails, the memory is gone.
+Two local git repositories, both to push to that one repo on different branches — the same
+shape `Supreme-Sentinel` uses, applied to this project alone:
 
-Two ways to close that, whenever it is worth it:
+| Repo | Branch | Holds |
+|---|---|---|
+| `Documents\Chinese-EV-Research\` | `main` | Instructions and all working documents. |
+| `~\.claude\projects\C--Users-ESHOP-Documents-Chinese-EV-Research\memory\` | `memory-chinese-ev-research` | The memory folder. |
 
-- **Its own private repo** — keeps the separation intact. Needs a new repo created first.
-- **A branch on `Supreme-Sentinel`** — the Al Milhan pattern, already working on this
-  machine, but it puts this project's history inside the Supreme repo and its mirror inside
-  the Supreme vault.
+The branch keeps its long name so it could be transplanted into another repo later without
+colliding with anything.
 
-Until one is chosen, treat this memory as single-copy.
+🔴 **Status: both repos are committed locally, neither has a remote yet.** The GitHub repo
+has to be created by hand — there is no `gh` CLI on this machine, so it cannot be scripted.
+**Until the remotes are added and pushed, everything here exists on one disk only.**
+
+To finish: create an **empty private** repo named `Chinese-EV-Research` (no README, no
+`.gitignore`, no licence — an initial commit on GitHub's side causes a divergence), then add
+it as `origin` to both repos and push each branch. Git's credential manager already holds
+the GitHub login, so no new authentication is needed.
+
+There is no sync script for this workspace. Committing and pushing is manual until one is
+written, and unpushed work is unbacked work.
 
 ## Who and what for
 
