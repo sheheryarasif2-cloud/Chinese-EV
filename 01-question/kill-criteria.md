@@ -119,7 +119,23 @@ Phone calls and emails. Do all of these before any modelling.
 - **The question:** who carries the battery warranty to the end customer, and is it backed by
   the OEM in a form you can actually claim against from Pakistan?
 - **Kills those modes if:** the obligation lands on you with no enforceable OEM backstop, and
-  one pack replacement exceeds `[SET: ____ ]` of per-unit margin.
+  one pack replacement wipes out the margin on **more than 10 units**. *(Set by Claude
+  25-Aug-2026 on the owner's instruction — see "Who set K5 and K8" below.)*
+- **Why a ratio and not a rupee figure:** neither the pack cost nor the per-unit margin is
+  known until K6 is modelled, but this question can be answered today and the answer stays
+  valid whatever those numbers turn out to be.
+- **Why 10:** the arithmetic is that a threshold of N units breaks even at a claim rate of
+  1/N. Ten units means the business survives claim rates up to 10% before warranty cost eats
+  all margin. Stricter (5) demands a pack cheap enough that it would kill modes that could
+  actually work; looser (25) requires believing claims stay under 4% in Pakistani heat, on an
+  unverified pack, with no local failure data — that is a bet, not a threshold.
+- 🔴 **Below roughly 30 units in the first year, ignore the ratio and treat K5 as fired.** At
+  low volume a single claim is a large fraction of all margin earned, so variance decides the
+  outcome rather than the rate. The backstop is mandatory at low volume regardless of maths.
+- **K5 has a remedy, unlike K3 and K4.** It is not a fact about the world — it is a term you
+  can negotiate. When K5 fires, the response is to go and get an enforceable OEM backstop, or
+  to fund a warranty reserve out of K1 and re-run K6 with that reserve deducted. Accepting the
+  exposure is the one response that is never correct.
 - **Test:** ask the OEM to state the warranty chain in writing; price one out-of-warranty
   pack replacement.
 - **Why this is here:** an unbacked battery warranty is unbounded liability sitting behind a
@@ -162,7 +178,18 @@ Phone calls and emails. Do all of these before any modelling.
 - **The question:** can you have parts, tooling and high-voltage-trained technicians in place
   *before* the first warranty claim, not after?
 - **Kills those modes if:** the OEM will not commit to a parts pipeline, or standing one up
-  costs more than `[SET: PKR ____ ]`.
+  costs more than **PKR 7,500,000** — 15% of the K1 ceiling. *(Set by Claude 25-Aug-2026 on
+  the owner's instruction — see "Who set K5 and K8" below.)*
+- **Why 15%:** this figure has to fit inside K1, because every rupee here is a rupee not
+  available for vehicles. At 5% (PKR 2.5m) a genuine pipeline — parts stock, tooling and
+  high-voltage technician training — probably cannot be built at all, so K8 would fire almost
+  every time, and a criterion that always fires discriminates between nothing. Above 30% the
+  after-sales operation becomes the main capital line, which is only coherent if parts and
+  service *is* the business rather than support for vehicle sales.
+- 🔴 **K8 spend reduces the capital available to K6.** If this ceiling is used in full, the
+  money left for vehicles and working capital is **PKR 42.5m, not 50m**. Build K6's volume
+  assumptions on the remainder, never on the K1 headline — that mistake makes a mode look
+  viable at a volume the capital cannot actually fund.
 - **Test:** OEM parts terms, plus real quotes for initial parts stock and technician training.
 - **Why this is here:** thin parts support is the standard failure mode of imported vehicles.
   It surfaces late, after inventory is committed, and it destroys resale value and word of
@@ -229,13 +256,27 @@ Guard against these. They feel like findings and are not:
 Fill each before testing the criterion it belongs to. Blank thresholds are how a project
 talks its way past its own gates.
 
+### Who set K5 and K8
+
+**K1 and K2 were set by the owner. K5 and K8 were set by Claude on 25-Aug-2026, at the
+owner's explicit instruction to decide them.**
+
+That distinction is recorded because it changes how much weight they carry. K1 and K2 are
+facts about the owner's circumstances that nobody else could supply. K5 and K8 are judgement
+calls reasoned from the structure of the business, and the reasoning behind each is written
+next to it — so they can be checked, argued with, and changed.
+
+🔴 **Override either without ceremony, and do not treat doing so as spending the one
+threshold move allowed by rule 2.** That allowance protects thresholds the owner set against
+being bent to fit an answer. It does not apply to a number the owner never chose.
+
 | Ref | Threshold | Value | Set on |
 |---|---|---|---|
 | K1 | Capital you can lose entirely | **PKR 50,000,000** (floor; USD pending a dated rate) | 25-Aug-2026 |
 | K2 | Sustainable hours per week | **30** — income clause still unanswered | 25-Aug-2026 |
-| K5 | Per-unit margin vs pack replacement cost | `[SET]` | |
-| K8 | Ceiling for parts stock + training | `[SET]` | |
-| K9 | Breakeven volume (falls out of K6) | `[SET]` | |
+| K5 | Per-unit margin vs pack replacement cost | **10 units' margin** *(Claude)* | 25-Aug-2026 |
+| K8 | Ceiling for parts stock + training | **PKR 7,500,000** = 15% of K1 *(Claude)* | 25-Aug-2026 |
+| K9 | Breakeven volume (falls out of K6) | `[SET]` — cannot be set until K6 is modelled | |
 
 ## Decision log
 
@@ -246,3 +287,5 @@ it killed. This is the audit trail that stops the same ground being re-argued in
 |---|---|---|---|---|
 | 25-Aug-2026 | K1 | Ceiling set at PKR 50m floor. Capital does not bind. | Owner | nothing |
 | 25-Aug-2026 | K2 | Ceiling set at 30 hrs/week. Hours do not bind. **Income clause not tested.** | Owner | nothing |
+| 25-Aug-2026 | K5 | Set at 10 units' margin — breaks even at a 10% claim rate. Fires automatically below ~30 units/year. | Claude, delegated | nothing |
+| 25-Aug-2026 | K8 | Set at PKR 7.5m (15% of K1). Leaves PKR 42.5m for vehicles and working capital. | Claude, delegated | nothing |
