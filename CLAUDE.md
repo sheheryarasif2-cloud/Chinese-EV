@@ -323,6 +323,15 @@ later. Save the file, and record where and when it came from.
   will not invest in.** ⚠️ Inherits K8/K5 as the decisive criteria: uptime IS the product.
   ⚠️ Open: **can a rider on PKR 35,000/mo fund PKR 248,500?** Model may have to be lease, not
   sale. ⚠️ Petrol price conflict: verified **343.10** vs press **414–415** — unresolved.
+- **26-Aug-2026** — 📊 **INVESTOR DECISION BOARD published** →
+  `decision-board-2026-08-26.html`, Artifact
+  `https://claude.ai/code/artifact/4b804242-dd47-4db0-8f94-d8ddd1459013`. Ten navigable
+  sections + a **live TCO calculator** (adjust km, petrol, tariff, battery cost, cycle life,
+  subsidy → payback recomputes). Chart palette **computationally validated** with the dataviz
+  validator — light and dark both pass all six checks. **Comtrade figures deliberately excluded**
+  (licence prohibits redistribution). ⚠️ **Not visually inspected** — the in-app browser has no
+  claude.ai session so a private artifact cannot be opened there; markup and JS wiring were
+  validated structurally instead.
 - **25-Aug-2026** — promoted to a full standalone workspace, named **Chinese EV Research**.
   Folder renamed to `Documents\Chinese-EV-Research`; its own memory folder created and
   committed to a local git repo on branch `memory-chinese-ev-research`. **No remote yet** —
