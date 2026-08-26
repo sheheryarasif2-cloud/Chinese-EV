@@ -298,6 +298,17 @@ later. Save the file, and record where and when it came from.
   the cheap route entirely.** 🟢 **Most promising thread: battery swapping** — recurring
   revenue, fits fleets, planned in the NEV Policy, and explicitly something Atlas Honda says it
   will not invest in.
+- **26-Aug-2026** — Section **G** done → `05-numbers/tco-model.md`. 🟢 **THE CONSUMER ECONOMICS
+  WORK, AND ROBUSTLY.** Yadea T5 (PKR 248,500, 2 kWh per 80 km per the maker) vs CD 70
+  (PKR 159,900, PKR 5.72–6.24/km): **T5 runs at PKR 0.83/km at the average tariff and PKR 1.70/km
+  even at the WORST domestic slab.** Payback **13–18 months with no subsidy**, and the case
+  survives every battery assumption tested — even PKR 60,000 replaced every 15 months still
+  saves PKR 1.69/km. 🔴 **With the PKR 65,000 subsidy payback is 3.9 months; without it, 14.5** —
+  that is K7 in one number, and it tapers. 🔴 **NEW — THE SLAB-CROSSING TRAP:** charging adds
+  ~31 kWh/month, so a household at 175–200 units/mo **crosses the 200-unit protected threshold
+  and loses protected status on the WHOLE bill** — the target CD 70 buyer is exactly who this
+  hits. It argues for charging away from home, and makes **solar charging a real differentiator.**
+  **Net: demand is NOT the risk. The risk is entirely whether a new entrant can be the seller.**
 - **25-Aug-2026** — promoted to a full standalone workspace, named **Chinese EV Research**.
   Folder renamed to `Documents\Chinese-EV-Research`; its own memory folder created and
   committed to a local git repo on branch `memory-chinese-ev-research`. **No remote yet** —
