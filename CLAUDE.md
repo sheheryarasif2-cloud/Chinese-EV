@@ -309,6 +309,20 @@ later. Save the file, and record where and when it came from.
   and loses protected status on the WHOLE bill** — the target CD 70 buyer is exactly who this
   hits. It argues for charging away from home, and makes **solar charging a real differentiator.**
   **Net: demand is NOT the risk. The risk is entirely whether a new entrant can be the seller.**
+- **26-Aug-2026** — 🟢 **FLEET MODEL — THE FIRST THESIS THAT SURVIVES EVERYTHING** →
+  `05-numbers/fleet-model.md`. Riders run **80 km/day × 26 days = ~24,960 km/yr** (not 40,000);
+  fuel is **PKR 17,841/mo — 30–71% of gross earnings of PKR 25,000–60,000.** E-bike payback
+  **4.0–6.4 months with NO subsidy** vs 13–18 for consumers. **50,000+ known fleet riders**
+  (foodpanda 20k, Bykea 30k) — PKR 50m buys ~200 machines, so **under 1% of that market is
+  enough. First time the capital looks adequate rather than absurd.** 🔴 **For fleet, CYCLE life
+  replaces calendar life** — 312–500 cycles/yr means **lead-acid dies in 8–13 months**, so
+  chemistry becomes operational, not economic (both chemistries pay back alike). 🔴 **Swapping
+  becomes structurally necessary** at 128 km/day vs 75–85 km range — benchmarks: 15% lower TCO,
+  riders do **20–40% more orders, earn 15–35% more.** Fleet sidesteps K11 (buyers choose on
+  arithmetic), the idle capacity, and the MOQ chasm — and targets what Atlas Honda **says it
+  will not invest in.** ⚠️ Inherits K8/K5 as the decisive criteria: uptime IS the product.
+  ⚠️ Open: **can a rider on PKR 35,000/mo fund PKR 248,500?** Model may have to be lease, not
+  sale. ⚠️ Petrol price conflict: verified **343.10** vs press **414–415** — unresolved.
 - **25-Aug-2026** — promoted to a full standalone workspace, named **Chinese EV Research**.
   Folder renamed to `Documents\Chinese-EV-Research`; its own memory folder created and
   committed to a local git repo on branch `memory-chinese-ev-research`. **No remote yet** —
