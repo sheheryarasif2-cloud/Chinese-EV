@@ -212,6 +212,7 @@ intended shape — each folder gets created the first time it is actually needed
 | `03-pakistan/` | Regulation, duty structure, EV policy, grid and charging, financing, demand. |
 | `04-entry-modes/` | One file per candidate mode: import, assembly, dealership, charging, parts. |
 | `05-numbers/` | Landed-cost workings, capital requirements, the assumptions behind each. |
+| `04-comparables/` | Other markets that already ran this cycle — India first. |
 | `06-sources/` | Saved copies of anything that could vanish — policy PDFs, price pages, tariff notifications. |
 
 🔴 **`06-sources/` is not optional.** Pakistani SROs, budget documents and manufacturer price
@@ -271,6 +272,19 @@ later. Save the file, and record where and when it came from.
   AIDEP allowed **10 CBU/variant at 50% duty, max 200 units/company**, with manufacturing
   compulsory within 2 years — **but AIDEP expired 30-Jun-2026 and the two-wheeler pilot's
   survival is unconfirmed.**
+- **26-Aug-2026** — research plan agreed → `01-question/research-plan.md`: 15 sections, 15 gaps
+  added to the original 8-part outline. **Section D executed** →
+  `04-comparables/india-fame-shakeout.md`.
+- **26-Aug-2026** — 🔴 **INDIA CHANGES THE THESIS.** Its e-2W market **grew 53–75% while
+  subsidies were slashed** — so demand survives policy withdrawal. **But the entire leaderboard
+  was replaced: legacy petrol makers TVS, Bajaj, Hero plus Ather took 95.6% of incremental
+  growth.** Ola Electric went from **>50% share (Apr-2024) to 6.8%** — beaten not on price or
+  product but on **service capacity and spare parts**: 10,644 consumer complaints, warranty
+  claims refused, and **Goa suspended its vehicle registrations**. **K8 is therefore the
+  criterion that decides, not a secondary one**, and **K5 now carries a market-access
+  consequence, not just a financial one** — both updated in `kill-criteria.md`. New priority
+  open item: **quantify Atlas Honda's and United's dealer/service networks** — that number
+  decides K11.
 - **25-Aug-2026** — promoted to a full standalone workspace, named **Chinese EV Research**.
   Folder renamed to `Documents\Chinese-EV-Research`; its own memory folder created and
   committed to a local git repo on branch `memory-chinese-ev-research`. **No remote yet** —

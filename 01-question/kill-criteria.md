@@ -132,6 +132,11 @@ Phone calls and emails. Do all of these before any modelling.
 - 🔴 **Below roughly 30 units in the first year, ignore the ratio and treat K5 as fired.** At
   low volume a single claim is a large fraction of all margin earned, so variance decides the
   outcome rather than the rate. The backstop is mandatory at low volume regardless of maths.
+- 🔴 **Warranty failure can cost you the right to sell — added 26-Aug-2026.** The exposure is
+  not only financial. In India, refused warranty claims and unavailable spare parts drew the
+  Central Consumer Protection Authority, and **the state of Goa suspended Ola Electric's vehicle
+  registrations.** A backstop failure can therefore end market access, not merely erode margin.
+  Treat regulatory consequence as part of K5, not a separate risk.
 - **K5 has a remedy, unlike K3 and K4.** It is not a fact about the world — it is a term you
   can negotiate. When K5 fires, the response is to go and get an enforceable OEM backstop, or
   to fund a warranty reserve out of K1 and re-run K6 with that reserve deducted. Accepting the
@@ -194,6 +199,13 @@ Phone calls and emails. Do all of these before any modelling.
 - **Why this is here:** thin parts support is the standard failure mode of imported vehicles.
   It surfaces late, after inventory is committed, and it destroys resale value and word of
   mouth simultaneously.
+- 🔴 **26-Aug-2026 — India says this is THE criterion, not a secondary one.** Ola Electric held
+  **over 50% of the Indian e-2W market in April 2024 and fell to 6.8% by H1 2026** — not on
+  price, product or capital, but on service capacity and spare-part availability. 10,644
+  consumer complaints, warranty claims refused, and **the state of Goa suspended its vehicle
+  registrations** after a regulator probed unavailable spare parts. See
+  `04-comparables/india-fame-shakeout.md`. **The PKR 7.5m ceiling was reasoned as a capital
+  limit; India suggests underspending here is the failure mode, not the saving. Revisit it.**
 
 ---
 
