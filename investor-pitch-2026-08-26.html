@@ -1,0 +1,473 @@
+<title>The Rider Economics Play</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap">
+
+<style>
+:root{
+  --ground:#F7F8F8; --surface:#FFFFFF; --sunk:#ECEEEF; --deep:#0E1418;
+  --ink:#0E1418; --ink-2:#38434A; --muted:#6A757C;
+  --line:#DCE0E2; --line-2:#BFC6C9;
+  --c1:#00897B; --c2:#B0521E; --c3:#45489C; --c4:#9E2B4E;
+  --good:#1B7A4E; --warn:#96650A; --crit:#A63A2E;
+  --good-soft:#DEEEE5; --warn-soft:#F7EEDA; --crit-soft:#F7E3E0; --c1-soft:#DCEFEC;
+  --shadow:0 1px 2px rgba(14,20,24,.05), 0 14px 40px -20px rgba(14,20,24,.25);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1013; --surface:#131A1E; --sunk:#1B2429; --deep:#050809;
+    --ink:#E9EEF0; --ink-2:#B6C0C5; --muted:#849096;
+    --line:#242E33; --line-2:#38444A;
+    --c1:#0FA08C; --c2:#D07038; --c3:#7A7ED8; --c4:#D05578;
+    --good:#3FB37A; --warn:#D0A03C; --crit:#DC6A5C;
+    --good-soft:#0F2C22; --warn-soft:#2E2610; --crit-soft:#311A17; --c1-soft:#0B2C28;
+    --shadow:0 1px 2px rgba(0,0,0,.5), 0 16px 44px -22px rgba(0,0,0,.9);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1013; --surface:#131A1E; --sunk:#1B2429; --deep:#050809;
+  --ink:#E9EEF0; --ink-2:#B6C0C5; --muted:#849096;
+  --line:#242E33; --line-2:#38444A;
+  --c1:#0FA08C; --c2:#D07038; --c3:#7A7ED8; --c4:#D05578;
+  --good:#3FB37A; --warn:#D0A03C; --crit:#DC6A5C;
+  --good-soft:#0F2C22; --warn-soft:#2E2610; --crit-soft:#311A17; --c1-soft:#0B2C28;
+  --shadow:0 1px 2px rgba(0,0,0,.5), 0 16px 44px -22px rgba(0,0,0,.9);
+}
+
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:"Instrument Sans",system-ui,sans-serif;font-size:17px;line-height:1.62;margin:0;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.col{max-width:70ch}
+h1,h2,h3,.big{font-family:Fraunces,Georgia,serif;font-variation-settings:"opsz" 100}
+.mono,.n,.kk,.eyebrow{font-family:"JetBrains Mono",monospace;font-variant-numeric:tabular-nums}
+
+h1{font-size:clamp(2.5rem,6.4vw,4.6rem);font-weight:900;letter-spacing:-.028em;line-height:1.0;margin:0 0 1rem;text-wrap:balance}
+h2{font-size:clamp(1.7rem,3.6vw,2.7rem);font-weight:700;letter-spacing:-.02em;line-height:1.08;margin:0 0 .7rem;text-wrap:balance}
+h3{font-family:"Instrument Sans",sans-serif;font-size:1.05rem;font-weight:600;letter-spacing:-.008em;margin:0 0 .45rem}
+p{margin:0 0 1.1rem}
+strong{font-weight:600}
+:focus-visible{outline:2px solid var(--c1);outline-offset:3px}
+
+.eyebrow{font-size:.68rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--c1);margin:0 0 .9rem;display:flex;align-items:center;gap:.7rem}
+.eyebrow::after{content:"";flex:1;height:1px;background:var(--line-2)}
+
+section{padding:76px 0 0}
+.rule{border:none;border-top:1px solid var(--line);margin:76px 0 0}
+
+/* hero */
+.hero{padding:88px 0 8px}
+.lede{font-size:clamp(1.14rem,2.1vw,1.42rem);color:var(--ink-2);max-width:60ch;margin:1.2rem 0 0;line-height:1.5}
+.tagline{font-family:"JetBrains Mono",monospace;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:1.6rem}
+
+/* hero number */
+.hn{background:var(--deep);color:#F7F8F8;border-radius:8px;padding:38px 40px;margin:38px 0 0;box-shadow:var(--shadow)}
+.hn .big{font-size:clamp(3rem,9vw,5.6rem);font-weight:900;letter-spacing:-.04em;line-height:.94;display:block;color:#fff}
+.hn .cap{font-family:"JetBrains Mono",monospace;font-size:.74rem;letter-spacing:.13em;text-transform:uppercase;color:#8FA3AB;margin-top:1rem;display:block;line-height:1.6}
+.hn em{color:var(--c1);font-style:normal}
+
+/* stat strip */
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden;margin:30px 0}
+.sc{background:var(--surface);padding:20px 22px}
+.sv{font-family:Fraunces,serif;font-size:2rem;font-weight:700;letter-spacing:-.03em;line-height:1;display:block}
+.sk{font-family:"JetBrains Mono",monospace;font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:.55rem;display:block;line-height:1.5}
+.t1{color:var(--c1)} .tg{color:var(--good)} .tc{color:var(--crit)} .tw{color:var(--warn)}
+
+/* callout */
+.pull{border-left:3px solid var(--c1);padding:4px 0 4px 22px;margin:26px 0;font-family:Fraunces,serif;font-size:clamp(1.16rem,2.3vw,1.5rem);font-weight:600;line-height:1.35;letter-spacing:-.012em;color:var(--ink)}
+
+.box{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:22px 24px;box-shadow:var(--shadow)}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin:26px 0}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:26px 0}
+
+.flag{border-radius:6px;padding:18px 22px;margin:22px 0;border-left:3px solid}
+.flag.g{background:var(--good-soft);border-color:var(--good)}
+.flag.w{background:var(--warn-soft);border-color:var(--warn)}
+.flag.c{background:var(--crit-soft);border-color:var(--crit)}
+.flag p:last-child{margin-bottom:0}
+.flag .lb{font-family:"JetBrains Mono",monospace;font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:.5rem;font-weight:500}
+.flag.g .lb{color:var(--good)} .flag.w .lb{color:var(--warn)} .flag.c .lb{color:var(--crit)}
+
+/* bars */
+.chart{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:24px;margin:26px 0}
+.ct{font-family:"Instrument Sans",sans-serif;font-weight:600;font-size:1rem;margin:0 0 .2rem}
+.cs{color:var(--muted);font-size:.83rem;margin:0 0 18px}
+.brow{display:grid;grid-template-columns:minmax(120px,auto) 1fr minmax(78px,auto);gap:14px;align-items:center;margin-bottom:10px}
+.bl{font-size:.82rem;color:var(--ink-2);font-weight:500}
+.bt{background:var(--sunk);border-radius:3px;height:24px;overflow:hidden}
+.bf{height:100%;border-radius:0 4px 4px 0}
+.bv{font-family:"JetBrains Mono",monospace;font-size:.82rem;font-weight:700;text-align:right}
+.lgd{display:flex;gap:18px;flex-wrap:wrap;margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:.78rem;color:var(--ink-2)}
+.lg{display:flex;align-items:center;gap:7px}
+.sw{width:11px;height:11px;border-radius:2px}
+
+/* steps */
+.steps{counter-reset:s;margin:26px 0}
+.step{counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:18px;padding:20px 0;border-top:1px solid var(--line)}
+.step:last-child{border-bottom:1px solid var(--line)}
+.step::before{content:counter(s);font-family:Fraunces,serif;font-size:1.5rem;font-weight:700;color:var(--c1);line-height:1}
+.step h3{margin-bottom:.3rem}
+.step p{font-size:.92rem;color:var(--ink-2);margin:0}
+
+ul.t{margin:0 0 1rem;padding-left:1.2rem}
+ul.t li{margin-bottom:.5rem;font-size:.95rem}
+
+.ph{background:var(--sunk);border:1px dashed var(--line-2);border-radius:5px;padding:3px 9px;font-family:"JetBrains Mono",monospace;font-size:.76rem;color:var(--muted);display:inline-block}
+
+table{border-collapse:collapse;width:100%;font-size:.9rem;min-width:520px}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--surface);margin:24px 0}
+th{text-align:left;font-family:"JetBrains Mono",monospace;font-size:.63rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:13px 14px;border-bottom:1px solid var(--line-2);background:var(--sunk);white-space:nowrap}
+td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:none}
+.nn{text-align:right;font-family:"JetBrains Mono",monospace;font-size:.84rem;white-space:nowrap}
+
+footer{margin-top:80px;padding:30px 0 90px;border-top:1px solid var(--line-2);font-size:.83rem;color:var(--muted)}
+footer strong{color:var(--ink-2)}
+
+@media (max-width:640px){
+  body{font-size:16px}
+  .hero{padding-top:52px}
+  .hn{padding:26px 24px}
+  .step{grid-template-columns:32px 1fr;gap:12px}
+  .brow{grid-template-columns:minmax(88px,auto) 1fr minmax(62px,auto);gap:9px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+
+<div class="hero">
+  <p class="tagline">Pakistan · Electric two-wheelers · Fleet</p>
+  <h1>Fuel eats up to 71% of a Pakistani delivery rider's income. We can take that to almost nothing.</h1>
+  <p class="lede">
+    An electric bike repays its entire price premium in <strong>four to six months</strong> from fuel savings
+    alone — with no government subsidy, at the worst electricity tariff in the country. This is not a bet on
+    policy or on consumer sentiment. It is arithmetic that already works.
+  </p>
+
+  <div class="hn">
+    <span class="big">PKR 17,841</span>
+    <span class="cap">
+      What a delivery rider spends on petrol every month — against earnings of PKR 25,000–60,000.<br>
+      The same distance on electricity costs <em>PKR 1,736</em>.
+    </span>
+  </div>
+</div>
+
+<hr class="rule">
+
+<!-- PROBLEM -->
+<section>
+  <p class="eyebrow">The problem</p>
+  <h2>The most expensive thing a rider owns is the fuel, not the bike</h2>
+
+  <div class="col">
+    <p>
+      A Pakistani delivery rider covers <strong>80 km a day, 26 days a month</strong>. At PKR 343 a litre on a
+      bike returning 40 km/l, that is roughly <strong>PKR 686–800 every single day</strong>, gone.
+    </p>
+  </div>
+
+  <div class="pull">
+    Between a third and three-quarters of everything they earn is burned as petrol. Nothing else in their cost
+    base comes close — and fuel has moved 3.4% in three weeks.
+  </div>
+
+  <div class="col">
+    <p>
+      This is why the fleet segment converts on economics rather than on brand, marketing or novelty. The
+      customer is not choosing a lifestyle. They are recovering their wages.
+    </p>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- PROOF -->
+<section>
+  <p class="eyebrow">The proof</p>
+  <h2>The unit economics, and why they hold under pressure</h2>
+
+  <div class="chart">
+    <p class="ct">Cost to travel one kilometre</p>
+    <p class="cs">Honda CD 70 at PKR 343.10/l vs an electric equivalent at 2.5 kWh/100 km, across Pakistan's domestic tariff slabs</p>
+    <div class="brow"><span class="bl">Petrol · CD 70</span><div class="bt"><div class="bf" style="width:100%;background:var(--c2)"></div></div><span class="bv" style="color:var(--c2)">5.72–6.24</span></div>
+    <div class="brow"><span class="bl">Electric · worst slab</span><div class="bt"><div class="bf" style="width:27.2%;background:var(--c1)"></div></div><span class="bv" style="color:var(--c1)">1.70</span></div>
+    <div class="brow"><span class="bl">Electric · average</span><div class="bt"><div class="bf" style="width:13.3%;background:var(--c1)"></div></div><span class="bv" style="color:var(--c1)">0.83</span></div>
+    <div class="lgd">
+      <span class="lg"><span class="sw" style="background:var(--c2)"></span>Petrol</span>
+      <span class="lg"><span class="sw" style="background:var(--c1)"></span>Electric</span>
+      <span class="lg" style="color:var(--muted)">PKR per km · lower is better</span>
+    </div>
+  </div>
+
+  <div class="strip">
+    <div class="sc"><span class="sv tg">4–6</span><span class="sk">Months to full payback</span></div>
+    <div class="sc"><span class="sv t1">PKR 13,900</span><span class="sk">Saved per rider per month</span></div>
+    <div class="sc"><span class="sv t1">7×</span><span class="sk">Cheaper per km, average tariff</span></div>
+    <div class="sc"><span class="sv tg">Zero</span><span class="sk">Subsidy required</span></div>
+  </div>
+
+  <div class="flag g">
+    <span class="lb">Why we trust this number</span>
+    <p>
+      We stress-tested it rather than modelled it once. It survives the <strong>worst domestic electricity
+      tariff in Pakistan</strong>, a battery replaced <strong>every 15 months at PKR 60,000</strong>, and the
+      complete removal of every government incentive. Under all three at once it still saves money. The only
+      inputs are the price of petrol and the price of a unit of electricity.
+    </p>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- MARKET -->
+<section>
+  <p class="eyebrow">The market</p>
+  <h2>A record two-wheeler market, with electric compounding inside it</h2>
+
+  <div class="strip">
+    <div class="sc"><span class="sv">1.93m</span><span class="sk">Motorcycles sold FY26 · record</span></div>
+    <div class="sc"><span class="sv t1">+173%</span><span class="sk">Electric 2W growth · H1 2026</span></div>
+    <div class="sc"><span class="sv t1">90,000</span><span class="sk">Electric 2W sold Apr–Jun 2026 alone</span></div>
+    <div class="sc"><span class="sv">50,000+</span><span class="sk">Known fleet riders · foodpanda &amp; Bykea</span></div>
+  </div>
+
+  <div class="col">
+    <p>
+      A single quarter of 2026 came within a fifth of the whole of 2025. The total motorcycle market is at an
+      all-time high and growing 33.8% — <strong>electric is taking a fast-growing share of a fast-growing
+      base.</strong>
+    </p>
+  </div>
+
+  <div class="pull">
+    We do not need the market to be large. We need a few hundred machines placed with operators who count
+    fuel — under 1% of the riders we can already name.
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- WEDGE -->
+<section>
+  <p class="eyebrow">The wedge</p>
+  <h2>We are not building a consumer brand. That is the point.</h2>
+
+  <div class="col">
+    <p>
+      Pakistan's motorcycle market is effectively a monopoly: <strong>Atlas Honda holds roughly 88% on 1.69
+      million units a year</strong>, with 500+ dealers and 63 service points, and it has already launched an
+      electric scooter. Any plan that requires beating it on brand, showroom reach or consumer trust loses.
+    </p>
+    <p>
+      <strong>So we are not attempting that.</strong> The fleet channel is a different business with a
+      different buyer, and it is one the incumbent has publicly declined to build for — its stated position is
+      that existing facilities are sufficient for expected EV demand. <em>A factory is not a service network,
+      and it is certainly not a battery-swap network.</em>
+    </p>
+  </div>
+
+  <div class="grid2">
+    <div class="box">
+      <h3 style="color:var(--muted)">Consumer — the losing game</h3>
+      <ul class="t" style="color:var(--ink-2)">
+        <li>Won on brand, trust and dealer proximity</li>
+        <li>Millions of dispersed buyers; heavy retail spend</li>
+        <li>Payback 13–18 months without subsidy</li>
+        <li>Competes head-on with an 88% incumbent</li>
+      </ul>
+    </div>
+    <div class="box" style="border-color:var(--c1);border-width:2px">
+      <h3 style="color:var(--c1)">Fleet — where we play</h3>
+      <ul class="t">
+        <li>Won on <strong>arithmetic</strong>, verifiable in a spreadsheet</li>
+        <li><strong>Dozens of operators</strong>, no retail network required</li>
+        <li>Payback <strong>4–6 months</strong>, no subsidy needed</li>
+        <li>Targets what the incumbent <strong>says it will not fund</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="flag g">
+    <span class="lb">The recurring revenue is in the battery, not the machine</span>
+    <p>
+      The world's largest maker earns <strong>28.4% of its revenue from batteries and chargers</strong> — it
+      sells more batteries than vehicles. In a fleet model with swapping, that revenue accrues to the operator
+      rather than being exported. Riders on swap networks elsewhere complete <strong>20–40% more deliveries and
+      earn 15–35% more</strong>, because they stop waiting to charge.
+    </p>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- EDGE -->
+<section>
+  <p class="eyebrow">Why us</p>
+  <h2>The work behind this is not a market report</h2>
+
+  <div class="steps">
+    <div class="step">
+      <div>
+        <h3>Read from audited filings, not trade press</h3>
+        <p>Five annual reports read directly — Yadea, Aima, Xinri, Luyuan and NIU. Where a filing contradicted the press, the filing won. That reversed a conclusion we had already drawn.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div>
+        <h3>Found that Chinese "global" makers barely export</h3>
+        <p>Aima's overseas revenue is <strong>0.86% of turnover and falling</strong>. NIU ships ~2,000 units per foreign market. It tells us precisely which partners can actually support a distant buyer — and which cannot.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div>
+        <h3>Traced the regulation to primary source</h3>
+        <p>PCT 8711.6040, the 1% duty line, the Fifth Schedule gate, the EDB certification requirement written for combustion engines, and the <strong>30 June 2027 sunset</strong> — read from FBR and Ministry documents, not summaries.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div>
+        <h3>Studied the market that already failed</h3>
+        <p>India ran this exact cycle. We know what killed the entrants — <strong>service and spare parts, not price</strong> — and have designed around it rather than discovering it later.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- RISK -->
+<section>
+  <p class="eyebrow">Risks, stated plainly</p>
+  <h2>What could go wrong, and what we are doing about it</h2>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Risk</th><th>Why it matters</th><th>Mitigation</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Service &amp; spare parts</strong></td>
+          <td>Destroyed India's largest player from 50% share. For a fleet, uptime <em>is</em> the product.</td>
+          <td>Service capacity funded before volume, not after. Fleet concentration makes it tractable — dozens of sites, not hundreds.</td>
+        </tr>
+        <tr>
+          <td><strong>Battery chemistry</strong></td>
+          <td>Lead-acid dies in <strong>8–13 months</strong> at fleet duty cycles in Pakistani heat.</td>
+          <td>Lithium only. Both chemistries pay back alike, so this costs nothing and removes the failure mode.</td>
+        </tr>
+        <tr>
+          <td><strong>Policy withdrawal</strong></td>
+          <td>Duty concessions <strong>sunset 30 June 2027</strong>; successor policy unapproved.</td>
+          <td>The model is built to work with <strong>zero</strong> concessions. Any support is upside, never the basis.</td>
+        </tr>
+        <tr>
+          <td><strong>Currency</strong></td>
+          <td>PKR volatility hits any import business directly.</td>
+          <td>Short order cycles, low inventory, price pass-through in fleet contracts. <span class="ph">to be modelled</span></td>
+        </tr>
+        <tr>
+          <td><strong>Rider affordability</strong></td>
+          <td>A rider on PKR 35,000/month cannot pay PKR 248,500 upfront.</td>
+          <td>Likely lease or battery-as-a-service rather than outright sale. <strong>This is the open commercial question.</strong></td>
+        </tr>
+        <tr>
+          <td><strong>Incumbent response</strong></td>
+          <td>Atlas Honda could enter fleet directly.</td>
+          <td>It has stated it will not invest further in EV capability. We monitor rather than assume.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="flag w">
+    <span class="lb">Three things this analysis cannot yet prove</span>
+    <p>
+      No supplier, bank or delivery platform has been contacted. We do not yet know whether a manufacturer will
+      supply at our scale, whether a letter of credit can be opened on current terms, or whether an enforceable
+      battery warranty exists. <strong>These are the first things funded, not assumptions we are asking anyone to
+      accept.</strong>
+    </p>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ASK -->
+<section>
+  <p class="eyebrow">The ask</p>
+  <h2>What the first tranche buys</h2>
+
+  <div class="grid3">
+    <div class="box"><span class="sv t1"><span class="ph">amount</span></span><span class="sk" style="margin-top:.8rem">Raising</span></div>
+    <div class="box"><span class="sv t1"><span class="ph">%</span></span><span class="sk" style="margin-top:.8rem">For</span></div>
+    <div class="box"><span class="sv t1"><span class="ph">months</span></span><span class="sk" style="margin-top:.8rem">Runway to milestone</span></div>
+  </div>
+
+  <div class="flag c">
+    <span class="lb">Not yet filled in — deliberately</span>
+    <p>
+      The raise amount, valuation and runway are <strong>not stated because they have not been decided</strong>.
+      Founder capacity is roughly PKR 50m of risk capital; the working assumption is a first placement of a few
+      hundred machines, needing well under 1% of the fleet riders already identified.
+      <strong>Any figure here would be invented, and inventing one is how pitches lose credibility.</strong>
+    </p>
+  </div>
+
+  <div class="steps">
+    <div class="step">
+      <div>
+        <h3>Close the three open gates</h3>
+        <p>Supplier terms and MOQ, letter-of-credit availability, and an enforceable battery warranty. Weeks, not months — and any one of them can stop the project cheaply.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div>
+        <h3>Sign one fleet operator to a pilot</h3>
+        <p>A defined cohort of riders on measured routes. The unit economics are either confirmed in the field or they are not.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div>
+        <h3>Prove service before scaling</h3>
+        <p>Parts depth, technician training and swap logistics stood up for the pilot fleet. India's lesson is that this must precede volume, never follow it.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div>
+        <h3>Then, and only then, scale placements</h3>
+        <p>With measured uptime, real claim rates and a proven cost per km — numbers no competitor entering later will have.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- CLOSE -->
+<section>
+  <p class="eyebrow">In one line</p>
+  <div class="pull" style="border-left-width:4px;font-size:clamp(1.3rem,3vw,1.9rem)">
+    Pakistan's riders are burning a third to three-quarters of their income as petrol. The replacement pays for
+    itself in under six months without a rupee of subsidy. We are not fighting for the showroom — we are
+    supplying the people who count the fuel.
+  </div>
+</section>
+
+<footer>
+  <p>
+    <strong>Basis of preparation.</strong> Figures are drawn from audited company filings (Yadea 1585.HK, Aima
+    603529.SH, Xinri 603787.SH, Luyuan 2451.HK, Niu Technologies Form 20-F), Pakistani primary regulation (NEV
+    Policy 2025-30, FBR Budget 2026-27, SRO 656(I)/2006, AIDEP 2021-26, NEPRA SRO 279(I)/2026), and published
+    market and pricing data. Pakistani market volumes are press-reported and not yet confirmed against PAMA's
+    own filings.
+  </p>
+  <p>
+    <strong>This is a research summary, not an offer.</strong> No supplier, bank, platform or regulator has been
+    contacted; availability judgements are inference from public evidence. No financial projections, traction or
+    commitments are presented, because none exist yet. Petrol at PKR 343.10/l verified 25 August 2026; a press
+    figure of PKR 414–415 remains unreconciled. Prospective investors should conduct independent verification.
+  </p>
+  <p>Prepared 26 August 2026 · Sheheryar Asif</p>
+</footer>
+
+</div>

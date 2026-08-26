@@ -343,6 +343,18 @@ later. Save the file, and record where and when it came from.
   had missed: a bar encoding 13–18 at 80% when its siblings encoded the low value (→72%),
   slider `step` snapping the stated defaults (24,960→25,000; 33.4→33.5), and an awkward
   stat-label wrap.
+- **26-Aug-2026** — 📣 **INVESTOR PITCH published** → `investor-pitch-2026-08-26.html`,
+  Artifact `https://claude.ai/code/artifact/24c2ab52-0480-4304-8f49-734e61893aaa`.
+  **Reordered and reframed, NOT softened** — opportunity-first, but Atlas Honda's ~88%, the
+  India collapse, the June-2027 sunset and the three open gates all stay in, because a pitch
+  that hides them would mislead an investor and sophisticated ones find them anyway. Leads on
+  **PKR 17,841/month rider fuel spend vs PKR 1,736 on electricity.**
+  🔴 **Raise amount, valuation and runway are `[PLACEHOLDER]` on purpose** — never decided, so
+  any figure would be invented. Same for traction/team: none claimed because none exist.
+  Carries a basis-of-preparation + "research summary, not an offer" disclosure.
+  **Three deliverables now exist and serve different audiences:** `brief-` (working notes),
+  `decision-board-` (own decision tool, leads with the uncomfortable), `investor-pitch-`
+  (external, opportunity-first). **Keep them in sync or retire the stale ones.**
 - **25-Aug-2026** — promoted to a full standalone workspace, named **Chinese EV Research**.
   Folder renamed to `Documents\Chinese-EV-Research`; its own memory folder created and
   committed to a local git repo on branch `memory-chinese-ev-research`. **No remote yet** —
