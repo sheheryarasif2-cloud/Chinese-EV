@@ -285,6 +285,19 @@ later. Save the file, and record where and when it came from.
   consequence, not just a financial one** — both updated in `kill-criteria.md`. New priority
   open item: **quantify Atlas Honda's and United's dealer/service networks** — that number
   decides K11.
+- **26-Aug-2026** — Sections **B** (`02-supply/battery-layer.md`) and **E**
+  (`03-pakistan/petrol-baseline.md`) done. 🔴 **K11 is now very hard to answer positively:
+  Atlas Honda holds ~85–88% share on ~1.69m units FY26, runs 500+ dealers and 63 service/parts
+  points, and has ALREADY launched an electric scooter (Icon e) stating it needs no additional
+  EV investment** — the exact India playbook, in Pakistan, at near-zero capex. Benchmark:
+  **CD 70 = PKR 159,900, 55–60 km/l, ~PKR 5.85–6.10/km** at petrol of **PKR 343.10/l
+  (25-Aug-2026, volatile)**. 🔴 **Battery: lead-acid dies in 12–15 months in Pakistani heat**
+  (PKR 10–20k) vs lithium 3–5+ yrs (PKR 40–120k) — and the import evidence (~US$350/unit,
+  ~95 kg) implies **lead-acid is what is arriving**, which is a direct K5 warranty trap. The
+  1% concession reportedly covers *"batteries other than lead-acid"* — **verify; it may exclude
+  the cheap route entirely.** 🟢 **Most promising thread: battery swapping** — recurring
+  revenue, fits fleets, planned in the NEV Policy, and explicitly something Atlas Honda says it
+  will not invest in.
 - **25-Aug-2026** — promoted to a full standalone workspace, named **Chinese EV Research**.
   Folder renamed to `Documents\Chinese-EV-Research`; its own memory folder created and
   committed to a local git repo on branch `memory-chinese-ev-research`. **No remote yet** —
