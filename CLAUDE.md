@@ -332,6 +332,17 @@ later. Save the file, and record where and when it came from.
   (licence prohibits redistribution). ⚠️ **Not visually inspected** — the in-app browser has no
   claude.ai session so a private artifact cannot be opened there; markup and JS wiring were
   validated structurally instead.
+- **26-Aug-2026** — 🟢 **BOARD LAYOUT NOW VISUALLY VERIFIED.** 🔴 **Neither browser tool can
+  inspect a published artifact:** the in-app browser has no claude.ai session AND cannot
+  screenshot local files; real Chrome authenticates but the artifact sits in a genuinely
+  cross-origin iframe (`*.frame.claudeuse`) that swallows scroll, ignores anchor jumps, blocks
+  JS, and paints only its own viewport — stretching the frame element just yields blank space.
+  ✅ **The method that works: headless Chrome full-page screenshot of the local HTML, then
+  Read the PNG** (use a throwaway `--user-data-dir` per `windows-doc-toolchain`; slice tall
+  renders with PIL before reading). Found and fixed 3 real defects that structural validation
+  had missed: a bar encoding 13–18 at 80% when its siblings encoded the low value (→72%),
+  slider `step` snapping the stated defaults (24,960→25,000; 33.4→33.5), and an awkward
+  stat-label wrap.
 - **25-Aug-2026** — promoted to a full standalone workspace, named **Chinese EV Research**.
   Folder renamed to `Documents\Chinese-EV-Research`; its own memory folder created and
   committed to a local git repo on branch `memory-chinese-ev-research`. **No remote yet** —

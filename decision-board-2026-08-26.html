@@ -297,7 +297,7 @@ footer h3{color:var(--ink)}
   </div>
 
   <div class="stats">
-    <div class="stat"><span class="stat-v">1.93m</span><span class="stat-k">Motorcycles sold FY26 · all-time high</span></div>
+    <div class="stat"><span class="stat-v">1.93m</span><span class="stat-k">Motorcycles sold FY26 · record</span></div>
     <div class="stat"><span class="stat-v v-c1">+173%</span><span class="stat-k">Electric 2W growth · H1 2026</span></div>
     <div class="stat"><span class="stat-v v-c1">90,000</span><span class="stat-k">Electric 2W sold Apr–Jun 2026 alone</span></div>
     <div class="stat"><span class="stat-v">112,000</span><span class="stat-k">Electric 2W sold in all of 2025</span></div>
@@ -434,7 +434,7 @@ footer h3{color:var(--ink)}
     <div class="brow"><span class="blab">Fleet · 40,000 km/yr</span><div class="btrack"><div class="bfill" style="width:20.4%;background:var(--c1)" title="3.7–4.0 months at heavy fleet use"></div></div><span class="bval" style="color:var(--c1)">3.7–4.0</span></div>
     <div class="brow"><span class="blab">Fleet · 24,960 km/yr</span><div class="btrack"><div class="bfill" style="width:33%;background:var(--c1)" title="5.9–6.4 months at the verified Pakistani rider duty cycle"></div></div><span class="bval" style="color:var(--c1)">5.9–6.4</span></div>
     <div class="brow"><span class="blab">Consumer · with subsidy</span><div class="btrack"><div class="bfill" style="width:22%;background:var(--c3)" title="3.9 months — but depends entirely on the PKR 65,000 subsidy"></div></div><span class="bval" style="color:var(--c3)">3.9</span></div>
-    <div class="brow"><span class="blab">Consumer · no subsidy</span><div class="btrack"><div class="bfill" style="width:80%;background:var(--c3)" title="13.1–14.5 months at 15,000 km/year"></div></div><span class="bval" style="color:var(--c3)">13–18</span></div>
+    <div class="brow"><span class="blab">Consumer · no subsidy</span><div class="btrack"><div class="bfill" style="width:72%;background:var(--c3)" title="13.1–14.5 months at 15,000 km/year"></div></div><span class="bval" style="color:var(--c3)">13–18</span></div>
     <div class="legend">
       <span class="lg"><span class="sw" style="background:var(--c1)"></span>Fleet rider</span>
       <span class="lg"><span class="sw" style="background:var(--c3)"></span>Private consumer</span>
@@ -521,15 +521,15 @@ footer h3{color:var(--ink)}
     <div class="ctrls">
       <div class="ctrl">
         <label for="km">Distance per year <output id="kmO">24,960 km</output></label>
-        <input type="range" id="km" min="5000" max="50000" step="1000" value="24960">
+        <input type="range" id="km" min="5000" max="50000" step="10" value="24960">
       </div>
       <div class="ctrl">
         <label for="pet">Petrol price <output id="petO">PKR 343.10 /l</output></label>
-        <input type="range" id="pet" min="200" max="500" step="1" value="343">
+        <input type="range" id="pet" min="200" max="500" step="0.1" value="343.1">
       </div>
       <div class="ctrl">
         <label for="tar">Electricity tariff <output id="tarO">PKR 33.38 /kWh</output></label>
-        <input type="range" id="tar" min="4" max="70" step="0.5" value="33.4">
+        <input type="range" id="tar" min="4" max="70" step="0.1" value="33.4">
       </div>
       <div class="ctrl">
         <label for="bat">Battery pack cost <output id="batO">PKR 30,000</output></label>
