@@ -355,6 +355,23 @@ later. Save the file, and record where and when it came from.
   **Three deliverables now exist and serve different audiences:** `brief-` (working notes),
   `decision-board-` (own decision tool, leads with the uncomfortable), `investor-pitch-`
   (external, opportunity-first). **Keep them in sync or retire the stale ones.**
+- **26-Aug-2026** — 🟢 **RIDER AFFORDABILITY SOLVED** → `05-numbers/rider-affordability.md`.
+  **It was never an affordability problem, it was a financing-structure one.** Replacing petrol
+  creates **PKR 16,105/mo = PKR 619 per working day** of headroom, so any charge below that
+  leaves the rider better off with **no deposit, savings or credit history**. At **PKR 350/day
+  the rider keeps PKR 7,005/mo and we collect PKR 9,100/mo**; asset recovered in 13–20 months.
+  🔴 **The actual solve is the collection mechanism: the PLATFORM deducts from rider earnings
+  before payout** — converting thousands of informal-worker credit risks into one B2B
+  receivable. **No platform has been approached; this is now the single most important
+  conversation, ahead of suppliers and banks.** 🟢 Proven template: **Zypp Electric (India)** —
+  ₹100–300/day, 52-week rent-to-own, 20,000+ EVs, US$76.5m raised, same customer set.
+  🔴 **NEW AND IMPORTANT: the Punjab E-Bike Scheme (PKR 15k down + PKR 2–3k/mo × 24 = PKR
+  63–87k total) implies a large market segment FAR below the PKR 248,500 Yadea T5 this project
+  has been anchored on.** At PKR 120–150k a bike, PKR 50m buys **333–416 machines** instead of
+  201. **Price the cheap end — the benchmark may have been wrong all along.** (Scheme itself is
+  students-only, balloted — riders are NOT eligible.) ⚠️ Trade-off: rental **locks capital
+  13–20 months per machine** — this becomes asset finance with a supply arm, and should be
+  funded as one.
 - **25-Aug-2026** — promoted to a full standalone workspace, named **Chinese EV Research**.
   Folder renamed to `Documents\Chinese-EV-Research`; its own memory folder created and
   committed to a local git repo on branch `memory-chinese-ev-research`. **No remote yet** —
