@@ -73,7 +73,7 @@ confirmed with figures: at the reachable order tier, **the battery is 53% of FOB
 
 Against Pakistani retail — cheapest e-bike PKR 97,000, volume band PKR 150,000–250,000 —
 **a PKR 110,987 FOB starting point is far tighter than the kit price alone suggested.**
-Freight, 1%/10–15% duty, sales tax, withholding, clearing, assembly, warranty reserve and
+Freight, 1% or 15% duty, sales tax, withholding, clearing, assembly, warranty reserve and
 dealer margin all still have to fit between PKR 110,987 and the shelf.
 
 **The margin is real but it is not generous, and it depends entirely on landing the good
@@ -98,10 +98,14 @@ the pack size a two-wheeler uses.
 
 1. 🔴 **Quotes, not listings.** The 2× spread between Koyosonic and Hunan CTS at the same
    quantity is the whole argument for asking.
-2. **Battery HS code and duty rate.** Batteries are a **separate tariff line** from the vehicle
-   (8711.6040) and lead-acid is treated differently from lithium under the EV concession.
-   `[PLACEHOLDER: battery HS code + rate]` — until known, the PKR 110,987 FOB does not become a
-   landed cost.
+2. 🟢 **RESOLVED 27-Aug-2026 — see `03-pakistan/fifth-schedule-primary-text.md`.** The heading is
+   **85.07**; the concession reads **"Batteries other than lead acid (PCT code 85.07)" at 1%** —
+   **lead-acid is expressly excluded.** Statutory, with no concession: **8507.6000 carries CD 10%
+   + RD 2% + ST 18% + IT 11%** (TIPP, Govt of Pakistan). 🔴 **And there is a better route than
+   either:** lithium **cells** at **0%** (Fifth Schedule Part-I sr.143) or a full pack BOM at
+   **0%**, for a Sales-Tax-registered lithium battery assembler on an IOCO quota — **no EDB
+   vehicle certification required.** Given the battery is 53% of FOB cost, that route deserves
+   testing on its own.
 3. **Sea freight on lithium.** UN38.3 goods carry dangerous-goods handling; freight is not the
    same rate as the kit. `[PLACEHOLDER]`
 4. **Whether a Pakistani assembler can source packs locally** at or below PKR 59,281 — Maaz's

@@ -253,7 +253,7 @@ later. Save the file, and record where and when it came from.
   numerator and denominator counted different populations.
 - **25-Aug-2026** — 🟢 **K6 UNBLOCKED. Tariff structure found** →
   `03-pakistan/tariff-structure-current.md`. Electric motorcycle = **PCT 8711.6040**;
-  **1% CD on EV-specific CKD components**, 10–15% non-localised, under Table-II to Part-V(A),
+  **1% CD on EV-specific CKD components**, 15% non-localised, under Table-II to Part-V(A),
   **Fifth Schedule, Customs Act 1969**. 🔴 **The 1% requires EDB certification and quota — it
   is not automatic.** The successor policy AIDEP 2026-31 is **still draft**, awaiting the PM
   and the IMF. **A correction to a correction:** the earlier "K7 already fired / concessions
@@ -505,3 +505,65 @@ break left the rest blank — a 301-char page. **Flowing the sections and adding
 `pdftotext | wc -c`, not by eye.
 ✅ **Checked and TRUE:** the Decision Board's hidden tab content DOES print (FAME, Ola, Huaihai,
 Atlas Honda all present in the PDF text) — the tabs are CSS-hidden, not absent from the DOM.
+
+---
+
+## 27-Aug-2026 (later) — the Fifth Schedule's own words + the battery tariff lines
+
+**Requested:** get the Fifth Schedule primary text and the battery HS code. **Both obtained.**
+New file: `03-pakistan/fifth-schedule-primary-text.md`. Source PDF + extracted text archived as
+`06-sources/fbr-fifth-schedule-FY2025-26.*` (87pp, FBR, created 5-Aug-2025).
+
+### 🔴 THREE CORRECTIONS TO THIS PROJECT'S OWN PRIOR WORK
+1. **Non-localised CKD is 15%, NOT "10–15%."** That range came from FBR's budget *summary* and was
+   wrong. **Corrected in 5 files.** Localised parts are **15% + ACD under SRO 693(I)/2006** —
+   *dearer* than non-localised, which is the design.
+2. **The operative regime is EV Policy 2020**, not NEV Policy 2025-30. The NEV policy has **no
+   Fifth Schedule table yet.**
+3. 🔴 **The printed text says "five years from 1st July, 2020" = expired 30-Jun-2025.** It is NOT
+   expired — Finance Act 2026 moved it to 30-Jun-2027. **This is the same trap as before: a
+   policy's stated end date is not the law in force.** ⚠️ **The FY2026-27 Fifth Schedule is NOT
+   PUBLISHED** — fbr.gov.pk/Budget2026-27/CustomsSchedules* returns **404**; only Salient Features
+   is posted. **The most load-bearing date in the project rests on a summary + press.**
+
+### 🟢 THE BATTERY HS CODE — it is THREE answers, not one
+- **Route A · 1%** — *"Batteries other than lead acid (**PCT code 85.07**)"*, Part-V(A) Table-II
+  sr.3(i)(g). 🔴 **LEAD-ACID IS EXPRESSLY EXCLUDED** in all three 2-3 wheeler serials — the tariff
+  will not subsidise the chemistry that dies in 8–13 months. Needs **EDB** certification.
+- **Route B · 0%** — **Lithium Ion Cells 8507.6000**, Fifth Schedule **Part-I sr.143**, for a
+  Sales-Tax-registered maker *of lithium-ion batteries*, **IOCO** quota.
+- **Route C · 0%** — **"Parts of Lithium Batteries"**, Part-I, a **13-line pack BOM** (cells/BMS/
+  casing 8507.9000, copper bar 7407.1010, harness+cables 8544.4290, DC breaker 8536.2010/20/90 …)
+  for a registered **lithium battery assembler**, IOCO quota.
+🔴 **Routes B and C need NO EDB VEHICLE CERTIFICATION.** The state built a lower barrier into the
+battery than into the vehicle — and the battery is **53% of FOB cost.** Worth testing on its own.
+
+### Statutory rates if you do NOT qualify — TIPP (Pakistan Single Window), read 27-Aug
+- **8507.6000:** CD **10%** · RD **2%** (01-07-2026→30-06-2027) · ST **18%** · IT **11%**
+- **8711.6040 e-motorcycle CBU:** CD **30%** · ACD **4%** (both from **01-07-2026**) · ST **18%** ·
+  IT **12%**   *(8711.6060 loader is identical)*
+- Provincial cess: **Sindh 1.80–1.85%** · Punjab 0.90% · KPK 2% · Balochistan 1.10–1.50%
+- 🔴 **PSQCA Release Certificate is a listed requirement on 8507.6000** — non-conforming shipments
+  **destroyed**. ⚠️ **Pak-China FTA on 8507.6000 (4.58%) EXPIRED 31-12-2023** — assume no preference.
+- ⚠️ **No total incidence is stated anywhere** — ST and IT apply to duty-inclusive value and the
+  stacking order is a clearing-agent question. **Do not invent one.**
+🟢 **The prize is not the 1% — it is not paying 30+4+18+12 on a CBU.** And the gate to it is EDB
+against **SRO 656(I)/2006**, now confirmed *from the primary text* as the operative condition.
+**K7 and the EDB question are ONE risk, not two.**
+
+### ⚠️ A DRAFTING DEFECT IN THE SCHEDULE ITSELF
+Sr.3 gives **Converter = PCT 8454.1000**. **8454 is metallurgical** — "converters, ladles, ingot
+moulds and casting machines … used in metallurgy." Sr.1 (auto rickshaw) gives **8502.4000**
+(*electric rotary converters*) for the same component. **Declaring a DC-DC converter under
+8454.1000 declares a steel converter.** Ask a clearing agent before goods ship — paperwork this
+size ended Hero Electric and Okinawa.
+
+### Tooling notes
+- **TIPP (`tipp.gov.pk`) is the best Pakistani tariff source found** — statutory CD/ACD/RD/ST/IT
+  with validity dates, provincial cess, measures and SRO cross-refs. **Its search form ignores URL
+  params; navigate `?r=tradeInfo/view&id=N` directly.** Known ids: **27751**=8507.6000,
+  **22719**=8711.6040, **22721**=8711.6060.
+- 🔴 **`javascript_tool` was BLOCKED again** (`[BLOCKED: Cookie/query string data]`) on TIPP —
+  second time today. **`get_page_text` worked every time. Stop reaching for JS.**
+- ⚠️ **TIPP contradicts itself** on SRO 929(I)/2024 sr.3(xi): description says *"till 30th June,
+  2025"*, `valid_to` field says **31-12-2040**. Read the SRO.

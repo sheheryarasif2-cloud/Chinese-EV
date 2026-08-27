@@ -233,7 +233,7 @@ Standing rules apply to every section; they are in Part 4.
 > **RMB 1,415 per electric bicycle, RMB 1,878 per electric scooter** (Yadea FY2025).
 > **Pakistan retail price list** — every local brand and model.
 > **Landed-cost model for CKD**, built line by line: FOB → freight → insurance → **customs duty
-> (1% EV-specific components / 10–15% non-localised, PCT 8711.6040)** → additional customs duty
+> (1% EV-specific components / 15% non-localised, PCT 8711.6040)** → additional customs duty
 > → regulatory duty → sales tax → withholding → clearing → inland freight → assembly cost →
 > warranty reserve → dealer margin → retail.
 > 🔴 **Build it twice — with concessions and with none.** 🔴 **Every FX rate carries its date.**

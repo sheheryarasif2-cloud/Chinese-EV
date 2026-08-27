@@ -55,7 +55,7 @@ Verbatim from the FBR salient features:
 |---|---|---|
 | **PCT 8711.6040** — electric motorcycle | — | Pakistan's national tariff line for this product |
 | EV-specific components, in any kit form, for assembly/manufacture | **1% customs duty** | Table-II to Part-V(A), **Fifth Schedule, Customs Act 1969** |
-| Non-localised CKD parts | **10–15%** | Same schedule |
+| Non-localised CKD parts | **15%** | Same schedule — ⚠️ corrected 27-Aug-2026 from primary text; "10–15%" came from FBR's budget summary and is WRONG. Localised parts are **15% + ACD under SRO 693(I)/2006** — dearer, by design |
 | Sales tax, NEV two/three-wheelers | 1% (vs 18% standard) | Reported; confirm against the Sales Tax Act schedules |
 
 🔴 **The 1% rate is not automatic.** The concession requires **"certification and quota
@@ -77,7 +77,7 @@ narrowed, consistent with the NEV Policy's stated intent to phase out special du
 
 ## What this means for the decision
 
-- **K6 is unblocked.** A landed-cost model can now be built on 1% EV-specific CKD, 10–15%
+- **K6 is unblocked.** A landed-cost model can now be built on 1% EV-specific CKD, 15%
   non-localised, against PCT 8711.6040 — with the EDB certification requirement modelled as a
   precondition rather than a cost.
 - 🔴 **K7 is sharper, not weaker. The cliff is 30 June 2027 — roughly ten months out.** What

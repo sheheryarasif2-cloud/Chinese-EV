@@ -65,7 +65,7 @@ Set the kit cost against Pakistani retail:
 | Honda ICON e: | 419,900 |
 
 🔴 **The gap is very large — and it is the whole business.** Even after customs duty (1% on
-EV-specific components, 10–15% non-localised), freight, assembly labour, warranty reserve and
+EV-specific components, 15% non-localised), freight, assembly labour, warranty reserve and
 distribution margin, a kit starting near PKR 55,000 has room to land well inside the current
 Pakistani price band.
 
