@@ -181,11 +181,20 @@ Requires being an **EDB-certified electric motorcycle manufacturer** with quota 
 (PDF p174)** in the substituted schedule by OCRing the scanned pages (tesseract 4.1.1 installed in
 WSL for the purpose). ⚠️ **Route B is still being searched** — see §4A.
 
-### Route B — lithium cells as a battery maker: **0%**
-Fifth Schedule **Part-I, serial 143**:
+### Route B — lithium cells as a battery maker: **0%** 🟢 CONFIRMED CURRENT
+**Fifth Schedule Part-III, serial 143** — *"Raw Materials/Inputs for Poultry and Textile Sector;
+**Other Goods**"*. Verified in the substituted schedule at **Gazette pages 761–762 (PDF p235–236)**:
 
 > **143 · Lithium Ion Cells · 8507.6000 · 0% ·** *"If imported by manufacturers registered under
 > the Sales Tax Act 1990, of lithium-ion batteries subject to quota determination by IOCO."*
+
+⚠️ **Citation corrected:** this was recorded earlier in this file as *Part-I* serial 143. **It is
+Part-III.** Part-I ends at serial ~39; Part-III is the "Other Goods" table that runs to serial 150+.
+
+🟢 **And Part-III's own conditions carry NO EDB test and no locally-manufactured test** — read in
+full, they require only that the designated officer furnish information online through the Customs
+Computerized System under section 155D. **So Route B genuinely needs only Sales Tax registration
+as a manufacturer of lithium-ion batteries, plus an IOCO quota.**
 
 ### Route C — a full pack BOM as a battery assembler: **0%**
 Fifth Schedule Part-I, **"(d) Parts of Lithium Batteries — 0%"**, *"If imported by the local
@@ -208,10 +217,25 @@ subject to quota determination by IOCO"*:
 | Acrylic sheet (short-circuit safety sheet) | 3920.5900 / 3921.9090 |
 | Other accessories (temp sensors, connectors, handles) | 8536.9090 / 9031.8000 / 8507.9000 |
 
-🔴 **This is the most strategically interesting finding in the file.** Route C needs **no EDB
-vehicle certification at all** — only Sales Tax registration as a lithium battery assembler plus
-an IOCO quota. **The state has built a cheaper, lower-barrier on-ramp into the battery than into
-the vehicle**, and `battery-import-cost.md` shows the battery is **53% of FOB cost**.
+🔴 **This is the most strategically interesting finding in the file — but state it precisely.**
+
+**Neither B nor C requires EDB certification as a *vehicle manufacturer* under SRO 656(I)/2006.**
+That is the heavy gate, and it is the one Route A cannot avoid.
+
+⚠️ **But Routes B and C are not identically clean, and an earlier draft of this file overstated it:**
+
+| | Part | EDB involvement |
+|---|---|---|
+| **Route B** — cells, sr.143 | **Part-III** — "Other Goods" | 🟢 **None.** Conditions are online information-furnishing only |
+| **Route C** — pack BOM | **Part-I** — "Plant, Machinery, Equipment … Capital Goods" | ⚠️ **Subject to Part-I's note**: goods must *"not [be] listed in the locally manufactured items, notified through a Customs General Order … or, as the case may be, **certified as such by the Engineering Development Board**"* |
+
+**So Route C does touch EDB** — not to certify *you* as a manufacturer, but to determine whether
+the *item* is locally made. **That is a far lighter test than SRO 656 vehicle certification, and it
+is not nothing.** 🔴 **If a pack casing or harness is on the locally-manufactured CGO list, that
+line loses its 0%.**
+
+**The state has still built a lower-barrier on-ramp into the battery than into the vehicle** — and
+`battery-import-cost.md` shows the battery is **53% of FOB cost.**
 
 ---
 
@@ -248,6 +272,29 @@ The block survives **verbatim in structure and condition**, still at **0%**:
 (7310.1000), glue port (8419.8090), transfer tanks (7310.1000), booster pumps (8413.7090) and
 magnetic filters (8421.3090). **This is capital equipment for building a battery plant, not for
 assembling packs — noted for completeness, not proposed.**
+
+### 🟢 Route E — charging infrastructure at 0%, with NO conditions at all
+
+Found on the same OCR pass, **Part-I** (serial 29 in the FY2025-26 numbering), confirmed present in
+the substituted schedule at **Gazette page 707 (PDF p181)**:
+
+| Description | PCT | Customs duty | **Condition** |
+|---|---|---:|---|
+| **Charging station for electric vehicle** | **8504.4030** | **0%** | **Nil** |
+
+🔴 **"Nil" is the whole condition column.** No EDB certification, no IOCO quota, no Sales Tax
+registration test, no quantity cap, no expiry. **This is the cleanest EV concession in the entire
+schedule** — and it is the one nobody in this research had looked for.
+
+**Why it matters to the fleet thesis specifically:** `fleet-model.md` and the battery work both
+concluded that **uptime is the product** and that a 65 km machine on a 6-hour charge is useless at
+an 80–128 km duty cycle. The answer to that is charging or swapping density — and
+**the charging hardware lands duty-free, unconditionally.**
+
+⚠️ **What this does NOT tell you:** what a station costs, what 8504.4030 actually covers (it is a
+*static converter* line — a swap cabinet with racking and BMS may classify elsewhere), or anything
+about the electricity connection, which is where the real cost and the real delay usually sit.
+`[PLACEHOLDER: landed cost of one charging/swap station, and the K-Electric commercial connection]`
 
 ---
 

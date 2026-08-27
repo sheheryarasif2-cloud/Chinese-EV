@@ -660,3 +660,71 @@ gives exit 128 / HEAD unmoved / tree dirty and **the guard fires**. Live run: `2
 
 ⚠️ **The Supreme workspace's sync scripts have the same "trust the exit code" shape** and were
 NOT touched. Worth the same treatment if it ever false-alarms there.
+
+---
+
+## 27-Aug-2026 (evening) — all battery routes settled, plus two findings nobody looked for
+
+### 🔧 TOOLING: tesseract 4.1.1 installed in WSL (`sudo apt-get install tesseract-ocr`)
+🔴 **This is the unlock for the Finance Act.** Pages 77–255 are SCANNED IMAGES; `pdftotext` misses
+every schedule. Blind page-probing failed four times. **OCR made all 92 schedule pages greppable
+in one pass** (`pdftoppm -r 200` → `tesseract --psm 6`), ~25 min.
+Archived: `06-sources/finance-act-2026-schedules-OCR.txt`. 🔎 **Gazette page = PDF page + 526.**
+
+### 🟢 ALL FOUR BATTERY ROUTES CONFIRMED IN THE SUBSTITUTED SCHEDULE
+| Route | Where | Duty | Gate |
+|---|---|---|---|
+| **A** pack as EV CKD component, 85.07 "other than lead acid" | Part-V(A) T-II sr.3 | 1% | **EDB vehicle cert (SRO 656)** |
+| **B** **Lithium Ion Cells 8507.6000** | **Part-III sr.143** (Gazette 761-2) | **0%** | 🟢 Sales Tax reg + IOCO. **NO EDB** |
+| **C** Parts of Lithium Batteries (13-line BOM) | **Part-I** (Gazette 700) | **0%** | Sales Tax reg + IOCO **+ Part-I locally-manufactured test (EDB may certify)** |
+| **D** Li-battery *manufacturing equipment* | Part-I sr.6(d) | 0% | EDB Annex-B. ⚠️ mostly "Omitted" now |
+
+🔴 **CITATION CORRECTED: sr.143 is PART-III ("Raw Materials/Inputs … Other Goods"), NOT Part-I.**
+Part-III's conditions are online info-furnishing ONLY — read in full, **no EDB, no local-manufacture
+test**. ⚠️ **And my "Routes B and C need no EDB at all" was TOO STRONG for C** — Part-I's note
+requires goods not be on the locally-manufactured CGO list *or* be EDB-certified as such.
+**Route C ≠ Route B. Do not merge them again.**
+⚠️ Route C trimmed by the substitution: **copper bar 7407.1010 OMITTED**, 2 of 3 DC-breaker codes
+omitted. **Cells and BMS card both survive.**
+
+### 🟢 ROUTE E — the cleanest concession in the schedule, and nobody had looked for it
+**"Charging station for electric vehicle · 8504.4030 · 0% · Condition: Nil"** (Part-I, Gazette 707).
+🔴 **"Nil" is the ENTIRE condition column** — no EDB, no IOCO, no Sales Tax test, no cap, no expiry.
+**Uptime is the fleet product; the hardware that fixes it lands duty-free.** ⚠️ 8504.4030 is a
+*static converter* line — a swap cabinet may classify elsewhere; and nothing here covers the
+K-Electric connection, where the real cost/delay sits.
+
+### 🔴 CHEMISTRY IS TAXED 2× — lithium wins twice
+| | CD | ACD | RD | pre-tax |
+|---|---|---|---|---|
+| **8507.6000 lithium** | 10% | — | 2% | **12%** |
+| **8507.2000 lead-acid (traction)** | 20% | 2% | 2% | **24%** |
+| **8507.1010 lead-acid starter, expressly "vehicles of heading 87.11"** | 25% | 11% | — | **36%** |
+Lead-acid is **excluded from the 1% concession by name AND carries double the duty.** 🟢 **Policy and
+engineering agree for once** — the graphene/lead-acid tier that dies in 8–13 months is also the one
+the border taxes hardest. ⚠️ **TIPP prints the SAME 12-digit product string on 8507.2000 and
+8507.6000** — its sub-code descriptions are demonstrably unreliable.
+🔎 TIPP ids: **27746**=8504.4090 · **27749**=8507.1010 · **27750**=8507.2000 · **27751**=8507.6000.
+
+### 🟢 NO LOW-SPEED CLASS EXISTS → `03-pakistan/vehicle-class-and-registration.md`
+**Provincial Motor Vehicles Ordinance 1965**, read in full. *"motor vehicle"* = mechanically
+propelled, road-adapted, *"whether … from an external or internal source"*; *"motor cycle"* = <4
+wheels, unladen ≤ **900 lb (408 kg)**. 🔴 **NO wattage/kW/cc/speed threshold anywhere**, and s.23(1)
+is unconditional. **Every e-2W in Pakistan is a motor cycle in law.**
+⚠️ **CORRECTS the vendor-site claim** that <250W needs no registration — **no basis in the Ordinance**;
+it is Indian rules restated. 🔴 **The sub-97k tier cannot be unlocked by regulatory arbitrage** —
+it needs primary legislation amended in four provinces.
+🟢 **Balochistan publishes the missing mechanism:** EV fees are charged in the ordinary band *"after
+conversion of power of electric motor from Kilo Watts (KWs) equivalent to engine capacity (cc)"*
+— **but the ratio is NOT published**, and it decides 1% vs 2% of value.
+🔴 **Sindh is the outlier:** Balochistan waives MV tax to 2030, Punjab 95%, KPK (4-wheelers) to 2028
+— **Sindh publishes NO EV concession, only a Rs 5,000 late-registration penalty naming "EV Scooters"**
+(which independently corroborates that registration is compulsory). **Karachi is in the one province
+offering EVs nothing.** Keep it in proportion: ~PKR 300–600k across 200 machines. **The signal, not the sum.**
+
+### 🟢 FREIGHT — 20ft Shenzhen→Karachi **US$1,800–2,200**, transit **9–10 days**
+⚠️ **Transit contradicts the suppliers' 25–35 days** — both true: theirs is door-to-door, this is
+port-to-port. **Do not net them.** 🔴 **Units-per-container is a GUESS** (~50 @ 0.6m³ → PKR
+10–12.2k/unit); no supplier has given crated volume or gross weight, and a container can weigh out
+before it cubes out. 🔴 **Lithium is DG — US$1,800–2,200 is a general-cargo rate and understates it.**
+**CIF ≈ PKR 121,000–123,200/unit.** The gap to retail is decided by **EDB certification, not kit price.**

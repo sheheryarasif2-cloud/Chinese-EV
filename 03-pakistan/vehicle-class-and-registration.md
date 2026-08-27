@@ -124,13 +124,72 @@ The band is presumably the ≤149cc one — **but that is an inference, not a pu
 uncertainty is a clean 2×.** `[PLACEHOLDER: which band Sindh Excise actually applies to an EV]`
 **This is a counter question, not a research question.**
 
+---
+
+## 🟢 How a zero-cc vehicle is assessed — Balochistan publishes the mechanism
+
+**Source:** Balochistan Excise, *Schedule of Taxes and Fees* (`mvtx.pdf`, posted Jan 2026, fees
+w.e.f. 15-05-2025), read directly. Archived as `06-sources/balochistan-mvtx-schedule.pdf`.
+
+> ***Explanation – II:** The taxes / registration fee for electric vehicles will be charged on the
+> basis of respective categories wherein it falls, **after conversion of power of electric motor
+> from Kilo Watts (KWs) equivalent to engine capacity (cc)**.*
+
+Repeated under the registration-fee table:
+
+> *Note: The Registration/other fees for Electric vehicles will be charged on the basis of
+> respective categories wherein it falls and after conversion of power of Electric Motors from
+> Kilo Watts (kw) equivalent to Engine Capacity (cc). **The rebate shall be allowed on
+> registration of EVs subject to the Electric Vehicle Policy.***
+
+🟢 **So the answer is: kW is converted to a cc-equivalent, and the vehicle is then assessed in the
+ordinary band.** The cc-banded schedule is not a gap — it is applied through a conversion.
+
+🔴 **But the conversion factor is NOT published in this document.** "kW equivalent to cc" with no
+ratio stated. **That is not a rounding detail** — a 1,500 W motor could land either side of the
+149cc line, which is the difference between **1% and 2% of vehicle value.**
+`[PLACEHOLDER: the kW→cc conversion factor, and the instrument that sets it]`
+
+**Balochistan's own motorcycle figures, for benchmarking:**
+
+| | |
+|---|---|
+| Motorcycle / scooter **token tax** | **Rs. 1,500 lifetime** |
+| Motor cycle **registration fee** | **1% of value** |
+
+## ⚠️ Sindh is the outlier — and Sindh is the target market
+
+| Province | EV treatment | Evidence |
+|---|---|---|
+| **Balochistan** | Motor vehicle tax **waived in full on EVs to 30 June 2030** (Finance Act 2026); kW→cc conversion published | press + official schedule |
+| **Punjab** | **95% exemption** on both registration fee and annual motor vehicle tax for EVs | press |
+| **KPK** | **No token tax on electric four-wheelers to 30 June 2028** | press |
+| 🔴 **Sindh** | **No published EV concession found.** Only an "EV Scooters" **late-registration penalty** of Rs. 5,000 | official schedule |
+
+🔴 **Karachi sits in the one major province that appears to offer electric vehicles nothing.**
+Three provinces publish concessions; Sindh publishes a penalty.
+
+**Keep this in proportion.** On a PKR 150,000 machine the Sindh registration fee is
+PKR 1,500–3,000, so across 200 machines the gap versus Punjab's 95% rebate is on the order of
+**PKR 300,000–600,000 — real, but not thesis-changing.** ⚠️ **The signal matters more than the
+sum:** it says provincial policy support cannot be assumed in the market this business would
+actually operate in, and any pitch that leans on "government support for EVs" is weaker in Sindh
+than the national NEV Policy implies.
+
+⚠️ **Grade honestly:** Balochistan's and Sindh's schedules were read directly; **Punjab's and
+KPK's figures are press-reported and unverified against their own schedules.**
+
 ## Open items
 
-1. 🟢 **Partly closed** — Sindh's bands captured above. 🔴 **Still open: which band an EV is
-   assessed under**, plus annual token tax (Sindh offers lifetime token for ≤1000cc — does an EV
-   qualify?), and the equivalent schedules for Punjab, KPK and Balochistan.
-   ⚠️ **Balochistan reportedly exempts EVs entirely** `[VERIFY]` — if true, registering a fleet
-   there and operating in Karachi is a question worth asking a lawyer, not assuming.
+1. 🔴 **The kW→cc conversion factor** — the one number that decides which band an e-bike falls in.
+   Balochistan names the mechanism without publishing the ratio.
+2. 🔴 **Whether Sindh applies the same kW→cc conversion**, and whether any Sindh EV concession
+   exists that is simply not on the page read. **This is a counter question.**
+3. **Verify Punjab and KPK against their own schedules**, not press.
+4. **Whether a fleet can register in a concession province and operate in Karachi** — plate
+   jurisdiction, token tax liability and insurance all turn on it. **A lawyer's question, not a
+   researcher's**, and not something to assume.
+5. **Annual token tax for an e-bike in Sindh** — Balochistan's lifetime Rs. 1,500 is the benchmark.
 2. **Whether any province has issued an EV-specific registration notification** — the NEV Policy
    2025-30 may direct one.
 3. **Whether a rental/fleet operator can register in the company's name** and what that does to

@@ -89,6 +89,7 @@ td{padding:3.6pt 5pt;border-bottom:.5pt solid #dfe4e6;vertical-align:top}
     <li><strong>India</strong> — the market that already ran this cycle</li>
     <li><strong>Supply side</strong> — audited financials, the MOQ chasm, the battery layer</li>
     <li><strong>Regulation</strong> — the Fifth Schedule's own words, the battery's three tariff routes, the sunset</li>
+    <li><strong>The vehicle in law</strong> — registration, the missing low-speed class, provincial asymmetry</li>
     <li><strong>Landed cost</strong> — CKD kits, battery pricing, and the supplier spread</li>
     <li><strong>Factory gate to shelf</strong> — the 3.3× multiple, at a dated FX rate</li>
     <li><strong>Price catalogues</strong> — Pakistan, India, China</li>
@@ -563,8 +564,9 @@ td{padding:3.6pt 5pt;border-bottom:.5pt solid #dfe4e6;vertical-align:top}
     <thead><tr><th>Route</th><th>Duty</th><th>What it requires</th></tr></thead>
     <tbody>
       <tr><td class="co">A · Pack as an EV CKD component<br><span class="small">"Batteries other than lead acid", 85.07</span></td><td class="n"><strong>1%</strong></td><td><strong>EDB certification as an electric motorcycle manufacturer</strong> + quota</td></tr>
-      <tr><td class="co">B · Lithium-ion cells<br><span class="small">8507.6000, Part-I serial 143</span></td><td class="n"><strong>0%</strong></td><td>Sales Tax registration as a <strong>lithium-ion battery manufacturer</strong> + IOCO quota</td></tr>
-      <tr><td class="co">C · Full pack bill of materials<br><span class="small">13 lines, cells to terminal covers</span></td><td class="n"><strong>0%</strong></td><td>Sales Tax registration as a <strong>lithium battery assembler</strong> + IOCO quota</td></tr>
+      <tr><td class="co">B · Lithium-ion cells<br><span class="small">8507.6000, <strong>Part-III</strong> serial 143</span></td><td class="n"><strong>0%</strong></td><td>Sales Tax registration as a <strong>lithium-ion battery manufacturer</strong> + IOCO quota. <strong>No EDB test in Part-III</strong></td></tr>
+      <tr><td class="co">C · Full pack bill of materials<br><span class="small">13 lines, cells to terminal covers, <strong>Part-I</strong></span></td><td class="n"><strong>0%</strong></td><td>Sales Tax registration as a <strong>lithium battery assembler</strong> + IOCO quota, <strong>and</strong> Part-I’s locally-manufactured-items test (EDB may certify)</td></tr>
+      <tr><td class="co"><strong>E · Charging station for electric vehicle</strong><br><span class="small">8504.4030, Part-I</span></td><td class="n"><strong>0%</strong></td><td><strong>Condition column reads &quot;Nil&quot;.</strong> No EDB, no IOCO, no registration test, no expiry</td></tr>
       <tr><td class="co"><strong>No qualification</strong></td><td class="n"><strong>10% + 2%</strong></td><td>CD 10% + RD 2%, then ST 18% and withholding 11%</td></tr>
     </tbody>
   </table>
@@ -579,9 +581,24 @@ td{padding:3.6pt 5pt;border-bottom:.5pt solid #dfe4e6;vertical-align:top}
     </p>
     <p>
       <strong>And the state has built a lower-barrier on-ramp into the battery than into the vehicle.</strong>
-      Routes B and C need <strong>no EDB vehicle certification at all</strong> — only Sales Tax registration and
-      an IOCO quota. Given the battery is <strong>53% of FOB cost</strong>, that is a materially different
-      business to enter, at a materially lower regulatory bar.
+      Neither route B nor C needs EDB certification as a <em>vehicle manufacturer</em> under SRO 656(I)/2006 —
+      the heavy gate, and the one route A cannot avoid. Given the battery is <strong>53% of FOB cost</strong>,
+      that is a materially different business to enter, at a materially lower regulatory bar.
+    </p>
+    <p>
+      <strong>Stated precisely, because the two routes are not identically clean:</strong> route B sits in
+      Part-III, whose conditions are online information-furnishing only — <strong>no EDB test whatsoever.</strong>
+      Route C sits in Part-I, which additionally requires the goods not be on the locally-manufactured list
+      notified by Customs General Order, <em>or</em> be certified as such by EDB. <strong>That is a far lighter
+      test than vehicle certification, but it is not nothing</strong> — if a casing or harness is on that list,
+      the line loses its 0%.
+    </p>
+    <p>
+      <strong>And the cleanest concession in the whole schedule is the one nobody looked for:</strong> a charging
+      station for an electric vehicle enters at <strong>0% with &quot;Nil&quot; in the condition column.</strong>
+      No certification, no quota, no expiry. Since uptime is the product for a fleet, and a 65 km machine on a
+      six-hour charge is useless at an 80–128 km duty cycle, <strong>the hardware that answers that problem lands
+      duty-free.</strong>
     </p>
   </div>
 
@@ -594,9 +611,33 @@ td{padding:3.6pt 5pt;border-bottom:.5pt solid #dfe4e6;vertical-align:top}
       <tr><td class="co">Regulatory duty</td><td class="n">2% <span class="small">(to 30 Jun 27)</span></td><td class="n">—</td></tr>
       <tr><td class="co">Sales tax</td><td class="n">18%</td><td class="n">18%</td></tr>
       <tr><td class="co">Income tax withholding</td><td class="n">11%</td><td class="n">12%</td></tr>
-      <tr><td class="co">Provincial cess, Karachi</td><td class="n">1.80–1.85%</td><td class="n">1.80–1.85%</td></tr>
+      <tr><td class="co">Provincial cess, Karachi</td><td class="n">1.80&ndash;1.85%</td><td class="n">1.80&ndash;1.85%</td></tr>
     </tbody>
   </table>
+
+  <h3>And the chemistry is taxed differently &mdash; by a factor of two</h3>
+  <table>
+    <thead><tr><th>Line</th><th>Description</th><th class="n">CD</th><th class="n">ACD</th><th class="n">RD</th><th class="n">Duty pre-tax</th></tr></thead>
+    <tbody>
+      <tr><td class="co">8507.6000</td><td><strong>Lithium-ion</strong></td><td class="n">10%</td><td class="n">&mdash;</td><td class="n">2%</td><td class="n"><strong>12%</strong></td></tr>
+      <tr><td class="co">8507.2000</td><td>Other lead-acid <span class="small">(the traction line)</span></td><td class="n">20%</td><td class="n">2%</td><td class="n">2%</td><td class="n"><strong>24%</strong></td></tr>
+      <tr><td class="co">8507.1010</td><td>Lead-acid starter, expressly <em>"meant for vehicles of heading 87.11"</em></td><td class="n">25%</td><td class="n">11%</td><td class="n">&mdash;</td><td class="n"><strong>36%</strong></td></tr>
+    </tbody>
+  </table>
+  <div class="flag g">
+    <span class="lb">Policy and engineering point the same way, for once</span>
+    <p>
+      <strong>Pakistan penalises lead-acid twice, and the penalties compound:</strong> it is excluded from the 1%
+      concession by name, and it carries <strong>double the statutory duty</strong> of lithium &mdash; triple on
+      the starter line.
+    </p>
+    <p>
+      So the cheap Chinese graphene/lead-acid tier &mdash; <strong>the one that dies in 8&ndash;13 months at fleet
+      duty</strong> &mdash; is also <strong>the one the border taxes hardest.</strong> The chemistry that survives
+      Pakistani fleet service is the chemistry the tariff favours.
+    </p>
+  </div>
+
   <p class="small">
     Source: Trade Information Portal of Pakistan, Pakistan Single Window. <strong>No total is stated</strong>
     because sales tax and withholding apply to duty-inclusive value and the stacking order is a clearing-agent
@@ -654,6 +695,95 @@ td{padding:3.6pt 5pt;border-bottom:.5pt solid #dfe4e6;vertical-align:top}
 </section>
 
 <!-- ============ 8 LANDED COST ============ -->
+
+<section>
+  <p class="eyebrow">Section 7c</p>
+  <h2>The vehicle in law, and what it costs to put on the road</h2>
+
+  <p class="small">
+    India's entry tier exists because India created a <strong>25 kmph class beneath registration</strong>.
+    This checks whether Pakistan has one. Source: <strong>Provincial Motor Vehicles Ordinance, 1965</strong>,
+    read in full.
+  </p>
+
+  <div class="flag">
+    <span class="lb">No low-speed class exists, and the law leaves no room to read one in</span>
+    <p>
+      <strong>"Motor vehicle"</strong> means any mechanically propelled vehicle adapted for road use
+      <em>"whether the powers of propulsion is transmitted thereto from an external or internal source"</em>.
+      <strong>"Motor cycle"</strong> adds only two tests: fewer than four wheels, and unladen weight not
+      exceeding <strong>900 pounds (408 kg)</strong>.
+    </p>
+    <p>
+      <strong>There is no wattage, kW, cc or top-speed threshold anywhere in either definition</strong> &mdash; the
+      whole Ordinance was searched. And section 23(1) is unconditional: <em>"No person shall drive any motor
+      vehicle &hellip; unless the vehicle is registered."</em> The exemptions that exist cover dealers,
+      road-rollers and driving to the registration office. <strong>Nothing keyed to power or speed.</strong>
+    </p>
+    <p>
+      So <strong>every electric two-wheeler in Pakistan is a motor cycle in law</strong> &mdash; the heaviest in
+      the catalogues, the 86 kg ICON e:, is under a quarter of the weight ceiling. <strong>The sub-PKR-97,000
+      tier cannot be unlocked by regulatory arbitrage</strong>; it would take amending primary legislation in
+      four provinces separately.
+    </p>
+  </div>
+
+  <p class="small">
+    &#9888; <strong>This corrects a claim repeated across Pakistani EV vendor sites</strong> &mdash; that machines
+    below 250 W may not need registration. <strong>It has no basis in the Ordinance</strong> and appears to be
+    Indian rules restated for a Pakistani audience. Selling on it would hand the buyer a legal exposure.
+  </p>
+
+  <h3>How a zero-cc vehicle is assessed &mdash; and where the ambiguity sits</h3>
+  <p>
+    Every provincial fee schedule is banded by engine capacity. <strong>Balochistan publishes the bridge:</strong>
+    fees are charged in the ordinary band <em>"after conversion of power of electric motor from Kilo Watts (KWs)
+    equivalent to engine capacity (cc)."</em>
+  </p>
+  <div class="flag w">
+    <span class="lb">The mechanism is published; the number is not</span>
+    <p>
+      <strong>No conversion ratio is given anywhere in the schedule.</strong> That is not a rounding detail &mdash;
+      a 1,500 W motor could land either side of the 149 cc line, which in Sindh is the difference between
+      <strong>1% and 2% of vehicle value.</strong>
+    </p>
+  </div>
+
+  <table>
+    <thead><tr><th>Province</th><th>Electric vehicle treatment</th><th>Evidence</th></tr></thead>
+    <tbody>
+      <tr><td class="co">Balochistan</td><td>Motor vehicle tax <strong>waived in full to 30 Jun 2030</strong>; kW&rarr;cc conversion published; motorcycle token <strong>Rs 1,500 lifetime</strong></td><td><span class="tag t-a">Schedule</span></td></tr>
+      <tr><td class="co">Punjab</td><td><strong>95% exemption</strong> on registration fee and annual motor vehicle tax</td><td><span class="tag t-c">Press</span></td></tr>
+      <tr><td class="co">KPK</td><td>No token tax on electric <em>four-wheelers</em> to 30 Jun 2028</td><td><span class="tag t-c">Press</span></td></tr>
+      <tr><td class="co"><strong>Sindh</strong></td><td><strong>No published EV concession found.</strong> Bands: &le;149cc <strong>1% of value</strong>, 150cc+ <strong>2%</strong>. Only EV mention is a <strong>Rs 5,000 late-registration penalty on "EV Scooters"</strong></td><td><span class="tag t-a">Schedule</span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="flag">
+    <span class="lb">Karachi is in the one major province that offers electric vehicles nothing</span>
+    <p>
+      Three provinces publish concessions. <strong>Sindh publishes a penalty.</strong> Keep it in proportion
+      &mdash; on a PKR 150,000 machine the fee is PKR 1,500&ndash;3,000, so across 200 machines the gap against
+      Punjab is <strong>PKR 300,000&ndash;600,000. Real, not thesis-changing.</strong>
+    </p>
+    <p>
+      <strong>The signal matters more than the sum.</strong> Provincial support cannot be assumed in the market
+      this business would actually operate in, and any pitch leaning on "government support for EVs" is weaker
+      in Sindh than the national NEV Policy implies.
+    </p>
+  </div>
+
+  <div class="flag g">
+    <span class="lb">And one objection this removes</span>
+    <p>
+      A delivery rider's machine was always going to be registered, licensed and plated. <strong>The fleet
+      model never depended on an exemption</strong>, so none of this weakens it &mdash; it closes off a different
+      strategy. Registration also makes every machine <strong>traceable, insurable and pledgeable</strong>,
+      which is what makes a rental fleet financeable at all.
+    </p>
+  </div>
+</section>
+
 <section>
   <p class="eyebrow">Section 8</p>
   <h2>Landed cost — CKD kit pricing</h2>
@@ -895,7 +1025,7 @@ td{padding:3.6pt 5pt;border-bottom:.5pt solid #dfe4e6;vertical-align:top}
 
   <ul>
     <li><strong>No supplier, bank, delivery platform or regulator has been contacted.</strong> Every availability judgement is inference from public evidence.</li>
-    <li><strong>Whether the two 0% battery routes survived the substitution is unconfirmed.</strong> They were read from the FY2025-26 schedule; Part-I was renumbered wholesale (serials 17–43 now read "Omitted") and the Gazette pages are scanned images, so the lithium block could not be relocated. <strong>Route A at 1% is confirmed current; routes B and C are leads.</strong></li>
+    <li><strong>What a charging or swap station actually costs is unknown.</strong> The import duty is 0% and unconditional, but 8504.4030 is a <em>static converter</em> line and a swap cabinet with racking and battery management may classify elsewhere. Nothing here covers the electricity connection — where the real cost and delay usually sit.</li>
     <li><strong>The correct 12-digit sub-code for a 72V traction pack.</strong> The rates captured sit on the "portable application" sub-code; a traction pack may fall elsewhere. Heading-level rates should hold, but the sub-code must be confirmed before filing. <strong>Lead-acid's own statutory rate was not captured</strong>, so the cost of the excluded chemistry is unsized.</li>
     <li><strong>Dangerous-goods freight on UN38.3 lithium is uncosted</strong>, and the IOCO quota process for the 0% battery routes — timeline, cost, feasibility — is entirely unknown. IOCO is a different body from EDB.</li>
     <li><strong>Three referenced instruments have not been read:</strong> SRO 693(I)/2006 (the ACD on localised parts), SRO 929(I)/2024 sr.3(xi) (whose own record in the government portal is self-contradictory on its expiry), and SRO 655(I)/2006.</li>
@@ -945,6 +1075,9 @@ td{padding:3.6pt 5pt;border-bottom:.5pt solid #dfe4e6;vertical-align:top}
     <li>NEPRA tariff determination — SRO 279(I)/2026</li>
     <li><strong>THE FIFTH SCHEDULE TO THE CUSTOMS ACT, 1969 (IV OF 1969)</strong> — FBR, 87pp, FY2025-26 edition, read in full (Part-V(A) Table-II and Part-I serials 143 and (d))</li>
     <li><strong>Finance Act 2026</strong> — Gazette of Pakistan Extraordinary, Part I, 26 June 2026, 256pp; s.3(14) and the Second Schedule (the substituted Fifth Schedule), read from the scanned pages</li>
+    <li><strong>The Provincial Motor Vehicles Ordinance, 1965</strong> (W.P. Ord. XIX of 1965) &mdash; full text</li>
+    <li><strong>Sindh Excise, Taxation &amp; Narcotics Control Department</strong> &mdash; motor vehicle registration fee schedule</li>
+    <li><strong>Balochistan Excise</strong> &mdash; Schedule of Taxes and Fees, Jan 2026 (the kW&rarr;cc conversion rule)</li>
     <li><strong>S.R.O. 1063(I)/2026</strong>, 30 June 2026 — additional customs duty, superseding SRO 1151(I)/2025</li>
     <li><strong>Trade Information Portal of Pakistan</strong> — Pakistan Single Window: statutory duty, cess and measure records for 8507.6000, 8711.6040 and 8711.6060</li>
     <li>Board of Investment — Fifth Schedule EV concession detail, PCT 8711.6040</li>
