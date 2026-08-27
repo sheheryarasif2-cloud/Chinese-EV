@@ -424,6 +424,22 @@ later. Save the file, and record where and when it came from.
   brand sites geo-blocked (yadea.com.cn 404s from here), real pricing on Tmall/JD behind
   sessions, heavy white-labelling. **Anyone offering a complete Chinese model list is scraping
   B2B storefronts or inventing it.**
+- **27-Aug-2026** — 🟢 **CKD KIT PRICES FOUND** → `05-numbers/ckd-kit-pricing.md`. Alibaba
+  geo-localises to PKR, so these are the numbers a Pakistani buyer sees.
+  **Complete CKD kits list at PKR 51,706–93,121 at MOQ 50** — KeywayEV K037 (12″, 72V,
+  1001–2000W) **PKR 51,706 @ 50**; CKD SKD 10″ 600/800W **55,748 @ 50**; SAIGE EV EEC 1500W
+  **57,617–59,174**; CKD EEC 10″ **61,977 @ 50**. **A 50-kit first order is ~PKR 2.75m — 5.5% of
+  the PKR 50m ceiling.** Against Pakistani retail (cheapest 97,000; volume band 150–250k; T5
+  253,500) **the import stack has real margin, not assumed margin — first hard evidence of it.**
+  🔴 **BUT: the battery is almost certainly NOT included.** The one listing that bundles
+  batteries (3000W + lead-acid) is **PKR 348,189–354,418 — ~6× the battery-less kits.** So
+  **true landed cost = kit + battery, and the battery may exceed the kit.** The favourable
+  arithmetic is only half the picture until battery import cost is known.
+  ⚠️ These are **self-declared listing prices, Alibaba's undated FX — NOT quotes.** No supplier
+  contacted, no RFQ sent, no account created. ⚠️ "CKD kit" has no consistent definition —
+  some are complete-vehicle-minus-battery, some are motor+controller conversion kits.
+  📇 Named for RFQ: **KeywayEV · SAIGE EV Group · Benlg (⚠️ check vs Pakistani "Benling") ·
+  LVJIAN · Xuchang Hengna** + MDKA/Legend/Taiya. An 8-point RFQ checklist is in the file.
 - **25-Aug-2026** — promoted to a full standalone workspace, named **Chinese EV Research**.
   Folder renamed to `Documents\Chinese-EV-Research`; its own memory folder created and
   committed to a local git repo on branch `memory-chinese-ev-research`. **No remote yet** —
