@@ -372,6 +372,22 @@ later. Save the file, and record where and when it came from.
   students-only, balloted — riders are NOT eligible.) ⚠️ Trade-off: rental **locks capital
   13–20 months per machine** — this becomes asset finance with a supply arm, and should be
   funded as one.
+- **26-Aug-2026** — 📚 **MODEL & PRICE CATALOGUES, four documents:**
+  `03-pakistan/pakistan-models-and-prices.md` · `04-comparables/india-models-and-prices.md` ·
+  `02-supply/china-models-and-prices.md` · `05-numbers/price-comparison.md`.
+  🔴 **Pakistan's entry tier is PKR 145–210k — AT OR BELOW the CD 70's 159,900** — so the
+  Yadea T5 at 245,000 this project anchored on is **mid-market, not the volume segment**.
+  Five brands sit within PKR 15k of each other at entry; **nobody is differentiated on price.**
+  🔴 **The value chain is now visible: audited Yadea ex-works ASP is RMB 1,878 for a scooter,
+  and the same brand's T5 retails in Pakistan at PKR 245,000.** Everything between is the
+  import stack — that is the business, and what K6 must model.
+  🔴 **BIGGEST PRODUCT FINDING: Yadea's sodium-ion Q1/DE3 at CNY 3,299–3,499** — its entry
+  models now use **no lithium at all** (92% capacity at −20°C, 80% charge in 15 min). If it
+  reaches export it **resets the cost floor** and removes lithium price/supply risk. **Market
+  leader deploying it, not a startup. Watch this.**
+  ⚠️ India's mainstream starts at **₹74,000** on a subsidy cut to just ₹5,000/vehicle — **volume
+  needed scale and localisation, not big subsidy.** 🔴 **Still missing and most important:
+  Atlas Honda Icon e pricing** — the actual competitor.
 - **25-Aug-2026** — promoted to a full standalone workspace, named **Chinese EV Research**.
   Folder renamed to `Documents\Chinese-EV-Research`; its own memory folder created and
   committed to a local git repo on branch `memory-chinese-ev-research`. **No remote yet** —
