@@ -386,8 +386,24 @@ later. Save the file, and record where and when it came from.
   reaches export it **resets the cost floor** and removes lithium price/supply risk. **Market
   leader deploying it, not a startup. Watch this.**
   ⚠️ India's mainstream starts at **₹74,000** on a subsidy cut to just ₹5,000/vehicle — **volume
-  needed scale and localisation, not big subsidy.** 🔴 **Still missing and most important:
-  Atlas Honda Icon e pricing** — the actual competitor.
+  needed scale and localisation, not big subsidy.**
+- **27-Aug-2026** — 📋 **MASTER LIST → `03-pakistan/MASTER-model-price-list.md`: ~90 Pakistani
+  models, 13 brands, exact prices**, pulled per-brand from PakWheels.
+  🟢 **ATLAS HONDA ICON e: FOUND — PKR 419,900**, 1500W, **Li-ion 1.58 kWh FIXED
+  (non-swappable)**, **65 km range**, 55 km/h, **6h charge, proprietary charger, NO fast
+  charge**, 86 kg. **It is 2.6× a CD 70 with LESS range than a Yadea T5 — and structurally
+  useless for fleet** (a rider doing 80–128 km/day cannot use a 65 km fixed-pack machine).
+  **The incumbent took a premium CONSUMER position, not a fleet one — the fleet gap is
+  confirmed open by the only company that could have closed it.**
+  🔴 **CORRECTION: the entry point is far lower than recorded.** **Evee Flipper PKR 97,000** and
+  **REVOO A04 PKR 100,000** sit WELL BELOW the CD 70's 159,900 — the earlier "entry tier is
+  145–210k" note is **superseded**. ~35 models from 10 brands sit in 150–250k; **nothing is
+  differentiated on price.**
+  🔴 **The lithium premium is now measurable like-for-like:** MS Jaguar Bolt 174,000 standard vs
+  **245,000 LFP (+71,000)**; REVOO A11 +42,000, A12 +62,000. **That is the key number for a
+  fleet buyer**, since lead-acid dies in 8–13 months at fleet cycles.
+  ⚠️ Crown contradiction: its own site markets its line as electric, PakWheels lists it as
+  non-electric — resolve before relying on either.
 - **25-Aug-2026** — promoted to a full standalone workspace, named **Chinese EV Research**.
   Folder renamed to `Documents\Chinese-EV-Research`; its own memory folder created and
   committed to a local git repo on branch `memory-chinese-ev-research`. **No remote yet** —
