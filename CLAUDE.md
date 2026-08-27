@@ -621,3 +621,42 @@ Part and serial, though note the staleness caveat above.
 ### Deliverables
 `03-pakistan/fifth-schedule-primary-text.md` rewritten (§2A the substituted schedule, §2B the ACD
 correction). Master dossier now **15pp**. Sources archived: Finance Act (42MB), SRO 1063.
+
+---
+
+## 27-Aug-2026 — the sync "commit FAILED" false alarm: what it was NOT
+
+🔴 **I misdiagnosed this first. `core.safecrlf` is NOT set.** Running
+`git config --get core.safecrlf; git config --get core.autocrlf` printed one `true` and one
+blank, and I attributed the `true` to the wrong setting. **`core.autocrlf=true` is set — from
+`C:/Program Files/Git/etc/gitconfig`, the normal Git-for-Windows default. `core.safecrlf` is
+unset.** ⚠️ **Never read a value off a two-command output without labelling which printed it.**
+
+### What actually happened
+At 17:39 `Sync-Workspace.ps1` threw `FAILED during 'commit' (exit 1)` — **while the commit
+(`24385af`) landed perfectly intact**, 42MB Finance Act included. Re-running pushed it cleanly.
+
+### Ruled out by experiment, not reasoning
+| Hypothesis | Test | Result |
+|---|---|---|
+| `core.safecrlf=true` | `config --show-origin --get-all` | **not set at all** |
+| CRLF warnings → non-zero | LF file through the real wrapper | **exit 0** |
+| 42MB binary → non-zero | 42MB random binary, throwaway repo | **exit 0** |
+| commit/post-commit hook | `ls .git/hooks` | **none active** |
+| failed auto-gc | `.git/gc.log`, `count-objects` | **no log, 239 loose objects** |
+
+**Not reproducible.** Treated as a one-off, cause unknown. **Do not "fix" it by guessing again.**
+
+### 🟢 The real fix: stop trusting an intermediate exit code
+`Sync-Workspace.ps1` now, on commit, **asks the repository what happened** instead of believing
+the exit code: it records HEAD before, runs commit outside the throwing wrapper, then re-reads
+HEAD and `status --porcelain`.
+- **HEAD unmoved OR changes remain → still throws.** Real failures still fail hard.
+- **HEAD moved AND tree clean but exit ≠ 0 → prints a NOTE and continues**, because the proof
+  this script rests on is the **remote-SHA comparison**, never an intermediate exit code.
+
+🟢 **Both paths PROVEN, not assumed** — happy path commits at exit 0; a planted `.git/index.lock`
+gives exit 128 / HEAD unmoved / tree dirty and **the guard fires**. Live run: `2a4c958`, verified.
+
+⚠️ **The Supreme workspace's sync scripts have the same "trust the exit code" shape** and were
+NOT touched. Worth the same treatment if it ever false-alarms there.
