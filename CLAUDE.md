@@ -728,3 +728,39 @@ port-to-port. **Do not net them.** 🔴 **Units-per-container is a GUESS** (~50 
 10–12.2k/unit); no supplier has given crated volume or gross weight, and a container can weigh out
 before it cubes out. 🔴 **Lithium is DG — US$1,800–2,200 is a general-cargo rate and understates it.**
 **CIF ≈ PKR 121,000–123,200/unit.** The gap to retail is decided by **EDB certification, not kit price.**
+
+---
+
+## 27-Aug-2026 ~19:57 — 🔴 FIVE RFQs SENT. The desk-research caveat is now partly void.
+
+**Sent from sheheryar.asif@gmail.com** on explicit instruction, after preparing drafts and getting
+a clear yes. Register + full text: `02-supply/rfq-and-supplier-contacts.md`.
+
+| Supplier | To | msg id |
+|---|---|---|
+| Wuxi Keyway EV (cheapest kit, K037) | liqingxia@keywayev.com | `1a043b9823d5e1f4` |
+| Wuxi SAIGE (top-6, 80k units/mo) | Info@saigebikes.com | `1a043b991edf4e95` |
+| BENLG (India base; the "Benling" question) | sales@ + cc director@benlg.com | `1a043b99c72ba30d` |
+| Koyosonic (cheap battery) | export@koyosonic.com | `1a043b9b92e8e2fd` |
+| Hunan CTS (dear battery) | emily@ctsbattery.com | `1a043b9c7a2504de` |
+
+✅ **Verified independently of the send call:** SENT **14→19 (+5 exactly)**, DRAFT stayed **4**
+(pre-existing drafts untouched). **Never trust a send tool's own success return — count the label.**
+
+🔴 **UPDATE EVERY FILE'S STANDING CAVEAT.** "No supplier, bank, platform or regulator contacted" is
+**now false for suppliers**. Still true for banks (K4), delivery platforms, EDB/IOCO/PSQCA/Sindh Excise.
+
+🔴 **Alibaba / Made-in-China RFQ forms need a logged-in ACCOUNT — I do not create accounts.**
+Direct email to company-published addresses is the only route. Contacts came from each firm's OWN
+site, not a platform inbox. ⚠️ `keywayev.com` times out on WebFetch but resolves via curl —
+its contact page gives **liqingxia@**, while search results reported **wulingli@**. Used the
+contact page.
+
+**Framing kept honest (N3):** the text states this is an evaluation, not a repeat order, and claims
+no company, volume or premises. **Inflating a track record would poison the quote and the relationship.**
+
+**Watch for, in order:** (1) who honours a warranty claim from Pakistan — K5, the weakest point;
+(2) crated dims + gross weight — freight/unit is currently a GUESS; (3) whether either battery firm
+quotes **cells only** → Route B goes live (0%, no EDB); (4) whether the 2× battery spread survives a
+real quote; (5) whether BENLG already has a PK distributor; (6) LC vs T/T-in-advance — K4.
+⚠️ **A non-reply is data too** — it answers K3.

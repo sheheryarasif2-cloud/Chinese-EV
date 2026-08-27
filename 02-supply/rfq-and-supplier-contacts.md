@@ -10,7 +10,7 @@ from a B2B platform's messaging system.
   existing volume and no premises. The text says what is true: **evaluation stage, selecting
   suppliers.** Inventing a track record to get a better price would poison the quote and the
   relationship.
-- **Drafts are prepared; nothing is sent without an explicit instruction naming the recipients.**
+- 🟢 **SENT 27-Aug-2026.** Drafts were prepared first and sent only on an explicit instruction. See Status at the foot of this file.
 
 ---
 
@@ -112,6 +112,39 @@ certification.** It could change the shape of the entry.
 | **K6 — landed cost** | Crated volume and weight, the last missing input to freight per unit |
 | **K8 — parts and service** | Whether a starter parts package exists |
 
-## Status
+## Status — 🟢 ALL FIVE SENT, 27-Aug-2026 ~19:57 PKT
 
-**Drafts prepared. Nothing sent.** Sending requires an explicit instruction naming the recipients.
+Sent from **sheheryar.asif@gmail.com** on the user's explicit instruction ("ok send all"), after a
+prepared-drafts review step.
+
+| Supplier | To | Gmail message id |
+|---|---|---|
+| Wuxi Keyway EV | liqingxia@keywayev.com | `1a043b9823d5e1f4` |
+| Wuxi SAIGE | Info@saigebikes.com | `1a043b991edf4e95` |
+| BENLG | sales@benlg.com · cc director@benlg.com | `1a043b99c72ba30d` |
+| Koyosonic Power | export@koyosonic.com | `1a043b9b92e8e2fd` |
+| Hunan CTS | emily@ctsbattery.com | `1a043b9c7a2504de` |
+
+✅ **Verified independently, not from the send call's own return value:** the SENT label went
+**14 → 19 (+5 exactly)** and DRAFT stayed at **4** — the four pre-existing drafts were untouched.
+
+### 🔴 This changes the project's own standing caveat
+
+Every file in this workspace carries the line *"no supplier, bank, platform or regulator has been
+contacted."* **That is now false for suppliers.** It remains true for banks (K4), delivery
+platforms and regulators (EDB, IOCO, PSQCA, Sindh Excise).
+
+### What to watch for in the replies
+
+1. 🔴 **Who honours a warranty claim from Pakistan (K5).** The weakest point in the thesis. Expect
+   vagueness; press for a named entity and a process.
+2. 🔴 **Crated dimensions and gross weight.** The last input to freight per unit — `battery-import-cost.md`
+   currently divides a container rate by a *guess* at how many fit.
+3. 🔴 **Whether Koyosonic and Hunan CTS quote cells separately.** If yes, Route B (0% duty, no EDB
+   vehicle certification) becomes live and may reshape the entry.
+4. ⚠️ **Whether the 2× battery spread survives a real quote**, or was an artefact of how each listed.
+5. ⚠️ **Whether BENLG already has a Pakistani distributor** — asked directly. A yes narrows the field.
+6. ⚠️ **Whether an LC is acceptable (K4)**, or they demand T/T in advance. T/T-only shifts the whole
+   working-capital profile.
+
+⚠️ **A non-reply is also data.** If a supplier will not quote 50–200 units, that is K3 answering.
