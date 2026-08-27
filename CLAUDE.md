@@ -445,3 +445,63 @@ later. Save the file, and record where and when it came from.
   committed to a local git repo on branch `memory-chinese-ev-research`. **No remote yet** —
   see Backup status above. Not wired into `Sync-Memory.ps1` and not mirrored into the
   Supreme vault, deliberately.
+
+---
+
+## 27-Aug-2026 — PDF deliverables, and three evidence gaps closed
+
+**Requested:** combine the research into a master PDF, put the artifacts into PDFs, focus only
+on research. Then: use Firecrawl / scraping connectors for more information.
+
+### 🔴 Firecrawl is NOT available in this environment
+`search_mcp_registry` returns **zero results** for firecrawl, scrape, crawl, web-scraping and
+extract. No generic scraping connector exists in the registry to install. **Do not promise one.**
+
+**What actually works, in order of usefulness:**
+1. **Real Chrome (`claude-in-chrome`) + `get_page_text`** — beat every block. Got the dated FX
+   table off Forex.pk after WebFetch returned only a "Loading…" widget.
+2. **WebFetch on a direct product URL** — works where the *search* page is blocked. Made-in-China
+   search returned "information is not available right now"; its product pages returned full
+   price tiers.
+3. ⚠️ **`javascript_tool` is fragile here** — Alibaba froze the renderer (CDP timeout 45s), and
+   one extraction was refused as `[BLOCKED: Cookie/query string data]`. **`get_page_text` is the
+   reliable path; JS is not.**
+
+### 🟢 GAP 1 CLOSED — battery import cost → `05-numbers/battery-import-cost.md`
+Three named suppliers, published quantity tiers, FOB Shenzhen/Guangzhou.
+**The finding is not the price, it is the spread:** at the same 50-unit tier the same nominal
+72V/30–35Ah pack is **PKR 59,281 (Koyosonic)** or **PKR 113,939 (Hunan CTS)** — the latter equals
+Pakistani retail (PKR 115,000) *before* freight, duty or tax.
+🔴 **The arbitrage is a property of the SUPPLIER, not of the trade.** Also confirmed: **the
+battery is 53% of FOB cost** (kit 51,706 + battery 59,281 = **110,987 FOB**), and **1,500 cycles
+@90% DOD = 3.0–4.8 fleet years**, but warranty is **1 year below 50Ah** — the K5 exposure, exactly.
+
+### 🟢 GAP 2 CLOSED — dated FX rate → `05-numbers/fx-rates.md`
+**Thu 27-Aug-2026 15:56 PST — USD/PKR 277.40/277.90, CNY/PKR 41.26/41.34** (Forex.pk,
+*indicative interbank, not a dealing rate*). First dated rate in the project; unblocks every
+`[PLACEHOLDER: rate + date]`.
+🔴 **Yadea's audited ex-works scooter ASP = PKR 77,636. The Yadea T5 retails in Pakistan at
+253,500 — a 3.3× multiple.** And **China's own retail (PKR 124,000–161,000) sits INSIDE Pakistan's
+volume band**, already carrying Chinese distribution margin. That premium is the opportunity —
+and precisely what a local assembler on the 1% CKD rate can compete away.
+
+### 🟢 GAP 3 CLOSED — petrol price → appended to `03-pakistan/petrol-baseline.md`
+**PKR 343.10 is CORRECT; the 414–415 press figure is wrong.** Month ran 329.82→343.10 across four
+independently reported notification dates.
+🔴 **Structural discovery: Pakistan reprices petrol DAILY since Aug 2026** under a new OGRA
+mechanism (the 26-Aug notification was valid "until August 27"). **No petrol figure may be quoted
+as "the price" again — only as the price on a stated date.** Strengthens the fleet pitch
+(volatility is what an e-bike removes); adds a risk (a crude fall now reaches the pump in days).
+
+### PDFs → `PDF/` (58 → 51 pages total)
+`01-Master-Research-Dossier.pdf` (13pp, A4) · `02-Decision-Board.pdf` (12pp) ·
+`03-Investor-Pitch.pdf` (10pp) · `04-Opening-Brief.pdf` (16pp).
+Source of the master is now tracked as `master-research-dossier.html`.
+
+⚠️ **Print-CSS lesson: `page-break-before:always` on every section CREATED dead pages.** A section
+running slightly long orphaned its trailing `page-break-inside:avoid` block, then the next forced
+break left the rest blank — a 301-char page. **Flowing the sections and adding
+`page-break-after:avoid` on h2/h3 took 20pp → 13pp with no loss.** Verify with per-page
+`pdftotext | wc -c`, not by eye.
+✅ **Checked and TRUE:** the Decision Board's hidden tab content DOES print (FAME, Ola, Huaihai,
+Atlas Honda all present in the PDF text) — the tabs are CSS-hidden, not absent from the DOM.

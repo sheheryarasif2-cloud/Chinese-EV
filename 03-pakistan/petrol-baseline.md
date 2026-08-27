@@ -98,3 +98,49 @@ Both are `[PLACEHOLDER]` until sourced.
 3. Dealer-network counts for **United and Road Prince** — the non-Honda alternatives, and the
    only plausible existing networks a new brand could rent rather than build.
 4. Domestic vs commercial electricity tariff for charging.
+
+---
+
+# 🟢 RESOLVED 27-Aug-2026 — the PKR 343.10 figure is correct
+
+The conflict flagged earlier (PKR 343.10 verified against a press figure of PKR 414–415) is
+closed. **PKR 343.10 is right; the 414–415 figure is wrong** and should not be used.
+
+Verified across multiple independent dates in August 2026:
+
+| Effective | PKR/litre | Move |
+|---|---:|---|
+| 7 Aug 2026 | 329.82 | −3.19 |
+| 21 Aug 2026 | 337.78 | +0.27 |
+| 22 Aug 2026 | 341.59 | — |
+| **26–27 Aug 2026** | **343.10** | **+1.12 from 341.98** |
+
+Petroleum Division notification, reported consistently by ARY News, Daily Pakistan and
+Mashriq TV. **The whole month sits in a 329.82–343.10 band. Nothing approaches 414.**
+
+## 🔴 The more important discovery: Pakistan now reprices fuel DAILY
+
+**Since August 2026 petrol prices are reviewed daily under a new OGRA pricing mechanism**, with
+revised rates published each day — the 26-Aug notification was explicitly valid only *"until
+August 27, 2026."*
+
+This replaces the fortnightly regime every earlier assumption in this research was built on.
+
+**What it changes:**
+
+1. ✅ **The TCO model is unaffected in direction.** Petrol moved 4.0% across the month; the
+   electric running-cost advantage is 3–7×. **No plausible daily move reverses the sign.**
+2. 🔴 **But no petrol figure in this research can be quoted as "the price" again** — only as
+   "the price on a stated date." Every cost-per-km number must now carry its date.
+3. 🟢 **It strengthens the fleet pitch and weakens the consumer one.** A rider facing a price
+   that can move every morning values a fixed electricity cost more, not less. **Daily
+   repricing makes fuel volatility a felt weekly experience rather than a fortnightly news
+   event** — and volatility, not just level, is what an electric bike removes.
+4. ⚠️ **It is also a downside risk.** A sustained fall in global crude now transmits to the
+   pump within days rather than weeks, eroding the saving faster than under the old regime.
+   **The TCO case should be re-run at a lower petrol price as a sensitivity** —
+   `[PLACEHOLDER: TCO at PKR 300 and PKR 275/litre]`.
+
+**Source:** OGRA / Petroleum Division daily notifications, August 2026. Evidence grade: press
+reporting of an official notification — consistent across three outlets and four dates, which
+is why it is treated as settled.
