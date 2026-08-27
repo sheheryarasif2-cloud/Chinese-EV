@@ -567,3 +567,57 @@ size ended Hero Electric and Okinawa.
   second time today. **`get_page_text` worked every time. Stop reaching for JS.**
 - ⚠️ **TIPP contradicts itself** on SRO 929(I)/2024 sr.3(xi): description says *"till 30th June,
   2025"*, `valid_to` field says **31-12-2040**. Read the SRO.
+
+---
+
+## 27-Aug-2026 (later still) — 🟢 THE FY2026-27 FIFTH SCHEDULE, OBTAINED
+
+**Requested:** get the FY2026-27 Fifth Schedule or the SRO. **Got both.**
+
+### 🔴 WHY IT COULD NOT BE FOUND: IT IS NOT A SEPARATE DOCUMENT
+**Finance Act 2026 s.3(14):** *"The Fifth Schedule to the Customs Act, 1969 shall be **substituted**
+in the manner provided for in the **Second Schedule to this Act**."*
+**The FY2026-27 Fifth Schedule IS the Second Schedule to the Finance Act 2026.** Whole schedule
+replaced, not amended. **Stop looking for a standalone FY2026-27 PDF on fbr.gov.pk — there isn't one.**
+Source: `download1.fbr.gov.pk/Docs/20266291261044366FinanceAct2026.pdf` → `06-sources/finance-act-2026.pdf`
+(Gazette of Pakistan Extraordinary Part I, 26-Jun-2026, 256pp, in force 1-Jul-2026).
+⚠️ **Pages 77–255 are SCANNED IMAGES** — `pdftotext` yields 213K chars and **misses every schedule**;
+179/256 pages return <60 chars. No tesseract on this machine. **Read them with `pdftoppm` + vision.**
+🔎 **Page map: Gazette page = PDF page + 526.** Part-V(A) Table-I = PDF p240 · **Table-II sr.3 = PDF p243.**
+
+### 🟢 K7 SETTLED IN PRIMARY LAW — Gazette p769, verbatim
+> *"The concession shall be admissible to manufacturers of electric motorcycle **on and from the
+> 1st day of July, 2025 till 30th day of June, 2027** subject to certification and quota
+> determination by the Engineering Development Board (EDB)."*
+
+The FY2025-26 wording (*"five years from 1st July, 2020"*) was **replaced outright**, not extended
+by proviso. Table-I sr.7/8 moved **2026 → 2027** identically (Gazette p766).
+🔴 **~10 months of runway.** EDB cert + supplier + LC + 15–45d lead + 25–35d sea must all fit inside.
+**The decision window is much shorter than the concession window.**
+🔴 **Everything else in sr.3 carried forward UNCHANGED — including the 8454.1000 converter typo.**
+**A wholesale substitution of the entire schedule did not fix it.** It is not a transcription slip
+in the old edition; it is the law.
+
+### 🔴 CORRECTION TO YESTERDAY: THE 4% ACD IS NOT PAYABLE
+**S.R.O. 1063(I)/2026, 30-Jun-2026**, s.18(5), **in supersession of SRO 1151(I)/2025**, effective
+**1-Jul-2026** → `06-sources/sro-1063-2026-acd.pdf`. Para 3 — ACD **shall not be levied** on:
+- **(xi) "Imports under PCT codes 8703.8030, 8711.6040 and 8711.6060"** ← **no expiry attached**
+- (iii) imports **under the Fifth Schedule** — *excluding* Part-I sr.30/33/35 and Part-III
+  sr.102/111/116(except xvi)/117/118 → **so 1% CKD components carry no ACD either**
+- (vii) imports under **SRO 693(I)/2006** → **no double ACD on localised parts**
+
+🟢 **This also kills the TIPP contradiction:** TIPP still cites superseded **SRO 929(I)/2024**
+(*"till 30th June, 2025"* vs `valid_to` 31-12-2040). **Neither is right — 1063 re-enacted it.**
+⚠️ **TIPP's tariff table is current (shows 01-07-2026 rates) but its EXEMPTION list is STALE.**
+
+### ⚠️ NOT CONFIRMED — the two 0% battery routes
+Routes B (Lithium Ion Cells 8507.6000, Part-I sr.143) and C ("Parts of Lithium Batteries") were
+read from the **FY2025-26** schedule. **Part-I was RENUMBERED by the substitution** — PDF p238
+(Gazette 764) shows serials **17–43 all "Omitted"**. Probed p190/192/194/238 and did not relocate
+the lithium block. **Route A (1%) is confirmed current; B and C are LEADS, not findings.**
+Next attempt: TIPP for **8507.9000** (the cells/BMS/casing code) — its exemption list names the
+Part and serial, though note the staleness caveat above.
+
+### Deliverables
+`03-pakistan/fifth-schedule-primary-text.md` rewritten (§2A the substituted schedule, §2B the ACD
+correction). Master dossier now **15pp**. Sources archived: Finance Act (42MB), SRO 1063.

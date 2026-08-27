@@ -35,9 +35,13 @@ Statutory rates from the **Trade Information Portal of Pakistan (TIPP)**, Pakist
 | (f) | Converter | **8454.1000** ⚠️ see §3 |
 | **(g)** | **Batteries other than lead acid** | **85.07** |
 
-**Condition, column (5), verbatim in substance:** the concession is admissible **to manufacturers
-of electric motorcycle for a period of five years from 1st July, 2020, subject to certification
-and quota determination by the Engineering Development Board (EDB).**
+**Condition, column (5), as printed in FY2025-26:** admissible **to manufacturers of electric
+motorcycle for a period of five years from 1st July, 2020, subject to certification and quota
+determination by the Engineering Development Board (EDB).**
+
+🔴 **That date wording is SUPERSEDED — see §2A.** The FY2026-27 schedule replaces it with
+**"on and from the 1st day of July, 2025 till 30th day of June, 2027."** Everything else in this
+section — the seven codes, the 1%, the 15%, the SRO 656 condition — **carries forward unchanged.**
 
 Serials (ii) and (iii) are both conditioned on **Para-2 of SRO 656(I)/2006 dated 22.06.2006** —
 the instrument already documented in `edb-certification.md` as containing **no EV provisions at
@@ -56,18 +60,92 @@ it penalises importing what Pakistan already makes.
 The **NEV Policy 2025-30 has no corresponding Fifth Schedule table yet.** The concession an
 assembler would actually claim in 2026 is a 2020-policy instrument.
 
-**3. 🔴 DO NOT read the expiry off this text.** As printed it says *"five years from 1st July,
-2020"* — which reads as **30 June 2025**, already past. But the **Finance Act 2026 extended the
-1% EV CKD concession to 30 June 2027** (FBR Salient Features Budget 2026-27; corroborated by
-Profit/Pakistan Today, 12-Jun-2026). Table-I's four-wheeler entries similarly print
-*"till 30th June 2026"* while the extension moved them too.
+**3. 🟢 THE EXPIRY IS NOW CONFIRMED FROM PRIMARY LAW — see §2A below.** The FY2025-26 text prints
+*"five years from 1st July, 2020"*, which reads as expired on 30 June 2025. **The substituted
+FY2026-27 text replaces that wording outright with "on and from the 1st day of July, 2025 till
+30th day of June, 2027."** The concession is live. **Runway from today: about ten months.**
 
-⚠️ **This is the exact trap this project fell into once already** (recorded in `CLAUDE.md`: a
-policy's stated end date is not the law in force; the annual finance act overtakes it).
-**The FY2025-26 schedule text and the operative date now differ. Neither the printed text nor a
-press summary settles it — only the FY2026-27 schedule or an SRO does.**
-`[PLACEHOLDER: FY2026-27 Fifth Schedule]` — **not found on fbr.gov.pk.** The Budget 2026-27
-folder returns 404 for the customs schedules; only Salient Features is posted.
+---
+
+## 2A. 🟢 THE FY2026-27 FIFTH SCHEDULE — obtained 27-Aug-2026
+
+**It is not a separate document, which is why it could not be found.**
+
+> **Finance Act 2026, section 3(14):** *"The Fifth Schedule to the Customs Act, 1969 (IV of 1969),
+> shall be **substituted** in the manner provided for in the **Second Schedule to this Act**."*
+
+**The FY2026-27 Fifth Schedule IS the Second Schedule to the Finance Act 2026.** The whole
+schedule was replaced wholesale, not amended.
+
+**Source:** *THE GAZETTE OF PAKISTAN, EXTRAORDINARY, PART I, June 26, 2026* — Finance Act 2026,
+256pp, archived as `06-sources/finance-act-2026.pdf`. **In force 1 July 2026.**
+⚠️ **Pages 77–255 are scanned images, not text** — the schedules cannot be grepped and were read
+page by page.
+
+### The operative provision, from the Gazette, page 769
+
+**Part-V(A) · TABLE-II · Serial 3 · Electric motorcycle (PCT code 8711.6040)** — column (5),
+**verbatim**:
+
+> *"The concession shall be admissible to manufacturers of electric motorcycle **on and from the
+> 1st day of July, 2025 till 30th day of June, 2027** subject to certification and quota
+> determination by the Engineering Development Board (EDB)."*
+
+**Everything else in serial 3 survives the substitution unchanged:** the same seven components at
+**1%**, non-localised at **15%**, localised at **15% plus ACD under SRO 693(I)/2006**, both
+conditioned on Para-2 of **SRO 656(I)/2006**.
+
+🔴 **Including the error.** Converter is still **PCT 8454.1000** — *the metallurgical code
+survived a wholesale substitution of the entire schedule* (see §3).
+
+### Corroborated on the four-wheeler entries, Gazette page 766
+
+Table-I serial 7 now reads *"admissible w.e.f. 1st July, 2022 **till 30th June 2027**"* and
+serial 8 *"admissible **till 30th June 2027**"* — where the FY2025-26 text said **2026** in both.
+
+### 🔴 What this means for K7
+
+**The date is no longer an inference from a budget summary. It is black-letter law.**
+**30 June 2027 — roughly ten months from today.** Working backwards through EDB certification,
+supplier selection, LC, a 15–45 day lead time and a 25–35 day sea leg, **the decision window is
+materially shorter than the concession window.**
+
+---
+
+## 2B. 🔴 CORRECTION — the 4% ACD on electric motorcycles is NOT payable
+
+**This corrects what this project recorded yesterday.** TIPP shows ACD 4% as statutory on
+8711.6040 from 01-07-2026, and that was reported as a cost. **It is exempted.**
+
+**S.R.O. 1063(I)/2026, dated 30 June 2026** (Ministry of Finance and Revenue, Revenue Division),
+issued under section 18(5) of the Customs Act and **in supersession of S.R.O. 1151(I)/2025**,
+levies ACD — and then provides at **paragraph 3** that ACD **shall not be levied** on, among
+others:
+
+> *"(iii) import under the Fifth Schedule to the Customs Act, 1969 … excluding serial numbers 30,
+> 33 and 35 of the Table of Part-I, [and] serial numbers 102, 111, 116 (except xvi), 117 and 118
+> of the Table of Part-III;*
+> *(vii) import under Notification No. SRO.693(I)/2006 dated the 1st July, 2006; … and*
+> **_"(xi) Imports under PCT codes 8703.8030, 8711.6040 and 8711.6060."_**
+>
+> *"4. This Notification shall take effect from the 1st day of July, 2026."*
+
+Archived as `06-sources/sro-1063-2026-acd.pdf`.
+
+**Three consequences:**
+
+1. 🟢 **Electric motorcycles, electric auto rickshaws and 3-wheeler loaders pay no ACD at all** —
+   as a standing exclusion with **no expiry date attached**, unlike the concession itself.
+2. 🟢 **It also resolves the contradiction in TIPP's own record.** TIPP still cites the superseded
+   **SRO 929(I)/2024** with description *"till 30th June, 2025"* against a `valid_to` of
+   31-12-2040. **Neither is right: the exclusion was re-enacted by SRO 1063(I)/2026 and runs from
+   1 July 2026.**
+3. 🟢 **CKD imports under the Fifth Schedule are also ACD-free** (para 3(iii)), and so are imports
+   under SRO 693(I)/2006 (para 3(vii)) — so **the "15% plus ACD" on localised parts does not
+   attract a second ACD under this notification.**
+
+⚠️ **Read paragraph 3(iii)'s exclusions before relying on it** — serials 30/33/35 of Part-I and
+102/111/116/117/118 of Part-III **do** pay ACD, and Part-I was renumbered by the substitution.
 
 ---
 
@@ -98,6 +176,12 @@ India (`india-fame-shakeout.md`).
 🔴 **Lead-acid is expressly excluded.** The concession is written *"other than lead acid"* in all
 three two/three-wheeler serials. **Pakistan's tariff will not subsidise the cheap chemistry.**
 Requires being an **EDB-certified electric motorcycle manufacturer** with quota determination.
+
+⚠️ **Routes B and C below were read from the FY2025-26 schedule. Their survival into the
+substituted FY2026-27 schedule is NOT CONFIRMED.** Part-I was renumbered in the substitution
+(serials 17–43 now read "Omitted"), the Gazette pages are scanned images, and the lithium block
+could not be located within reasonable search. **Route A is confirmed current; B and C are
+leads.** Verify before relying on either.
 
 ### Route B — lithium cells as a battery maker: **0%**
 Fifth Schedule **Part-I, serial 143**:
@@ -153,7 +237,7 @@ govern. **The heading-level rates should hold; the sub-code must be confirmed be
 | Duty | Rate | Valid from |
 |---|---:|---|
 | **CD** Statutory Customs Duty | **30%** | **01-07-2026** |
-| **ACD** Additional Customs Duty | **4%** | **01-07-2026** |
+| **ACD** Additional Customs Duty | ~~4%~~ → **0%** | **exempted by SRO 1063(I)/2026 para 3(xi)** — see §2B |
 | **ST (VAT)** Sales Tax | **18%** | 01-07-2020 |
 | **IT** Income Tax | **12%** | 01-07-2023 |
 
@@ -206,14 +290,17 @@ question.**
 
 ## Open items
 
-1. 🔴 **The FY2026-27 Fifth Schedule.** Not published at the expected FBR paths (404). The
-   extension to 30-06-2027 rests on FBR's Salient Features plus press. **Get the schedule or the
-   SRO.**
+1. 🟢 **CLOSED 27-Aug-2026 — the FY2026-27 Fifth Schedule is the Second Schedule to the Finance
+   Act 2026**, read from the Gazette. **30 June 2027 confirmed in primary law.** See §2A.
+   🔴 **Remaining:** whether the **0% lithium routes (B and C) survived the substitution** — Part-I
+   was renumbered and the block was not located in the scanned pages.
 2. **The correct 12-digit sub-code for a 72V traction pack** under 8507.6000.
 3. **Statutory rate for lead-acid (8507.20xx)** — needed to size what the excluded chemistry
    actually costs.
-4. **SRO 929(I)/2024 sr.3(xi)** — read it; TIPP's own record is self-contradictory.
-5. **SRO 693(I)/2006** — the ACD on localised parts, referenced but not read.
+4. 🟢 **CLOSED — SRO 929(I)/2024 is superseded by SRO 1063(I)/2026**, which re-enacts the ACD
+   exclusion for 8711.6040 with no expiry. TIPP's record is stale. See §2B.
+5. **SRO 693(I)/2006** — the ACD on localised parts, referenced but not read. ⚠️ Note SRO
+   1063(I)/2026 para 3(vii) exempts imports *under* 693 from its own ACD, so read them together.
 6. **Whether Customs accepts 8454.1000 for an EV converter**, or reclassifies.
 7. **IOCO quota determination** — the process, timeline and cost for Routes B and C are unknown,
    and IOCO is a different body from EDB.
