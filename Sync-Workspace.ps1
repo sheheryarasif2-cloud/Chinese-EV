@@ -104,7 +104,37 @@ foreach ($r in $repos) {
                 $n = ($dirty | Measure-Object).Count
                 Write-Host "  $n uncommitted change(s), committing" -ForegroundColor Yellow
                 Invoke-Git @('-C', $r.Path, 'add', '-A') 'stage' | Out-Null
-                Invoke-Git @('-C', $r.Path, 'commit', '-q', '-m', "Sync $($r.Name) $stamp") 'commit' | Out-Null
+
+                # 'git commit' was observed once (27-Aug-2026) returning a non-zero exit code
+                # while still creating the commit correctly. It was never reproduced: large
+                # binaries, CRLF warnings, hooks and auto-gc were all ruled out. So do not
+                # trust the exit code in EITHER direction - ask the repository what happened.
+                #
+                # This does NOT weaken the guarantee. A commit that did not land still fails
+                # hard. A commit that DID land is reported and the run continues, because the
+                # proof this script relies on is the remote-SHA comparison below, never the
+                # exit code of an intermediate step.
+                $headBefore = ''
+                $prevEAP = $ErrorActionPreference
+                $ErrorActionPreference = 'Continue'
+                try {
+                    $headBefore = & git -C $r.Path rev-parse HEAD    # empty repo: non-zero, stays ''
+                    if ($LASTEXITCODE -ne 0) { $headBefore = '' }
+                    & git -C $r.Path commit -q -m "Sync $($r.Name) $stamp" | Out-Null
+                    $commitExit = $LASTEXITCODE
+                } finally { $ErrorActionPreference = $prevEAP }
+
+                $headAfter  = Invoke-Git @('-C', $r.Path, 'rev-parse', 'HEAD') 'read head after commit'
+                $stillDirty = Invoke-Git @('-C', $r.Path, 'status', '--porcelain') 'recheck status'
+
+                if ($headAfter -eq $headBefore -or $stillDirty) {
+                    $moved = if ($headAfter -eq $headBefore) { 'HEAD did not move' } else { 'HEAD moved' }
+                    $left  = if ($stillDirty) { 'changes remain uncommitted' } else { 'tree clean' }
+                    throw "git commit FAILED (exit $commitExit) - $moved, $left."
+                }
+                if ($commitExit -ne 0) {
+                    Write-Host "  NOTE: git commit returned exit $commitExit but the commit landed intact ($($headAfter.Substring(0,7))). Continuing - the push is still proven against the remote below." -ForegroundColor Yellow
+                }
                 $committed++
             } else {
                 Write-Host "  working tree clean" -ForegroundColor DarkGray
