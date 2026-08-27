@@ -114,8 +114,12 @@ certification.** It could change the shape of the entry.
 
 ## Status — 🟢 ALL FIVE SENT, 27-Aug-2026 ~19:57 PKT
 
-Sent from **sheheryar.asif@gmail.com** on the user's explicit instruction ("ok send all"), after a
-prepared-drafts review step.
+🔴 **SENT FROM `sheheryar.asif2@gmail.com`** — the account the Gmail connector is authenticated to — **NOT from `sheheryar.asif@gmail.com`**, the address in the global CLAUDE.md.
+Verified from the message headers, not assumed.
+
+⚠️ **So every reply lands in the `.asif2` inbox.** The `.asif` mailbox (8,872 inbox / 1,695 sent / 119 drafts) will show nothing. The connector's mailbox is a different, much smaller account (998 inbox / 19 sent / 4 drafts) — that size mismatch is how the error surfaced.
+
+Sent on the user's explicit instruction ("ok send all"), after a prepared-drafts review step.
 
 | Supplier | To | Gmail message id |
 |---|---|---|

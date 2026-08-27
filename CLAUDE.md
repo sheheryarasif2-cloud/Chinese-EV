@@ -733,8 +733,10 @@ before it cubes out. 🔴 **Lithium is DG — US$1,800–2,200 is a general-carg
 
 ## 27-Aug-2026 ~19:57 — 🔴 FIVE RFQs SENT. The desk-research caveat is now partly void.
 
-**Sent from sheheryar.asif@gmail.com** on explicit instruction, after preparing drafts and getting
-a clear yes. Register + full text: `02-supply/rfq-and-supplier-contacts.md`.
+🔴 **SENT FROM `sheheryar.asif2@gmail.com`, NOT `sheheryar.asif@gmail.com`.** The Gmail connector is authenticated to the **.asif2** account; I reported the wrong address because I read its mailbox counts without ever checking WHICH account it was.
+⚠️ **ALWAYS verify the connector's identity before telling the user an email 'was sent from X'** — `get_message` returns a `sender` field; the label counts do not.
+🔎 **Tell the accounts apart by size:** `.asif2` = 998 inbox / 4 drafts. `.asif` = 8,872 inbox / 1,695 sent / 119 drafts.
+**Replies will arrive in `.asif2`.** Sent on explicit instruction after a drafts review. Register + full text: `02-supply/rfq-and-supplier-contacts.md`.
 
 | Supplier | To | msg id |
 |---|---|---|
