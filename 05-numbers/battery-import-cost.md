@@ -112,3 +112,56 @@ the pack size a two-wheeler uses.
    out-of-stock PKR 115,000 suggests thin local supply, but one retailer is not a market.
 5. **Graphene / lead-acid pack pricing** — searched, not found with usable figures. It is the
    cheap tier the Chinese domestic market runs on, and the 8–13-month fleet failure mode.
+
+---
+
+# 🟢 Freight, and what the stack now looks like — 27-Aug-2026
+
+**Sea freight, China → Karachi:** a **20ft container (20GP) is US$1,800–2,200**, quoted July 2026
+and described as up ~25% month-on-month; **transit 9–10 days port to port.**
+Grade: <span>freight-forwarder market reporting, not a quote</span>. Rates are volatile and
+explicitly caveated as needing a fresh quote with 2–3 week validity at booking.
+
+At **USD 277.90** (27-Aug-2026): **PKR 500,220 – 611,380 per 20ft container.**
+
+⚠️ **Two honest caveats before this number is used:**
+
+1. **Units per container is an ASSUMPTION, not a measurement.** A 20ft holds ~33 m³. If a crated
+   CKD kit plus its battery occupies ~0.6 m³, roughly **50 units** fit — which would make freight
+   **PKR 10,000–12,200 per unit**, about **9–11% of the PKR 110,987 FOB**. 🔴 **No supplier has
+   given a crated volume or gross weight, so this is arithmetic on a guess.** A container can also
+   "weigh out" before it "cubes out" — 50 kits plus 50 × 16–18 kg of battery is roughly 1.5–2.0
+   tonnes of battery alone. `[PLACEHOLDER: crated dimensions and gross weight per kit]`
+2. 🔴 **Lithium is dangerous goods.** UN38.3 cargo is not carried at the plain FCL rate —
+   it needs DG declarations, and some carriers surcharge or refuse it. **The US$1,800–2,200 above
+   is a general-cargo rate and almost certainly understates a battery shipment.**
+
+## 🔴 The transit time contradicts what the suppliers said
+
+| Source | Sea leg |
+|---|---|
+| Supplier listings (Koyosonic, Hunan CTS, Dongguan) | **25–35 days** |
+| Freight-forwarder market reporting, Karachi | **9–10 days** |
+
+**Both can be true** — the supplier figure looks like door-to-door including consolidation,
+booking and destination clearance; the forwarder figure is port-to-port steaming time.
+**Do not net them.** But it matters for the clock: with the concession ending **30 June 2027**, the
+sea leg is likely **weeks, not months**, and the binding constraint is **EDB certification and
+IOCO quota**, not shipping.
+
+## Where the landed stack stands now
+
+| Line | PKR/unit | Evidence |
+|---|---:|---|
+| CKD kit, cheapest complete (KeywayEV K037 @ MOQ 50) | 51,706 | listing |
+| Battery, best 50-unit price (Koyosonic 72V 35Ah) | 59,281 | listing |
+| **FOB sub-total** | **110,987** | |
+| Sea freight, allocated *(assumption above)* | ~10,000 – 12,200 | market rate ÷ guessed fill |
+| **CIF, approximate** | **~121,000 – 123,200** | |
+| Customs duty — **if EDB-certified CKD** | **1%** on EV-specific components | primary law |
+| Customs duty — **if not certified** | 15% non-localised · battery 10% CD + 2% RD | primary law |
+| Sales tax, withholding, clearing, provincial cess | see `fifth-schedule-primary-text.md` §5 | primary law |
+
+**Against Pakistani retail — cheapest e-bike 97,000, volume band 150,000–250,000 — a CIF around
+PKR 121,000–123,000 leaves a real but not generous gap**, and the size of that gap is decided by
+**whether EDB certification is obtained**, not by negotiating the kit price.

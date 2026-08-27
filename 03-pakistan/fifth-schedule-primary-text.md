@@ -177,11 +177,9 @@ India (`india-fame-shakeout.md`).
 three two/three-wheeler serials. **Pakistan's tariff will not subsidise the cheap chemistry.**
 Requires being an **EDB-certified electric motorcycle manufacturer** with quota determination.
 
-⚠️ **Routes B and C below were read from the FY2025-26 schedule. Their survival into the
-substituted FY2026-27 schedule is NOT CONFIRMED.** Part-I was renumbered in the substitution
-(serials 17–43 now read "Omitted"), the Gazette pages are scanned images, and the lithium block
-could not be located within reasonable search. **Route A is confirmed current; B and C are
-leads.** Verify before relying on either.
+🟢 **UPDATE 27-Aug-2026 — Route C is CONFIRMED CURRENT.** Located at **Gazette page 700
+(PDF p174)** in the substituted schedule by OCRing the scanned pages (tesseract 4.1.1 installed in
+WSL for the purpose). ⚠️ **Route B is still being searched** — see §4A.
 
 ### Route B — lithium cells as a battery maker: **0%**
 Fifth Schedule **Part-I, serial 143**:
@@ -217,6 +215,42 @@ the vehicle**, and `battery-import-cost.md` shows the battery is **53% of FOB co
 
 ---
 
+## 4A. 🟢 Route C, verified in the substituted schedule — Gazette p700
+
+The block survives **verbatim in structure and condition**, still at **0%**:
+
+> *"If imported by the local assemblers or manufacturers of **Lithium Batteries** registered under
+> the **Sales Tax Act, 1990**, subject to quota determination by the **Input Output Co-efficient
+> Organization (IOCO)**."*
+
+⚠️ **Two line items were trimmed by the substitution** — read the current list, not the old one:
+
+| | Item | PCT | FY2026-27 |
+|---|---|---|---|
+| (i) | Cells | 8507.9000 | ✅ |
+| (ii) | ~~Copper Bar (cell-to-cell connection) 7407.1010~~ | — | 🔴 **Omitted** |
+| (iii) | BMS (level 1) Electronic Card | 8507.9000 | ✅ |
+| (iv) | Casing | 8507.9000 | ✅ |
+| (v) | Harness Set | 8544.4290 | ✅ |
+| (vi) | Output Terminal with screws | 8536.9090 | ✅ |
+| (vii) | Power Cables (battery internal) | 8544.4290 | ✅ |
+| (viii) | DC Fan | 8414.5990 | ✅ |
+| (ix) | DC Breaker | ~~8536.2010~~ ~~8536.2020~~ **8536.2090** | ⚠️ **2 of 3 codes Omitted** |
+| (x)–(xiii) | Screws, terminal covers, acrylic sheet, accessories | 7318.1590 · 3926.9099 · 3920.5900/3921.9090 · 8536.9090/8507.9000 | ✅ (one accessory code Omitted) |
+
+🟢 **The two most valuable lines — cells and the BMS card — both survive at 0%.**
+
+### And a fourth route found in the same pass: Route D
+
+**Part-I serial 6(d), "Lithium ion batteries manufacturing equipment" at 0%**, conditioned on
+**EDB** certification via Annex-B that the goods are a bona fide project requirement.
+⚠️ **Heavily gutted** — most sub-items now read "Omitted"; survivors are storage tanks
+(7310.1000), glue port (8419.8090), transfer tanks (7310.1000), booster pumps (8413.7090) and
+magnetic filters (8421.3090). **This is capital equipment for building a battery plant, not for
+assembling packs — noted for completeness, not proposed.**
+
+---
+
 ## 5. What it costs with no concession — statutory rates <span>(TIPP, Govt of Pakistan)</span>
 
 ### 8507.6000 — Lithium-ion *(commodity code 850760001000)*
@@ -229,8 +263,32 @@ the vehicle**, and `battery-import-cost.md` shows the battery is **53% of FOB co
 | **IT** Income Tax (withholding) | **11%** | 01-07-2020 | 31-12-2040 |
 
 ⚠️ **That 12-digit code reads "Secondary lithium cells and batteries for portable application"** —
-a 72V traction pack is arguably **not** portable-application, and another 12-digit sub-code may
-govern. **The heading-level rates should hold; the sub-code must be confirmed before filing.**
+a 72V traction pack is arguably **not** portable-application. 🔴 **And TIPP prints the identical
+product string on 8507.2000, which is a lead-acid heading — so TIPP's 12-digit descriptions are
+demonstrably unreliable.** Heading-level rates hold; **confirm the sub-code before filing.**
+
+### 🔴 The chemistry comparison — lithium is taxed at half the rate of lead-acid
+
+| Line | Description | CD | ACD | RD | **Duty before tax** |
+|---|---|---:|---:|---:|---:|
+| **8507.6000** | **Lithium-ion** | 10% | — | 2% | **12%** |
+| **8507.2000** | **Other lead-acid accumulators** *(the traction-pack line)* | 20% | 2% | 2% | **24%** |
+| **8507.1010** | Lead-acid starter, **expressly "meant for vehicles of heading 87.11"** | 25% | 11% | — | **36%** |
+
+*(All lines then carry ST 18% and income-tax withholding 11%.)*
+
+🟢 **Pakistan's tariff punishes lead-acid twice over, and the two penalties compound:**
+1. **Excluded from the 1% EV CKD concession** — the schedule says *"batteries other than lead acid."*
+2. **Double the statutory duty** at 24% against lithium's 12%, and triple it on the starter line.
+
+**So policy and engineering point the same way for once.** The cheap Chinese graphene/lead-acid
+tier — the one that dies in 8–13 months at fleet duty cycles — is also **the one the border taxes
+hardest**. The chemistry that survives Pakistani fleet service is the chemistry the tariff favours.
+
+⚠️ **Note the ACD caveat:** SRO 1063(I)/2026 para 3(xi) exempts ACD on the *vehicle* codes
+(8703.8030 / 8711.6040 / 8711.6060), **not on 85.07 battery lines**. A battery imported on its own
+account pays the ACD shown above; a battery imported as a Fifth Schedule CKD component does not
+(para 3(iii)).
 
 ### 8711.6040 — Electric motorcycles (CBU)
 
