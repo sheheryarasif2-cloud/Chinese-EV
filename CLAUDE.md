@@ -404,6 +404,26 @@ later. Save the file, and record where and when it came from.
   fleet buyer**, since lead-acid dies in 8–13 months at fleet cycles.
   ⚠️ Crown contradiction: its own site markets its line as electric, PakWheels lists it as
   non-electric — resolve before relying on either.
+- **27-Aug-2026** — 📋 **INDIA + CHINA MASTER LISTS** →
+  `04-comparables/MASTER-india-model-price-list.md` (**36 current models + 8 upcoming, with top
+  speed / range / weight / kWh**) and `02-supply/MASTER-china-model-price-list.md`.
+  🔴 **INDIA vs PAKISTAN — the structural gap:** Indian mainstream scooters carry **2.5–5.3 kWh
+  and do 102–212 km**; Pakistan's carry **1.58–1.8 kWh and do 65–90 km**. **Honda sells a 102 km
+  Activa e in India and a 65 km ICON e: in Pakistan** — same maker, same segment, materially
+  worse product. India's entry is **Lectrix SX25 ₹54,999** (25 kmph low-speed class — **Pakistan
+  has no equivalent regulatory category; worth checking, it would open a tier below PKR 97,000**).
+  ⚠️ India's next wave is **Suzuki, TVS, Honda, Vinfast** — legacy makers and a funded foreign
+  entrant, not startups.
+  🔴 **CHINA — the cost basis, now anchored:** audited ex-works ASP **RMB 1,415 (e-bicycle) /
+  1,878 (e-scooter)**, and Chinese **domestic retail is CNY 2,999–3,899** for a mainstream
+  60–80 km machine (Tailg 2,999; Tailg M6 3,899; Yadea sodium Q1/DE3 3,299–3,499). **Domestic
+  distribution margin is thin — the gap to Pakistani retail is almost entirely freight, duty,
+  tax and margin.** ⚠️ **The cheap Chinese tier runs on GRAPHENE = lead-acid** — the price
+  advantage and the 8–13-month fleet failure mode arrive together.
+  🔴 **China CANNOT be enumerated like the other two** — hundreds of makers, thousands of SKUs,
+  brand sites geo-blocked (yadea.com.cn 404s from here), real pricing on Tmall/JD behind
+  sessions, heavy white-labelling. **Anyone offering a complete Chinese model list is scraping
+  B2B storefronts or inventing it.**
 - **25-Aug-2026** — promoted to a full standalone workspace, named **Chinese EV Research**.
   Folder renamed to `Documents\Chinese-EV-Research`; its own memory folder created and
   committed to a local git repo on branch `memory-chinese-ev-research`. **No remote yet** —
