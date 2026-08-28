@@ -145,3 +145,91 @@ this section describes lands duty-free and unconditionally.**
 5. **Whether the Mitigation Action Facility structure extends to two-wheelers or to Sindh** — and
    whether HBL or Meezan would lend against EV assets outside it.
 6. **Zyp's actual progress against the 60-station / 1,000-bike plan.** The plan is 2024-dated.
+
+---
+
+# 🔴 UPDATE 28-Aug-2026 — what a swap network actually costs, and what Zyp actually built
+
+## The capex number, from supplier listings
+
+**Guangzhou Tycorun Energy** — battery swap cabinet, published tier pricing:
+
+| Quantity | **USD each** | **PKR each** @ 277.90 |
+|---|---:|---:|
+| 5–49 units | **3,999** | **1,111,322** |
+| 50–99 units | 3,799 | 1,055,742 |
+| 100+ units | 3,599 | 1,000,159 |
+
+**TYCORUN 8-slot cabinet, Alibaba sample price: US$4,999** (≈ PKR 1,389,222).
+
+**Specification on the Tycorun unit:** 48/60/72 V · 50Ah @ 0.2C · **1760 × 550 × 710 mm · 160 kg** ·
+>1,000 cycles · ternary lithium/LiFePO4 · **"1 pc for sample checking is available"** · FOB Shenzhen
+· production capacity 30,000 units/month.
+
+🟢 **And it accepts L/C** — *"L/C, T/T, D/P, Western Union, PayPal, MoneyGram."* That is a small but
+real datapoint for **K4**: at least one infrastructure supplier will work on a letter of credit.
+
+⚠️ **Two cautions.** The listing says *"batteries included — integrated lithium battery system"*,
+which is **ambiguous**: it may mean the cabinet ships with swap packs, or merely that it houses a
+battery system. **A quote must state how many packs, at what Ah, are in the box.** And a secondary
+source put smart 10-slot cabinets at **US$1,400–2,000** — **less than half the listing prices
+above.** Where a blog summary and a product page disagree, **the product page is the better
+evidence**, but the spread is unexplained.
+
+**So one swap point is roughly PKR 1.0–1.4m in hardware**, before the packs that must circulate in
+it, before installation, and before the electricity connection — **and the connection is where the
+real cost and delay usually sit** `[PLACEHOLDER: K-Electric commercial connection]`.
+
+🟢 **Recall it lands duty-free:** *"Charging station for electric vehicle · 8504.4030 · 0% · Nil"*.
+
+## 🔴 Zyp's plan against Zyp's own website
+
+**Announced July 2024:** *"over 60 battery swap stations and 1,000 ZUM 2000 motorcycles in the next
+12 months."*
+
+**Zyp's own locations page, read 28-Aug-2026 — 25 months later — lists 10 sites, all in Lahore:**
+
+> Zyp Experience Center · TCS Gulberg · TCS Davis Road · Tricon Pvt Ltd · Chughtai Lab 7 Jail Road ·
+> Chughtai Lab Bhatta Chowk · Apni Dukaan State Life · METRO Cash & Carry Thokar · The Vertical ·
+> Zyp Technologies Factory
+
+🔴 **Two of those are Zyp's own premises.** So **eight third-party host sites against a 60-station
+plan — roughly 17% — twenty-five months after the raise, not twelve.**
+
+**Read carefully, because this is evidence about the business model, not a criticism of a company:**
+
+1. 🔴 **A funded, manufacturing, well-backed operator with its own factory has taken 25 months to
+   reach 10 swap points in one city.** Any plan in this workspace that assumes a network can be
+   stood up quickly should be re-read against that.
+2. 🟢 **The host pattern is the interesting part.** TCS (courier depots), Chughtai Lab (diagnostic
+   clinics), METRO (wholesale retail), Apni Dukaan. **Zyp is placing cabinets inside other
+   companies' existing footprints** — not building sites. That is a capital-light route worth
+   copying, and it explains why hardware cost is not the binding constraint.
+3. ⚠️ **The arithmetic says funding was probably not the limit.** 60 cabinets at ~US$3,800 is
+   ~US$228,000; even with packs and 1,000 bikes the plan plausibly fits inside US$1.5m.
+   **So the constraint is more likely siting, permissions, grid connections and demand density than
+   money** — which is exactly the kind of thing a desk cannot verify. `[VERIFY with Zyp]`
+
+## Residual value — the fleet model's exit, and it is weak
+
+| | |
+|---|---|
+| Used e-bikes listed on PakWheels | **PKR 19,000 → 80,000+** |
+| General e-bike depreciation | **15–25% per year**, most of it in year one |
+| Retained value at three years | **50–60%** |
+| Market condition | *"still evolving and not as strong as that for traditional bikes. **Depreciation can be high due to concerns about battery life**"* |
+
+🔴 **This matters directly to the fleet model.** `fleet-model.md` locks capital for **13–20 months
+per machine** and assumes recovery at the end. **If a used e-bike sells for PKR 19,000–80,000 and
+buyers discount hard for battery uncertainty, the exit value is thin and the asset is effectively
+consumed.**
+
+🟢 **It also argues for the swap/BaaS structure over outright sale.** If the operator retains the
+battery — the component buyers distrust — the vehicle's residual is less battery-dependent, and the
+pack keeps earning after the bike is sold. **That is the strongest argument yet for owning the
+battery rather than selling it with the machine**, and it is the same logic Yadea follows at
+28.4% of revenue.
+
+⚠️ **Grade honestly:** the depreciation percentages are **generic e-bike industry figures, not
+Pakistani data**, and the PKR 19,000–80,000 band is a listings range, not a matched-model
+comparison. **No Pakistani residual-value series exists.** `[PLACEHOLDER]`
