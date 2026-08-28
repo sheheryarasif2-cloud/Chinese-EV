@@ -179,6 +179,7 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
     <div class="stat"><span class="stat-v v-crit">~88%</span><span class="stat-k">Market held by Atlas Honda</span></div>
     <div class="stat"><span class="stat-v v-warn">30 Jun 27</span><span class="stat-k">Tariff concession sunset · ~10 months</span></div>
     <div class="stat"><span class="stat-v v-pk">3.3×</span><span class="stat-k">Factory gate → Pakistani shelf</span></div>
+    <div class="stat"><span class="stat-v v-crit">5.2×</span><span class="stat-k">State subsidy programme vs national production</span></div>
   </div>
   <p class="meta">
     Evidence grades used throughout &nbsp;
@@ -195,6 +196,8 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
   <a href="#models">All models</a>
   <a href="#economics">Economics</a>
   <a href="#fleet">Fleet &amp; rider</a>
+  <a href="#state">Demand shock</a>
+  <a href="#incumbentfleet">Already done</a>
   <a href="#incumbent">Incumbent</a>
   <a href="#india">India's warning</a>
   <a href="#supply">Supply side</a>
@@ -234,11 +237,21 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
     on service, not price.</p>
   </div>
 
+  <div class="note c"><span class="lbl">Two late findings that change the shape of this, not the sign</span>
+    <p><strong>The state is subsidising 116,000 machines this fiscal year against a national production of
+    22,404</strong> &mdash; a programme 5.2&times; the entire industry, at PKR 80,000 a unit. Demand is not merely
+    good; it is being manufactured. <strong>And a student in Lahore can already take an e-bike for PKR 2,100 a
+    month, interest-free.</strong></p>
+    <p><strong>foodpanda has already launched an EV rider fleet with an SECP-regulated NBFC.</strong> The
+    platform-plus-financier structure this dossier proposed is not speculative &mdash; it is running, in Punjab, with
+    the largest player. <strong>What is left is the market it does not cover: Karachi, and Bykea's 30,000+ riders,
+    in a province with no e-bike scheme at all.</strong> See sections 05 and 06.</p>
+  </div>
+
   <div class="note w"><span class="lbl">Three gates cannot be closed from a desk</span>
     <p>Whether a manufacturer will supply at this scale (K3), whether a letter of credit can be opened today (K4),
     and whether an enforceable battery warranty backstop exists (K5). <strong>RFQs went to five suppliers on
-    27 August; no reply yet.</strong> A fourth gate was added by the research: whether a delivery platform will
-    deduct rental from rider earnings at source.</p>
+    27 August; no reply yet.</strong></p>
   </div>
 </section>
 
@@ -356,7 +369,7 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
     <thead><tr><th>Case</th><th class="n">Premium PKR</th><th class="n">Breakeven</th><th class="n">Months</th></tr></thead>
     <tbody>
       <tr><td>Consumer · 15,000 km/yr · no subsidy</td><td class="n">88,600</td><td class="n">16,400–18,100 km</td><td class="n">13.1–14.5</td></tr>
-      <tr><td>Consumer · with PKR 65,000 subsidy</td><td class="n">23,600</td><td class="n">4,832 km</td><td class="n"><strong>3.9</strong></td></tr>
+      <tr><td>Consumer · with subsidy <span class="small">(modelled at 65,000; <strong>PAVE now pays 80,000</strong> — see section 05)</span></td><td class="n">23,600</td><td class="n">4,832 km</td><td class="n"><strong>3.9</strong></td></tr>
       <tr><td>Fleet · 24,960 km/yr · lithium</td><td class="n">88,600</td><td class="n">—</td><td class="n"><strong>5.9</strong></td></tr>
       <tr><td>Fleet · 40,000 km/yr · lithium</td><td class="n">88,600</td><td class="n">—</td><td class="n"><strong>3.7</strong></td></tr>
     </tbody>
@@ -435,9 +448,143 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
   player lost its market.</p>
 </section>
 
+
+<!-- ================= STATE DEMAND ================= -->
+<section id="state">
+  <p class="eyebrow">05 &mdash; the demand shock</p>
+  <h2>The state is manufacturing demand at 5&times; national production</h2>
+  <p class="sub">The largest demand finding in this research, and it arrived late enough to correct two earlier numbers.</p>
+
+  <div class="stats">
+    <div class="stat"><span class="stat-v">22,404</span><span class="stat-k">Units &middot; Pakistan's total e-2W production FY2024-25</span></div>
+    <div class="stat"><span class="stat-v v-crit">116,000</span><span class="stat-k">Units the state is subsidising this fiscal year</span></div>
+    <div class="stat"><span class="stat-v v-warn">80,000</span><span class="stat-k">PKR subsidy per motorcycle &middot; PAVE</span></div>
+    <div class="stat"><span class="stat-v v-acc">100bn</span><span class="stat-k">PKR allocated over five years</span></div>
+    <div class="stat"><span class="stat-v v-pk">34</span><span class="stat-k">Companies holding an EDB 2/3-wheeler licence</span></div>
+  </div>
+
+  <div class="chart">
+    <h4>National production against the subsidy programme</h4>
+    <p class="cap">Units. Production is EDB's own data; the 116,000 is the PM's Electric Bike and Rickshaw Scheme for the current fiscal year.</p>
+    <div class="bars" id="prod"></div>
+  </div>
+
+  <div class="note c"><span class="lbl">Read those two bars together</span>
+    <p><strong>The government is subsidising 116,000 machines in a year in which the entire country produced
+    22,404.</strong> The programme is <strong>5.2&times; total national production.</strong> Either the subsidy pulls
+    in imports, or the incumbents scale hard, or it underdelivers &mdash; and the scheme announcement does not say
+    which.</p>
+  </div>
+
+  <div class="tw"><table>
+    <thead><tr><th>Scheme</th><th>Scope</th><th>Terms</th></tr></thead>
+    <tbody>
+      <tr><td class="co">PM / PAVE <span class="small">federal</span></td><td><strong>116,000 units this FY</strong>, nationwide <strong>including Sindh</strong>, ages 18&ndash;65, CNIC + licence</td><td><strong>PKR 80,000 subsidy.</strong> Target 76,000 by June. E-rickshaw subsidy PKR 400,000</td></tr>
+      <tr><td class="co">CM Punjab e-Bike</td><td><strong>100,000 units, phase 1, students only</strong>, Punjab only</td><td><strong>PKR 70,000 subsidy</strong> &middot; interest-free <strong>PKR 2,100/month</strong> over 24 months &middot; Bank of Punjab administers &middot; male students PKR 14,000 down, <strong>female students PKR 0</strong></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="note w"><span class="lbl">Correction to this dossier's own numbers</span>
+    <p>Earlier sections used <strong>PKR 65,000</strong> from the NEV Policy. <strong>The operative subsidy under
+    PAVE is PKR 80,000</strong>, and subsidised machines are reported to land <strong>PKR 50,000&ndash;60,000 below
+    comparable market models.</strong> The subsidised payback case is therefore <em>better</em> than the 3.9 months
+    modelled &mdash; but a commercial offer now competes against a state-backed price floor.</p>
+    <p><strong>A student in Lahore can take an electric motorcycle for PKR 2,100 a month, interest-free, with zero
+    deposit if female.</strong> That is a different customer from a delivery rider &mdash; but it is the number any
+    consumer pitch is measured against.</p>
+  </div>
+
+  <h3>The EDB tender &mdash; a 500-unit batch structure, and it was reachable</h3>
+  <div class="tw"><table>
+    <tbody>
+      <tr><td class="co">Tender</td><td><strong>"Fast Track Adoption &mdash; 100,000 E-Bikes (2-Wheelers)"</strong>, PPRA TS0000007069E, issued by the Engineering Development Board</td></tr>
+      <tr><td class="co">Structure</td><td><strong>200 batches of 500 units each</strong> &middot; 90-day fast-track deployment</td></tr>
+      <tr><td class="co">Invited</td><td>EOIs from <strong>all EV 2-wheeler OEMs and assemblers</strong>, drawing on <em>"available production capacity and CKD inventory"</em></td></tr>
+      <tr><td class="co">Deadline</td><td>&#9888; <strong>June 2026 &mdash; already closed</strong></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="note g"><span class="lbl">The batch size is the finding</span>
+    <p><strong>500 units is 2.5&times; the fleet this dossier modelled and 10&times; the supplier MOQ</strong> &mdash;
+    an order of exactly the scale a small entrant could serve, and the tender explicitly leans on
+    <strong>existing CKD inventory.</strong></p>
+    <p><strong>But the window shut in June.</strong> Whether further batches follow is the single most valuable
+    question left in this research &mdash; and it is a phone call to EDB, not a research task. It also reframes the
+    EDB conversation entirely: <strong>not "can I get certified", but "is there a procurement pipeline to sell
+    into".</strong></p>
+  </div>
+
+  <h3>And the industry this would be entering is sub-scale</h3>
+  <p><strong>34 companies hold an EDB licence for electric two- and three-wheelers</strong>, and between them they
+  produced <strong>22,404 units &mdash; an average of about 660 each per year.</strong> Even allowing for a skewed
+  distribution, that is a workshop, not a factory.</p>
+  <div class="grid2">
+    <div class="card"><h4>&#127942; The good reading</h4>
+      <p class="small"><strong>EDB certification is demonstrably passable.</strong> The gate this dossier treated as
+      the central unknown has been cleared <strong>34 times</strong>. It is not a wall.</p></div>
+    <div class="card"><h4>&#9888; The hard reading</h4>
+      <p class="small"><strong>A licence is not a factory, and it is not volume.</strong> 660 units a year across 34
+      licensees says the barrier is not paperwork &mdash; it is everything after it.</p></div>
+  </div>
+</section>
+
+<!-- ================= ALREADY DONE ================= -->
+<section id="incumbentfleet">
+  <p class="eyebrow">06 &mdash; the uncomfortable one</p>
+  <h2>The fleet thesis is not novel &mdash; foodpanda is already doing it</h2>
+
+  <div class="note c"><span class="lbl">What was found</span>
+    <p><strong>foodpanda Pakistan has launched an EV delivery fleet</strong>, with the <strong>Government of
+    Punjab</strong> and <strong>Wasl Investment Finance</strong>, an <strong>SECP-regulated NBFC</strong>. Launched
+    in <strong>Lahore</strong>. Riders access EV financing through Wasl.</p>
+    <p>Wasl runs <strong>Wasl Mobility Modaraba</strong> and states it provides <em>"cash flow based financing …
+    structured in ways to avoid the need for any form of hard collateral"</em> to micro consumers and small
+    businesses. It had already partnered with YES Electromotive on EV accessibility in 2023.</p>
+  </div>
+
+  <div class="grid2">
+    <div class="card"><h4>&#127942; It validates the structure</h4>
+      <p class="small">This dossier argued the answer to rider affordability is a <strong>platform-plus-financier
+      arrangement collecting against rider earnings</strong> rather than lending to individuals. A delivery platform
+      and an NBFC have independently built exactly that. <strong>The model is not speculative.</strong></p></div>
+    <div class="card"><h4>&#9888; And it removes first-mover advantage</h4>
+      <p class="small">The platform relationship is <strong>the scarcest asset in the whole plan</strong>, and in
+      Punjab it is already taken &mdash; by the largest player, with government backing.</p></div>
+  </div>
+
+  <div class="note w"><span class="lbl">Three things are not established, and they decide how much this matters</span>
+    <p><strong>1. Whether it is financing-to-own or a rental fleet.</strong> Reporting says riders <em>"access EV
+    financing"</em>, which reads as lease-to-ownership &mdash; <strong>not</strong> an operator-owned fleet earning
+    rental. Those are different businesses with different balance sheets.</p>
+    <p><strong>2. Whether it reaches Karachi.</strong> Everything reported is Lahore and Punjab, alongside a Punjab
+    government partnership that has no Sindh equivalent.</p>
+    <p><strong>3. Scale.</strong> No unit count, no target and no terms were disclosed in any report found.</p>
+  </div>
+
+  <div class="note g"><span class="lbl">Which points at the opening Punjab's scheme cannot reach</span>
+    <p><strong>Karachi, and Bykea.</strong> Sindh has no provincial e-bike scheme, foodpanda's programme is
+    Punjab-anchored, and <strong>Bykea &mdash; 30,000+ riders &mdash; has no announced EV partner.</strong></p>
+    <p><strong>That is a question for Bykea, not for more desk research.</strong></p>
+  </div>
+
+  <h3>Consumer financing &mdash; previously a total blank in this research</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Route</th><th>Terms as reported</th></tr></thead>
+    <tbody>
+      <tr><td class="co">Bank of Punjab <span class="small">CM scheme</span></td><td><strong>Interest-free PKR 2,100/month over 24 months.</strong> Government pays the markup, contributes PKR 20,000 to the down payment, and covers first-year insurance</td></tr>
+      <tr><td class="co">Meezan Bank</td><td>Shariah-compliant <strong>Murabaha</strong>, profit fixed and disclosed</td></tr>
+      <tr><td class="co">Allied Bank</td><td>Conventional bike financing with a published instalment calculator</td></tr>
+      <tr><td class="co">Wasl <span class="small">NBFC</span></td><td>Cash-flow-based, <strong>no hard collateral</strong> &mdash; the delivery-rider route</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small">&#9888; <strong>Grade this honestly: all of it is vendor and aggregator reporting, not bank term
+  sheets.</strong> No markup rate, tenor table or approval criterion has been read from a bank's own published
+  schedule. <strong>Before any of it enters a financial model, get it from the bank.</strong></p>
+</section>
+
 <!-- ================= INCUMBENT ================= -->
 <section id="incumbent">
-  <p class="eyebrow">05 — the incumbent</p>
+  <p class="eyebrow">07 — the incumbent</p>
   <h2>Atlas Honda confirmed the gap by failing to close it</h2>
 
   <div class="stats">
@@ -480,7 +627,7 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
 
 <!-- ================= INDIA ================= -->
 <section id="india">
-  <p class="eyebrow">06 — the comparable market</p>
+  <p class="eyebrow">08 — the comparable market</p>
   <h2>India already ran this cycle, and it ended badly for entrants</h2>
   <p class="sub">Same subcontinent, same commuter baseline, same price sensitivity, and a subsidy structurally similar to Pakistan's NEV cost-sharing. Pakistan is at the start of that curve.</p>
 
@@ -513,7 +660,7 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
 
 <!-- ================= SUPPLY ================= -->
 <section id="supply">
-  <p class="eyebrow">07 — the source market</p>
+  <p class="eyebrow">09 — the source market</p>
   <h2>These are domestic Chinese businesses with an export gesture attached</h2>
   <p class="sub">Read from five audited filings, not from trade press. Where the two disagreed, the filing won — and in one case that reversed a conclusion already drawn.</p>
 
@@ -554,7 +701,7 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
 
 <!-- ================= BATTERY ================= -->
 <section id="battery">
-  <p class="eyebrow">08 — the battery layer</p>
+  <p class="eyebrow">10 — the battery layer</p>
   <h2>Batteries are the business, not the machine</h2>
   <p class="sub">Yadea's audited accounts show batteries and chargers at 28.4% of revenue — RMB 10.5bn — and it sold 18.3 million batteries against 16.3 million vehicles. The market leader monetises replacement rather than absorbing it as warranty cost.</p>
 
@@ -602,7 +749,7 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
 
 <!-- ================= TARIFF ================= -->
 <section id="tariff">
-  <p class="eyebrow">09 — primary law</p>
+  <p class="eyebrow">11 — primary law</p>
   <h2>The tariff regime, read in its own words</h2>
   <p class="sub">The FY2026-27 Fifth Schedule is not a separate document — Finance Act 2026 s.3(14) substituted the whole schedule via its Second Schedule. Read from the Gazette of Pakistan, 26 June 2026.</p>
 
@@ -710,7 +857,7 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
 
 <!-- ================= LANDED ================= -->
 <section id="landed">
-  <p class="eyebrow">10 — cost stack</p>
+  <p class="eyebrow">12 — cost stack</p>
   <h2>Factory gate to shelf is 3.3×</h2>
   <p class="sub">The first dated FX rate in this research unblocks the comparison everything was waiting on: 27 Aug 2026, 15:56 PST — USD/PKR 277.90, CNY/PKR 41.34 (Forex.pk, indicative interbank).</p>
 
@@ -776,7 +923,7 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
 
 <!-- ================= BRANDS ================= -->
 <section id="brands">
-  <p class="eyebrow">11 &mdash; who actually makes these</p>
+  <p class="eyebrow">13 &mdash; who actually makes these</p>
   <h2>The manufacturers, region by region</h2>
   <p class="sub">Models are the surface. This is the layer underneath &mdash; who owns what, at what scale, and on what evidence.</p>
 
@@ -862,7 +1009,7 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
 
 <!-- ================= SUPPLY CHAIN / RFQ ================= -->
 <section id="rfq">
-  <p class="eyebrow">12 &mdash; supply chain</p>
+  <p class="eyebrow">14 &mdash; supply chain</p>
   <h2>Who was approached, and what was asked</h2>
   <p class="sub">Five RFQs went out on 27 August 2026 to companies' own published addresses. No platform account was created &mdash; Alibaba and Made-in-China RFQ forms require a login, so that route was closed.</p>
 
@@ -922,7 +1069,7 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
 
 <!-- ================= POLICY DETAIL ================= -->
 <section id="policy">
-  <p class="eyebrow">13 &mdash; the certification gate</p>
+  <p class="eyebrow">15 &mdash; the certification gate</p>
   <h2>The gate behind the rate is written for a different technology</h2>
 
   <div class="note c"><span class="lbl">SRO 656(I)/2006 &mdash; the operative condition, confirmed from the primary text</span>
@@ -969,7 +1116,7 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
 
 <!-- ================= GATES ================= -->
 <section id="gates">
-  <p class="eyebrow">14 — decision gates</p>
+  <p class="eyebrow">16 — decision gates</p>
   <h2>Criteria written before the research, so they could not bend to it</h2>
   <div class="tw"><table>
     <thead><tr><th>Gate</th><th>Status</th><th>Position</th></tr></thead>
@@ -990,7 +1137,7 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
 
 <!-- ================= LIMITS ================= -->
 <section id="limits">
-  <p class="eyebrow">15 — what this does not establish</p>
+  <p class="eyebrow">17 — what this does not establish</p>
   <h2>The honest boundary</h2>
   <ul>
     <li><strong>Five supplier RFQs were sent on 27 August 2026</strong> — three CKD kit makers and both battery
@@ -1150,6 +1297,13 @@ function draw(){
     {l:'Ather',v:16,t:'16%',c:IN},
     {l:'Hero (VIDA)',v:11,t:'11%',c:IN},
     {l:'Ola \u2014 was over 50%',v:6.8,t:'6.8%',c:CR,strong:1}
+  ]);
+
+  bars('prod',[
+    {l:'Produced FY2021-22',v:7377,t:'7,377',c:PK},
+    {l:'Produced FY2024-25',v:22404,t:'22,404',c:PK,strong:1},
+    {l:'Subsidised this FY \u2014 PAVE',v:116000,t:'116,000',c:CR,strong:1},
+    {l:'EDB tender \u2014 fast-track',v:100000,t:'100,000',c:WA,strong:1}
   ]);
 
   distChart();
