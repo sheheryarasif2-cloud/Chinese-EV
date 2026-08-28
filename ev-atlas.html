@@ -1,0 +1,1191 @@
+<title>Three-Market EV Atlas</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+:root{
+  --bg:#FCFCFB; --panel:#FFFFFF; --sunk:#F2F4F4;
+  --ink:#14181B; --ink2:#3A464D; --muted:#647079; --line:#DDE3E5; --line2:#C3CCD0;
+  --accent:#0B6E77; --accent-soft:#E4F0F1;
+  --cn:#B07208; --in:#6C46AD; --pk:#0F7D4C;
+  --cn-soft:#F7EFDF; --in-soft:#EEE9F7; --pk-soft:#E4F1EA;
+  --good:#0F7D4C; --warn:#B07208; --crit:#A8372A;
+  --good-soft:#E4F1EA; --warn-soft:#F7EFDF; --crit-soft:#F9EBE8;
+  --shadow:0 1px 2px rgba(20,24,27,.05),0 4px 14px rgba(20,24,27,.045);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#14181B; --panel:#1B2125; --sunk:#232A2F;
+  --ink:#EDF1F2; --ink2:#C2CCD1; --muted:#8B979D; --line:#2E373C; --line2:#3E4950;
+  --accent:#4FB5BE; --accent-soft:#163336;
+  --cn:#B8822A; --in:#9A7ACE; --pk:#2FA26E;
+  --cn-soft:#33280F; --in-soft:#2A2338; --pk-soft:#123026;
+  --good:#2FA26E; --warn:#B8822A; --crit:#D0665A;
+  --good-soft:#123026; --warn-soft:#33280F; --crit-soft:#3A211D;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25);
+}}
+:root[data-theme="dark"]{
+  --bg:#14181B; --panel:#1B2125; --sunk:#232A2F;
+  --ink:#EDF1F2; --ink2:#C2CCD1; --muted:#8B979D; --line:#2E373C; --line2:#3E4950;
+  --accent:#4FB5BE; --accent-soft:#163336;
+  --cn:#B8822A; --in:#9A7ACE; --pk:#2FA26E;
+  --cn-soft:#33280F; --in-soft:#2A2338; --pk-soft:#123026;
+  --good:#2FA26E; --warn:#B8822A; --crit:#D0665A;
+  --good-soft:#123026; --warn-soft:#33280F; --crit-soft:#3A211D;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Source Serif 4",Georgia,serif;font-size:16px;line-height:1.6;
+  -webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,th,.ui,button,input,select,label,.eyebrow,.tag,.stat-k,.legend{font-family:Archivo,"Helvetica Neue",Arial,sans-serif}
+.mono,.n,code,.stat-v{font-family:"JetBrains Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
+
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.eyebrow{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+
+/* ---------- header ---------- */
+header.hero{padding:56px 0 30px;border-bottom:1px solid var(--line)}
+h1{font-size:clamp(32px,5.4vw,58px);font-weight:800;letter-spacing:-.03em;line-height:1.02;margin:0 0 16px;text-wrap:balance;max-width:16ch}
+.lede{font-size:clamp(15px,1.9vw,19px);color:var(--ink2);max-width:62ch;margin:0 0 22px;line-height:1.5}
+.meta{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--muted);line-height:2}
+.themebtn{position:fixed;top:14px;right:14px;z-index:60;background:var(--panel);border:1px solid var(--line2);color:var(--ink2);
+  border-radius:999px;padding:7px 13px;font-size:11px;font-weight:600;cursor:pointer;box-shadow:var(--shadow)}
+
+/* ---------- nav ---------- */
+nav.sticky{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 92%,transparent);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav.sticky .wrap{display:flex;gap:2px;overflow-x:auto;padding-top:6px;padding-bottom:6px;scrollbar-width:thin}
+nav.sticky a{flex:0 0 auto;padding:8px 12px;border-radius:7px;font-size:12.5px;font-weight:600;
+  color:var(--muted);text-decoration:none;white-space:nowrap}
+nav.sticky a:hover{background:var(--sunk);color:var(--ink)}
+nav.sticky a.on{background:var(--accent-soft);color:var(--accent)}
+
+/* ---------- sections ---------- */
+section{padding:52px 0;border-bottom:1px solid var(--line);scroll-margin-top:56px}
+h2{font-size:clamp(23px,3.2vw,33px);font-weight:800;letter-spacing:-.022em;margin:0 0 8px;text-wrap:balance}
+h3{font-size:17px;font-weight:700;letter-spacing:-.01em;margin:30px 0 10px}
+h4{font-size:13px;font-weight:700;margin:18px 0 6px;letter-spacing:.01em}
+.sub{color:var(--muted);font-size:14.5px;margin:0 0 22px;max-width:70ch}
+p{margin:0 0 13px;max-width:74ch}
+ul{margin:0 0 14px;padding-left:19px}li{margin-bottom:7px;max-width:72ch}
+
+/* ---------- stat tiles ---------- */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:12px;margin:24px 0}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:15px 16px;box-shadow:var(--shadow)}
+.stat-v{font-family:Archivo,sans-serif;font-size:27px;font-weight:800;letter-spacing:-.03em;line-height:1;display:block}
+.stat-k{font-family:"JetBrains Mono",monospace;font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--muted);margin-top:8px;display:block;line-height:1.5}
+.v-good{color:var(--good)}.v-warn{color:var(--warn)}.v-crit{color:var(--crit)}.v-acc{color:var(--accent)}
+.v-cn{color:var(--cn)}.v-in{color:var(--in)}.v-pk{color:var(--pk)}
+
+/* ---------- callouts ---------- */
+.note{border-left:3px solid var(--line2);background:var(--sunk);padding:14px 17px;border-radius:0 9px 9px 0;margin:18px 0}
+.note.g{border-left-color:var(--good);background:var(--good-soft)}
+.note.w{border-left-color:var(--warn);background:var(--warn-soft)}
+.note.c{border-left-color:var(--crit);background:var(--crit-soft)}
+.note p:last-child{margin-bottom:0}
+.note .lbl{font-family:"JetBrains Mono",monospace;font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;
+  display:block;margin-bottom:7px;font-weight:500;color:var(--muted)}
+.note.g .lbl{color:var(--good)}.note.w .lbl{color:var(--warn)}.note.c .lbl{color:var(--crit)}
+
+/* ---------- tables ---------- */
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:11px;background:var(--panel);margin:18px 0;box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;font-size:13.5px;font-family:Archivo,sans-serif}
+th{position:sticky;top:0;background:var(--sunk);text-align:left;font-size:9.5px;font-weight:700;
+  letter-spacing:.09em;text-transform:uppercase;color:var(--muted);padding:10px 13px;border-bottom:1px solid var(--line2);white-space:nowrap;z-index:2}
+td{padding:9px 13px;border-bottom:1px solid var(--line);vertical-align:top}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover{background:var(--sunk)}
+.n{text-align:right;white-space:nowrap;font-size:13px}
+.co{font-weight:600}
+.small{font-size:12px;color:var(--muted)}
+
+/* ---------- tags ---------- */
+.tag{display:inline-block;font-size:9.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+  padding:3px 7px;border-radius:5px;border:1px solid;white-space:nowrap}
+.t-a{color:var(--good);border-color:var(--good);background:var(--good-soft)}
+.t-b{color:var(--warn);border-color:var(--warn);background:var(--warn-soft)}
+.t-c{color:var(--crit);border-color:var(--crit);background:var(--crit-soft)}
+.t-d{color:var(--muted);border-color:var(--line2);background:var(--sunk)}
+.t-cn{color:var(--cn);border-color:var(--cn);background:var(--cn-soft)}
+.t-in{color:var(--in);border-color:var(--in);background:var(--in-soft)}
+.t-pk{color:var(--pk);border-color:var(--pk);background:var(--pk-soft)}
+
+/* ---------- charts ---------- */
+.chart{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:20px;margin:20px 0;box-shadow:var(--shadow)}
+.chart h4{margin:0 0 3px;font-size:14.5px}
+.chart .cap{font-size:12px;color:var(--muted);margin:0 0 16px}
+.legend{display:flex;flex-wrap:wrap;gap:14px;margin:12px 0 0;font-size:11.5px;font-weight:600;color:var(--ink2)}
+.legend span{display:flex;align-items:center;gap:6px}
+.sw{width:11px;height:11px;border-radius:3px;flex:0 0 auto}
+.bars{display:flex;flex-direction:column;gap:9px;margin-top:6px}
+.bar-row{display:grid;grid-template-columns:minmax(120px,190px) 1fr auto;gap:12px;align-items:center;font-size:12.5px;font-family:Archivo,sans-serif}
+.bar-lab{color:var(--ink2);font-weight:600;line-height:1.25}
+.bar-track{background:var(--sunk);border-radius:4px;height:19px;position:relative;overflow:hidden}
+.bar-fill{height:100%;border-radius:4px 3px 3px 4px;position:relative;transition:width .8s cubic-bezier(.2,.8,.2,1)}
+.bar-val{font-family:"JetBrains Mono",monospace;font-size:12px;font-weight:500;white-space:nowrap;min-width:78px;text-align:right}
+
+/* ---------- explorer ---------- */
+.controls{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin:18px 0 4px}
+.controls input,.controls select{font-size:13px;padding:8px 11px;border:1px solid var(--line2);border-radius:8px;
+  background:var(--panel);color:var(--ink);font-family:Archivo,sans-serif}
+.controls input{min-width:190px;flex:1 1 190px}
+.chip{font-size:12px;font-weight:600;padding:7px 13px;border-radius:999px;border:1px solid var(--line2);
+  background:var(--panel);color:var(--muted);cursor:pointer;font-family:Archivo,sans-serif}
+.chip.on{color:#fff;border-color:transparent}
+.chip.on[data-m="CN"]{background:var(--cn)}
+.chip.on[data-m="IN"]{background:var(--in)}
+.chip.on[data-m="PK"]{background:var(--pk)}
+.chip.on[data-m="ALL"]{background:var(--accent)}
+.count{font-size:12px;color:var(--muted);font-family:"JetBrains Mono",monospace;margin-left:auto}
+th.sortable{cursor:pointer;user-select:none}
+th.sortable:hover{color:var(--ink)}
+th.sortable::after{content:"⇅";opacity:.35;margin-left:5px;font-size:10px}
+th.sortable.asc::after{content:"↑";opacity:1}
+th.sortable.desc::after{content:"↓";opacity:1}
+.mkt{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:7px;vertical-align:middle}
+
+/* ---------- timeline ---------- */
+.tl{border-left:2px solid var(--line2);margin:22px 0 22px 8px;padding-left:22px;display:flex;flex-direction:column;gap:22px}
+.tl-i{position:relative}
+.tl-i::before{content:"";position:absolute;left:-28px;top:5px;width:11px;height:11px;border-radius:50%;
+  background:var(--in);border:2px solid var(--bg)}
+.tl-y{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.1em;color:var(--in);font-weight:700;display:block;margin-bottom:4px}
+
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px;margin:20px 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:17px 19px;box-shadow:var(--shadow)}
+.card h4{margin-top:0}
+footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
+@media(max-width:640px){
+  .bar-row{grid-template-columns:1fr;gap:4px}
+  .bar-val{text-align:left;min-width:0}
+  section{padding:38px 0}
+}
+</style>
+
+<button class="themebtn ui" id="tbtn" aria-label="Toggle colour theme">◐ Theme</button>
+
+<header class="hero"><div class="wrap">
+  <p class="eyebrow">China · India · Pakistan &nbsp;·&nbsp; electric two-wheelers &nbsp;·&nbsp; compiled 27 August 2026</p>
+  <h1>Three-Market EV Atlas</h1>
+  <p class="lede">
+    Everything gathered on electric two-wheelers across the source market, the comparable market and the
+    target market — audited filings, primary tariff law, ~140 models with prices, and a working cost model.
+    Built to survive scrutiny, including where the finding is unwelcome.
+  </p>
+  <div class="stats">
+    <div class="stat"><span class="stat-v v-good">4–6</span><span class="stat-k">Months payback · fleet · no subsidy</span></div>
+    <div class="stat"><span class="stat-v v-acc">7×</span><span class="stat-k">Cheaper per km than a CD 70</span></div>
+    <div class="stat"><span class="stat-v v-crit">~88%</span><span class="stat-k">Market held by Atlas Honda</span></div>
+    <div class="stat"><span class="stat-v v-warn">30 Jun 27</span><span class="stat-k">Tariff concession sunset · ~10 months</span></div>
+    <div class="stat"><span class="stat-v v-pk">3.3×</span><span class="stat-k">Factory gate → Pakistani shelf</span></div>
+  </div>
+  <p class="meta">
+    Evidence grades used throughout &nbsp;
+    <span class="tag t-a">Audited</span> company filing &nbsp;
+    <span class="tag t-b">Primary law</span> statute or gazette &nbsp;
+    <span class="tag t-c">Press</span> unverified &nbsp;
+    <span class="tag t-d">Declared</span> self-reported<br>
+    Five supplier RFQs sent 27 Aug 2026 · no reply yet · no bank, delivery platform or regulator contacted
+  </p>
+</div></header>
+
+<nav class="sticky"><div class="wrap" id="nav">
+  <a href="#verdict">Verdict</a>
+  <a href="#economics">Economics</a>
+  <a href="#fleet">Fleet &amp; rider</a>
+  <a href="#incumbent">Incumbent</a>
+  <a href="#india">India's warning</a>
+  <a href="#supply">Supply side</a>
+  <a href="#battery">Battery layer</a>
+  <a href="#tariff">Tariff &amp; law</a>
+  <a href="#landed">Landed cost</a>
+  <a href="#models">Model explorer</a>
+  <a href="#gates">Gates</a>
+  <a href="#limits">Limits</a>
+</div></nav>
+
+<div class="wrap">
+
+<!-- ================= VERDICT ================= -->
+<section id="verdict">
+  <p class="eyebrow">01 — the answer first</p>
+  <h2>Demand is not the risk. Being the seller is.</h2>
+  <p class="sub">Four independent lines of evidence converge on one conclusion.</p>
+
+  <p>The economics of electric two-wheelers in Pakistan are <strong>outstandingly good</strong>. They survive the
+  worst domestic electricity tariff, a punishing battery assumption, and the complete removal of every government
+  incentive — simultaneously. That much is settled.</p>
+
+  <div class="note g"><span class="lbl">What the evidence supports</span>
+    <p><strong>A fleet-first entry serving delivery riders, sold on arithmetic.</strong> Fuel is
+    <strong>30–71% of a Pakistani delivery rider's gross earnings</strong>. An electric bike repays its premium in
+    <strong>four to six months</strong> with no subsidy. There are <strong>50,000+ known fleet riders</strong>, and
+    PKR 50m buys enough machines to need <strong>under 1% of that market</strong>.</p>
+  </div>
+
+  <div class="note c"><span class="lbl">What the evidence does not support</span>
+    <p><strong>A new consumer brand.</strong> Atlas Honda holds ~88% of the market on 1.69m units a year, runs 500+
+    dealers, and has launched an electric scooter while stating it needs <em>no additional investment</em> to do so.
+    India ran this experiment: the best-funded pure-play fell from <strong>over 50% share to 6.8%</strong> — beaten
+    on service, not price.</p>
+  </div>
+
+  <div class="note w"><span class="lbl">Three gates cannot be closed from a desk</span>
+    <p>Whether a manufacturer will supply at this scale (K3), whether a letter of credit can be opened today (K4),
+    and whether an enforceable battery warranty backstop exists (K5). <strong>RFQs went to five suppliers on
+    27 August; no reply yet.</strong> A fourth gate was added by the research: whether a delivery platform will
+    deduct rental from rider earnings at source.</p>
+  </div>
+</section>
+
+<!-- ================= ECONOMICS ================= -->
+<section id="economics">
+  <p class="eyebrow">02 — the demand case</p>
+  <h2>Running cost is the most robust number here</h2>
+  <p class="sub">Honda CD 70 at PKR 343.10/litre against an electric equivalent at 2.5 kWh/100 km, across Pakistan's domestic tariff slabs.</p>
+
+  <div class="chart">
+    <h4>Cost per kilometre — petrol against every electricity slab</h4>
+    <p class="cap">PKR per km. Lower is better. Petrol shown in red; electric cases in green.</p>
+    <div class="bars" id="cpk"></div>
+    <div class="legend">
+      <span><i class="sw" style="background:var(--crit)"></i>Petrol — Honda CD 70</span>
+      <span><i class="sw" style="background:var(--pk)"></i>Electric — by tariff slab</span>
+    </div>
+  </div>
+
+  <p><strong>Even at the most expensive domestic electricity in Pakistan, the electric bike costs about a third of
+  the petrol bike to run.</strong> At the national average it is roughly one-seventh. This depends only on the price
+  of petrol and the price of a unit of electricity — not on a forecast, a subsidy or a policy.</p>
+
+  <h3>Payback and its sensitivities</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Case</th><th class="n">Premium PKR</th><th class="n">Breakeven</th><th class="n">Months</th></tr></thead>
+    <tbody>
+      <tr><td>Consumer · 15,000 km/yr · no subsidy</td><td class="n">88,600</td><td class="n">16,400–18,100 km</td><td class="n">13.1–14.5</td></tr>
+      <tr><td>Consumer · with PKR 65,000 subsidy</td><td class="n">23,600</td><td class="n">4,832 km</td><td class="n"><strong>3.9</strong></td></tr>
+      <tr><td>Fleet · 24,960 km/yr · lithium</td><td class="n">88,600</td><td class="n">—</td><td class="n"><strong>5.9</strong></td></tr>
+      <tr><td>Fleet · 40,000 km/yr · lithium</td><td class="n">88,600</td><td class="n">—</td><td class="n"><strong>3.7</strong></td></tr>
+    </tbody>
+  </table></div>
+  <p class="small">Battery sensitivity: even at PKR 60,000 replaced every 15 months — a deliberately punishing
+  assumption — the electric bike still saves PKR 1.69/km. Battery cost changes the payback period; it never
+  reverses the sign.</p>
+
+  <div class="note w"><span class="lbl">The slab-crossing trap — specific to Pakistan</span>
+    <p>Charging draws roughly <strong>31 kWh a month</strong>. Pakistan's protected domestic tariff cuts off at
+    <strong>200 units</strong>, and crossing it removes protected status <strong>from the entire bill, not just the
+    marginal units.</strong> A household at 175–200 units — plausibly exactly where a CD 70 buyer sits — is pushed over.</p>
+    <p>The consequence is commercial: <strong>a naive savings pitch is contradicted by the customer's next
+    electricity bill.</strong> It argues for charging away from home, and makes solar charging a genuine
+    differentiator rather than a marketing line.</p>
+  </div>
+
+  <div class="note"><span class="lbl">And fuel is now repriced daily</span>
+    <p>The petrol figure was checked against a conflicting press number of 414–415 and <strong>PKR 343.10 is
+    confirmed correct</strong>: the month ran 329.82 → 343.10, a 4.0% band, across four independently reported
+    notification dates. <strong>Since August 2026 petrol is reviewed daily under a new OGRA mechanism</strong> —
+    so no petrol figure here can be quoted as "the price", only as the price on a stated date.</p>
+    <p>It cuts both ways. <strong>It strengthens the fleet pitch</strong> — volatility is what an electric bike
+    removes — and <strong>adds a risk</strong>: a sustained crude fall now reaches the pump in days rather than weeks.</p>
+  </div>
+</section>
+
+<!-- ================= FLEET ================= -->
+<section id="fleet">
+  <p class="eyebrow">03 — the fleet model</p>
+  <h2>The fuel saving <em>is</em> the payment capacity</h2>
+  <p class="sub">A rider earning PKR 35,000/month cannot produce PKR 248,500 upfront. That was never an affordability problem — it was a financing-structure problem.</p>
+
+  <div class="stats">
+    <div class="stat"><span class="stat-v">80 km</span><span class="stat-k">Per day · 26 days/month</span></div>
+    <div class="stat"><span class="stat-v v-crit">17,841</span><span class="stat-k">PKR/month fuel · 30–71% of gross earnings</span></div>
+    <div class="stat"><span class="stat-v v-good">1,736</span><span class="stat-k">PKR/month electricity · same distance</span></div>
+    <div class="stat"><span class="stat-v v-acc">619</span><span class="stat-k">PKR/working day of headroom created</span></div>
+    <div class="stat"><span class="stat-v">50,000+</span><span class="stat-k">Known fleet riders · foodpanda + Bykea</span></div>
+  </div>
+
+  <p class="small">Cross-check: 80 km ÷ 40 km/l × PKR 343.10 = <strong>PKR 686/day computed</strong> against
+  ~PKR 800/day reported — close enough to validate the model.</p>
+
+  <div class="chart">
+    <h4>Rental rate — who keeps what</h4>
+    <p class="cap">Monthly, per rider. The rider's share is what remains of the fuel saving after the daily charge.</p>
+    <div class="bars" id="rent"></div>
+    <div class="legend">
+      <span><i class="sw" style="background:var(--pk)"></i>Rider keeps</span>
+      <span><i class="sw" style="background:var(--in)"></i>Operator collects</span>
+    </div>
+  </div>
+
+  <div class="note g"><span class="lbl">The collection mechanism is what actually solves it</span>
+    <p>Renting assets to informal workers is a credit-risk business, and that is usually where this model dies.
+    <strong>The fix is to collect at the platform, not from the rider</strong> — foodpanda or Bykea deducting the
+    daily rate from earnings before payout. That converts thousands of informal-worker credit exposures into
+    <strong>a single business receivable from a funded company.</strong></p>
+    <p><strong>Proven template:</strong> Zypp Electric in India runs exactly this — ₹100–300/day converting to
+    ownership at 52 weeks, 20,000+ vehicles across Swiggy, Zomato, Blinkit and Uber riders, on US$76.5m raised.
+    Same duty cycle, same constraint, same customer.</p>
+  </div>
+
+  <div class="note w"><span class="lbl">What it trades away</span>
+    <p>Rental <strong>locks capital for 13–20 months per machine</strong> where a sale recovers it immediately.
+    In exchange: recurring revenue, the battery margin, and control of uptime. <strong>This becomes an
+    asset-finance business with a supply arm, and should be funded as one.</strong></p>
+  </div>
+
+  <h3>Cycle life replaces calendar life</h3>
+  <p>At 80–128 km/day against a 75–85 km range, batteries cycle <strong>312–500 times a year</strong>. Lead-acid,
+  rated 300–400 cycles, therefore lasts <strong>8–13 months</strong> in fleet service. Both chemistries pay back in
+  roughly the same time, because lithium's higher cost is offset by its life. <strong>So chemistry is not an
+  economic choice here — it is an operational one</strong>, and getting it wrong is precisely how India's largest
+  player lost its market.</p>
+</section>
+
+<!-- ================= INCUMBENT ================= -->
+<section id="incumbent">
+  <p class="eyebrow">04 — the incumbent</p>
+  <h2>Atlas Honda confirmed the gap by failing to close it</h2>
+
+  <div class="stats">
+    <div class="stat"><span class="stat-v">1.69m</span><span class="stat-k">Units sold FY26</span></div>
+    <div class="stat"><span class="stat-v v-crit">~88%</span><span class="stat-k">Market share</span></div>
+    <div class="stat"><span class="stat-v">500+</span><span class="stat-k">Sales dealers</span></div>
+    <div class="stat"><span class="stat-v">63</span><span class="stat-k">Service &amp; parts points</span></div>
+  </div>
+
+  <div class="grid2">
+    <div class="card">
+      <h4>Honda ICON e: — PKR 419,900</h4>
+      <div class="tw" style="margin:10px 0 0;box-shadow:none"><table>
+        <tbody>
+          <tr><td>Motor</td><td class="n">1500 W · 85 Nm · 55 km/h</td></tr>
+          <tr><td><strong>Battery</strong></td><td class="n"><strong>1.58 kWh — FIXED</strong></td></tr>
+          <tr><td><strong>Range</strong></td><td class="n"><strong>65 km</strong></td></tr>
+          <tr><td><strong>Charging</strong></td><td class="n"><strong>6.0 h · proprietary</strong></td></tr>
+          <tr><td>Weight / wheels</td><td class="n">86 kg dry · 12″</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div class="card">
+      <h4>What that price buys, in context</h4>
+      <div class="bars" id="hondactx" style="margin-top:12px"></div>
+    </div>
+  </div>
+
+  <div class="note g"><span class="lbl">The most consequential finding for the fleet thesis</span>
+    <p>At PKR 419,900 the ICON e: is <strong>2.6× a CD 70</strong> and <strong>1.7× a Yadea T5</strong>, while
+    offering <strong>less range than the T5</strong> (65 km vs 75–85 km).</p>
+    <p><strong>And it is structurally useless for fleet work.</strong> A rider covering 80–128 km a day cannot use a
+    65 km machine with a fixed battery, a proprietary charger and a six-hour recharge. No swap, no fast charge, no
+    second pack. <strong>The incumbent has taken a premium consumer position, not a fleet one — the gap is confirmed
+    open by the only company that could have closed it.</strong></p>
+  </div>
+  <p class="small"><strong>Road Prince matters disproportionately:</strong> one of the few substantial non-Honda
+  networks, and it already carries Yadea, the world's largest electric two-wheeler maker.</p>
+</section>
+
+<!-- ================= INDIA ================= -->
+<section id="india">
+  <p class="eyebrow">05 — the comparable market</p>
+  <h2>India already ran this cycle, and it ended badly for entrants</h2>
+  <p class="sub">Same subcontinent, same commuter baseline, same price sensitivity, and a subsidy structurally similar to Pakistan's NEV cost-sharing. Pakistan is at the start of that curve.</p>
+
+  <div class="tl">
+    <div class="tl-i"><span class="tl-y">2022</span>
+      <p>Generous FAME-II support draws in entrants. <strong>Hero Electric and Okinawa hold 31% combined share.</strong></p></div>
+    <div class="tl-i"><span class="tl-y">2023–24</span>
+      <p>SFIO pursues <strong>Hero Electric, Okinawa and Benling</strong> over ~INR 2.97bn in localisation-linked
+      claims. <strong>~INR 469 crore ordered repaid; 80%+ of permanent staff laid off.</strong> Combined share falls 31% → 10%.</p></div>
+    <div class="tl-i"><span class="tl-y">2024</span>
+      <p>FAME-II lapses. <strong>Sales fall 53% in a single month.</strong> Beneficiary vehicles cut from ~989,000 to under 564,000.</p></div>
+    <div class="tl-i"><span class="tl-y">2024–26</span>
+      <p>Ola Electric falls from <strong>&gt;50% share to 6.8%</strong>. 10,644 consumer-helpline complaints, warranty
+      claims refused, scooters queued for parts — <strong>Goa suspends its vehicle registrations.</strong> FY loss ₹1,833 crore.</p></div>
+    <div class="tl-i"><span class="tl-y">2026</span>
+      <p>Registrations <strong>up 53–75%</strong> with support slashed to ₹5,000/vehicle. <strong>TVS 25%, Bajaj 23%,
+      Ather 16%, Hero 11%</strong> — those four take <strong>95.6% of incremental growth.</strong></p></div>
+  </div>
+
+  <div class="note c"><span class="lbl">The three transferable lessons</span>
+    <p><strong>1. Demand survives subsidy withdrawal. Entrants often do not.</strong> The market was captured by
+    whoever already had dealers, service and brand trust. In Pakistan that means Atlas Honda — and it has begun.</p>
+    <p><strong>2. Service is the decisive variable, not price.</strong> Ola had capital, product, brand and half the
+    market. It lost on spare parts and service capacity — and a state regulator removed its right to sell.</p>
+    <p><strong>3. Localisation-linked subsidy claims carry clawback risk.</strong> Pakistan's 1% duty concession is
+    gated on EDB certification and annual input reconciliation. Same structural shape. In India, getting that
+    paperwork wrong was company-ending.</p>
+  </div>
+</section>
+
+<!-- ================= SUPPLY ================= -->
+<section id="supply">
+  <p class="eyebrow">06 — the source market</p>
+  <h2>These are domestic Chinese businesses with an export gesture attached</h2>
+  <p class="sub">Read from five audited filings, not from trade press. Where the two disagreed, the filing won — and in one case that reversed a conclusion already drawn.</p>
+
+  <div class="tw"><table>
+    <thead><tr><th>Company</th><th class="n">Revenue</th><th class="n">Net margin</th><th class="n">Vehicle units</th><th>International</th><th>Grade</th></tr></thead>
+    <tbody>
+      <tr><td class="co">Yadea · 1585.HK · FY2025</td><td class="n">RMB 37.01bn</td><td class="n"><strong>7.87%</strong></td><td class="n">16,269,200</td><td>Vietnam plant live</td><td><span class="tag t-a">Audited</span></td></tr>
+      <tr><td class="co">Aima · 603529.SH · FY2025</td><td class="n">RMB 25.10bn</td><td class="n"><strong>8.11%</strong></td><td class="n">11,639,817</td><td><strong>0.86%</strong> ↓7.89%</td><td><span class="tag t-a">Audited</span></td></tr>
+      <tr><td class="co">Luyuan · 2451.HK · FY2024</td><td class="n">RMB 5.07bn</td><td class="n">2.29%</td><td class="n">—</td><td>HKD 6.1m unspent</td><td><span class="tag t-a">Audited</span></td></tr>
+      <tr><td class="co">Xinri · 603787.SH · FY2025</td><td class="n">RMB 4.11bn</td><td class="n">1.23%</td><td class="n">2,284,597</td><td>2.48% @ 9.95% GM</td><td><span class="tag t-a">Audited</span></td></tr>
+      <tr><td class="co">NIU · NASDAQ · FY2025</td><td class="n">—</td><td class="n"><strong>loss</strong></td><td class="n">1,192,039</td><td>6.7% of units</td><td><span class="tag t-a">Audited</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="chart">
+    <h4>Overseas revenue as a share of turnover</h4>
+    <p class="cap">The figure that decides whether a partner will fund your warranty claims, marketing or credit terms.</p>
+    <div class="bars" id="intl"></div>
+  </div>
+
+  <div class="note c"><span class="lbl">Read what the filings actually say</span>
+    <p><strong>Aima</strong> — described everywhere as aggressively regionalising — filed <strong>overseas revenue of
+    0.86% of turnover, and it fell 7.89%.</strong> <strong>Xinri</strong> exports at 9.95% gross margin against
+    14–21% domestically: exporting is its <em>least</em> profitable channel. <strong>NIU</strong> sold 80,018 units
+    internationally across 40+ countries — about 2,000 per market. <strong>Luyuan's</strong> international budget was
+    HKD 6.1m, "delayed and unutilized".</p>
+    <p><strong>A partner for whom export is under 1% of revenue and falling will not fund your warranty claims.</strong></p>
+  </div>
+
+  <h3>The cost basis, and the MOQ chasm</h3>
+  <p>Derived from Yadea's audited revenue table across 16.3 million units — <strong>ex-works ASP RMB 1,415 per
+  electric bicycle, RMB 1,878 per electric scooter.</strong> Order minimums then split the market in two.
+  <strong>Huaihai</strong> — a top-five maker with its own OEM arm and an existing Pakistan base — quotes
+  <strong>10,000 units a year</strong>, roughly twenty times the capital ceiling. The tier that deals at
+  <strong>50–200 units</strong> is trading houses and small ODMs. <strong>Nothing sits in between</strong>, and the
+  reachable tier is where a warranty backstop is weakest.</p>
+</section>
+
+<!-- ================= BATTERY ================= -->
+<section id="battery">
+  <p class="eyebrow">07 — the battery layer</p>
+  <h2>Batteries are the business, not the machine</h2>
+  <p class="sub">Yadea's audited accounts show batteries and chargers at 28.4% of revenue — RMB 10.5bn — and it sold 18.3 million batteries against 16.3 million vehicles. The market leader monetises replacement rather than absorbing it as warranty cost.</p>
+
+  <div class="tw"><table>
+    <thead><tr><th>Chemistry</th><th class="n">Pack price PKR</th><th class="n">Rated cycles</th><th class="n">Consumer life</th><th class="n">Fleet life</th></tr></thead>
+    <tbody>
+      <tr><td class="co">Lead-acid / graphene</td><td class="n">10,000–20,000</td><td class="n">300–400</td><td class="n">12–15 months</td><td class="n"><strong>8–13 months</strong></td></tr>
+      <tr><td class="co">Lithium-ion</td><td class="n">40,000–120,000</td><td class="n">1,500–2,000+</td><td class="n">3–5 years</td><td class="n"><strong>3.0–4.8 years</strong></td></tr>
+      <tr><td class="co">NiMH</td><td class="n">25,000–50,000</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Three suppliers, same nominal spec, wildly different prices</h3>
+  <p class="sub">72V 30–35Ah LiFePO4, converted at <strong>USD 277.90</strong> — interbank selling, dated 27 Aug 2026 15:56 PST.</p>
+
+  <div class="chart">
+    <h4>Battery pack price at the reachable order tier</h4>
+    <p class="cap">PKR per pack. The dashed marker is Pakistani retail for the same nominal spec.</p>
+    <div class="bars" id="batt"></div>
+  </div>
+
+  <div class="note c"><span class="lbl">The supplier spread is bigger than the import margin</span>
+    <p>At the <strong>50-unit tier</strong> the same nominal pack is <strong>PKR 59,281 from Koyosonic</strong> and
+    <strong>PKR 113,939 from Hunan CTS.</strong> One is 48% below Pakistani retail; the other <strong>matches
+    Pakistani retail before a single rupee of freight, duty or tax.</strong></p>
+    <p><strong>So the arbitrage is not a property of the trade. It is a property of the supplier.</strong> Choosing
+    wrong erases the entire margin — which is why listing prices cannot substitute for quotes.</p>
+  </div>
+
+  <div class="note w"><span class="lbl">The volume cliff, and the warranty gap</span>
+    <p><strong>PKR 42,018 at MOQ 500 against PKR 128,668 at 1–49 — 3.1× cheaper at volume.</strong> But MOQ 500 is
+    <strong>PKR 21m of batteries alone, 42% of the ceiling</strong>, before a single vehicle.</p>
+    <p>Hunan CTS publishes <strong>1,500 cycles at 90% DOD</strong> — 3.0–4.8 fleet years. Read conservatively that
+    is <strong>three years, not five</strong> — and Koyosonic warrants only <strong>1 year below 50Ah</strong>,
+    exactly the pack size a two-wheeler uses. <strong>A one-year warranty on a three-year asset is the K5 exposure.</strong></p>
+  </div>
+
+  <div class="note"><span class="lbl">The development to watch</span>
+    <p><strong>Yadea's sodium-ion Q1 and DE3 at CNY 3,299–3,499</strong> — its entry models now use <strong>no
+    lithium at all</strong>, with 92% capacity at −20 °C and 80% charge in 15 minutes. If sodium reaches export
+    markets it resets the cost floor and removes lithium price and supply risk from the bill of materials.
+    <strong>It is the market leader deploying it, not a startup.</strong></p>
+  </div>
+</section>
+
+<!-- ================= TARIFF ================= -->
+<section id="tariff">
+  <p class="eyebrow">08 — primary law</p>
+  <h2>The tariff regime, read in its own words</h2>
+  <p class="sub">The FY2026-27 Fifth Schedule is not a separate document — Finance Act 2026 s.3(14) substituted the whole schedule via its Second Schedule. Read from the Gazette of Pakistan, 26 June 2026.</p>
+
+  <div class="note g"><span class="lbl">K7 settled in black-letter law — Gazette page 769</span>
+    <p><em>"The concession shall be admissible to manufacturers of electric motorcycle <strong>on and from the 1st day
+    of July, 2025 till 30th day of June, 2027</strong> subject to certification and quota determination by the
+    Engineering Development Board (EDB)."</em></p>
+    <p>The old "five years from 1st July, 2020" wording was replaced outright. <strong>About ten months remain</strong>
+    — and EDB certification, supplier selection, an LC, a 15–45 day lead time and a 25–35 day sea leg all have to fit
+    inside it. <strong>The decision window is materially shorter than the concession window.</strong></p>
+  </div>
+
+  <h3>The seven components that get 1% — PCT 8711.6040, Table-II serial 3</h3>
+  <div class="tw"><table>
+    <thead><tr><th></th><th>Component</th><th class="n">PCT code</th></tr></thead>
+    <tbody>
+      <tr><td>(a)</td><td class="co">Electric Motor</td><td class="n">8501.3200</td></tr>
+      <tr><td>(b)</td><td class="co">Battery Charger</td><td class="n">8504.4020</td></tr>
+      <tr><td>(c)</td><td class="co">Switches</td><td class="n">8536.5029</td></tr>
+      <tr><td>(d)</td><td class="co">Junction Box</td><td class="n">8536.4910</td></tr>
+      <tr><td>(e)</td><td class="co">Controller</td><td class="n">8542.3100</td></tr>
+      <tr><td>(f)</td><td class="co">Converter</td><td class="n"><strong>8454.1000</strong> ⚠</td></tr>
+      <tr><td><strong>(g)</strong></td><td class="co"><strong>Batteries other than lead acid</strong></td><td class="n"><strong>85.07</strong></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="note c"><span class="lbl">A drafting defect that survived a wholesale substitution</span>
+    <p><strong>8454 is "converters, ladles, ingot moulds and casting machines of a kind used in metallurgy."</strong>
+    It is a steel-making vessel. The auto-rickshaw entry two serials above gives Converter as <strong>8502.4000</strong>
+    — electric rotary converters, the sensible code.</p>
+    <p>So the schedule assigns a <strong>foundry code to an electric motorcycle's converter</strong> — and the entire
+    schedule was replaced in June 2026 without fixing it. <strong>It is not a transcription slip. It is the law.</strong>
+    Paperwork exactly this size is what ended Hero Electric and Okinawa in India.</p>
+  </div>
+
+  <h3>The battery has five routes, and the cheapest avoids EDB entirely</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Route</th><th class="n">Duty</th><th>What it requires</th></tr></thead>
+    <tbody>
+      <tr><td class="co">A · Pack as EV CKD component<br><span class="small">85.07, "other than lead acid"</span></td><td class="n"><strong>1%</strong></td><td><strong>EDB certification as a vehicle manufacturer</strong> under SRO 656(I)/2006 — the heavy gate</td></tr>
+      <tr><td class="co">B · Lithium-ion cells<br><span class="small">8507.6000 · <strong>Part-III sr.143</strong> · Gazette 761–2</span></td><td class="n"><strong>0%</strong></td><td>Sales Tax registration as a lithium-ion battery manufacturer + IOCO quota. <strong>No EDB test in Part-III</strong></td></tr>
+      <tr><td class="co">C · Full pack bill of materials<br><span class="small">13 lines · <strong>Part-I</strong> · Gazette 700</span></td><td class="n"><strong>0%</strong></td><td>Sales Tax reg + IOCO quota, <strong>and</strong> Part-I's locally-manufactured-items test (EDB may certify)</td></tr>
+      <tr><td class="co">D · Battery <em>manufacturing equipment</em><br><span class="small">Part-I sr.6(d)</span></td><td class="n"><strong>0%</strong></td><td>EDB Annex-B certification. ⚠ Heavily gutted — most sub-items now "Omitted"</td></tr>
+      <tr><td class="co"><strong>E · Charging station for EV</strong><br><span class="small">8504.4030 · Part-I · Gazette 707</span></td><td class="n"><strong>0%</strong></td><td><strong>Condition column reads "Nil".</strong> No EDB, no IOCO, no registration test, no expiry</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="note g"><span class="lbl">Two findings the primary text produced that no summary showed</span>
+    <p><strong>Lead-acid is expressly excluded</strong> — the words are "batteries other than lead acid", in all three
+    two- and three-wheeler serials. Pakistan's tariff will not subsidise the chemistry that fails in 8–13 months at
+    fleet duty. <strong>Policy and engineering point the same way for once.</strong></p>
+    <p><strong>And the cleanest concession in the whole schedule is the one nobody looked for:</strong> a charging
+    station enters at <strong>0% with "Nil" in the condition column.</strong> Since uptime is the fleet product, and a
+    65 km machine on a six-hour charge is useless at an 80–128 km duty cycle, <strong>the hardware that answers that
+    problem lands duty-free.</strong></p>
+  </div>
+
+  <div class="chart">
+    <h4>Chemistry is taxed at double — duty before sales tax and withholding</h4>
+    <p class="cap">Customs duty + additional customs duty + regulatory duty, by tariff line.</p>
+    <div class="bars" id="chem"></div>
+  </div>
+
+  <div class="tw"><table>
+    <thead><tr><th>Line</th><th>Description</th><th class="n">CD</th><th class="n">ACD</th><th class="n">RD</th><th class="n">ST</th><th class="n">WHT</th></tr></thead>
+    <tbody>
+      <tr><td class="co">8507.6000</td><td><strong>Lithium-ion</strong></td><td class="n">10%</td><td class="n">—</td><td class="n">2%</td><td class="n">18%</td><td class="n">11%</td></tr>
+      <tr><td class="co">8507.2000</td><td>Other lead-acid <span class="small">(traction)</span></td><td class="n">20%</td><td class="n">2%</td><td class="n">2%</td><td class="n">18%</td><td class="n">11%</td></tr>
+      <tr><td class="co">8507.1010</td><td>Lead-acid starter, <em>"vehicles of heading 87.11"</em></td><td class="n">25%</td><td class="n">11%</td><td class="n">—</td><td class="n">18%</td><td class="n">11%</td></tr>
+      <tr><td class="co">8711.6040</td><td><strong>Electric motorcycle CBU</strong></td><td class="n"><strong>30%</strong></td><td class="n"><strong>0%</strong><span class="small"> exempted</span></td><td class="n">—</td><td class="n">18%</td><td class="n">12%</td></tr>
+      <tr><td class="co">CKD, non-localised</td><td>Component for assembly</td><td class="n"><strong>15%</strong></td><td class="n">0%</td><td class="n">—</td><td class="n">18%</td><td class="n">12%</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small">Provincial cess on top, by port: <strong>Sindh 1.80–1.85%</strong> (Karachi) · Punjab 0.90% ·
+  KPK 2% · Balochistan 1.10–1.50%. <strong>No total incidence is stated</strong> because sales tax and withholding
+  apply to duty-inclusive value and the stacking order is a clearing-agent question, not a desk one.
+  The <strong>4% ACD on 8711.6040 is exempted by SRO 1063(I)/2026 para 3(xi)</strong>, with no expiry attached.</p>
+
+  <h3>The vehicle in law — there is no low-speed class</h3>
+  <div class="note c"><span class="lbl">Provincial Motor Vehicles Ordinance 1965, read in full</span>
+    <p><strong>"Motor cycle"</strong> has two tests only: fewer than four wheels, and unladen weight not exceeding
+    <strong>900 pounds (408 kg)</strong>. <strong>There is no wattage, kW, cc or speed threshold anywhere</strong>,
+    and section 23(1) is unconditional. Every electric two-wheeler in Pakistan is a motor cycle in law.</p>
+    <p>⚠ <strong>This corrects a claim repeated across Pakistani EV vendor sites</strong> — that machines below 250 W
+    need no registration. <strong>It has no basis in the Ordinance</strong> and appears to be Indian rules restated.
+    <strong>So the sub-PKR-97,000 tier cannot be unlocked by regulatory arbitrage</strong> — it would take amending
+    primary legislation in four provinces.</p>
+  </div>
+
+  <div class="tw"><table>
+    <thead><tr><th>Province</th><th>Electric vehicle treatment</th><th>Evidence</th></tr></thead>
+    <tbody>
+      <tr><td class="co">Balochistan</td><td>Motor vehicle tax <strong>waived in full to 30 Jun 2030</strong>; kW→cc conversion published; motorcycle token <strong>Rs 1,500 lifetime</strong></td><td><span class="tag t-b">Schedule</span></td></tr>
+      <tr><td class="co">Punjab</td><td><strong>95% exemption</strong> on registration fee and annual motor vehicle tax</td><td><span class="tag t-c">Press</span></td></tr>
+      <tr><td class="co">KPK</td><td>No token tax on electric <em>four-wheelers</em> to 30 Jun 2028</td><td><span class="tag t-c">Press</span></td></tr>
+      <tr><td class="co"><strong>Sindh</strong></td><td><strong>No published EV concession found.</strong> Bands: ≤149cc <strong>1% of value</strong>, 150cc+ <strong>2%</strong>. Only EV mention is a <strong>Rs 5,000 late-registration penalty on "EV Scooters"</strong></td><td><span class="tag t-b">Schedule</span></td></tr>
+    </tbody>
+  </table></div>
+  <p class="small"><strong>Karachi is in the one major province offering electric vehicles nothing.</strong> In money
+  it is PKR 300,000–600,000 across 200 machines — real, not thesis-changing. <strong>The signal matters more than the
+  sum.</strong> Balochistan publishes the missing mechanism — fees are charged "after conversion of power of electric
+  motor from Kilo Watts (KWs) equivalent to engine capacity (cc)" — <strong>but not the ratio</strong>, which decides
+  1% against 2% of value.</p>
+</section>
+
+<!-- ================= LANDED ================= -->
+<section id="landed">
+  <p class="eyebrow">09 — cost stack</p>
+  <h2>Factory gate to shelf is 3.3×</h2>
+  <p class="sub">The first dated FX rate in this research unblocks the comparison everything was waiting on: 27 Aug 2026, 15:56 PST — USD/PKR 277.90, CNY/PKR 41.34 (Forex.pk, indicative interbank).</p>
+
+  <div class="chart">
+    <h4>One machine, from Yadea's audited factory gate to the Pakistani shelf</h4>
+    <p class="cap">PKR. Chinese figures converted at the dated rate above; Pakistani figures are retail listings.</p>
+    <div class="bars" id="stack"></div>
+    <div class="legend">
+      <span><i class="sw" style="background:var(--cn)"></i>China — ex-works &amp; domestic retail</span>
+      <span><i class="sw" style="background:var(--pk)"></i>Pakistan — retail</span>
+    </div>
+  </div>
+
+  <div class="note c"><span class="lbl">Two readings, and the second is the uncomfortable one</span>
+    <p><strong>A Yadea sold in Pakistan retails at 3.3× what Yadea's own audited accounts say it leaves the factory
+    for.</strong> That multiple is freight, duty, sales tax, withholding, clearing, assembly and distribution margin
+    — the whole opportunity and the whole tariff exposure in one number.</p>
+    <p>And <strong>China's own retail — PKR 124,000–161,000 — lands inside Pakistan's volume band and well below the
+    T5's PKR 253,500</strong>, while already carrying Chinese distribution margin. That premium is the importable
+    margin. <strong>It is also exactly what a domestic assembler holding the 1% CKD rate is positioned to compete
+    away</strong> — so it is the competitive risk as much as the opportunity.</p>
+  </div>
+
+  <h3>CKD kit prices at real order quantities</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Product</th><th class="n">PKR</th><th class="n">MOQ</th></tr></thead>
+    <tbody>
+      <tr><td class="co">KeywayEV K037 — 12″, 72V, 1001–2000W, SKD for local assembly</td><td class="n"><strong>51,706</strong></td><td class="n">50</td></tr>
+      <tr><td class="co">CKD SKD 10″ — 600/800W, 50 km/h</td><td class="n"><strong>55,748</strong></td><td class="n">50</td></tr>
+      <tr><td class="co">SAIGE EV Group — EEC, 1500W, 48/60V, 45 km/h</td><td class="n">57,617–59,174</td><td class="n">150</td></tr>
+      <tr><td class="co">CKD EEC 10″ — 600/800W</td><td class="n">61,977</td><td class="n">50</td></tr>
+      <tr><td class="co">K025 — off-road, 72V, 1001–2000W</td><td class="n">87,792</td><td class="n">50</td></tr>
+      <tr><td class="co">Benlg ROBIN S — CKD/SKD, 48V, 450W hub</td><td class="n">84,400–93,121</td><td class="n">30</td></tr>
+      <tr><td class="co">EEC 72V 2000W streetbike (LVJIAN)</td><td class="n">102,775–105,890</td><td class="n">50</td></tr>
+      <tr><td class="co">Factory direct 72V 3000W, 90 km/h</td><td class="n">155,408</td><td class="n">50</td></tr>
+      <tr><td class="co"><strong>3000W kit INCLUDING lead-acid batteries</strong></td><td class="n"><strong>348,189–354,418</strong></td><td class="n">20</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="tw"><table>
+    <thead><tr><th>Landed stack, per unit</th><th class="n">PKR</th><th>Evidence</th></tr></thead>
+    <tbody>
+      <tr><td>CKD kit, cheapest complete (KeywayEV K037 @ MOQ 50)</td><td class="n">51,706</td><td><span class="tag t-d">Listing</span></td></tr>
+      <tr><td><strong>Battery, best 50-unit price (Koyosonic 72V 35Ah)</strong></td><td class="n"><strong>59,281</strong></td><td><span class="tag t-d">Listing</span></td></tr>
+      <tr><td><strong>FOB sub-total</strong></td><td class="n"><strong>110,987</strong></td><td class="small">battery is <strong>53%</strong></td></tr>
+      <tr><td>Sea freight, allocated — 20ft US$1,800–2,200, ~50 units <em>assumed</em></td><td class="n">~10,000–12,200</td><td><span class="tag t-c">Market rate</span></td></tr>
+      <tr><td><strong>CIF, approximate</strong></td><td class="n"><strong>~121,000–123,200</strong></td><td></td></tr>
+      <tr><td>Duty — <strong>if EDB-certified CKD</strong></td><td class="n">1% / 15%</td><td><span class="tag t-b">Primary law</span></td></tr>
+      <tr><td>Duty — <strong>if not certified, CBU</strong></td><td class="n">30% + 18% + 12%</td><td><span class="tag t-b">Primary law</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="note w"><span class="lbl">Where this number is soft</span>
+    <p><strong>Units per container is an assumption, not a measurement.</strong> No supplier has given a crated
+    volume or gross weight, so the freight allocation is arithmetic on a guess — and a container can "weigh out"
+    before it "cubes out". <strong>Lithium is also dangerous goods</strong>, so the general-cargo rate above almost
+    certainly understates a battery shipment.</p>
+    <p>⚠ <strong>Transit time contradicts the suppliers:</strong> forwarders quote <strong>9–10 days</strong>
+    port-to-port to Karachi; suppliers quote <strong>25–35 days</strong>. Both are probably true — door-to-door
+    versus steaming time. <strong>Do not net them.</strong></p>
+  </div>
+</section>
+
+<!-- ================= MODEL EXPLORER ================= -->
+<section id="models">
+  <p class="eyebrow">10 — the catalogues</p>
+  <h2>Every model found, in all three markets</h2>
+  <p class="sub">Filter, search and sort. Prices are each market's own currency — <strong>nothing is converted without a dated rate</strong>, and no INR rate was captured, so India stays in INR.</p>
+
+  <div class="controls">
+    <button class="chip on" data-m="ALL">All markets</button>
+    <button class="chip" data-m="PK">Pakistan</button>
+    <button class="chip" data-m="IN">India</button>
+    <button class="chip" data-m="CN">China</button>
+    <input type="search" id="q" placeholder="Search brand, model, chemistry…" aria-label="Search models">
+    <label class="chip" style="cursor:pointer;display:flex;align-items:center;gap:7px">
+      <input type="checkbox" id="disc" style="margin:0;width:auto;min-width:0;flex:none"> Show discontinued
+    </label>
+    <span class="count" id="cnt"></span>
+  </div>
+
+  <div class="tw"><table id="mt">
+    <thead><tr>
+      <th class="sortable" data-k="mkt">Market</th>
+      <th class="sortable" data-k="brand">Brand</th>
+      <th class="sortable" data-k="model">Model</th>
+      <th class="sortable n" data-k="price">Price</th>
+      <th>Cur.</th>
+      <th class="sortable n" data-k="spd">Top spd</th>
+      <th class="sortable n" data-k="rng">Range</th>
+      <th>Battery</th>
+      <th>Chemistry</th>
+      <th class="sortable" data-k="status">Status</th>
+      <th>Detail</th>
+    </tr></thead>
+    <tbody id="mb"></tbody>
+  </table></div>
+
+  <div class="note w"><span class="lbl">Coverage boundary, stated plainly</span>
+    <p><strong>Pakistan and India are near-complete</strong> — both have a dominant public aggregator listing every
+    model with a price. <strong>China cannot be enumerated the same way</strong>: hundreds of manufacturers,
+    thousands of SKUs, brand sites geo-blocked, retail pricing behind Tmall and JD sessions, and heavy
+    white-labelling. <strong>The Chinese rows are verified price points and tiers, not an SKU catalogue.</strong>
+    Anyone claiming a complete Chinese model list is either scraping a B2B storefront or making it up.</p>
+  </div>
+
+  <div class="grid2">
+    <div class="card">
+      <h4>What Pakistan's list shows</h4>
+      <ul>
+        <li><strong>The entry point is PKR 97,000</strong> — Evee Flipper, well below the CD 70's 159,900.</li>
+        <li><strong>~35 models cluster within PKR 100,000 of each other.</strong> Nothing is differentiated on price.</li>
+        <li><strong>Chemistry is the real price ladder.</strong> MS Jaguar's Bolt is 174,000 standard and
+          <strong>245,000 in LFP</strong> — +PKR 71,000 for the same machine. REVOO shows +42,000 and +62,000.</li>
+        <li><strong>Yadea spans 174,000 to 1,400,000</strong> — the only brand credibly present at both ends.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>What India's list shows that Pakistan's does not</h4>
+      <ul>
+        <li><strong>Battery capacity is published as standard, and it is 2–3× Pakistan's.</strong> Indian mainstream
+          carries 2.5–5.3 kWh; Pakistan's volume import carries 1.8 kWh.</li>
+        <li><strong>Range at the mainstream price point is not close</strong> — India 102–212 km, Pakistan 65–90 km.</li>
+        <li><strong>Honda sells a 102 km Activa e in India and a 65 km ICON e: in Pakistan.</strong> Same
+          manufacturer, same segment, materially worse product.</li>
+        <li><strong>The next wave is legacy manufacturers</strong> — Suzuki, TVS, Honda and Vinfast — not startups.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="chart">
+    <h4>Where the models sit — price distribution by market</h4>
+    <p class="cap">Count of models per price band, in each market's own currency. Bands are not comparable across markets; the shape is.</p>
+    <div class="bars" id="dist"></div>
+    <div class="legend">
+      <span><i class="sw" style="background:var(--pk)"></i>Pakistan (PKR)</span>
+      <span><i class="sw" style="background:var(--in)"></i>India (INR)</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GATES ================= -->
+<section id="gates">
+  <p class="eyebrow">11 — decision gates</p>
+  <h2>Criteria written before the research, so they could not bend to it</h2>
+  <div class="tw"><table>
+    <thead><tr><th>Gate</th><th>Status</th><th>Position</th></tr></thead>
+    <tbody>
+      <tr><td class="co">K1 · Capital</td><td><span class="tag t-a">Cleared</span></td><td>PKR 50m ceiling — not binding for a fleet entry needing ~200 machines</td></tr>
+      <tr><td class="co">K2 · Attention</td><td><span class="tag t-a">Cleared</span></td><td>30 hrs/week — not binding; income clause remains untested</td></tr>
+      <tr><td class="co">K3 · Supply</td><td><span class="tag t-b">Open</span></td><td>Yadea's territory taken; Huaihai's MOQ is 20× the ceiling. <strong>RFQs sent 27 Aug; a non-reply is also an answer</strong></td></tr>
+      <tr><td class="co">K4 · Import ability</td><td><span class="tag t-b">Open</span></td><td>Whether an LC can be opened at required volumes — asked in the RFQs, and a bank conversation besides</td></tr>
+      <tr><td class="co">K5 · Battery backstop</td><td><span class="tag t-c">At risk</span></td><td>No enforceable warranty chain identified. <strong>1-year warranty on a 3-year asset.</strong> India shows failure here can cost the right to sell</td></tr>
+      <tr><td class="co">K6 · Landed cost</td><td><span class="tag t-a">Largely closed</span></td><td>Duty rates, tariff lines, kit prices, battery prices, freight and a dated FX rate all in hand — <strong>CIF ≈ PKR 121,000–123,200</strong></td></tr>
+      <tr><td class="co">K7 · Policy</td><td><span class="tag t-c">Firing</span></td><td><strong>30 June 2027, confirmed in primary law.</strong> ~10 months. Successor unapproved; subsidy tapers. India proves the downside</td></tr>
+      <tr><td class="co">K8 · Parts &amp; service</td><td><span class="tag t-c">Decisive</span></td><td>India's largest player destroyed by this from 50% share. <strong>For a fleet, uptime is the product</strong></td></tr>
+      <tr><td class="co">K9 · Volume</td><td><span class="tag t-a">Favourable</span></td><td>Fleet needs under 1% of 50,000+ known riders</td></tr>
+      <tr><td class="co">K11 · Defensible position</td><td><span class="tag t-c">Hard</span></td><td>~88% incumbent share, 500+ dealers. <strong>Only answerable via a segment the incumbent will not serve</strong></td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<!-- ================= LIMITS ================= -->
+<section id="limits">
+  <p class="eyebrow">12 — what this does not establish</p>
+  <h2>The honest boundary</h2>
+  <ul>
+    <li><strong>Five supplier RFQs were sent on 27 August 2026</strong> — three CKD kit makers and both battery
+      suppliers — but <strong>no reply has been received</strong>, so every supplier figure here remains a published
+      listing, not a quote. <strong>No bank, delivery platform or regulator has been contacted at all.</strong></li>
+    <li><strong>Whether a delivery platform will deduct rental at source.</strong> The fleet model's collection
+      mechanism depends on it entirely.</li>
+    <li><strong>How EDB applies an ICE-era facility schedule to an electric vehicle.</strong> SRO 656(I)/2006
+      contains no EV provisions at all — its only use of "electric" describes a crane hoist — yet the primary text
+      confirms it as the operative condition. Its motorcycle schedule mandates an <strong>engine assembly line</strong>
+      and an <strong>emission tester</strong>. An electric motorcycle has neither.</li>
+    <li><strong>The kW→cc conversion factor.</strong> Balochistan names the mechanism without publishing the ratio,
+      and it decides 1% against 2% of vehicle value.</li>
+    <li><strong>Units per container, and dangerous-goods freight on lithium.</strong> Freight per unit is currently a
+      container rate divided by an assumption.</li>
+    <li><strong>The IOCO quota process</strong> for the 0% battery routes — timeline, cost, feasibility — is entirely
+      unknown. IOCO is a different body from EDB.</li>
+    <li><strong>What a charging or swap station costs.</strong> Import duty is 0% and unconditional, but 8504.4030 is
+      a <em>static converter</em> line and a swap cabinet may classify elsewhere. Nothing here covers the K-Electric
+      connection, where the real cost and delay usually sit.</li>
+    <li><strong>Pakistani market volumes are press-reported.</strong> PAMA counts members only, which excludes almost
+      every electric maker. A penetration figure computed on that basis was <strong>withdrawn</strong> from this research.</li>
+    <li><strong>No Pakistani brand publishes unit sales.</strong> The catalogues show what is offered, not what sells.</li>
+    <li><strong>Three referenced instruments have not been read:</strong> SRO 693(I)/2006, SRO 655(I)/2006, and
+      SRO 929(I)/2024 sr.3(xi) — whose own record in the government portal is self-contradictory on its expiry.</li>
+  </ul>
+
+  <div class="note w"><span class="lbl">One methodological note worth keeping</span>
+    <p>Several conclusions in this research were <strong>reversed by primary sources after being drawn from trade
+    press or official summaries</strong> — a market-share ranking that could not be reconciled with audited filings;
+    a penetration figure computed across mismatched populations; a "10–15%" duty rate that the schedule states flat
+    at 15%; a concession expiry that the printed schedule appeared to have missed. <strong>Where a filing or a
+    statute disagreed with a summary, the primary source won every time.</strong> Any figure still carrying a
+    <span class="tag t-c">Press</span> grade should be treated as provisional.</p>
+  </div>
+</section>
+
+<footer>
+  <p><strong>Sources.</strong> Audited filings: Yadea 1585.HK FY2025 · Aima 603529.SH FY2025 · Xinri 603787.SH FY2025 ·
+  Luyuan 2451.HK FY2024 · NIU Form 20-F FY2025 (SEC EDGAR CIK 1744781).
+  Primary law: Finance Act 2026 and its Second Schedule (Gazette of Pakistan Extraordinary, 26 June 2026) ·
+  Fifth Schedule to the Customs Act 1969 · S.R.O. 1063(I)/2026 · SRO 656(I)/2006 · Provincial Motor Vehicles
+  Ordinance 1965 · New Energy Vehicles Policy 2025-30 · AIDEP 2021-26 · NEPRA SRO 279(I)/2026.
+  Government portals: Trade Information Portal of Pakistan (Pakistan Single Window) · Sindh Excise · Balochistan Excise.
+  Market: PakWheels · BikeWale · Alibaba, Made-in-China and Global Sources listings · Forex.pk (dated 27 Aug 2026) ·
+  OGRA/Petroleum Division daily notifications.</p>
+  <p><strong>Restricted material not reproduced here:</strong> official bilateral trade statistics (UN Comtrade) informed
+  the import-volume and unit-value conclusions, but the licence prohibits redistribution, so those figures are held
+  privately and deliberately excluded.</p>
+  <p>Compiled 27 August 2026. A research dossier, not an offer or a recommendation to invest. Verify every
+  load-bearing figure independently before acting on it.</p>
+</footer>
+</div>
+
+<script>
+(function(){
+"use strict";
+/* ---------- theme ---------- */
+var root=document.documentElement, tb=document.getElementById('tbtn');
+tb.addEventListener('click',function(){
+  var cur=root.getAttribute('data-theme');
+  if(!cur){cur=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';}
+  root.setAttribute('data-theme',cur==='dark'?'light':'dark');
+  draw();
+});
+
+/* ---------- helpers ---------- */
+function cv(n){return getComputedStyle(root).getPropertyValue(n).trim();}
+function fmt(n){return n.toLocaleString('en-US');}
+
+function bars(el,rows,opt){
+  opt=opt||{};
+  var host=document.getElementById(el); if(!host)return;
+  var max=opt.max||Math.max.apply(null,rows.map(function(r){return r.v;}));
+  host.innerHTML='';
+  rows.forEach(function(r,i){
+    var d=document.createElement('div'); d.className='bar-row';
+    var pct=Math.max(1.2,(r.v/max)*100);
+    d.innerHTML='<div class="bar-lab">'+r.l+'</div>'+
+      '<div class="bar-track"><div class="bar-fill" style="width:0;background:'+r.c+'"></div></div>'+
+      '<div class="bar-val" style="color:'+(r.strong?r.c:'')+'">'+r.t+'</div>';
+    host.appendChild(d);
+    var f=d.querySelector('.bar-fill');
+    setTimeout(function(){f.style.width=pct+'%';},40+i*45);
+    d.title=r.l+' — '+r.t;
+  });
+}
+
+/* ---------- chart data ---------- */
+function draw(){
+  var PK=cv('--pk'),IN=cv('--in'),CN=cv('--cn'),CR=cv('--crit'),WA=cv('--warn'),AC=cv('--accent'),MU=cv('--line2');
+
+  bars('cpk',[
+    {l:'Petrol — CD 70 @ 55 km/l',v:6.24,t:'6.24',c:CR,strong:1},
+    {l:'Petrol — CD 70 @ 60 km/l',v:5.72,t:'5.72',c:CR,strong:1},
+    {l:'Electric — top slab 68.00/kWh',v:1.70,t:'1.70',c:PK},
+    {l:'Electric — above-700 slab 47.20',v:1.18,t:'1.18',c:PK},
+    {l:'Electric — commercial 39.70',v:0.99,t:'0.99',c:PK},
+    {l:'Electric — national avg 33.38',v:0.83,t:'0.83',c:PK,strong:1}
+  ]);
+
+  bars('rent',[
+    {l:'PKR 300/day — rider keeps',v:8305,t:'8,305',c:PK},
+    {l:'PKR 300/day — operator',v:7800,t:'7,800',c:IN},
+    {l:'PKR 350/day — rider keeps',v:7005,t:'7,005',c:PK,strong:1},
+    {l:'PKR 350/day — operator',v:9100,t:'9,100',c:IN,strong:1},
+    {l:'PKR 400/day — rider keeps',v:5705,t:'5,705',c:PK},
+    {l:'PKR 400/day — operator',v:10400,t:'10,400',c:IN},
+    {l:'PKR 450/day — rider keeps',v:4405,t:'4,405',c:PK},
+    {l:'PKR 450/day — operator',v:11700,t:'11,700',c:IN}
+  ]);
+
+  bars('hondactx',[
+    {l:'Honda CD 70 — petrol',v:159900,t:'159,900',c:MU},
+    {l:'Yadea T5 — 75–85 km',v:253500,t:'253,500',c:CN},
+    {l:'Honda ICON e: — 65 km',v:419900,t:'419,900',c:CR,strong:1}
+  ]);
+
+  bars('intl',[
+    {l:'Aima — overseas share, falling 7.89%',v:0.86,t:'0.86%',c:CN,strong:1},
+    {l:'Xinri — at 9.95% gross margin',v:2.48,t:'2.48%',c:CN},
+    {l:'NIU — 40+ countries, ~2,000 each',v:6.7,t:'6.7%',c:CN},
+    {l:'Yadea — Vietnam plant live',v:10,t:'plant',c:CN}
+  ],{max:10});
+
+  bars('batt',[
+    {l:'Dongguan Rishengzhi @ MOQ 500',v:42018,t:'42,018',c:PK,strong:1},
+    {l:'Koyosonic 72V 35Ah @ 50+',v:59281,t:'59,281',c:PK,strong:1},
+    {l:'Koyosonic @ 30–49',v:62677,t:'62,677',c:PK},
+    {l:'Hunan CTS @ 100+',v:100878,t:'100,878',c:WA},
+    {l:'Hunan CTS @ 50–99',v:113939,t:'113,939',c:CR,strong:1},
+    {l:'— Pakistani retail benchmark —',v:115000,t:'115,000',c:MU,strong:1},
+    {l:'Hunan CTS @ 1–49',v:128668,t:'128,668',c:CR}
+  ]);
+
+  bars('chem',[
+    {l:'8507.6000 — lithium-ion',v:12,t:'12%',c:PK,strong:1},
+    {l:'8507.2000 — lead-acid, traction',v:24,t:'24%',c:WA,strong:1},
+    {l:'8507.1010 — lead-acid, starter',v:36,t:'36%',c:CR,strong:1}
+  ]);
+
+  bars('stack',[
+    {l:'Yadea ex-works ASP — e-bicycle',v:58496,t:'58,496',c:CN},
+    {l:'Yadea ex-works ASP — e-scooter',v:77636,t:'77,636 · 1.0×',c:CN,strong:1},
+    {l:'Cheapest PK e-bike — Evee Flipper',v:97000,t:'97,000 · 1.2×',c:PK},
+    {l:'Tailg — Chinese domestic retail',v:123978,t:'123,978 · 1.6×',c:CN},
+    {l:'Yadea Q1/DE3 sodium — Chinese retail',v:144648,t:'144,648 · 1.9×',c:CN},
+    {l:'Tailg M6 — Chinese retail',v:161184,t:'161,184 · 2.1×',c:CN},
+    {l:'PK volume band — upper edge',v:250000,t:'250,000 · 3.2×',c:PK},
+    {l:'Yadea T5 in Pakistan',v:253500,t:'253,500 · 3.3×',c:PK,strong:1},
+    {l:'Honda ICON e:',v:419900,t:'419,900 · 5.4×',c:CR,strong:1}
+  ]);
+
+  distChart();
+}
+
+/* ---------- model data ---------- */
+var PKM=[
+/* brand, model, price, W, V/Ah, spd, range, chem, status, note */
+["Evee","Flipper",97000,0,"",0,0,"","Current","Cheapest new e-2W found in Pakistan"],
+["REVOO","A04",100000,0,"",0,0,"","Current",""],
+["MS Jaguar","70cc",107900,0,"",0,0,"","Current",""],
+["MS Jaguar","100cc",115900,0,"",0,0,"","Current",""],
+["REVOO","Y04",119000,0,"",0,0,"","Current",""],
+["Metro","X8 Foldable Scooter",129000,0,"",0,0,"","Current","Foldable"],
+["Evee","Mito",137000,0,"",0,0,"","Current",""],
+["Jolta","Sparrow",144900,0,"",0,0,"","Current",""],
+["Jolta","JE-70D",149900,1000,"48V/20Ah",55,75,"Dry gel","Current","1000W hub \u00b7 6\u20138 h charge"],
+["Pakzon","PE-70D",149900,0,"",0,0,"","Current",""],
+["REVOO","Y06",151000,0,"",0,0,"","Current",""],
+["Evee","Nisa",155000,0,"",0,0,"","Current",""],
+["MS Jaguar","Miso",158000,0,"",0,0,"","Current",""],
+["Evee","LX",160000,0,"",0,0,"","Current",""],
+["Okla","Orbit",162000,0,"",0,0,"","Current",""],
+["Jolta","Storm",164900,0,"",0,0,"","Current",""],
+["Pakzon","PE-100D",165900,0,"",0,0,"","Current",""],
+["REVOO","A11",167000,0,"",0,0,"","Current","LFP variant at +PKR 42,000"],
+["Jolta","JE-70G",170900,0,"",0,0,"Graphene","Current",""],
+["Pakzon","PE-70G",170900,0,"",0,0,"Graphene","Current",""],
+["MS Jaguar","Bolt",174000,0,"",0,0,"","Current","LFP variant at +PKR 71,000"],
+["Yadea","M3",174000,0,"",0,0,"","Current",""],
+["Jolta","Storm Pro",174900,0,"",0,0,"","Current",""],
+["Jolta","Neo",174900,0,"",0,0,"","Current",""],
+["Evee","Gen-Z",177900,0,"",0,0,"","Current",""],
+["Jolta","Neo Pro",179900,0,"",0,0,"","Current",""],
+["REVOO","A12",187000,0,"",0,0,"","Current","LFP variant at +PKR 62,000"],
+["Okla","Onyx",192000,0,"",0,0,"","Current",""],
+["Yadea","Ruibin Sports",193000,0,"",0,0,"","Current",""],
+["Yadea","GT30",194000,0,"",0,0,"","Current",""],
+["MS Jaguar","M1",204000,0,"",0,0,"","Current","LFP variant at +PKR 61,000"],
+["Jolta","JES-70D",204900,0,"",0,0,"","Current",""],
+["Evee","S1",206000,0,"",0,0,"","Current",""],
+["REVOO","A11 LFP",209000,0,"",0,0,"LFP","Current","+42,000 over standard A11"],
+["Yadea","Ruibin",209000,0,"",0,0,"","Current",""],
+["REVOO","A01",210000,0,"",0,0,"","Current",""],
+["Okla","OKT",219000,0,"",0,0,"","Current",""],
+["Jolta","JE-70L",225900,0,"",0,0,"Lithium","Current",""],
+["Pakzon","PE-70L",225900,0,"",0,0,"Lithium","Current",""],
+["REVOO","C32 Young",227000,0,"",0,0,"","Current",""],
+["Evee","Nisa 3W",235000,0,"",0,0,"","Current","Three-wheeler"],
+["Evee","Sqube",239000,0,"",0,0,"","Current",""],
+["Jolta","JE-100L",239900,0,"",0,0,"Lithium","Current",""],
+["Pakzon","PE-100L",239900,0,"",0,0,"Lithium","Current",""],
+["MS Jaguar","Bolt (LFP)",245000,0,"",0,0,"LFP","Current","+71,000 over standard Bolt"],
+["REVOO","A12 LFP",249000,0,"",0,0,"LFP","Current","+62,000 over standard A12"],
+["Hyder","HLi 100",250000,0,"",0,0,"Lithium","Current",""],
+["Yadea","T5",253500,0,"1.8 kWh",0,80,"","Current","PK volume import \u00b7 75\u201385 km"],
+["ELFA","EV-1",255000,1500,"",60,75,"","Current",""],
+["EcoDost","ED-70",255000,1500,"",60,90,"Lithium","Current","1500W BLDC"],
+["Yadea","M3H",255000,0,"",0,0,"","Current",""],
+["Pakzon","PE-70L-SE",259900,0,"",0,0,"Lithium","Current",""],
+["Metro","E8S RangeMaker",260000,0,"",0,0,"","Current",""],
+["MS Jaguar","E-70",265000,0,"",0,0,"","Current",""],
+["MS Jaguar","M1 (LFP)",265000,0,"",0,0,"LFP","Current","+61,000 over standard M1"],
+["REVOO","C32",267000,0,"",0,0,"","Current",""],
+["Evee","S1 Pro",272000,0,"",0,0,"","Current",""],
+["MS Jaguar","E-70 Supreme",275000,0,"",0,0,"","Current",""],
+["Evee","S1 Air",275000,0,"",0,0,"","Current",""],
+["Pakzon","PE-100L-SE",278000,0,"",0,0,"Lithium","Current",""],
+["Yadea","G5",280000,0,"",0,0,"","Current",""],
+["Metro","E8S Mountain Climber",284000,0,"",0,0,"","Current",""],
+["Metro","A7",289000,0,"",0,0,"","Current",""],
+["Yadea","T5L",290000,0,"",0,110,"","Current","80\u2013140 km claimed"],
+["Okla","OMO",299000,0,"",0,0,"","Current",""],
+["Evee","C1 Air",305000,0,"",0,0,"","Current",""],
+["Jinpeng","Thunder 1500",310000,1500,"",0,0,"","Current",""],
+["Evee","S1 Air (Lithium)",319900,0,"",0,0,"Lithium","Current",""],
+["Metro","E8S Pro",330000,0,"",0,0,"","Current",""],
+["Metro","Premium Plus",335000,0,"",0,0,"","Current",""],
+["Vlektra","Velocity 180SE",339000,0,"",0,0,"","Current",""],
+["ELFA","EV-125",345000,2000,"",75,115,"","Current",""],
+["REVOO","B12",350000,0,"",0,0,"","Current",""],
+["Yadea","Epoc-H",355000,0,"",0,0,"","Current",""],
+["MS Jaguar","E-125",370000,0,"",0,0,"","Current",""],
+["Vlektra","Retro",379000,1500,"72V/24Ah",0,90,"Lithium","Current","1500W hub \u00b7 80\u2013100 km"],
+["Vlektra","Velocity 180",384000,0,"",0,0,"","Current",""],
+["Okla","OMIGO",399000,0,"",0,0,"","Current",""],
+["REVOO","E52",405000,0,"",0,0,"","Current",""],
+["Honda","ICON e:",419900,1500,"1.58 kWh",55,65,"Li-ion fixed","Current","85 Nm \u00b7 6 h proprietary charge \u00b7 86 kg \u00b7 NO swap"],
+["Yadea","Velax",444000,0,"",0,0,"","Current",""],
+["Okla","Ovega",450000,0,"",0,0,"","Current",""],
+["Vlektra","Bolt",549000,0,"",0,0,"","Current",""],
+["Metro","Miku Super",550000,0,"",0,0,"","Current",""],
+["Okla","OMAX",599000,0,"",0,0,"","Current",""],
+["Vlektra","Retro 1969",619000,0,"",0,0,"","Current",""],
+["Okla","OKG",819000,0,"",0,215,"Samsung cells","Current","ABS+EBD \u00b7 heated grips \u00b7 reverse \u00b7 IP67 \u00b7 5-yr battery warranty"],
+["Yadea","Keeness",1400000,0,"",0,0,"","Current","Top of the Pakistani ladder"],
+/* --- discontinued, still part of the record --- */
+["Jolta","JES-70Li",120000,0,"",0,0,"Lithium","Discontinued",""],
+["Crown","EV-1000",122500,0,"",0,0,"","Discontinued","\u26a0 Crown listing contradiction"],
+["Jolta","JE-100D",137500,0,"",0,0,"","Discontinued",""],
+["MS Jaguar","E-Scooter",137000,0,"",0,0,"","Discontinued",""],
+["Crown","EV-650 Smart",140000,0,"",0,0,"","Discontinued","\u26a0 Crown listing contradiction"],
+["Yadea","GT60 Backrest",160000,0,"",0,0,"","Discontinued",""],
+["Crown","EV-800",160000,0,"",0,0,"","Discontinued","\u26a0 Crown listing contradiction"],
+["Crown","EV T10",165000,0,"",0,0,"","Discontinued","\u26a0 Crown listing contradiction"],
+["Pakzon","PES-70D",180000,0,"",0,0,"","Discontinued",""],
+["Evee","C1",183500,0,"",0,0,"","Discontinued",""],
+["Crown","EV T20 Plus",190000,0,"",0,0,"","Discontinued","\u26a0 Crown listing contradiction"],
+["Crown","EV Smart",193500,0,"",0,0,"","Discontinued","\u26a0 Crown listing contradiction"],
+["Crown","EV Pro",195000,0,"",0,0,"","Discontinued","\u26a0 Crown listing contradiction"],
+["Evee","C1 Pro",196500,0,"",0,0,"","Discontinued",""],
+["Jolta","Aero Pro",240000,0,"",0,0,"","Discontinued",""],
+["Pakzon","PES-70L",240000,0,"",0,0,"","Discontinued",""],
+["Jolta","JE-70Li",264000,0,"",0,0,"Lithium","Discontinued",""],
+["Jolta","Aero",270000,0,"",0,0,"","Discontinued",""],
+["Crown","EV-350",330000,0,"",0,0,"","Discontinued","\u26a0 Crown listing contradiction"],
+["MS Jaguar","E-Heavy Bike",1000000,0,"",0,0,"","Discontinued",""]
+];
+/* [model, spd, range, weight, kwh, price] */
+var INM=[
+["Lectrix","SX25",25,60,70,1.34,54999],["Ampere","Reo",25,80,74,1.44,71999],
+["OLA","S1 X",125,320,113,5.2,89999],["Honda","QC1",50,80,89.5,1.5,90707],
+["Ampere","Magnus Neo",65,125,104,2.3,90999],["BGauss","Oowah",60,145,104,3,94990],
+["TVS","Orbiter",68,158,112,3.1,102459],["Ampere","Magnus G Max",65,142,116,3,102999],
+["Bajaj","Chetak C25",55,113,108,2.5,104599],["OLA","Roadster",126,248,0,6,104999],
+["OLA","Roadster X",118,252,127,4.5,104999],["BGauss","C12",60,123,116,2.7,107733],
+["Hero VIDA","VX2",90,187,0,4.4,109583],["Kinetic","DX",90,116,90,2.6,111499],
+["Bajaj","Chetak",80,153,0,3.5,119038],["TVS","iQube",82,212,129.7,5.3,119250],
+["Honda","Activa e",80,102,119,3,120130],["Ather","Rizta",80,160,119,3.5,120657],
+["Ampere","Nexus",90,136,126.4,3,129999],["OLA","S1 Pro",141,320,118,5.2,129999],
+["Ather","450S",90,161,111.6,3.5,130311],["OLA","Roadster X Plus",125,501,148.3,9.1,134999],
+["Hero VIDA","V2",90,165,125,3.94,137609],["Revolt","RV400",0,150,0,0,140000],
+["BGauss","BG RUV 350",75,145,122,3,143985],["Ultraviolette","Tesseract",125,162,0,3.5,145000],
+["River","Indie",90,161,135,4,152597],["Ather","450X",90,161,111.6,3.5,153902],
+["Yamaha","EC 06",79,169,132,4,172013],["Simple Energy","One",115,236,129,5,184205],
+["Suzuki","E Access",71,95,122,3.07,190761],["Ather","450 Apex",100,165,111.6,3.5,196189],
+["OLA","Roadster Pro",194,579,0,16,199999],["Simple Energy","Ultra",115,400,139,6.5,234999],
+["Ultraviolette","X47 Crossover",145,323,208,10.3,249000],["Royal Enfield","Flying Flea C6",115,154,124,3.91,279000],
+["Yamaha","Aerox E",95.5,117,139,3,281609],["Ultraviolette","F77",0,323,0,0,309000],
+["Ather","Konarc",0,0,0,0,90000],["Vinfast","Vero X",0,0,0,0,100000],
+["Vinfast","Viper",0,0,0,0,100000],["Suzuki","Burgman Street Electric",0,0,0,0,105000],
+["TVS","Jupiter Electric",0,0,0,0,110000],["Honda","QC3",0,0,0,0,125000],
+["Simple Energy","Arrive",0,0,0,0,130000],["Simple Energy","Simple Wave",0,0,0,0,150000]
+];
+var UPCOMING={"Konarc":1,"Vero X":1,"Viper":1,"Burgman Street Electric":1,"Jupiter Electric":1,"QC3":1,"Arrive":1,"Simple Wave":1};
+/* [brand, model, cny, spd, range, kwh, note] */
+var CNM=[
+["Yadea","ex-works ASP — e-bicycle",1415,0,0,0,"Audited · across 16.3m units"],
+["Yadea","ex-works ASP — e-scooter",1878,0,0,0,"Audited · the industry cost basis"],
+["Tailg","promotional model",2999,0,60,0,"1200W · 72V 21Ah graphene"],
+["Yadea","Q1",3299,0,0,0,"Sodium-ion — no lithium"],
+["Yadea","DE3",3499,0,0,0,"Sodium-ion · 92% at −20°C · 80% in 15 min"],
+["Tailg","M6",3899,0,80,0,"600W · 60V 23Ah graphene"],
+["Yadea","G6",12285,0,0,0,"Mid tier"],
+["Yadea","T9",12994,0,0,0,"Mid tier"],
+["Yadea","Fierider",27950,0,0,0,"Premium"],
+["Yadea","Y1S",31785,0,0,0,"Premium"],
+["Sunra / Xinri","Kemper",0,160,0,0,"100–160 km/h · 10 min to 80%"],
+["Sunra / Xinri","Keenes",0,160,0,0,"100–160 km/h · 10 min to 80%"],
+["Yadea","G30 Lite",0,0,0,0,"Sodium-ion"]
+];
+
+var ROWS=[];
+PKM.forEach(function(r){ROWS.push({mkt:'PK',brand:r[0],model:r[1],price:r[2],cur:'PKR',
+  w:r[3],batt:r[4],spd:r[5],rng:r[6],chem:r[7],status:r[8],note:r[9]});});
+INM.forEach(function(r){
+  ROWS.push({mkt:'IN',brand:r[0],model:r[1],price:r[6],cur:'INR',w:0,
+    batt:r[5]?r[5]+' kWh':'',spd:r[2],rng:r[3],chem:'',
+    status:UPCOMING[r[1]]?'Upcoming':'Current',
+    note:(r[4]?r[4]+' kg':'')});
+});
+CNM.forEach(function(r){ROWS.push({mkt:'CN',brand:r[0],model:r[1],price:r[2],cur:'CNY',w:0,
+  batt:r[5]?r[5]+' kWh':'',spd:r[3],rng:r[4],chem:'',status:'Reference',note:r[6]});});
+
+var MKTNAME={PK:'Pakistan',IN:'India',CN:'China'};
+var filt='ALL',q='',sk='price',sd=1,showDisc=false;
+
+function render(){
+  var tb=document.getElementById('mb');
+  var out=ROWS.filter(function(r){
+    if(filt!=='ALL'&&r.mkt!==filt)return false;
+    if(!showDisc&&r.status==='Discontinued')return false;
+    if(q&&(r.brand+' '+r.model+' '+r.note+' '+r.chem+' '+r.status).toLowerCase().indexOf(q)<0)return false;
+    return true;
+  });
+  out.sort(function(a,b){
+    var x=a[sk],y=b[sk];
+    if(typeof x==='string'){x=x.toLowerCase();y=(''+y).toLowerCase();return x<y?-sd:x>y?sd:0;}
+    return (x-y)*sd;
+  });
+  var col={PK:'var(--pk)',IN:'var(--in)',CN:'var(--cn)'};
+  var stag={Current:'t-a',Discontinued:'t-d',Upcoming:'t-b',Reference:'t-d'};
+  tb.innerHTML=out.map(function(r){
+    return '<tr><td><span class="mkt" style="background:'+col[r.mkt]+'"></span>'+MKTNAME[r.mkt]+'</td>'+
+      '<td class="co">'+r.brand+'</td><td>'+r.model+'</td>'+
+      '<td class="n">'+(r.price?fmt(r.price):'\u2014')+'</td><td class="small">'+r.cur+'</td>'+
+      '<td class="n">'+(r.spd?r.spd+' km/h':'\u2014')+'</td>'+
+      '<td class="n">'+(r.rng?r.rng+' km':'\u2014')+'</td>'+
+      '<td class="small">'+(r.batt||(r.w?r.w+' W':'\u2014'))+'</td>'+
+      '<td class="small">'+(r.chem||'\u2014')+'</td>'+
+      '<td><span class="tag '+(stag[r.status]||'t-d')+'">'+r.status+'</span></td>'+
+      '<td class="small">'+(r.note||'')+'</td></tr>';
+  }).join('');
+  var nd=ROWS.filter(function(r){return showDisc||r.status!=='Discontinued';}).length;
+  document.getElementById('cnt').textContent=out.length+' of '+nd+' shown \u00b7 '+ROWS.length+' total records';
+}
+
+document.querySelectorAll('.chip').forEach(function(c){
+  c.addEventListener('click',function(){
+    document.querySelectorAll('.chip').forEach(function(x){x.classList.remove('on');});
+    c.classList.add('on'); filt=c.dataset.m; render();
+  });
+});
+document.getElementById('q').addEventListener('input',function(e){q=e.target.value.toLowerCase();render();});
+document.getElementById('disc').addEventListener('change',function(e){showDisc=e.target.checked;render();});
+document.querySelectorAll('th.sortable').forEach(function(th){
+  th.addEventListener('click',function(){
+    var k=th.dataset.k;
+    if(sk===k){sd=-sd;}else{sk=k;sd=1;}
+    document.querySelectorAll('th.sortable').forEach(function(x){x.classList.remove('asc','desc');});
+    th.classList.add(sd>0?'asc':'desc');
+    render();
+  });
+});
+
+function distChart(){
+  var PK=cv('--pk'),IN=cv('--in');
+  var pkB=[[0,150000,'under 150k'],[150000,250000,'150k–250k'],[250000,400000,'250k–400k'],[400000,1e9,'over 400k']];
+  var inB=[[0,90000,'under 90k'],[90000,130000,'90k–130k'],[130000,200000,'130k–200k'],[200000,1e9,'over 200k']];
+  var rows=[];
+  pkB.forEach(function(b){
+    var n=ROWS.filter(function(r){return r.mkt==='PK'&&r.status==='Current'&&r.price>=b[0]&&r.price<b[1];}).length;
+    rows.push({l:'Pakistan · PKR '+b[2],v:n,t:n+' models',c:PK});
+  });
+  inB.forEach(function(b){
+    var n=ROWS.filter(function(r){return r.mkt==='IN'&&r.status==='Current'&&r.price>=b[0]&&r.price<b[1];}).length;
+    rows.push({l:'India · INR '+b[2],v:n,t:n+' models',c:IN});
+  });
+  bars('dist',rows);
+}
+
+/* ---------- nav ---------- */
+var links=Array.prototype.slice.call(document.querySelectorAll('#nav a'));
+var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
+function onScroll(){
+  var y=window.scrollY+90,best=0;
+  secs.forEach(function(s,i){if(s&&s.offsetTop<=y)best=i;});
+  links.forEach(function(a,i){a.classList.toggle('on',i===best);});
+}
+window.addEventListener('scroll',onScroll,{passive:true});
+
+render(); draw(); onScroll();
+})();
+</script>
