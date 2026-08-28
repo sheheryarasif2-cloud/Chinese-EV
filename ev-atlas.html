@@ -199,6 +199,7 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
   <a href="#state">Demand shock</a>
   <a href="#incumbentfleet">Already done</a>
   <a href="#swapping">Swapping &amp; geography</a>
+  <a href="#opex">Operating costs</a>
   <a href="#incumbent">Incumbent</a>
   <a href="#india">India's warning</a>
   <a href="#supply">Supply side</a>
@@ -760,9 +761,99 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
   </div>
 </section>
 
+
+<!-- ================= OPERATING COSTS ================= -->
+<section id="opex">
+  <p class="eyebrow">08 &mdash; costs nobody had costed</p>
+  <h2>Three operating costs the model was missing, and who ELFA actually is</h2>
+
+  <div class="note c"><span class="lbl">ELFA is a Wavetec company &mdash; that changes the competitive read</span>
+    <p>This dossier treated ELFA as one more Pakistani assembler from the catalogue. <strong>It is not.</strong>
+    <strong>ELFA Electric is a product of EV Technologies, a subsidiary of Wavetec</strong> &mdash; a company that
+    has <em>"operated globally for over 37 years"</em>, citing a 30-year R&amp;D legacy in its own materials.</p>
+    <p><strong>So the competitor holding the Bykea relationship in Karachi is backed by an established
+    Pakistani-origin multinational, not a startup.</strong></p>
+  </div>
+
+  <div class="tw"><table>
+    <thead><tr><th>Player</th><th>What they are</th><th>Where</th></tr></thead>
+    <tbody>
+      <tr><td class="co">Atlas Honda</td><td>~88% incumbent, 500+ dealers, premium consumer EV</td><td>National</td></tr>
+      <tr><td class="co">Zyp Technologies</td><td>VC-backed, own factory, BaaS swap network</td><td><span class="tag t-b">Lahore</span></td></tr>
+      <tr><td class="co"><strong>ELFA / EV Technologies</strong></td><td>🔴 <strong>Wavetec subsidiary &mdash; 37-year multinational &mdash; holds Bykea</strong></td><td><span class="tag t-pk">Karachi</span></td></tr>
+      <tr><td class="co">foodpanda + Wasl</td><td>Platform + SECP-regulated NBFC</td><td><span class="tag t-b">Lahore</span></td></tr>
+      <tr><td class="co">34 EDB licensees</td><td>~660 units/year each on average</td><td>Mostly Punjab</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="note w"><span class="lbl">But scale is still unmeasured on both sides</span>
+    <p>No rider count, unit count or target has ever been published for the ELFA&ndash;Bykea partnership, and Zyp is
+    visibly at <strong>~17% of its own network plan.</strong> <strong>Weak execution is not the same as a weak
+    competitor, and neither has been measured.</strong></p>
+  </div>
+
+  <h3>&#128994; Electricity in Karachi may be cheaper than this dossier assumed</h3>
+  <p class="sub">The TCO section uses PKR 39.70/kWh (the NEV Policy commercial rate) and 33.38 (national average). K-Electric's own published rates sit below both.</p>
+  <div class="tw"><table>
+    <thead><tr><th>K-Electric category</th><th class="n">PKR/unit</th><th>Note</th></tr></thead>
+    <tbody>
+      <tr><td class="co">Commercial</td><td class="n"><strong>18.50 &ndash; 28.50</strong></td><td>Varies by business category and consumption</td></tr>
+      <tr><td class="co">Industrial B1 <span class="small">small</span></td><td class="n"><strong>26.23</strong></td><td>Cut from 30.80 &middot; <strong>effective Feb 2026 &rarr; Dec 2026 only</strong></td></tr>
+      <tr><td class="co">Industrial B2 <span class="small">medium</span></td><td class="n">26.16</td><td>Cut from 30.73</td></tr>
+      <tr><td class="co">Industrial B3 <span class="small">high-tension</span></td><td class="n">27.00</td><td>Cut from ~31</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="note c"><span class="lbl">Do not drop these straight into the model</span>
+    <p>The final bill adds <strong>FCA (fuel cost adjustment), QTA (quarterly tariff adjustment), GST and meter
+    rent</strong> &mdash; and in Pakistan those adjustments are not trivial. <strong>The base rate is not the
+    effective rate.</strong> Commercial tariffs also carry <strong>fixed charges based on sanctioned load</strong>,
+    which matter a great deal for a swap cabinet that draws hard in bursts.</p>
+    <p>🟢 <strong>But the direction is favourable.</strong> A commercial or industrial operator in Karachi buys at a
+    published base of <strong>PKR 18.50&ndash;28.50</strong> against the <strong>39.70</strong> the model
+    conservatively assumed. <strong>The TCO section is, if anything, understated for a commercial operator.</strong></p>
+  </div>
+
+  <h3>The connection itself &mdash; process known, cost not</h3>
+  <p>K-Electric new commercial connection: online application &rarr; <strong>site survey to assess load</strong>
+  &rarr; <strong>demand note, which is where the connection charge appears</strong> &rarr; meter in
+  <strong>15&ndash;20 days.</strong></p>
+  <div class="note w"><span class="lbl">The one cost that cannot be researched</span>
+    <p><strong>The connection charge is not published &mdash; it is quoted per site after survey.</strong> So the
+    cost identified as the real constraint behind a swap point <strong>must be requested per location.</strong>
+    🟢 The 15&ndash;20 day meter timeline is faster than expected and is not a bottleneck.</p>
+  </div>
+
+  <h3>Insurance &mdash; entirely absent from the model until now</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Cover</th><th class="n">Annual premium</th></tr></thead>
+    <tbody>
+      <tr><td class="co">Third-party <span class="small">legally required</span></td><td class="n"><strong>PKR 2,500 &ndash; 4,000</strong> <span class="small">70cc bike</span></td></tr>
+      <tr><td class="co">Comprehensive</td><td class="n"><strong>PKR 5,000 &ndash; 20,000+</strong> <span class="small">by value, age, location</span></td></tr>
+    </tbody>
+  </table></div>
+  <p class="small">&#9888; <strong>Karachi is explicitly rated higher-risk</strong> for traffic density and accident
+  rates &mdash; so a Karachi fleet sits at the upper end, not the middle. At a mid-range PKR 12,000,
+  <strong>a 200-machine fleet carries roughly PKR 2.4m a year in insurance.</strong> Not fatal against a PKR 50m
+  base, but it was <strong>entirely absent</strong> &mdash; and for a rental operator comprehensive cover is not
+  optional the way it might be for an owner-rider.</p>
+
+  <div class="note c"><span class="lbl">And the same cc problem appears for the third time</span>
+    <p><em>"Engine capacity is one of the biggest determinants of cost."</em></p>
+    <p>Registration fees are cc-banded. Provincial token tax is cc-banded. <strong>And now insurance premiums are
+    cc-rated</strong> &mdash; while an electric motorcycle has no engine capacity at all. Balochistan solved it by
+    publishing a kW&rarr;cc conversion without publishing the ratio. <strong>No insurer's approach to rating a
+    zero-cc vehicle has been found.</strong></p>
+    <p>&#9888; <strong>No EV-specific motorcycle insurance product or pricing was found in Pakistan at all.</strong>
+    Whether insurers will write comprehensive cover on a lithium-battery vehicle at standard rates &mdash; given
+    battery fire risk &mdash; is <strong>unestablished, and is a real exposure for a rental fleet</strong> where the
+    operator owns the asset and carries the liability.</p>
+  </div>
+</section>
+
 <!-- ================= INCUMBENT ================= -->
 <section id="incumbent">
-  <p class="eyebrow">08 — the incumbent</p>
+  <p class="eyebrow">09 — the incumbent</p>
   <h2>Atlas Honda confirmed the gap by failing to close it</h2>
 
   <div class="stats">
@@ -805,7 +896,7 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
 
 <!-- ================= INDIA ================= -->
 <section id="india">
-  <p class="eyebrow">09 — the comparable market</p>
+  <p class="eyebrow">10 — the comparable market</p>
   <h2>India already ran this cycle, and it ended badly for entrants</h2>
   <p class="sub">Same subcontinent, same commuter baseline, same price sensitivity, and a subsidy structurally similar to Pakistan's NEV cost-sharing. Pakistan is at the start of that curve.</p>
 
@@ -838,7 +929,7 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
 
 <!-- ================= SUPPLY ================= -->
 <section id="supply">
-  <p class="eyebrow">10 — the source market</p>
+  <p class="eyebrow">11 — the source market</p>
   <h2>These are domestic Chinese businesses with an export gesture attached</h2>
   <p class="sub">Read from five audited filings, not from trade press. Where the two disagreed, the filing won — and in one case that reversed a conclusion already drawn.</p>
 
@@ -879,7 +970,7 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
 
 <!-- ================= BATTERY ================= -->
 <section id="battery">
-  <p class="eyebrow">11 — the battery layer</p>
+  <p class="eyebrow">12 — the battery layer</p>
   <h2>Batteries are the business, not the machine</h2>
   <p class="sub">Yadea's audited accounts show batteries and chargers at 28.4% of revenue — RMB 10.5bn — and it sold 18.3 million batteries against 16.3 million vehicles. The market leader monetises replacement rather than absorbing it as warranty cost.</p>
 
@@ -927,7 +1018,7 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
 
 <!-- ================= TARIFF ================= -->
 <section id="tariff">
-  <p class="eyebrow">12 — primary law</p>
+  <p class="eyebrow">13 — primary law</p>
   <h2>The tariff regime, read in its own words</h2>
   <p class="sub">The FY2026-27 Fifth Schedule is not a separate document — Finance Act 2026 s.3(14) substituted the whole schedule via its Second Schedule. Read from the Gazette of Pakistan, 26 June 2026.</p>
 
@@ -1035,7 +1126,7 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
 
 <!-- ================= LANDED ================= -->
 <section id="landed">
-  <p class="eyebrow">13 — cost stack</p>
+  <p class="eyebrow">14 — cost stack</p>
   <h2>Factory gate to shelf is 3.3×</h2>
   <p class="sub">The first dated FX rate in this research unblocks the comparison everything was waiting on: 27 Aug 2026, 15:56 PST — USD/PKR 277.90, CNY/PKR 41.34 (Forex.pk, indicative interbank).</p>
 
@@ -1101,7 +1192,7 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
 
 <!-- ================= BRANDS ================= -->
 <section id="brands">
-  <p class="eyebrow">14 &mdash; who actually makes these</p>
+  <p class="eyebrow">15 &mdash; who actually makes these</p>
   <h2>The manufacturers, region by region</h2>
   <p class="sub">Models are the surface. This is the layer underneath &mdash; who owns what, at what scale, and on what evidence.</p>
 
@@ -1187,7 +1278,7 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
 
 <!-- ================= SUPPLY CHAIN / RFQ ================= -->
 <section id="rfq">
-  <p class="eyebrow">15 &mdash; supply chain</p>
+  <p class="eyebrow">16 &mdash; supply chain</p>
   <h2>Who was approached, and what was asked</h2>
   <p class="sub">Five RFQs went out on 27 August 2026 to companies' own published addresses. No platform account was created &mdash; Alibaba and Made-in-China RFQ forms require a login, so that route was closed.</p>
 
@@ -1247,7 +1338,7 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
 
 <!-- ================= POLICY DETAIL ================= -->
 <section id="policy">
-  <p class="eyebrow">16 &mdash; the certification gate</p>
+  <p class="eyebrow">17 &mdash; the certification gate</p>
   <h2>The gate behind the rate is written for a different technology</h2>
 
   <div class="note c"><span class="lbl">SRO 656(I)/2006 &mdash; the operative condition, confirmed from the primary text</span>
