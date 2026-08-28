@@ -37,3 +37,4 @@ worked on rather than facts to be recalled:
 - Raw figures with a source — those go in the project folder with their source saved to
   `06-sources/`.
 - Anything about Supreme Renewables, ExaSnap, or any existing client.
+- [EV Atlas artifact](ev-atlas-artifact.md) — the SHARED published URL; always update it in place, never publish a new one
