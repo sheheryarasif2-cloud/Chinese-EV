@@ -101,3 +101,50 @@ list.** It is directionally useful, not citable.
    material limit on using PAVE for a rental fleet. `[VERIFY]`
 4. **Confirm the two-tier subsidy from a government notification**, not the portal summary.
 5. **Vitality EV and E Turbo** — unknown to this research; add to the catalogue once specs exist.
+
+---
+
+# Lithium import scale, and three models added to the catalogue — 29-Aug-2026
+
+## 🔴 Pakistan already imports lithium at GWh scale, on the exact HS code Route B uses
+
+| | |
+|---|---:|
+| Monthly imports, **HS 8507.6000**, Jan 2024 | **42 MWh** |
+| Monthly imports, **April 2026** | **652 MWh** — a record |
+| Growth | **+1,640%** |
+| Battery-storage imports, 2025 | **4.6 GWh**, +220% YoY |
+| Cumulative to end-2025 | **7.6 GWh** |
+| Current annualised rate | **~5.86 GWh** |
+| Projected 2030 | **8.7 GWh** |
+
+⚠️ **Most of this is SOLAR STORAGE, not EV.** These are battery-energy-storage-system imports driven
+by Pakistan's solar boom and, reportedly, by Middle East disruption accelerating energy
+independence. **Do not read 652 MWh as EV battery demand.**
+
+🟢 **Two things it does establish:**
+
+1. **The import channel already exists at scale on the same tariff line.** Supplier relationships,
+   freight routes, DG handling and customs precedent for lithium at GWh volume are in place. **The
+   valuation ruling exists precisely because that volume is large** — this is not an untrodden path.
+2. **It sizes the EV programme honestly.** **116,000 e-bikes at ~2.5 kWh is roughly 290 MWh — about
+   5% of Pakistan's annualised lithium imports.** 🔴 **The state's flagship EV scheme is a rounding
+   error beside the solar-storage market.** Anyone modelling battery supply security should be
+   watching solar demand, not EV demand — it sets the price and the queue.
+
+## Three models added to the catalogue
+
+| Brand | Model | PKR | Notes |
+|---|---|---:|---|
+| **E Turbo** | **Warrior 200KM** | **790,000** | 3000 W nominal / **5400 W peak** QS BLDC hub · **95 km/h** · **200 km** · 3 ride modes · **PAVE-approved** |
+| **Vitality** | Retro | 225,000 | **PAVE-approved** |
+| **Vitality** | Velocity | 249,000 | — |
+
+**Catalogue now 170 records** (Pakistan 111 — 91 current + 20 discontinued — across 15 brands).
+
+🟢 **Both PAVE-approved names from the earlier aggregator list are now confirmed as real, priced
+models on PakWheels** — "Vitality EV Retro" is Vitality Retro at PKR 225,000, and "E Turbo Warrior
+200KM" is a genuine 790,000 machine. **That raises confidence in the rest of that approved-model
+list**, though it remains aggregator-sourced.
+
+⚠️ **E Turbo Evo** also exists on PakWheels but **no price was found** — not added.
