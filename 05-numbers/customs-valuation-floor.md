@@ -97,3 +97,27 @@ are its input, **that ruling is now a required document, not an optional one.**
 4. **Whether the CKD concession route changes the valuation basis** — the ruling is written against
    8507.6000 generally, not against the Fifth Schedule route.
 5. **Whether 1964/2025 has since been rescinded or revised** — it applies "until rescinded".
+
+---
+
+## ⚠️ A secondary source contradicts the primary PDF — the PDF wins
+
+A trade-press summary of this ruling states: *"Values are per kilowatt (KW), **not per kg** or unit."*
+
+🔴 **That is wrong.** The ruling PDF read directly shows **two columns** — `7/Kg` **and** `70/KW` —
+under a header reading **"Whichever is higher"**. The aggregator dropped the per-kg column.
+
+🟢 **This is the third time in this project that going to the primary document changed the answer**
+(after the "10–15%" duty rate and the concession expiry date). **The per-kg column matters**: for a
+heavy, low-energy pack it is the binding figure, and a model built on the per-kW column alone would
+understate the floor.
+
+## Valuation Ruling 2061/2026 — attempted, not obtained
+
+Searched the FBR valuations listing and trade press directly. **The values for the CELLS ruling are
+not publicly indexed anywhere found.** The ruling's existence and scope are confirmed
+— *"Lithium-Ion Cells (LFP, LiFePO4, Prismatic)"*, issued because of *"significant discrepancies
+between declared transaction values and prevailing market prices"* — but **no figures.**
+
+🔴 **This must be requested from the Directorate General of Customs Valuation, Karachi, or from a
+clearing agent.** It governs Route B's cost base and cannot be inferred from the batteries ruling.

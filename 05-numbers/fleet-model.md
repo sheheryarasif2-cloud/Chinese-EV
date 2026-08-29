@@ -137,3 +137,36 @@ underfunded.
 5. **Whether riders can finance PKR 248,500** at all, or whether the model must be
    lease/rental rather than sale. **This may be the real question** — the payback is excellent,
    but a rider earning PKR 35,000/month cannot produce PKR 248,500 upfront.
+
+---
+
+# 🟢 The addressable market is larger than this model assumed — 28-29 Aug 2026
+
+`fleet-model.md` has used **"50,000+ known fleet riders"** (foodpanda 20,000+, Bykea 30,000+).
+That is the *sourced, conservative* figure. The wider platform economy is an order of magnitude
+bigger:
+
+| Measure | Figure |
+|---|---|
+| Pakistan's **total platform-economy workers** | **~1.5 million** |
+| Of which **"location-based" work** — delivery and ride-hailing | **~0.5 million** |
+| Bykea **bikes registered on the platform** | **500,000+** ⚠️ *2020 figure* |
+| Named platforms | foodpanda · Bykea · Careem · Uber · Cheetay · Daraz · Gharpar |
+
+⚠️ **Do not swap 50,000 for 500,000 in the model.** The figures measure different things:
+
+- **0.5m "location-based"** includes **car ride-hailing drivers**, who are not addressable by a
+  two-wheeler fleet.
+- **Bykea's 500,000+ "bikes registered"** is a **2020 platform-registration count**, not active
+  riders — registration on an app is not a working fleet, and it is six years stale.
+- **50,000+** remains the only figure tied to *active delivery riders on named platforms*.
+
+🟢 **What it does change:** the conclusion that a 200-machine fleet needs "under 1% of the known
+market" was already comfortable. **Against a location-based workforce of ~500,000 it needs
+0.04%.** The constraint on this business was never demand-side, and this widens the margin on that
+point rather than altering it.
+
+🔴 **What it does not change:** the addressable segment is still gated by **which platform will
+partner**, not by how many riders exist — and `swapping-and-the-punjab-concentration.md` records
+that **both foodpanda and Bykea already have EV partners.** A large TAM behind a closed door is not
+an opportunity.
