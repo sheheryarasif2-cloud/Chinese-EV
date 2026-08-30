@@ -86,3 +86,68 @@ anything shown to an investor.**
 3. **Confirm whether 22,404 is 9-month or full-year**, and whether it covers all 34 licensees.
 4. **Verify the "5th largest market globally" claim** against an independent source.
 5. **Re-run the penetration calculation** once a same-basis numerator and denominator exist.
+
+---
+
+# 🔴 SELF-CORRECTION, same day — the import hypothesis was wrong
+
+The section above hypothesised that a ~90,000-unit gap between "sales" (112,000) and production
+(22,404) meant **"roughly four in five electric two-wheelers sold in Pakistan are not made in
+Pakistan."** It was flagged as unverified. **Further searching indicates it is wrong.**
+
+> **"Total PRODUCTION of electric scooters and electric motorcycles reached 111,844 units between
+> January and December 2025"** — Mobile World Magazine
+
+🔴 **The ~112,000 figure is PRODUCTION, not sales.** The earlier search summary framed it as units
+"sold"; the underlying attribution is production. **So there is no 90,000-unit import gap to
+explain — the two figures I was differencing are both production numbers from different collectors
+over different periods.**
+
+| Figure | Basis | Period | Source |
+|---:|---|---|---|
+| **22,404** | Production | **FY2024-25, Jul–Mar (9 months)** | EDB |
+| **111,844** | **Production** | **Jan–Dec 2025 (12 months)** | Mobile World Magazine |
+
+**Can both be true?** Only with very fast growth in Apr–Dec 2025 — which the same sources support:
+**+191.7% YTD April**, **+173% H1 2026**, electric segment **+50% in Q1 2026**. So the figures are
+reconcilable by growth, not by imports.
+
+⚠️ **What this does NOT settle:** the CBU-import share is still genuinely unknown. **It is simply
+not 80%, and I should not have implied a number.** The honest position is the one this project
+started with: **no reliable import/local split exists.**
+
+🔴 **The lesson is the one this project keeps relearning.** I differenced two figures from different
+collectors on different bases and read a business opportunity into the residual — **the same error
+as the withdrawn 8–9% penetration figure.** I flagged the risk in the same breath as making it,
+which is not the same as not making it. **Do not difference figures across sources.**
+
+## What the new data does establish
+
+| Finding | Figure |
+|---|---|
+| 🔴 **E-2W companies operating in Pakistan** | **64 companies, ~70 brands** |
+| **Electric scooters as share of output** | **~94%** — motorcycles are the small remainder |
+| Q1 2026 total two-wheeler market | **+33% YoY to 530,000+ units** |
+| Q1 2026 electric segment | **+50%** |
+| YTD April EV sales growth | **+191.7%**, *"almost all dealers in short supply"* |
+
+🔴 **64 companies and ~70 brands against 34 EDB licensees** — so roughly half the market's companies
+are operating without an EDB manufacturing licence, which is consistent with the grey-market and
+regulator-gap findings.
+
+🔴 **And it exposes a coverage limit in this project's own catalogue:** `MASTER-model-price-list.md`
+covers **15 Pakistani brands**. If there are ~70, **the catalogue captures perhaps a fifth of the
+brands**, even though it likely captures most of the *volume* (the named brands are the ones with
+dealer networks and PakWheels listings). **The catalogue should be described as covering the
+documented market, not the whole market.**
+
+🟢 **"Almost all dealers in short supply"** is the most commercially interesting line found today.
+**A market growing 173–191% with dealers unable to get stock is a supply-constrained market** —
+which is exactly the condition in which a new importer or assembler can enter without displacing
+anyone.
+
+## Penetration, recomputed on the corrected basis
+
+111,844 production ÷ (1,930,000 + 111,844) = **~5.5%** — unchanged, because the numerator is the
+same figure. ⚠️ **But it is production over sales, which is still not like-for-like.** The
+4.5–5.5% range stands as a range; **it does not become citable through repetition.**
