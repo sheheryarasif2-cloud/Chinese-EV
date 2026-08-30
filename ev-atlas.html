@@ -179,7 +179,7 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
     <div class="stat"><span class="stat-v v-crit">~88%</span><span class="stat-k">Market held by Atlas Honda</span></div>
     <div class="stat"><span class="stat-v v-warn">30 Jun 27</span><span class="stat-k">Tariff concession sunset · ~10 months</span></div>
     <div class="stat"><span class="stat-v v-pk">3.3×</span><span class="stat-k">Factory gate → Pakistani shelf</span></div>
-    <div class="stat"><span class="stat-v v-crit">5.2×</span><span class="stat-k">State subsidy programme vs national production</span></div>
+    <div class="stat"><span class="stat-v v-acc">4.5–5.5%</span><span class="stat-k">Electric share of two-wheeler sales · range, not a point</span></div>
   </div>
   <p class="meta">
     Evidence grades used throughout &nbsp;
@@ -242,9 +242,9 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
   </div>
 
   <div class="note c"><span class="lbl">Two late findings that change the shape of this, not the sign</span>
-    <p><strong>The state is subsidising 116,000 machines this fiscal year against a national production of
-    22,404</strong> &mdash; a programme 5.2&times; the entire industry, at PKR 80,000 a unit. Demand is not merely
-    good; it is being manufactured. <strong>And a student in Lahore can already take an e-bike for PKR 2,100 a
+    <p><strong>The state is subsidising 116,000 machines this fiscal year</strong> &mdash; roughly
+    <strong>one year of current e-2W sales</strong> (~112,000 in 2025), at PKR 50,000 financed / 80,000 self-finance.
+    Demand is not merely good; it is being manufactured. <strong>And a student in Lahore can already take an e-bike for PKR 2,100 a
     month, interest-free.</strong></p>
     <p><strong>foodpanda has already launched an EV rider fleet with an SECP-regulated NBFC.</strong> The
     platform-plus-financier structure this dossier proposed is not speculative &mdash; it is running, in Punjab, with
@@ -503,15 +503,43 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
 
   <div class="chart">
     <h4>National production against the subsidy programme</h4>
-    <p class="cap">Units. Production is EDB's own data; the 116,000 is the PM's Electric Bike and Rickshaw Scheme for the current fiscal year.</p>
+    <p class="cap">Units. Production is EDB data (a nine-month figure); sales are from a commercial data provider; the 116,000 is the PM's scheme for this fiscal year. <strong>Different collectors, different periods &mdash; not strictly like-for-like.</strong></p>
     <div class="bars" id="prod"></div>
   </div>
 
-  <div class="note c"><span class="lbl">Read those two bars together</span>
-    <p><strong>The government is subsidising 116,000 machines in a year in which the entire country produced
-    22,404.</strong> The programme is <strong>5.2&times; total national production.</strong> Either the subsidy pulls
-    in imports, or the incumbents scale hard, or it underdelivers &mdash; and the scheme announcement does not say
-    which.</p>
+  <div class="note c"><span class="lbl">Correction &mdash; this comparison was true but misleading</span>
+    <p>An earlier version led with <em>"the programme is 5.2&times; total national production."</em> Every number in
+    it was accurate; <strong>the framing was not.</strong> It compares a subsidy target against
+    <strong>production</strong>, inviting the conclusion that the programme dwarfs the market. <strong>It does not
+    &mdash; the market is already about the size of the programme.</strong></p>
+    <p><strong>E-2W units SOLD: ~112,000 in calendar 2025, and ~90,000 in April&ndash;June 2026 alone</strong>
+    (+173% in H1 2026). <strong>PAVE's 116,000 is roughly one year of current sales</strong>, and Q2 2026 by itself
+    was four times the annual production figure.</p>
+  </div>
+
+  <div class="note g"><span class="lbl">And the bigger consequence: most e-2W sold here are not made here</span>
+    <p>Sales of ~112,000 against production of 22,404 leaves a gap of roughly <strong>90,000 units</strong> &mdash;
+    either <strong>imported CBUs</strong>, or a partial production figure. <strong>This dossier has spent days on the
+    CKD/EDB route assuming domestic assembly is the only viable channel. A market where roughly four in five
+    electric two-wheelers sold are not domestically produced has an import channel operating at scale right
+    now.</strong></p>
+    <p>&#9888; <strong>Do not bank it yet.</strong> Production is FY Jul&ndash;Mar; sales are calendar year &mdash;
+    <strong>not like-for-like</strong> &mdash; and EDB counts licensee output while the sales figure is from a
+    commercial provider whose methodology <strong>could not be obtained</strong> (timeout and 403). 🔴 <strong>This
+    is the same numerator/denominator mismatch that produced the withdrawn 8&ndash;9% penetration figure. The gap is
+    a finding to verify, not an import volume.</strong></p>
+  </div>
+
+  <div class="note w"><span class="lbl">Penetration, revisited honestly</span>
+    <p>The withdrawn figure divided press electric numbers by combustion-only totals. <strong>FY26's 1.93 million
+    comes from Arif Habib, and that article does not mention electric two-wheelers at all</strong> &mdash; so it is
+    very likely a combustion denominator. Computed on that basis: 112,000 &divide; (1,930,000 + 112,000) =
+    <strong>~5.5%</strong>; a third-party post referenced <strong>4.6%</strong>. <strong>A defensible range is
+    roughly 4.5&ndash;5.5%</strong> &mdash; well above the ~1% production implies, well below the withdrawn
+    8&ndash;9%. <strong>Still not citable</strong> until the sales series is sourced directly.</p>
+    <p>&#9888; <strong>And one single-sourced claim worth verifying before it reaches an investor:</strong> that
+    Pakistan is the <strong>5th largest electric two-wheeler market in the world.</strong> If true, this is not a
+    nascent market entered early &mdash; it is a top-five market already moving at +173%.</p>
   </div>
 
   <div class="tw"><table>
@@ -1948,7 +1976,9 @@ function draw(){
 
   bars('prod',[
     {l:'Produced FY2021-22',v:7377,t:'7,377',c:PK},
-    {l:'Produced FY2024-25',v:22404,t:'22,404',c:PK,strong:1},
+    {l:'Produced FY2024-25 (9 mo)',v:22404,t:'22,404',c:PK},
+    {l:'SOLD — calendar 2025',v:112000,t:'~112,000',c:PK,strong:1},
+    {l:'SOLD — Apr–Jun 2026 alone',v:90000,t:'~90,000',c:PK,strong:1},
     {l:'Subsidised this FY \u2014 PAVE',v:116000,t:'116,000',c:CR,strong:1},
     {l:'EDB tender \u2014 fast-track',v:100000,t:'100,000',c:WA,strong:1}
   ]);
