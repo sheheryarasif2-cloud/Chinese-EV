@@ -151,3 +151,60 @@ anyone.
 111,844 production ÷ (1,930,000 + 111,844) = **~5.5%** — unchanged, because the numerator is the
 same figure. ⚠️ **But it is production over sales, which is still not like-for-like.** The
 4.5–5.5% range stands as a range; **it does not become citable through repetition.**
+
+---
+
+# The "5th largest market" claim — verification attempted, NOT confirmed
+
+**31-Aug-2026.** Checked against the **International Council on Clean Transportation (ICCT)**, the
+most credible independent source for global two-wheeler electrification.
+
+🔴 **ICCT does not confirm it, and does not list Pakistan at all.** ICCT ranks by **sales share**
+(penetration), not absolute units:
+
+| Country | E-2W share of two-wheeler sales |
+|---|---:|
+| **China** | **54.8%** — up from 51.7% in 2024 |
+| **Vietnam** | **21.7%** — up from ~10% in 2024 |
+| **India** | **6%** (2024) — described as the world's **second-largest** e-2W market by volume |
+| **Pakistan** | **not listed** |
+
+**China, India and Southeast Asia together are ~80% of global 2/3-wheeler sales.**
+
+⚠️ **So the claim is neither confirmed nor refuted** — ICCT measures a different thing. "5th largest
+by absolute units" is plausible arithmetic if the market is heavily concentrated in China, India,
+Vietnam and Indonesia, but **no independent source found ranks countries by absolute e-2W volume.**
+
+🔴 **The claim stays single-sourced and unverified. Do not put it in front of an investor.**
+
+## 🟢 But the ICCT data calibrates Pakistan usefully
+
+**Pakistan's 4.5–5.5% estimated share sits just below India's 6%** — which is a far more useful
+statement than a disputed ranking, and it comes from a source that publishes its methodology.
+
+**Read against `india-fame-shakeout.md`, that is the sharpest framing this project has produced:**
+Pakistan today is roughly where India was when its shakeout began. **India's 6% share was reached
+through a subsidy cycle that destroyed most of the entrants who chased it.**
+
+## 🔴 And Vietnam is the comparable this research never looked at
+
+**Vietnam went from ~10% to 21.7% e-2W share in a single year** — the fastest shift in the dataset,
+and **four times Pakistan's level.**
+
+**The mechanism was not a purchase subsidy.** ICCT attributes it to **Hanoi and Ho Chi Minh City
+planning low-emission zones that would ban or restrict petrol two-wheelers from city centres.**
+
+🟢 **That is the strongest adoption driver found anywhere in this project, and Pakistan has not used
+it.** A subsidy pays people to switch; **a restriction removes the alternative.** Vietnam's result
+suggests city-level access rules move share faster than money does.
+
+⚠️ **Relevance to the decision, stated carefully:** there is **no evidence Pakistan is considering
+petrol restrictions** in Karachi or anywhere else, and this research found none. **This is a
+scenario to watch, not a plan to bank.** But it is the single policy change that would most
+transform the demand case — and Karachi's air quality gives it a rationale.
+
+## Open items
+
+1. 🔴 **An independent country ranking by absolute e-2W units** — does not appear to exist publicly.
+2. **Whether any Pakistani city has discussed low-emission zones or petrol two-wheeler restrictions.**
+   Not searched yet; Vietnam's precedent makes it worth one look.
