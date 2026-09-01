@@ -12,6 +12,12 @@ metadata:
 
 **Source file:** `C:\Users\ESHOP\Documents\Chinese-EV-Research\ev-atlas.html`
 
+**Favicon: 🛵⚡** — `favicon` is a REQUIRED publish parameter and is NOT stored in
+the HTML, so it cannot be recovered by reading the artifact back. 🔴 **Pass exactly this emoji on
+every redeploy** — a different one changes the browser-tab icon and reads to viewers as a different
+page. Learned 01-Sep-2026: a redeploy was refused with *"favicon required to publish"* and the value
+had been recorded nowhere.
+
 🔴 **Standing instruction from Sheheryar (28-Aug-2026): "keep upgrading the published artifact from
 now on, so everyone i shared this with can see."** Every new research finding goes into this
 artifact, not only into the markdown files.
