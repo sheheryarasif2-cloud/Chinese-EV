@@ -446,6 +446,12 @@ later. Save the file, and record where and when it came from.
   see Backup status above. Not wired into `Sync-Memory.ps1` and not mirrored into the
   Supreme vault, deliberately.
 
+🔴 **THE BULLET LIST ABOVE ENDS ON 27-AUG-2026. IT IS NOT THE END OF THE RECORD.** From 27-Aug the
+log switched to full dated sections below, one per working session, and they run to **01-Sep-2026**.
+**Read to the bottom of this file** — the last two sections (*the maintained deliverable* and *what
+the 28-Aug → 01-Sep work did to the decision*) are the current state, and several bullets above have
+since been corrected there.
+
 ---
 
 ## 27-Aug-2026 — PDF deliverables, and three evidence gaps closed
@@ -766,3 +772,853 @@ no company, volume or premises. **Inflating a track record would poison the quot
 quotes **cells only** → Route B goes live (0%, no EDB); (4) whether the 2× battery spread survives a
 real quote; (5) whether BENLG already has a PK distributor; (6) LC vs T/T-in-advance — K4.
 ⚠️ **A non-reply is data too** — it answers K3.
+
+---
+
+## 28-Aug-2026 — the state's demand programme, the swap layer costed, and three corrections
+
+**New files:** `03-pakistan/state-demand-and-financing.md` ·
+`03-pakistan/swapping-and-the-punjab-concentration.md` ·
+`05-numbers/operating-costs-and-the-competitor.md`.
+**New deliverable:** `ev-atlas.html` created 09:11 — see the deliverables note at the end of this file.
+
+### 🔴 THE STATE IS MANUFACTURING DEMAND AT 5× NATIONAL PRODUCTION
+E-2W production **7,377 (FY2021-22) → 22,404 (FY2024-25), +200%** (EDB's own data). Against that,
+**PAVE** (*Pakistan Accelerated Vehicle Electrification*, launched 23-Feb-2026) is subsidising
+**116,000 e-motorcycles this fiscal year** — **PKR 100bn over five years, PKR 9bn this FY**.
+Eligibility **18–65, nationwide including Sindh**. ⚠️ **This 5.2× framing was itself corrected on
+30-Aug — see below. Read the two entries together.**
+
+**The provincial layer sits on top:** **CM Punjab e-Bike** — 100,000 units phase 1, **students only,
+Punjab only**, PKR 70,000 subsidy, **interest-free PKR 2,100/month via Bank of Punjab**, male
+students PKR 14,000 down, **female students PKR 0**, deadline 15-Sep-2026. 🔴 **That is the price
+floor any commercial offer competes against** — though it is a different customer from a rider.
+
+### 🔴 THE EDB TENDER — a 500-unit batch structure, and the window shut
+**PPRA TS0000007069E**, EDB: *"Fast Track Adoption – 100,000 E-Bikes"*, structured as
+🔴 **200 batches of 500 units**, 90-day fast-track, EOIs from all EV 2W OEMs/assemblers, awarded on
+*"available production capacity and **CKD inventory**"*. **Deadline June 2026 — already closed.**
+🟢 **The batch size is the finding:** 500 units is **2.5× the 200-machine fleet modelled** and
+**10× the 50-unit supplier MOQ** — an order exactly the scale a small entrant could serve.
+🔴 **Whether further batches or a second EOI round follow is the highest-value question to put to
+EDB — and it is a phone call, not a research task.** It reframes `01-question/edb-call-script.md`:
+the call is now about **whether there is a procurement pipeline to sell into**, not only about
+certification.
+
+### 🔴 CORRECTION — Bykea already has an EV partner. This research said it did not.
+**ELFA Electric has been partnered with Bykea since July 2025**, announced in Karachi, after a
+**six-month pilot** with driver-partners. Model **ELFA EV-125** — **already in this project's
+catalogue at PKR 345,000**. Rider offer: *"special installment plans"*, claimed saving **up to
+PKR 8,000/month**, fuel cost cut up to 70%. 🔴 **No rider count, bike count or target disclosed.**
+
+🟢 **But it validates the fleet arithmetic precisely.** `fleet-model.md` modelled the operator
+collecting **PKR 300–450/day (7,800–11,700/month)** out of **PKR 16,105/month** of headroom.
+**16,105 − 8,000 ≈ 8,100 to the financier** — landing on the modelled **PKR 300–350/day** band.
+**An independent commercial offer, built by people with real riders, prices at the number this
+model derived from first principles.**
+
+### 🔴 EVERYTHING IS HAPPENING IN PUNJAB
+CM e-Bike scheme · **foodpanda + Wasl** EV rider fleet (Lahore) · **Zyp** BaaS network (Lahore) ·
+ezBike/ezSwap (Islamabad/Rawalpindi) · first public swap station (Faisalabad) · **Mitigation Action
+Facility EUR 8.9m** (Faisalabad, Lahore, Multan) · tax concessions in Balochistan/Punjab/KPK.
+🔴 **The one Karachi-anchored initiative found is ELFA + Bykea.** ⚠️ **This framing was corrected
+on 29-Aug — Sindh's programme is real, it is just public-transport-led. See below.**
+
+**foodpanda + Wasl Investment Finance (SECP-regulated NBFC), Lahore:** riders access EV financing
+through Wasl, which provides *"cash flow based financing … structured in ways to avoid the need for
+any form of hard collateral"*. 🟢 **`fleet-model.md` argued the answer to rider affordability is a
+platform-plus-financier arrangement collecting against earnings. A platform and an NBFC have
+independently built exactly that.** 🔴 **And it removes first-mover advantage in Punjab** — the
+platform relationship, the scarcest asset in the plan, is taken there by the largest player with
+government backing. ⚠️ Unestablished: financing-to-own vs rental, whether it reaches Karachi, and
+scale — no unit count disclosed.
+
+### 🔴 ZYP — the closest analogue that exists, measured against its own plan
+US$1.2m seed (2023) + **US$1.5m Pre-A led by Shorooq Partners**. Own factory, **12,000 bikes/year**.
+**Announced July 2024: 60+ swap stations and 1,000 ZUM 2000 motorcycles in 12 months.**
+**Zyp's own locations page, read 28-Aug-2026 — 25 months later — lists 10 sites, all Lahore, two of
+them Zyp's own premises. Eight third-party hosts against a 60-station plan: ~17%, at 25 months not
+12.** 🔴 **Any plan here that assumes a network can be stood up quickly should be re-read against
+that.** 🟢 **The host pattern is the copyable part:** TCS depots, Chughtai Lab clinics, METRO, Apni
+Dukaan — **cabinets inside other companies' existing footprints, not built sites.**
+⚠️ 60 cabinets at ~US$3,800 is ~US$228,000, so **funding was probably not the limit** — siting,
+permissions, grid connections and demand density are the likelier constraints. `[VERIFY with Zyp]`
+
+### 🟢 SWAP CABINET CAPEX — the first hard number
+**Guangzhou Tycorun**, published tiers: **US$3,999 (5–49) / 3,799 (50–99) / 3,599 (100+)** →
+**PKR 1.00–1.11m each** at 277.90. TYCORUN 8-slot Alibaba sample **US$4,999**. Spec: 48/60/72 V,
+50Ah, **1760 × 550 × 710 mm, 160 kg**, >1,000 cycles, FOB Shenzhen.
+🟢 **It accepts L/C** — *"L/C, T/T, D/P …"* — a real datapoint for **K4**.
+⚠️ *"Batteries included"* is ambiguous; a quote must state **how many packs at what Ah are in the
+box**. ⚠️ A secondary source puts smart 10-slot cabinets at **US$1,400–2,000** — less than half;
+the spread is unexplained and the product page is the better evidence.
+**So one swap point is ~PKR 1.0–1.4m in hardware**, before circulating packs, installation and the
+electricity connection — **and the connection is where the cost and delay usually sit.**
+🟢 **Recall it lands duty-free:** 8504.4030, 0%, condition **Nil**.
+
+### 🟢 MITIGATION ACTION FACILITY — a financing structure worth understanding
+**EUR 8.9m: EUR 3m demonstration grants + EUR 3m first-loss guarantees leveraging EUR 18.6m of
+commercial lending — 6.2×.** Implementer **LUMS**; lenders **HBL and Meezan**. Targets **9,614
+swappable e-3W, 137 swap stations, 12.3 MWp solar**, in Faisalabad/Lahore/Multan; implementation
+**08/2026–07/2031**. 🟢 **It names two banks willing to fund EV assets against a guarantee — a
+route to K4 this research had not considered.** ⚠️ **Three-wheelers, Punjab only.**
+
+### 🔴 RESIDUAL VALUE — the fleet model's exit, and it is weak
+Used e-bikes on PakWheels **PKR 19,000–80,000+**; **15–25%/year** depreciation, most in year one;
+**50–60% retained at three years**; the market *"still evolving … depreciation can be high due to
+concerns about battery life."* 🔴 `fleet-model.md` locks capital **13–20 months per machine** and
+assumes recovery — **if the exit is thin the asset is effectively consumed.**
+🟢 **This is the strongest argument yet for owning the battery rather than selling it with the
+machine:** if the operator retains the component buyers distrust, the vehicle's residual stops being
+battery-dependent and the pack keeps earning. Same logic Yadea follows at 28.4% of revenue.
+⚠️ **Generic industry figures, not Pakistani data.** No Pakistani residual series exists.
+⚠️ **Superseded in part on 01-Sep** — Dawn puts the loss at ~50% *at the showroom door*. See below.
+
+### 🔴 ELFA IS A WAVETEC COMPANY — re-read the competitive picture
+**ELFA Electric is a product of EV Technologies, a subsidiary of Wavetec** — *"operated globally for
+over 37 years"*, 30-year R&D legacy. **Not one more assembler from the catalogue.**
+🔴 **So Karachi delivery is held by a 37-year multinational's subsidiary, and the swap-network model
+by a funded manufacturer in Lahore. Neither is a weak incumbent.** ⚠️ **But neither has been
+measured** — no rider, unit or capacity figure published for ELFA; Zyp visibly at ~17% of its plan.
+**Weak execution is not a weak competitor.**
+
+### 🟢 KARACHI ELECTRICITY MAY BE CHEAPER THAN MODELLED
+K-Electric published base: **commercial 18.50–28.50**, **industrial B1 26.23** (cut from 30.80,
+**effective Feb 2026 → Dec 2026**), B2 26.16, B3 27.00 — all **below the 39.70 the TCO assumed**.
+🔴 **Do not drop these into the model.** The bill adds **FCA, QTA, GST and meter rent**, and
+commercial tariffs carry **fixed charges on sanctioned load** — which matter for a swap cabinet that
+draws in bursts. **The base rate is not the effective rate.** ⚠️ The industrial cut expires
+end-December 2026.
+**Connection:** application → site survey → **demand note (where the charge appears)** → meter in
+**15–20 days**. 🔴 **The connection charge is not published — quoted per site after survey.** So the
+cost identified as the real constraint behind a swap point **cannot be researched, only requested.**
+
+### ⚠️ INSURANCE — a fleet operating cost that was never in the model
+Third-party (legally required) **PKR 2,500–4,000/yr** for a 70cc; comprehensive **PKR 5,000–20,000+**.
+**Karachi is explicitly rated higher-risk.** At a mid-range PKR 12,000, **a 200-machine fleet carries
+~PKR 2.4m a year against a PKR 50m base — not fatal, but entirely absent from the model**, and for a
+rental operator comprehensive cover is not optional.
+🔴 **And the cc problem appears a third time.** Registration fees, provincial token tax **and now
+insurance premiums are all cc-banded** — while an electric motorcycle has no engine capacity.
+**No insurer's approach to rating a zero-cc vehicle was found, and no EV-specific motorcycle
+insurance product exists in Pakistan at all.** Whether comprehensive cover is written on a lithium
+vehicle at standard rates is **unestablished and a real exposure for a rental fleet.** Broker question.
+
+---
+
+## 28-Aug-2026 (evening) — Parliament wants lead-acid shut down, and there is no regulator to do it
+
+**New file:** `03-pakistan/regulatory-vacuum-and-the-battery-crackdown.md`. Source: **National
+Assembly Standing Committee on Industries and Production**, July 2026, consistent across five
+outlets. ⚠️ **Press reporting of a committee, not its own minutes.**
+
+> **"The companies using lead-acid batteries in electric motorcycles should be shut down."**
+> — **Naz Baloch**, committee member. Reasons: substandard quality, **explosion risk in hot weather.**
+
+🟢 **This validates the most load-bearing judgement in the project.** `battery-layer.md` found
+lead-acid dies in **8–13 months at fleet duty cycles in Pakistani heat**;
+`fifth-schedule-primary-text.md` found the tariff **excludes lead-acid by name** and taxes it at
+**double**. **Parliament arrived at the same place, for the same reason — heat. Policy, tariff and
+engineering now all point one way.** ⚠️ No deadline, no company named, no count of affected licensees.
+
+### 🔴 But the machinery to enforce anything does not exist
+| Gap | Committee's own record |
+|---|---|
+| **No regulator** | **No dedicated authority for e-motorcycles.** EDB (licences) · PSQCA (standards) · NEECA (charging) · provincial (roads). Chair Dr Mehreen Bhutto: *"Too many ministries and departments were involved."* |
+| **No battery policy** | None exists; EDB CEO said one was *"being finalised."* |
+| 🔴 **Licences don't require lithium** | **EDB licences do not mandate lithium-ion** — licensees may fit lead-acid and stay compliant |
+| **No testing labs** | PSQCA holds **172 standards for electric motorcycles** but **no lithium battery testing laboratories**, and *"no effective mechanism to ensure implementation"* |
+| **No complaint channel** | A manufacturer asked where to report illegal battery makers. **The question went unanswered.** |
+
+🔴 **So the PSQCA release certificate on the battery tariff line is a paper gate with no laboratory
+behind it.** It cuts both ways: **easier to clear than feared, and worth less than it appears** as a
+barrier to competitors.
+
+### 🔴 The grey market — and it lands on Route B
+> *"Unlicensed operators import lithium-ion cells **as scrap** and resell them without registration
+> or quality control."*
+
+**First evidence of an informal-sector competitor, attacking the component that is 53% of FOB cost.**
+It does not kill Route B — a fleet operator selling uptime is far less exposed than a battery
+retailer — but **any plan to sell packs into the aftermarket now has a named competitor with a
+structural cost advantage.** ⚠️ The committee heard substandard batteries have **2–3 year lifespans
+and cost PKR 90,000 to replace** — consistent with this project's own PKR 115,000 retail finding,
+from an independent source.
+
+### Separately: BYD is building near Karachi
+**BYD + Mega Motor Company (a Hub Power subsidiary)**, near Karachi, under construction since
+**April 2025**, first Pakistan-assembled car **July/August 2026**, **25,000 vehicles/year**.
+⚠️ **Cars, not two-wheelers.** But 🔴 **the largest Chinese EV manufacturer chose Karachi, in the
+province with no EV concessions — which weakens the "everyone went to Punjab because Sindh offers
+nothing" reading.** **Huaihai** is confirmed to operate in Pakistan, India, Peru, Chile, Indonesia —
+🔴 **but no JV, plant or partner in Pakistan could be identified.** `[PLACEHOLDER]`
+
+---
+
+## 29-Aug-2026 — warranty quantified, Sindh corrected, three charging tariffs, and a customs floor
+
+**New files:** `02-supply/warranty-gap-and-coming-standards.md` ·
+`03-pakistan/sindh-correction-and-psqca.md` · `05-numbers/charging-tariff-and-the-grey-market.md` ·
+`05-numbers/customs-valuation-floor.md` · `03-pakistan/pave-supply-answered.md`.
+**Source archived:** `06-sources/customs-valuation-ruling-1964-2025-lithium.pdf`.
+
+### 🔴 K5 IS NOW A NUMBER
+| Who | Battery warranty |
+|---|---|
+| **Okla** OKG | **5 years** |
+| **ELFA** — the Bykea partner | 🔴 **3 years / 50,000 km**, marketed *"industry-leading"* |
+| **Yadea** via Road Prince | 24 months / 20,000 km |
+| **Aima** (China domestic) | 3 years on lithium |
+| 🔴 **Koyosonic** — the favourable-priced pack | **1 year below 50Ah** — *exactly the two-wheeler pack size* |
+| Hunan CTS | Not published |
+
+**Pakistani competitors warrant 2–5 years. The reachable Chinese supplier warrants 1 year on the
+relevant size.** 🔴 **An importer at Koyosonic's price cannot match ELFA's 3-year/50,000 km without
+self-insuring two years of battery liability** on a PKR 59,281–115,000 component. **On 200 machines,
+a 15% failure rate between years 1 and 3 at ~PKR 60,000 is PKR 1.8m unfunded** — ⚠️ **and 15% is a
+guess; no failure-rate data exists.**
+🟢 **A rental/BaaS operator warrants nothing to a rider — it keeps the fleet running. The exposure
+becomes a forecastable operating cost instead of a contingent liability. This is now the strongest
+structural argument for rental over sale.**
+⚠️ **And note what "warranty" means at this tier:** Yadea earns **28.4% of revenue** from batteries
+and chargers and sells more batteries than vehicles. **The industry monetises replacement rather
+than absorbing it — a generous warranty from a Chinese ODM is a marketing number until someone
+tests who honours a claim from Karachi.**
+
+### 🔴 THE BATTERY POLICY IS LATER AND WIDER THAN REPORTED
+It is now the **Next Generation Energy Storage Policy (2026–2033)** — EDB Chief Executive
+**Hammad Mansoor** expected to present an upgraded version *"shortly."* **Still in development,
+scope widened from EV batteries to energy storage generally, horizon to 2033. Still the single most
+consequential pending document for this decision, and later than the July reporting implied.**
+
+**Proposed PSQCA standards, and they are demanding:** packs must survive a **one-metre drop onto
+bare concrete** with no cracks, leaks or internal damage; **ingress protection explicitly including
+flooding and monsoon conditions**; EDB + NEECA directed to build an inspection and verification
+mechanism.
+🟢 **Actionable now, not later: ask every supplier whether the pack passes a 1 m drop onto concrete,
+and its IP rating against immersion.** The RFQs already asked for IP rating — that was the right
+question. ⚠️ **Karachi floods. A pack rated for dust but not immersion is the wrong pack for this
+city** — an engineering judgement that does not need to wait for a policy.
+
+**Road Prince / Yadea:** partner **Eiffel Industries Limited**, **~US$10m** infused incrementally
+into an existing plant at **Kasur (Punjab)**, six models announced PKR 150,000–1,000,000, **3S
+dealerships (Sales, Service, Spare Parts) across Pakistan**.
+🔴 **Note what the US$10m buys: service and spare parts — precisely the variable
+`india-fame-shakeout.md` identified as decisive, and the one that destroyed Ola from 50% share. The
+world's largest e-2W manufacturer, entering Pakistan, is spending its money on the thing this
+research says decides the outcome.**
+⚠️ Its quoted Pakistani range PKR 204,000–350,000 conflicts with the catalogue's PKR 174,000–1,400,000
+— **different source, different date, possibly a different model set. Do not merge them; the
+PakWheels catalogue is the better evidence for what is actually on sale.**
+
+### 🔴 CORRECTION — "Sindh offers none of that" was too strong
+**Sindh Budget 2026-27 allocates PKR 39.5bn to transport and communications.** Reviewed at a
+Transport & Mass Transit Department meeting chaired by **Sharjeel Inam Memon, 4-Aug-2026**:
+**EV taxi service launching September 2026 · 1,000 electric buses in phases (500 already approved) ·
+50 double-deckers to Karachi October 2026 · 🔴 pink EV scooters for women — a two-wheeler
+programme · charging infrastructure explicitly funded.** Sindh was **the first province to introduce
+electric buses in Pakistan.**
+
+**The corrected picture: Sindh's EV strategy is public-transport- and fleet-led; Punjab's is
+consumer-subsidy-led. Different strategies, not presence versus absence.**
+🟢 **This improves the Karachi case rather than weakening it** — a province funding EV taxis, e-buses,
+women's e-scooters and charging is building demand and grid capability in the target city.
+⚠️ **The original point survives in narrower form:** an entrant selling to private buyers or riders
+in Karachi still gets **no provincial subsidy and no tax concession**; the same entrant in Lahore
+would. **The consumer-facing gap is real. The "nothing is happening" framing was not.**
+🔴 **"Pink EV scooters for women" is a direct government two-wheeler procurement in Sindh** — the
+Sindh analogue of the EDB 500-unit batch. **Whether it is tendered, and to whom, is worth asking.**
+
+### 🔴 THERE IS NO SINGLE EV CHARGING RATE — THERE ARE THREE
+| Rate | PKR/kWh | What it is |
+|---|---:|---|
+| Residential off-peak | **23.57** | NEPRA subsidised off-peak domestic |
+| NEV Policy commercial fast-charging **cap** | **39.70** | 🔴 **the figure this project modelled** |
+| **NEPRA EVCS, base + adjustments** | **48.78** | what a public charging station actually carries |
+
+🔴 **For a public charging business the TCO's electricity assumption was optimistic, not
+conservative — 48.78 against 39.70.** 🟢 **For a fleet it is lower, not higher:** a depot charging
+overnight is not a public charging station; it buys at a commercial/industrial connection
+(**18.50–28.50**) or residential off-peak (**23.57**), both well below 39.70. 🟢 EV charging stations
+are reported **exempt from certain fuel cost adjustments** that hit other consumer categories —
+⚠️ **whether a private fleet depot qualifies as EVCS is exactly the question, and it is unverified.**
+**Net: at the worst number found (48.78) the electric bike still runs at ≈1.22 PKR/km against
+petrol's 5.72–6.24 — roughly a fifth. The conclusion does not turn on which applies; only the margin
+does.** ⚠️ **All three are press/aggregator grade, not read from a NEPRA notification. Get the EVCS
+tariff determination before relying on any of it.**
+
+🟢 **And the grey market inverts on a second reading.** It exists because finished lithium packs
+carry **CD 10% + RD 2%** and lead-acid **20–24%** — **but Route B imports CELLS at 0%** (Fifth
+Schedule Part-III sr.143). **So a legitimate Route B operator faces the same zero duty the scrap
+importer evades, and beats them on cell quality, BMS, testing and warranty. The grey market's entire
+cost advantage is duty avoidance on a duty that Route B does not pay.**
+⚠️ Two things stop it being a clean win: the scrap operator also avoids PSQCA, testing and any
+warranty obligation — **and PSQCA has no lithium testing laboratory, so nothing forces the
+comparison at point of sale** — and **the customer cannot tell the difference at purchase.** That is
+a marketing problem, not a cost problem, **and it is precisely the problem a rental/BaaS model does
+not have**, because the operator keeps the pack and bears the failure directly.
+🟢 **Third time this session the same conclusion arrived from a different direction** — warranty
+exposure, residual value, and now grey-market quality signalling all argue for **owning the battery
+and renting the service** rather than selling the machine.
+
+🔴 **And one line that changes how EDB certification reads:** *"EDB licences did not specifically
+require lithium-ion, allowing some companies to use cheaper lead-acid dry batteries."*
+**So an EDB licence certifies the assembler, not the chemistry** — and the PAVE approved-model list,
+which routes through EDB approval, **may therefore include lead-acid machines. That materially
+weakens the assumption that PAVE approval implies a quality floor.** `[VERIFY]`
+
+### 🔴 THE CUSTOMS VALUATION FLOOR — a hole in the landed-cost model nobody had looked for
+**Valuation Ruling 1964/2025**, Directorate General of Customs Valuation, Custom House Karachi,
+**29-01-2025**, under **s.25A Customs Act 1969**. *Determination of Customs Value of Lithium Ion
+Battery, PCT 8507.6000, all origins.* **Duty rates were known; the value the duty is charged on was
+assumed to be the invoice. It is not necessarily the invoice.**
+
+| Band | WeBOC PCT | $/kg | $/kW | Basis |
+|---|---|---:|---:|---|
+| **IP-20** | 8507.6000.1000 | **7** | **70** | 🔴 **whichever is higher** |
+| **IP-21** | 8507.6000.1100 | 8 | 80 | whichever is higher |
+| **IP-65** | 8507.6000.1200 | **9** | **90** | whichever is higher |
+
+Values are **C&F USD**. **Para 7 makes it a FLOOR, not a fixed price** — a higher declared value is
+assessed at the higher value. The **air-vs-sea freight difference is added**. Phone, laptop and
+tablet batteries are excluded. Applies until rescinded; s.25D revision within 30 days.
+🔴 **The band is set by IP RATING**, and IP-65 (weatherproof) carries the highest values.
+
+**Applied to this project's own candidates — it bites on two of three at IP-65:**
+
+| Supplier | IP-65 floor | Invoice | Bites? |
+|---|---:|---:|---|
+| **Koyosonic** 72V 35Ah (15 kg, 2.52 kWh) | **$226.80** | $213.32 | 🔴 **Yes — +6.3%** (PKR 63,027 vs 59,281) |
+| **Dongguan Rishengzhi** 72V 30Ah (16 kg, 1.89 kWh) | **$169.92** | $151.20 | 🔴 **Yes — +12.4%** |
+| **Hunan CTS** 72V 30Ah (18 kg, 2.16 kWh) | $194.40 | $410.00 | 🟢 No — invoice far above |
+
+🔴 **For a Karachi fleet the pack must be weatherproof, and weatherproof is the top band. The coming
+PSQCA standard requires resistance to flooding and monsoon conditions, and Karachi floods annually
+— so IP-65 is not an upgrade, it is the specification, and it puts both cheap packs below their own
+customs floor.**
+🟢 Absolute impact on duty is modest (1% on the EV-CKD route, 0% on Route B) — **but sales tax at
+18% and withholding at 11–12% are charged on the assessed value**, so the uplift flows straight into
+those (~PKR 1,100 per Koyosonic pack in extra tax base effect).
+⚠️ **It also partly erodes the Koyosonic advantage this research leaned on: the cheaper the declared
+price, the more the floor closes the gap. A quote below the floor buys nothing at the border.**
+⚠️ **The ruling writes "KW"; for a battery this is almost certainly kWh. The ambiguity is the
+ruling's, not ours — clearing-agent question**, and it changes the per-kW column by orders of
+magnitude.
+🟢 **The ruling's own background is under-invoicing** — *"massive under-invoicing … declared values
+did not correspond to market prices"*, over 90 days of import data, with transaction value under
+s.25(1) found inapplicable. **That is the state attacking the exact economics that make the
+scrap-cell trade viable, and it strengthens the Route B case: the floor removes the
+under-declaration advantage regardless of duty rate.**
+🔴 **A trade-press summary said values are *"per kilowatt (KW), not per kg"* — WRONG.** The PDF read
+directly shows **both columns** under *"whichever is higher"*; the aggregator dropped the per-kg
+column, **which is the binding one for a heavy, low-energy pack.** **Third time in this project that
+going to the primary document changed the answer** (after the "10–15%" duty rate and the concession
+expiry date).
+🔴 **`Valuation Ruling 2061/2026` covers lithium-ion CELLS (LFP, LiFePO4, prismatic) — the item
+Route B actually imports — and its values were NOT obtained.** Existence and scope confirmed
+(*"significant discrepancies between declared transaction values and prevailing market prices"*),
+**but no figures; not publicly indexed anywhere found.** **It is a required document, not an
+optional one. Request it from DG Customs Valuation Karachi or a clearing agent.** `[PLACEHOLDER]`
+
+### 🔴 CORRECTION — the PAVE subsidy is TWO-TIER, and only the higher number was reported
+| Vehicle | **Financed** | **Self-finance** |
+|---|---:|---:|
+| **E-bike** | **PKR 50,000** | **PKR 80,000** |
+| E-rickshaw / loader | PKR 200,000 | PKR 400,000 |
+
+🔴 **PKR 80,000 is the SELF-FINANCE tier. A buyer taking instalments gets PKR 50,000 — 37.5% less
+than every file in this workspace and the published artifact were reporting.**
+⚠️ **The subsidised-payback scenario must be re-run at PKR 50,000 for anyone financing — which is
+most of the target market, since the whole premise is that riders cannot pay upfront. The 80,000
+case applies to cash buyers.** The earlier NEV Policy figure of 65,000 sits *between* the two tiers,
+so it was neither right nor simply superseded.
+
+### 🟢 THE PAVE SUPPLY QUESTION IS ANSWERED — and it is a wall, not a door
+After four rounds of searching, the official portal (pave.gov.pk) states it plainly:
+**"Only models approved by the Engineering Development Board (EDB) will be offered"** — vehicles
+*"shortlisted based on safety, performance, and compliance standards."*
+🔴 **PAVE is not an import channel. It is a demand channel routed through EDB-licensed
+manufacturers** — the same 34 companies that produced 22,404 units between them.
+🟢 **For an EDB-certified assembler, PAVE is a state-funded order book.** 116,000 subsidised units
+against a national production of 22,404 means **the licensees are the bottleneck, not the demand.
+This is the strongest argument yet for pursuing EDB certification rather than importing CBUs.**
+🔴 **For anyone without certification, PAVE is a wall.** The subsidy makes approved models cheaper
+than anything an uncertified importer can land. **It converts EDB certification from a duty-rate
+question into a market-access question.**
+**Programme parameters:** 116,000 e-bikes · **3,170 e-rickshaws/loaders — so 97.3% of units are
+two-wheelers**, and earlier framing that treated bikes and rickshaws as comparable legs was wrong ·
+eligibility 18–65 (21–65 rickshaw) · **25% of the e-bike quota reserved for women** · includes
+Gilgit-Baltistan and AJK · registrations opened **1-Sep-2025**.
+**Approved models named** ⚠️ *(secondary aggregator — the official portal names none)*:
+🟢 **Crown Benling Fairy — resolves the Crown contradiction: Crown IS doing electric, under the
+Benling brand, and it is PAVE-approved** · **Eiffel Yadea Velax** (Eiffel = Road Prince) ·
+**Nova Mobility Ecodost ED70** (EcoDost's parent, not previously known) · **Zong Fa ZF125E3000**
+(previously "data incomplete") · Vitality EV Retro · E Turbo Warrior 200KM.
+⚠️ **Press-grade until checked against EDB. Ask EDB for the official list — it doubles as the
+competitive register.**
+
+### 🔴 PAKISTAN ALREADY IMPORTS LITHIUM AT GWh SCALE, ON ROUTE B'S EXACT HS CODE
+HS **8507.6000** monthly imports: **42 MWh (Jan 2024) → 652 MWh (April 2026), a record, +1,640%.**
+Battery-storage imports 2025 **4.6 GWh (+220% YoY)**; cumulative to end-2025 **7.6 GWh**; current
+annualised **~5.86 GWh**; projected 2030 **8.7 GWh**.
+⚠️ **Most of this is SOLAR STORAGE, not EV — BESS imports driven by Pakistan's solar boom. Do not
+read 652 MWh as EV battery demand.**
+🟢 **Two things it does establish.** (1) **The import channel already exists at scale on the same
+tariff line** — supplier relationships, freight routes, DG handling and customs precedent for
+lithium at GWh volume are in place; **the valuation ruling exists precisely because that volume is
+large. This is not an untrodden path.** (2) 🔴 **116,000 e-bikes at ~2.5 kWh is roughly 290 MWh —
+about 5% of Pakistan's annualised lithium imports. The state's flagship EV scheme is a rounding
+error beside the solar-storage market.** Anyone modelling battery supply security should watch
+**solar** demand, not EV demand — it sets the price and the queue.
+
+**Catalogue now 170 records** (Pakistan 111 — 91 current + 20 discontinued — across 15 brands).
+Added: **E Turbo Warrior 200KM PKR 790,000** (3000 W nominal / **5400 W peak** QS BLDC hub, 95 km/h,
+**200 km**, PAVE-approved) · **Vitality Retro 225,000** (PAVE-approved) · **Vitality Velocity
+249,000**. 🟢 **Both PAVE-approved names from the aggregator list are now confirmed as real, priced
+models on PakWheels — which raises confidence in the rest of that list**, though it stays
+aggregator-sourced.
+
+### ⚠️ FLEET TAM — recorded, and deliberately not substituted
+Pakistan's **platform-economy workers ~1.5m**; **"location-based" (delivery + ride-hailing) ~0.5m**;
+**Bykea 500,000+ bikes registered** ⚠️ *2020 figure*. Named platforms: foodpanda, Bykea, Careem,
+Uber, Cheetay, Daraz, Gharpar.
+🔴 **Do not swap 50,000 for 500,000.** The 0.5m includes car ride-hailing drivers, who are not
+addressable by a two-wheeler fleet, and a platform registration count six years stale is not a
+working fleet. **50,000+ remains the only figure tied to active delivery riders on named platforms.**
+🟢 It moves the margin, not the conclusion: a 200-machine fleet needs **0.04%** of the location-based
+workforce. 🔴 **The gate was never rider count — it is which platform will partner, and both
+foodpanda and Bykea already have EV partners. A large TAM behind a closed door is not an
+opportunity.**
+
+---
+
+## 30–31-Aug-2026 — the market-size correction, a same-day self-correction, and Vietnam
+
+**New file:** `03-pakistan/market-size-corrected.md`.
+
+### 🔴 CORRECTION — "5.2× national production" is true but misleading
+`state-demand-and-financing.md` and the published artifact both led with *"the government is
+subsidising 116,000 machines in a year in which the entire country produced 22,404."*
+**Every number in that sentence is accurate. The framing is not** — it compares a subsidy target
+against **production** and invites the reader to conclude the programme dwarfs the market.
+**It does not: Pakistan's e-2W market is already about the size of the programme.**
+⚠️ **And the EDB 22,404 is explicitly a NINE-MONTH figure (Jul–Mar).** Total motorcycle sales
+**1.93 million in FY26** (Arif Habib Limited — a record, against 1.85m in FY21).
+
+### 🔴 SELF-CORRECTION, SAME DAY — and it was this project's own repeat error
+The file first hypothesised that a ~90,000-unit gap between "sales" (112,000) and production
+(22,404) meant **roughly four in five e-2W sold here are not made here** — flagged as unverified.
+**Further searching shows the ~112,000 figure is itself PRODUCTION:** *"total **production** of
+electric scooters and electric motorcycles reached **111,844 units** between January and December
+2025"* (Mobile World Magazine).
+**So there is no 90,000-unit import gap. Both figures are production, from different collectors,
+over different periods, and they reconcile by growth** (+191.7% YTD April, +173% H1 2026, electric
++50% in Q1 2026) **— not by imports.**
+🔴 **The lesson is the one this project keeps relearning: do not difference figures across sources.**
+It is the same error as the withdrawn 8–9% penetration figure. **Flagging the risk in the same
+breath as making it is not the same as not making it.**
+⚠️ **The CBU-import share remains genuinely unknown. It is simply not 80%, and no number should have
+been implied. The honest position is the one this project started with: no reliable import/local
+split exists.**
+
+### What the new data does establish
+🔴 **64 companies / ~70 brands** operating in Pakistani e-2W · **electric scooters ~94% of output**
+(motorcycles are the small remainder) · Q1 2026 total two-wheeler market **+33% YoY to 530,000+
+units**, electric segment **+50%** · YTD April EV sales **+191.7%**, with *"almost all dealers in
+short supply."*
+🟢 **That last line is the most commercially interesting finding of the day. A market growing
+173–191% with dealers unable to get stock is supply-constrained — exactly the condition in which a
+new importer or assembler can enter without displacing anyone.**
+🔴 **64/~70 against 34 EDB licensees means roughly half the market's companies operate without a
+manufacturing licence** — consistent with the grey-market and regulator-gap findings.
+🔴 **And it exposes a coverage limit in this project's own catalogue:** `MASTER-model-price-list.md`
+covers **15 Pakistani brands**; if there are ~70, **it captures perhaps a fifth of the brands** —
+though likely most of the *volume*, since the named brands are the ones with dealer networks and
+PakWheels listings. **Describe it as covering the documented market, not the whole market.**
+
+**Penetration, computed properly:** 111,844 ÷ (1,930,000 + 111,844) = **~5.5%**; a third-party post
+gives **4.6%**. 🟢 **A defensible range is 4.5–5.5%** — materially higher than the ~1% production
+alone implies, materially lower than the withdrawn 8–9%. ⚠️ **Still a production numerator over a
+sales denominator, so still not like-for-like, and it does not become citable through repetition.**
+
+### 🔴 "5th largest e-2W market in the world" — checked against ICCT, NOT confirmed
+Checked against the **International Council on Clean Transportation**, the most credible independent
+source for global two-wheeler electrification. 🔴 **ICCT does not confirm it and does not list
+Pakistan at all.** ICCT ranks by **sales share**, not absolute units: **China 54.8%** (from 51.7% in
+2024), **Vietnam 21.7%** (from ~10%), **India 6%** (2024, described as the world's **second-largest**
+e-2W market by volume). China + India + Southeast Asia ≈ **80% of global 2/3-wheeler sales**.
+⚠️ **So the claim is neither confirmed nor refuted — ICCT measures a different thing, and no
+independent source found ranks countries by absolute e-2W volume.**
+🔴 **The claim stays single-sourced and unverified. Do not put it in front of an investor.**
+
+🟢 **But the ICCT data calibrates Pakistan usefully, and this is the sharpest framing the project has
+produced: Pakistan's 4.5–5.5% sits just below India's 6% — so Pakistan today is roughly where India
+was when its shakeout began, and India reached 6% through a subsidy cycle that destroyed most of the
+entrants who chased it.**
+
+### 🟢 VIETNAM — the comparable this research never looked at
+**~10% → 21.7% e-2W share in a single year** — the fastest shift in the dataset, and **four times
+Pakistan's level.** 🔴 **The mechanism was not a purchase subsidy.** ICCT attributes it to **Hanoi
+and Ho Chi Minh City planning low-emission zones that would ban or restrict petrol two-wheelers from
+city centres.** **A subsidy pays people to switch; a restriction removes the alternative — and
+Vietnam's result suggests city-level access rules move share faster than money does.**
+⚠️ **There is no evidence Pakistan is considering petrol restrictions in Karachi or anywhere else,
+and this research found none. A scenario to watch, not a plan to bank** — but it is the single policy
+change that would most transform the demand case, and Karachi's air quality gives it a rationale.
+**Open: whether any Pakistani city has discussed low-emission zones. Not searched yet; worth one look.**
+
+---
+
+## 01-Sep-2026 — 🔴 DAWN, 29-AUG: FIVE NAMED OPERATORS. THE BEST SOURCE IN THIS PROJECT.
+
+**New file:** `03-pakistan/dawn-29aug-named-operators.md`. Source: **Dawn, *"Leading the charge on
+two wheels"*, published 29 August 2026** — Pakistan's paper of record, three days old at reading.
+🔴 **This single article answers four sections the plan flagged as open, kills one thesis this
+research had carried since day one, and supplies the working-capital number that sizes the whole
+decision.** It is **the first source in this project where people who actually operate in this
+market are quoted by name:**
+
+| Who | Role |
+|---|---|
+| **Faraz Zaidi** | Chairman, **Wasl Mobility Modaraba** — finances electric mobility |
+| **Ammar Habib Khan** | CEO, **National Credit Guarantee Company Ltd** — building a 2W EV financing model |
+| **Huma Yahya Khattak** | CEO, **Elfa EV Technologies** — 🟢 already in this project's catalogue |
+| **Fahad Hassan** | Founder, **ChargePK** — runs the charger-location app |
+| **Muntaqa Peracha** | CEO, **Foodpanda Pakistan** — ~40,000-rider delivery fleet |
+
+⚠️ **Grade: named-executive press. Better than aggregator data, weaker than audited filings. These
+are practitioners with commercial incentives, not neutral statisticians. Where their figures conflict
+with a filing, the filing wins.**
+
+### 🔴 1. THE FLEET BEACHHEAD THESIS IS EMPIRICALLY REFUTED
+**Foodpanda Pakistan, from its own CEO: ~40,000 riders, ~150 electric bikes. 0.375%.**
+🔴 **The largest delivery fleet in the country — whose riders have the highest mileage and therefore
+the fastest payback in the entire market — is 99.6% petrol. This is the exact segment this research
+identified as the beachhead, and it has not converted.**
+
+**And Peracha gives the reason, which is not price:**
+> *"In the roughly **30 minutes** it takes to charge an electric bike, a rider could be out making a
+> delivery as that is approximately the time it takes to complete one order."*
+
+🔴 **Charging a bike costs a rider the earnings from one delivery. For a piece-rate worker the
+running-cost saving is collected in rupees per kilometre but paid for in lost orders — and the lost
+order is immediate and certain while the saving is gradual.**
+
+🟢 **Read the refutation precisely: it is a charging-TIME failure, not a fleet failure. The fleet
+economics are not disproved; the fleet's tolerance for downtime is.** And the fix is named in the
+same article — ChargePK *"is in talks with e-swap technologies… particularly important for delivery
+riders, for whom a bike is not simply a means of transport but a source of income."*
+🔴 **The corrected thesis: the fleet channel is not a beachhead — it is a beachhead CONDITIONAL ON
+BATTERY SWAPPING.** A swap is measured in seconds; a charge costs an order. **This converts swapping
+from an interesting option into the precondition for the entire B2B case**, and it aligns with
+`swapping-and-the-punjab-concentration.md`. ⚠️ **No deployed delivery-fleet swap network exists in
+Pakistan — "in talks" is the state of it.**
+⚠️ **`01-question/research-plan.md` §L/§3 must stop treating "fleet channel as a possible beachhead"
+as an open question with an assumed-favourable answer. It has been tested in the market at
+40,000-rider scale and it failed on charging time.**
+
+### 🔴 2. THE WORKING-CAPITAL NUMBER — and it is four times the budget
+**Ammar Habib Khan, NCGCL:**
+> *"At **1,000 units a month per OEM**, an assembler must commit around **Rs 200 million in working
+> capital** before a single bike is sold."*
+
+🔴 **Stated risk capital is PKR 50 million. That is one quarter of the working capital a
+1,000-unit/month assembler needs — before margin, before a single sale.** Scaled pro-rata, PKR 50m
+supports roughly **250 units/month (~3,000 units/year)** — ⚠️ **and that is the whole 50m consumed as
+working capital, leaving nothing for the PKR 7.5m parts-and-training requirement under gate K8,
+nothing for premises, and nothing for losses.**
+
+**The mechanism, in his words — the classic import trap:**
+> *"Electric bikes remain heavily dependent on imports from China, requiring **letters of credit and
+> strong credit lines**. **Without inventory, there can be no sales; without sales, there is not
+> enough cash flow to replenish inventory.**"*
+
+🟢 **This is precisely what this project predicted — *"an import business dies of working capital,
+not of margin."* Section K is no longer theoretical.**
+
+🔴 **And a named OEM is currently failing this test.** Elfa *"is scrambling to get money to order
+more material"* — its own CEO. **An established, catalogued, operating manufacturer cannot fund its
+next order. That is the single most sobering line in this entire research project — not because
+demand is weak, but because it is strong, and the company cannot finance the inventory to meet it.**
+🔴 **So the binding constraint on entry is NOT duty rates, EDB certification, supplier selection or
+product-market fit. It is the cash conversion cycle. Every one of those other questions has been
+researched in depth; this one is now the largest.**
+⚠️ **One named CEO, one number, PKR 200m. Get a second source before acting on it** — and establish
+**whether Rs 200m assumes CKD assembly or CBU import**, because the cycle differs materially.
+
+### 🟢 3. ELFA CONFIRMS ROUTE A — including which parts get localised
+> *"Elfa imports **completely knocked-down scooters from China** and assembles them locally. It also
+> **manufactures its own batteries**, while **importing other components such as motors and
+> controllers**."*
+
+🔴 **Route A exactly as this project modelled it, confirmed operating under a named CEO** — and it
+reveals the localisation split a real operator chose: **battery made locally · motor imported ·
+controller imported · rest of the scooter imported CKD.**
+🟢 **Localising the battery first is rational on this project's own numbers** — it is the heaviest,
+bulkiest, most freight-expensive item, it carries a customs valuation floor, and it is 40–45% of
+cost. **Independent confirmation that the battery is where localisation value sits.**
+⚠️ **It also means Elfa is exposed to the cell-import route (Route B) and therefore to Valuation
+Ruling 2061/2026, which this project still does not have.**
+**Open: whether Elfa imports cells or assembles packs** — it bears directly on Route B.
+
+### 🔴 4. BATTERY = 40–45% OF THE BIKE — the plan's §B number, answered
+> *"Batteries account for roughly **40pc to 45pc** of the cost of an electric bike."*
+
+⚠️ **His illustration — Rs 100,000 on a Rs 200,000 bike — is 50%, above his own stated range. He is
+speaking in round terms: use 40–45% and treat the example as rhetorical.**
+🟢 **Closes the plan's Section B request** (*battery as % of vehicle BOM and of retail price*),
+**from a market practitioner.**
+🔴 **And it re-frames the sourcing question entirely. If the battery is 40–45% of the bike, the
+supplier-price spread this research documented — Koyosonic at roughly half Hunan CTS — is not a
+component-level saving. It moves ~20% of the retail price of the finished machine.**
+
+### 🔴 5. RESALE — a 50% cliff at the showroom door
+> *"A bike can **lose roughly 50pc of its value once it leaves the showroom**"* — partly because
+> there is no established secondary market for EV bikes, partly because the battery loses capacity.
+
+🟢 **This answers the plan's Section 13, and the answer is bad.**
+🔴 **A 50% instant depreciation is close to fatal for financing, because a lender's security is worth
+half the loan the moment the asset is delivered. It explains why two of the five named sources in
+this article are financiers building bespoke models — ordinary auto finance cannot underwrite this
+collateral.**
+⚠️ **This supersedes the generic "50–60% retained at three years" recorded on 28-Aug.** Dawn's figure
+is Pakistani, named-source and specific to the showroom-exit moment; **prefer it, and treat the
+generic e-bike industry depreciation curve as not applicable to this market.**
+🟢 **And it compounds with the battery: residual is weak *because* the battery degrades, and the
+battery is 40–45% of the cost. Swapping severs that link** — if the rider never owns the battery,
+the degrading asset is off their balance sheet and out of the resale calculation. **A second,
+independent argument that swapping is structural rather than optional.**
+
+### ⚠️ 6. A MACRO EVENT THIS RESEARCH HAD NOT ACCOUNTED FOR
+**Faraz Zaidi:**
+> *"**Before the US attack on Iran**, the operating cost of an EV bike was around **25 per cent** of
+> that of a conventional bike, including petrol, engine oil, spark plugs and filters. **Since the
+> war, it has fluctuated around 15pc**."*
+
+🔴 **The opex advantage improved from 4× to ~6.7× because petrol got more expensive.**
+🟢 **Payback on the price premium: ~1.5 years** through fuel savings — the higher the mileage, the
+faster it comes.
+🔴 **But read the fragility: that improvement is a war premium on oil, not a structural gain. If the
+premium unwinds, the ratio reverts toward 25% and payback lengthens.**
+⚠️ **Every TCO scenario in this project must therefore be run at BOTH 15% and 25%** — the same
+discipline already applied to the with/without-concessions cases. **A demand case resting on a war
+is not a demand case.**
+
+### 🔴 7. CHARGING INFRASTRUCTURE — and the number is *two*
+**Fahad Hassan, ChargePK: at most about **100 DC chargers** in all of Pakistan. ChargePK has **2,500
+app users** — of which 🔴 **TWO are for bikes.**
+🔴 **Two users. Whatever charging network exists in Pakistan, it is not being used by two-wheelers
+at all.**
+**And the reason is interoperability, not only scarcity:**
+> *"Many DC chargers in Pakistan **do not allow bikes**, while **many bikes do not support the type
+> of DC charging available**."*
+
+🔴 **So the public DC count overstates bike-relevant capacity twice over — chargers that exclude
+bikes, and bikes that cannot use the standard. The effective public DC network for a two-wheeler is
+close to zero.**
+🟢 **What people actually do instead:** *"Some of our customers have bought good extensions which
+they **toss down from the balcony**."* Others have arrangements with **ground-floor homes or nearby
+kiryana stores**; some charge **at their offices**.
+🟢 **This is a real finding, not colour: charging is being solved socially rather than
+infrastructurally, so home-charging access is not binary and adoption can proceed without a
+network.** ⚠️ **But it also means charging quality, safety and speed are entirely uncontrolled** —
+which bears directly on the fire-risk and warranty questions in
+`warranty-gap-and-coming-standards.md`.
+
+### 🔴 8. KARACHI IS THE HARDER MARKET — now with a physical mechanism
+This project already documented the Punjab concentration from policy and swap-station data.
+**Dawn confirms it independently and adds a cause that has nothing to do with policy:**
+> *"Electric scooties generally have very **low ground clearance**, which is poorly suited to
+> **Karachi's roads**. This is one reason there are more electric scooties in Lahore than in the
+> port city."*
+
+**And a second, separate Karachi problem:** *"A lack of charging infrastructure, combined with the
+fact that **most of Karachi's residents live in apartments**, makes charging electric bikes a
+significant challenge."*
+
+🔴 **Two independent structural disadvantages in Karachi — road surface and housing stock — neither
+of which any policy fixes, and both of which favour Lahore.**
+⚠️ **This matters more than any other geographic finding in the project, because Sheheryar is in
+Karachi.** The plan's §L asks which city first. **The evidence now says the home city is the worse
+one**, on three layers:
+1. **Ground clearance vs road condition — a PRODUCT problem**, fixable by choosing a
+   higher-clearance motorcycle-form machine over a scooter.
+2. **Apartment living vs charging access — a MARKET problem**, fixable only by swapping.
+3. **Policy and swap infrastructure concentrated in Punjab — a STATE problem**, not fixable.
+
+🟢 **The product half is actionable and gives a sharper answer to §I than spec comparison alone could:
+for Karachi, a motorcycle-form machine with real ground clearance and ≥2,000 W — not a scooter.**
+
+### ⚠️ 9. A THIRD VOLUME SERIES — recorded, and deliberately NOT differenced
+> *"Last year, around **150,000** electric bikes and scooties were **sold** across Pakistan. **Fewer
+> than 200,000 of the 2m bikes sold annually are now electric**, putting the adoption rate at **less
+> than 10pc**."* — Faraz Zaidi. Total two-wheeler fleet: **>30 million.**
+
+🔴 **This project did NOT subtract 111,844 from 150,000.** The day before, it retracted a published
+import estimate produced by exactly that operation across exactly these kinds of sources.
+**Different collectors, different bases, different periods. The gap measures nothing.**
+🟢 **What it does move is penetration.** Zaidi's own arithmetic — fewer than 200,000 of 2m — gives
+**~7.5%**, and he states **"less than 10pc."**
+
+| Estimate | Figure | Status |
+|---|---:|---|
+| Withdrawn earlier in this project | 8–9% | ❌ mismatched populations |
+| This project's corrected range | 4.5–5.5% | ⚠️ built on a **production** numerator |
+| **Dawn / Wasl Mobility** | **~7.5%, "less than 10%"** | 🟢 **sales numerator, named source** |
+| ICCT, India for comparison | 6.0% | 🟢 published methodology |
+
+🔴 **The 4.5–5.5% range is probably too low, because its numerator is production and Zaidi's is
+sales. The honest statement is now a wider band: roughly 5% to 7.5%, depending on whether you count
+what was built or what was bought.** Still not a citable point figure — **but three independent
+estimates now bracket it, and Pakistan sits at or above India's 6%.**
+
+### ⚠️ 10. THE COMPANY COUNT, RECONCILED AT LAST
+| Count | Source | What it counts |
+|---:|---|---|
+| **34** | EDB | **Licensed** manufacturers |
+| **~40** | 🟢 **NCGCL CEO, Dawn** | **OPERATIONAL** OEMs |
+| 64 / ~70 brands | Trade press | Companies and badges |
+| 84 | Dawn, separate article | "companies and counting" |
+
+🟢 **"Operational" is the qualifier that reconciles these** — ~40 actually build bikes; the larger
+counts include badges, importers and dormant registrations. **It also lands close to the 34 EDB
+licensees, so most operational OEMs are licensed and the 64/84 figures are counting something else.**
+Khan's stated reason: *"it is much easier to manufacture a bike than a car."*
+
+**The anchor-brand argument.** His diagnosis of weak demand is **fragmentation, not price**: the
+market *"needs an **anchor brand**"*, as **BYD** proved for Chinese cars globally that they *"could
+be good quality at a competitive price."*
+⚠️ **A view, not a finding — but worth holding: in a market of ~40 OEMs with no quality signal, the
+scarce asset is credibility, not capacity.**
+
+### 🔴 11. THE PRICE GAP, RESTATED BY A LENDER
+| | PKR |
+|---|---:|
+| **Honda CD 70** | **168,000** |
+| **"A proper lithium-powered electric bike"** | **> 300,000** |
+
+🔴 **The qualifier "proper" is doing real work.** This project's catalogue contains many lithium
+machines under PKR 300,000. **A market financier's view is that below that price the lithium is not
+"proper"** — consistent with `warranty-gap-and-coming-standards.md` and the cell-quality findings.
+⚠️ **So the honest premium is not "PKR 255,000 vs 168,000" (+52%). It is "PKR 300,000+ vs 168,000" —
+79% or more, for a machine that will not disappoint.**
+
+**And the article's framing of what that machine must beat is the sharpest statement of the demand
+problem this research has found:**
+> *"On a Sunday, a family of five can climb onto a Honda CD 70 in North Nazimabad and head to the
+> beach. On weekdays, the same bike can carry a commuter to work, a child to school and a delivery
+> ride through an entire shift. **This is the benchmark electric two-wheelers have to beat.**"*
+
+🔴 **Family load capacity requires ≥2,000 W peak** (Khattak, Elfa) — *"while electric scooties may
+not have sufficient motor power, a bike with peak power of at least 2,000 watts can carry a heavier
+load. But the greater the load, the faster the battery depletes."*
+**Dawn's own conclusion, which this research should adopt rather than argue with:** in a market where
+the motorcycle is expected to *"carry a family, survive poor roads, retain its value and remain
+available for work all day, **low running costs alone may not be enough.**"*
+
+### What the Dawn article changes
+| Plan item | Status before | Status now |
+|---|---|---|
+| §3 Fleet / B2B beachhead | Open, assumed favourable | 🔴 **Refuted at 40,000-rider scale — 0.375%. Conditional on swapping** |
+| §B Battery % of cost | Open | 🟢 **40–45% of retail** |
+| §13 Residual value | Open | 🔴 **~50% lost at the showroom door** |
+| §K Working capital | Theoretical | 🔴 **PKR 200m per 1,000 units/month. Budget covers ~250/month** |
+| §L Which city first | Open | ⚠️ **Karachi is structurally the harder market** |
+| §I Variant pick | Spec-led | 🟢 **Karachi ⇒ motorcycle form, high clearance, ≥2,000 W** |
+| Route A (CKD) viability | Modelled | 🟢 **Confirmed operating — Elfa, battery localised** |
+
+### The five highest-value open items from this article
+1. 🔴 **Whether swapping actually solves the Foodpanda problem.** ChargePK is *"in talks"*; nothing
+   is deployed. **The highest-value open question in the project — the fleet thesis depends on it.**
+2. 🔴 **A second source for the PKR 200m working-capital figure.** One named CEO, one number, and it
+   is now the binding constraint. **Do not act on a single quote.**
+3. **Whether Rs 200m assumes CKD assembly or CBU import.**
+4. **What Wasl Mobility and NCGCL will actually lend against, given 50% depreciation.** 🟢 **Both are
+   building models, both are named, and both are in Karachi's financial sector — approachable.**
+5. **Whether Elfa imports cells or assembles packs** — bears on Route B.
+
+---
+
+## 🔴 THE MAINTAINED DELIVERABLE — the Three-Market EV Atlas
+
+**`ev-atlas.html`, created 28-Aug-2026 09:11, updated at nearly every sync since, last at
+01-Sep-2026 20:29.** It supersedes `brief-2026-08-25.html`, `decision-board-2026-08-26.html` and
+`investor-pitch-2026-08-26.html` as the maintained artefact — 🔴 **those three are now stale and
+should be retired or explicitly marked with their date.** The `PDF/` set is stale on the same terms.
+
+🔴 **The atlas is PUBLISHED AND SHARED WITH OTHER PEOPLE**, under a standing instruction from
+Sheheryar (28-Aug-2026): *"keep upgrading the published artifact from now on, so everyone i shared
+this with can see."*
+🔴 **Its URL, its favicon (🛵⚡ — a REQUIRED publish parameter, not stored in the HTML, and not
+recoverable by reading the artifact back), the re-bake rule for the 147-row model table, the
+verification method, and the CVD-validated chart palette are all recorded in this workspace's memory
+at `ev-atlas-artifact.md`. Read that before touching it.**
+
+✅ **Verified 04-Sep-2026 against the local file: the atlas is current, and more carefully so than
+expected.** It carries the 0.375% foodpanda refutation, the named operators on the record, the
+Punjab concentration, the warranty gap, the Atlas Honda gap and the tariff regime. **It was not left
+behind by the 28-Aug → 01-Sep work.** Both corrections are in it and correctly handled:
+- **The PAVE subsidy is stated as the two tiers** — *"PKR 50,000 financed / PKR 80,000
+  self-finance"* — and notes the financed figure is 37.5% lower than previously reported.
+- **The 5.2× framing appears only as a labelled correction**, quoting the old claim and explaining
+  why it was misleading, rather than asserting it.
+- ⚠️ The **PKR 65,000** still in the file is the **NEV Policy** subsidy with its 80/60/40% taper —
+  a different scheme from PAVE, correctly labelled. **Not a stale figure; do not "fix" it.**
+
+---
+
+## 🔴 WHAT THE 28-AUG → 01-SEP WORK DID TO THE DECISION
+
+**The shape of the question changed. It is no longer "is there a business here" — that is largely
+answered — it is "can this capital run it."**
+
+1. 🔴 **The binding constraint moved from regulation to working capital.** Duty routes, EDB
+   certification, supplier prices and the Fifth Schedule were all researched to primary-source depth
+   over four days. **Then a named lender put the number at PKR 200m per 1,000 units/month, and a
+   named, operating OEM said it cannot fund its next order.** Against PKR 50m of risk capital,
+   **this is now the largest open question in the project, and everything upstream of it is settled
+   work.**
+2. 🔴 **The fleet beachhead was refuted and then rebuilt on one condition.** foodpanda at 0.375%
+   killed "fleet as beachhead"; the 30-minute charge is why. **Fleet survives only as
+   fleet-plus-swapping — and no deployed delivery-fleet swap network exists in Pakistan.**
+3. 🟢 **Four independent arguments now converge on owning the battery rather than selling it:**
+   warranty exposure (K5), residual value, grey-market quality signalling, and the 50% showroom
+   cliff. **That is the most robust structural conclusion the project has produced.**
+4. 🔴 **Karachi is the harder market, and the owner is in Karachi** — ground clearance against road
+   surface, apartment living against charging access, and a policy/infrastructure ecosystem
+   concentrated in Punjab. **Only the product layer is fixable.**
+5. 🔴 **PAVE converted EDB certification from a duty question into a market-access question.** The
+   subsidy runs only through EDB-approved models, so an uncertified entrant cannot compete on price
+   at all — while for a certified assembler PAVE is a state-funded order book.
+6. ⚠️ **Two demand figures now need re-running, not re-deriving:** the subsidised payback at
+   **PKR 50,000 financed** (not 65,000 and not 80,000), and **every TCO at both the 15% and the 25%
+   opex ratio**, because the current advantage carries a war premium on oil.
+7. ⚠️ **Two operating costs are still missing from the fleet model entirely:** insurance
+   (~PKR 2.4m/year on 200 machines) and the K-Electric connection charge, which is quoted per site
+   and cannot be researched.
+8. 🔴 **THE KILL CRITERIA HAVE NOT BEEN TOUCHED SINCE 26-AUG, AND THAT IS THE REAL GAP.**
+   `01-question/kill-criteria.md` was last modified **26-Aug-2026**; its decision log holds **four
+   entries, all dated 25-Aug**, all of them threshold-setting rather than findings. **Nine days of
+   research have been written into `03-pakistan/`, `05-numbers/` and this file without a single
+   criterion being tested against them.**
+   🔴 **The log still records *"K1 — Ceiling set at PKR 50m floor. Capital does not bind"* as
+   cleared. The working-capital finding directly challenges that**, and K4, K5, K8, K10 and K11 all
+   now have evidence sitting against them unlogged.
+   **This project's own instructions say the criteria exist so they "cannot bend to the answer" and
+   the log exists "to stop the same ground being re-argued in six months." The governance device is
+   the one document not being maintained.** ⚠️ **Thresholds are the owner's to move — but the
+   *findings* should be logged regardless, and that is overdue.**
+
+### 🔴 Standing caveat, restated as of 01-Sep-2026
+**Contacted:** five Chinese suppliers, 27-Aug, from **`sheheryar.asif2@gmail.com`** — replies land
+there, **not** in `.asif`. ⚠️ **As of 04-Sep-2026 the replies have not been checked in this
+workspace.**
+**NOT contacted — and every one of them now holds a decision-critical answer:**
+**EDB** (further 500-unit batches? the official approved-model list?) · **banks, Wasl Mobility,
+NCGCL** (K4, and what they will lend against 50% depreciation) · **delivery platforms** (the gate on
+the whole fleet case) · **DG Customs Valuation Karachi** (Ruling 2061/2026) · **a clearing agent**
+("KW" vs kWh, which IP band a traction pack gets, the stacking order) · **an insurance broker** (how
+a zero-cc lithium vehicle is rated) · **K-Electric** (the per-site connection charge) ·
+**PSQCA / IOCO / Sindh Excise**.
+🔴 **The research has reached the edge of what desk work can settle. Nearly every remaining open
+item is a phone call, not a search.**
