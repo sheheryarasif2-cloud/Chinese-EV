@@ -26,7 +26,7 @@ param([switch]$Check)
 
 $ErrorActionPreference = 'Stop'
 
-$remote = 'https://github.com/sheheryarasif2-cloud/Chinese-EV-Research.git'
+$remote = 'https://github.com/sheheryarasif2-cloud/Chinese-EV.git'
 
 # Claude Code encodes the working directory into the memory folder name by replacing
 # ':', '\' and '.' with '-'. Derive it rather than hardcoding, so a folder rename fails

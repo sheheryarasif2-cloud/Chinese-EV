@@ -40,10 +40,25 @@ shape `Supreme-Sentinel` uses, applied to this project alone:
 The branch keeps its long name so it could be transplanted into another repo later without
 colliding with anything.
 
-🟢 **Live since 25-Aug-2026.** Remote is
-`https://github.com/sheheryarasif2-cloud/Chinese-EV-Research.git` (private). Both branches
-are pushed and both were verified by re-reading the remote SHAs, not by trusting the push
-output. Both local branches track their remote.
+🔴 **THE REMOTE MOVED ON 04-SEP-2026.** Both repos now push to
+**`https://github.com/sheheryarasif2-cloud/Chinese-EV.git`** — a new, separate repository.
+Both branches were pushed and both verified by re-reading the remote SHAs, not by trusting the
+push output. Both local branches track it.
+
+⚠️ **The old repo `Chinese-EV-Research` still exists and still holds the full history to
+`9019806`. It was NOT deleted.** It is retained on both local repos as a second remote named
+**`archive`**, so `git push archive <branch>` still reaches it. Nothing was lost in the move.
+
+🔴 **`Sync-Workspace.ps1` line 29 hardcodes the expected remote, and its origin guard refuses
+to push anywhere it does not recognise.** That line was updated in the same change; had it not
+been, the hourly task would have gone red on the next run. **If the remote ever moves again,
+update line 29 in the same commit — the guard is not advisory, it throws.** Proven green after
+the move with `-Check` (exit 0, both folders verified).
+
+🟢 **What did NOT change, and therefore did not need touching:** the folder paths, the branch
+names (`main` and `memory-chinese-ev-research`), the derived memory path, and the
+`$externallyManaged` entry in the Supreme monitor's `Run-SyncMemory-Hourly.ps1` — that list
+names the *branch*, not the remote.
 
 ### Syncing
 
@@ -1622,3 +1637,170 @@ a zero-cc lithium vehicle is rated) · **K-Electric** (the per-site connection c
 **PSQCA / IOCO / Sindh Excise**.
 🔴 **The research has reached the edge of what desk work can settle. Nearly every remaining open
 item is a phone call, not a search.**
+
+---
+
+## 04-Sep-2026 — 🔴 THE FIRST SUPPLIER REPLY, AND EVE'S OWN 45 °C NUMBER
+
+**Eight days after the RFQ batch. One of five answered.** Register updated in
+`02-supply/rfq-and-supplier-contacts.md`; the working record of the round is the artifact
+`Five RFQs, One Reply` — **a SEPARATE artifact from the EV Atlas, and not a replacement for it.**
+
+### 🔎 Account identity verified FIRST, per the 27-Aug lesson
+The Gmail connector is on **`sheheryar.asif2@gmail.com`** — read off the message's own `sender`
+field, **not** from label counts, which is exactly how the account was misreported on 27-Aug.
+✅ **The rule held. Use it every time.**
+
+### The tally
+| Supplier | Result |
+|---|---|
+| **Hunan CTS** — the *dear* battery, PKR 113,939 @ 50u | 🟢 **Replied twice.** Emily handed off at **+10 h**; Rebecca sent substance at **+7 d** |
+| Wuxi Keyway EV — the *cheapest* kit | 🔴 silent, 8 days |
+| Wuxi SAIGE — top-6, 80k units/month | 🔴 silent, 8 days |
+| BENLG — the "Benling" territory question | 🔴 silent, 8 days |
+| **Koyosonic** — the *cheap* battery, PKR 59,281 @ 50u | 🔴 silent, 8 days |
+
+Verified three ways — by supplier domain, by keyword across spam and trash, and against all 60
+inbound threads since 27-Aug. **Nothing arrived from a personal address either. The negative
+result is solid.**
+
+🔴 **Read the silence, because it is data (K3).** **Both CKD suppliers are silent** — Keyway and
+SAIGE were the entire *vehicle*-supply side of this evaluation. The battery layer answered; the
+machine layer did not. 🔴 **And the cheap battery supplier is silent while the dear one engaged.**
+The 2× spread this research leaned on is real, but **the half of it that answers the phone is the
+expensive half.** The finding *"the arbitrage is a property of the SUPPLIER, not of the trade"*
+now has a service dimension, and it points the wrong way for the cheap route.
+
+⚠️ **Likeliest cause is length, not disinterest.** Nine numbered questions from a buyer claiming
+no company, no volume and no premises is a lot of unpaid work for a sales desk.
+
+### 🔴 THE REPLY ANSWERED 2 OF 9 QUESTIONS
+Spec and cycle life only. **No price, no LCL, no crated weight, no warranty, no certification,
+no cells-only, no payment terms.** It is a *qualification* conversation, not a quotation — and it
+closed on a direct question (*"Is above specification suitable for your requirement?"*), so it was
+**stalled on our answer, not theirs.**
+🟢 **One genuinely new hard fact: the cell is EVE.** First time any supplier in this project has
+named its cell manufacturer, and it bears directly on the grey-market cell-quality risk.
+
+### 🔧 TOOLING — how the attachments were actually read
+🔴 **The Gmail connector exposes attachment IDs and metadata but has NO download tool.**
+🔴 **And the raw-MIME route does not work either** — `get_message` with `RAW` returns ~350 KB of
+base64, which would have to be re-emitted in full to write a decodable file; output limits truncate
+it, so the tokens are spent and no image results. **Do not attempt it.**
+✅ **What worked: real Chrome (`claude-in-chrome`), which carries the live Gmail session.**
+Navigate to `mail.google.com/mail/u/0/#inbox/<threadId>`, click the attachment chip, screenshot the
+projector overlay. ⚠️ The renderer timed out once on CDP `Page.captureScreenshot` (30 s) — wait 3 s
+and retry rather than re-clicking. ⚠️ Use element **refs** from `find`, not coordinates: scaled
+screenshots make the coordinate frame ambiguous.
+🔴 **`gh` (GitHub CLI) is NOT installed on this machine** — searched WinGet packages, Chocolatey,
+Scoop, both Program Files trees, LocalAppData\Programs and the GitHubCLI folder. **No PR can be
+opened from here.** Branch-and-push works; the PR itself has to be created in the browser.
+
+### 🟢 THE PACK, FROM THE DATASHEET → `05-numbers/battery-import-cost.md` needs updating
+**76.8 V 30 Ah LiFePO₄, 2.30 kWh.** Cell **EVE 3.2 V 15 Ah 32140** cylindrical, **24S2P**.
+50 A smart BMS with over/under-voltage, over-current, short-circuit and over/under-temperature
+protection. **CAN + Bluetooth + 4G.** 15 A max charge · **20 A continuous** · **40 A / 30 s peak**.
+Sheet-metal/steel enclosure, sealing foam + structural sealant, **IP65**.
+**225 × 195 × 415 mm · 18 kg.** Up to 2 packs in parallel.
+🔴 **Operating temperature: *"To be confirmed according to cell and BMS configuration."*
+The one question Karachi turns on is blank in their own datasheet.**
+
+### 🔴 THE FINDING — EVE QUALIFIES ITS OWN CELL TO 60% FEWER CYCLES AT 45 °C
+From the EVE cell document, §3.5.3.3 and §3.5.3.4. **Identical method** — 0.5C charge to 3.65 V
+with 0.05C cut-off, 1.0C discharge to 2.5 V. **Only the ambient differs.**
+
+| Protocol | Cycles logged |
+|---|---|
+| **§3.5.3.3 — 25 °C ± 2 °C** | **2,500** |
+| **§3.5.3.4 — 45 °C ± 2 °C** | **1,000** |
+
+🔴 **Karachi sits above 40 °C for much of the year, so the 45 °C column is the one that applies —
+not the 25 °C headline every supplier quotes.** Against this project's modelled fleet duty of
+**312–500 charge cycles a year**:
+- 2,500 cycles → **5.0–8.0 years**
+- 1,000 cycles → **2.0–3.2 years**
+
+🔴 **This workspace has been carrying *"1,500 cycles @ 90% DOD = 3.0–4.8 fleet years"*
+(`battery-import-cost.md`). The cell maker's own document does not support that at Karachi
+temperature.** Pack life at fleet duty is roughly **half** what the model assumes.
+
+⚠️ **STATE IT PRECISELY — this is exactly the trap this project keeps relearning.** These are
+**test protocols** — *"record the capacity after N cycles"* — **not a stated end-of-life**, and the
+excerpt gives **no retained-capacity threshold** (usually 80%). **It is NOT "the cell dies at 1,000
+cycles."** The finding is the **asymmetry**, and it is the manufacturer's own. The absolute number
+still needs Rebecca to state retained capacity at that point. **Do not put "1,000 cycles" in a
+model as an endurance figure.**
+
+### 🔴 THREE CORRECTIONS TO THIS PROJECT'S OWN RECORD
+1. **The pack is 76.8 V / 2.30 kWh, not 72 V / 2.16 kWh.** Voltage and energy both understated.
+2. **IP65 is confirmed** — so the customs valuation floor lands in the **top band** ($9/kg or
+   $90/kWh, whichever is higher). 18 kg → **$162**; 2.30 kWh → **$207**; **$207 binds**, against a
+   **$410** invoice, so **the floor still does not bite.** Conclusion unchanged, inputs now right.
+   🟢 **And it confirms IP65 is what actually ships** — so the top band is the correct one to apply
+   to Koyosonic too, where it **does** bite (+6.3%).
+3. **Operating temperature is blank in the supplier's own datasheet** — record it as unanswered,
+   not as "ambient rated".
+
+### 🟢 TWO THINGS NOBODY HAD COSTED
+1. **A 20ft container WEIGHS OUT before it CUBES OUT.** At 18 kg and 0.0182 m³ per pack:
+   ~**1,550 packs** on a ~28 t payload against ~**1,800** on ~33 m³ of volume. **This settles the
+   open caveat in the freight note** — the suspicion was right.
+2. 🔴 **The pack ships with CAN, Bluetooth and 4G, at no stated premium.** A rental/BaaS operator
+   collecting daily from riders with **no credit history** needs remote location, state-of-charge
+   and immobilisation — that is the collection mechanism `rider-affordability.md` identified as the
+   whole solve. **Zyp sells exactly this as "fleet-management software"; this pack has the hardware
+   layer built in.** It was not in the model at any price. **Re-read the rental structure with it.**
+
+### 📤 FIVE FOLLOW-UPS SENT — 04-Sep-2026, 13:36–13:37 UTC
+Sent on explicit instruction after the concern was raised and re-affirmed. **All five went as
+replies inside the original threads**, so the first RFQ sits below each.
+
+| To | UTC | msg id |
+|---|---|---|
+| export@koyosonic.com | 13:36:52 | `1a06ca2ee36eed0d` |
+| liqingxia@keywayev.com | 13:36:58 | `1a06ca307efbd704` |
+| Info@saigebikes.com | 13:37:01 | `1a06ca3135f315d4` |
+| sales@benlg.com · cc director@ | 13:37:06 | `1a06ca325fa5dcd9` |
+| rebecca@ctsbattery.com · cc emily@ | 13:37:17 | `1a06ca35094db527` |
+
+✅ **Verified by re-reading the `SENT` label, not by trusting the send call's return** — the
+27-Aug rule, applied again. Drafts stayed at 4; pre-existing drafts untouched.
+🟢 **Each was cut from nine questions to three**, with an explicit easy out. The three kept are the
+ones that decide: **cells-only pricing** (Route B), **who honours a warranty claim from Karachi**
+(K5), and **crated dimensions + gross weight**. **BENLG got ONE question** — whether the Pakistan
+territory is already held — because nothing else matters if it is.
+⚠️ **A second silence, against a three-question follow-up, is a far stronger signal than the first.
+Read it as an answer.**
+
+### 🔴 STILL OPEN FROM THIS ROUND
+1. **Retained capacity at the 1,000-cycle mark** — without it, the 45 °C finding is directional.
+2. **Pack operating temperature** — blank in their own datasheet.
+3. **Every commercial term from every supplier.** Not one price has been quoted by anyone.
+4. **Valuation Ruling 2061/2026** (lithium CELLS) — still not obtained, still governs Route B.
+
+---
+
+## 04-Sep-2026 — 🔴 THE PROJECT MOVED TO A NEW REPOSITORY
+
+**New remote: `https://github.com/sheheryarasif2-cloud/Chinese-EV.git`.** Both repos — the project
+folder on `main` and the memory folder on `memory-chinese-ev-research` — were repointed and pushed,
+and **both were verified by re-reading the remote SHA**, not by trusting the push output
+(`main` = `9019806`, memory = `9c0ec20`).
+
+**What happened, in order, because the order matters:**
+1. `CLAUDE.md`'s 28-Aug→01-Sep log had been committed to a branch, `docs/session-log-28aug-01sep`,
+   intending a PR. 🔴 **`gh` is not installed, so no PR was ever created** — the branch simply sat
+   one commit ahead of `main`. **Fast-forwarded into `main` with git and pushed.**
+2. **Pushed to the OLD remote first**, so the work was safe before any remote was touched.
+3. Repointed `origin` on both repos; **kept the old remote as `archive`** on both.
+4. 🔴 **Updated `Sync-Workspace.ps1` line 29** — the origin guard hardcodes the expected URL and
+   **throws** on anything else. Without this the hourly task would have gone red on the next run.
+5. Proved it with `Sync-Workspace.ps1 -Check` — **exit 0, both folders verified.**
+
+⚠️ **`docs/session-log-28aug-01sep` still exists on the ARCHIVE repo only.** It is fully merged
+into `main`, so nothing is missing; it was not carried to the new remote.
+
+🔴 **The lesson for next time this happens: changing a remote is a THREE-part change, not one.**
+The git remote, the sync script's hardcoded guard, and the documentation in this file all have to
+move together. **Two of the three are silent when wrong** — the guard fails only on the next
+scheduled run, and the documentation never fails at all.
