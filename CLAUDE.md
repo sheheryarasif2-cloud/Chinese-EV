@@ -1797,8 +1797,10 @@ and **both were verified by re-reading the remote SHA**, not by trusting the pus
    **throws** on anything else. Without this the hourly task would have gone red on the next run.
 5. Proved it with `Sync-Workspace.ps1 -Check` — **exit 0, both folders verified.**
 
-⚠️ **`docs/session-log-28aug-01sep` still exists on the ARCHIVE repo only.** It is fully merged
-into `main`, so nothing is missing; it was not carried to the new remote.
+✅ **`docs/session-log-28aug-01sep` has been DELETED** — locally and on the archive remote, and it
+was never carried to the new one. Deleted with `git branch -d` (which refuses an unmerged branch)
+after confirming with `git merge-base --is-ancestor` that its tip `9019806` sits in `main`'s
+history. **The commit survives; only the label is gone.** `main` is now the only local branch.
 
 🔴 **The lesson for next time this happens: changing a remote is a THREE-part change, not one.**
 The git remote, the sync script's hardcoded guard, and the documentation in this file all have to
