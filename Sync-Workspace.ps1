@@ -10,6 +10,9 @@
       project  ->  <this folder>                                        branch main
       memory   ->  ~\.claude\projects\<encoded-path>\memory             branch memory-chinese-ev-research
 
+    If a repo also has a remote named 'archive', its branch is mirrored there after origin
+    is verified - same rules, same SHA proof, and a stale mirror fails the run.
+
     Per repo: commit anything uncommitted, push, then PROVE the push by comparing the
     remote SHA against the local one. A push that prints success is not evidence.
 
@@ -59,8 +62,8 @@ function Invoke-Git {
 }
 
 function Get-RemoteSha {
-    param([string]$Path, [string]$Branch)
-    $line = Invoke-Git @('-C', $Path, 'ls-remote', 'origin', "refs/heads/$Branch") 'read remote sha'
+    param([string]$Path, [string]$Branch, [string]$Remote = 'origin')
+    $line = Invoke-Git @('-C', $Path, 'ls-remote', $Remote, "refs/heads/$Branch") "read $Remote sha"
     if (-not $line) { return $null }
     if ($line -is [array]) { $line = $line[0] }
     return ($line -split '\s+')[0]
@@ -176,6 +179,36 @@ foreach ($r in $repos) {
             Write-Host "  VERIFIED: remote $($verifySha.Substring(0,7)) matches local" -ForegroundColor Green
         } else {
             throw "MISMATCH: local $($localSha.Substring(0,7)), remote $($verifySha.Substring(0,7)) - this folder is NOT backed up"
+        }
+
+        # --- mirror to 'archive', if that remote is configured (added 05-Sep-2026) --------
+        # Same rules as origin: never force-pushed, refused if it is somehow ahead, and proven
+        # by re-reading its SHA. A mirror allowed to lag silently is not a backup, so a
+        # mismatch here fails the run like any other. Repos without an 'archive' remote skip it.
+        $remotes = @(Invoke-Git @('-C', $r.Path, 'remote') 'list remotes')
+        if ($remotes -contains 'archive') {
+            $prevEAP = $ErrorActionPreference
+            $ErrorActionPreference = 'Continue'
+            try { & git -C $r.Path fetch -q archive $r.Branch 2>$null | Out-Null } finally { $ErrorActionPreference = $prevEAP }
+
+            $archSha = Get-RemoteSha -Path $r.Path -Branch $r.Branch -Remote 'archive'
+            if ($archSha -and $archSha -ne $localSha) {
+                $aheadA = Invoke-Git @('-C', $r.Path, 'rev-list', '--count', "$localSha..$archSha") 'count archive ahead'
+                if ([int]$aheadA -gt 0) {
+                    throw "archive is $aheadA commit(s) AHEAD of this machine - nothing should ever commit there. Refusing to push."
+                }
+            }
+            if (-not $Check -and $archSha -ne $localSha) {
+                Invoke-Git @('-C', $r.Path, 'push', '-q', 'archive', $r.Branch) 'push archive' | Out-Null
+                Write-Host "  mirrored -> archive/$($r.Branch)" -ForegroundColor Green
+            }
+            $archVerify = Get-RemoteSha -Path $r.Path -Branch $r.Branch -Remote 'archive'
+            if ($archVerify -eq $localSha) {
+                Write-Host "  VERIFIED: archive $($archVerify.Substring(0,7)) matches local" -ForegroundColor Green
+            } else {
+                $shown = if ($archVerify) { $archVerify.Substring(0,7) } else { 'missing' }
+                throw "ARCHIVE MISMATCH: local $($localSha.Substring(0,7)), archive $shown - mirror is stale"
+            }
         }
     }
     catch {

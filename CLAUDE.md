@@ -45,9 +45,16 @@ colliding with anything.
 Both branches were pushed and both verified by re-reading the remote SHAs, not by trusting the
 push output. Both local branches track it.
 
-⚠️ **The old repo `Chinese-EV-Research` still exists and still holds the full history to
-`9019806`. It was NOT deleted.** It is retained on both local repos as a second remote named
-**`archive`**, so `git push archive <branch>` still reaches it. Nothing was lost in the move.
+🟢 **The old repo `Chinese-EV-Research` is now a LIVE MIRROR, not a dead snapshot** (05-Sep-2026).
+It is retained on both local repos as a second remote named **`archive`**, and
+**`Sync-Workspace.ps1` now mirrors each branch to it after origin is verified** — same rules as
+origin: never force-pushed, refused if it is somehow ahead, and proven by re-reading its SHA.
+🔴 **A stale mirror FAILS the run**, because a backup allowed to lag silently is not a backup.
+The block is skipped entirely on any repo without an `archive` remote, so it cannot break a
+workspace that does not have one.
+✅ **Both paths proven, not assumed** — `archive` was repointed at an empty bare repo and the run
+went red (`ARCHIVE MISMATCH: local 5b5bebc, archive missing`, exit 1); restored, it went green
+with all four VERIFIED lines. **Re-prove it the same way if this block is ever changed.**
 
 🔴 **`Sync-Workspace.ps1` line 29 hardcodes the expected remote, and its origin guard refuses
 to push anywhere it does not recognise.** That line was updated in the same change; had it not
