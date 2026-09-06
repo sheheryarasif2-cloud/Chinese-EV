@@ -301,3 +301,189 @@ it killed. This is the audit trail that stops the same ground being re-argued in
 | 25-Aug-2026 | K2 | Ceiling set at 30 hrs/week. Hours do not bind. **Income clause not tested.** | Owner | nothing |
 | 25-Aug-2026 | K5 | Set at 10 units' margin — breaks even at a 10% claim rate. Fires automatically below ~30 units/year. | Claude, delegated | nothing |
 | 25-Aug-2026 | K8 | Set at PKR 7.5m (15% of K1). Leaves PKR 42.5m for vehicles and working capital. | Claude, delegated | nothing |
+| 26-Aug-2026 | K7 | Consumer TCO: payback **13–18 months with NO subsidy**, and the case survives every battery assumption tested. | `05-numbers/tco-model.md` | nothing — K7 favourable |
+| 26-Aug-2026 | K7 | Fleet TCO: payback **4.0–6.4 months with NO subsidy**. Rider fuel spend PKR 17,841/mo vs PKR 1,736 electricity. | `05-numbers/fleet-model.md` | nothing — K7 favourable |
+| 26-Aug-2026 | K8 | 🔴 India: Ola went **>50% share (Apr-2024) → 6.8% (H1-2026)** on service capacity and spare parts — not price, product or capital. 10,644 complaints; **Goa suspended its registrations.** | `04-comparables/india-fame-shakeout.md` | nothing — but K8 becomes the deciding criterion |
+| 26-Aug-2026 | K11 | Atlas Honda holds **~85–88% on ~1.69m units**, 500+ dealers, 63 service/parts points, and launched an electric scooter stating it needs no additional EV investment. | `03-pakistan/petrol-baseline.md` | pressures K11 hard |
+| 27-Aug-2026 | K11 | 🟢 **Atlas Honda ICON e: PKR 419,900, 1.58 kWh FIXED pack, 65 km.** Unusable for a rider doing 80–128 km/day. **The incumbent took a premium consumer position — the fleet gap is confirmed open by the only firm that could have closed it.** | `03-pakistan/MASTER-model-price-list.md` | nothing — K11 improves |
+| 27-Aug-2026 | K5 | First K5 evidence, and it is unfavourable: **Koyosonic warrants 1 year below 50Ah** — exactly the two-wheeler pack size. | `05-numbers/battery-import-cost.md` | nothing yet — K5 exposure opens |
+| 27-Aug-2026 | K6 | Tariff regime read from **primary law** (Fifth Schedule as substituted by Finance Act 2026): EV CKD components **1%**, four battery routes, ACD **not** payable per SRO 1063(I)/2026. | `03-pakistan/fifth-schedule-primary-text.md` | nothing — K6 substantially advanced |
+| 27-Aug-2026 | K7 | Concession sunset fixed **in primary law at 30-Jun-2027** — *"on and from the 1st day of July, 2025 till 30th day of June, 2027"*. ~10 months of runway. | Gazette p769 | nothing — K7 clock started |
+| 27-Aug-2026 | K3 · K4 | Five RFQs sent to suppliers' own published addresses. The desk-research caveat is partly void from here. | `02-supply/rfq-and-supplier-contacts.md` | nothing — evidence gathering opens |
+| 28-Aug-2026 | K4 | 🟢 First K4 datapoint: **Tycorun accepts L/C** (*"L/C, T/T, D/P…"*). At least one supplier will trade on a letter of credit. | `03-pakistan/swapping-and-the-punjab-concentration.md` | nothing — K4 indicator, not a test |
+| 28-Aug-2026 | K4 | 🟢 **Mitigation Action Facility names HBL and Meezan** lending against EV assets behind EUR 3m of first-loss guarantees — a 6.2× leverage structure. A K4 route not previously considered. | same | nothing — K4 route found |
+| 28-Aug-2026 | K11 | 🔴 **ELFA is a Wavetec subsidiary** (37-year multinational) and holds **Bykea in Karachi**. Zyp is VC-backed with its own 12,000/yr factory in Lahore. **Neither is a weak incumbent** — though neither has been measured. | `05-numbers/operating-costs-and-the-competitor.md` | pressures K11 |
+| 28-Aug-2026 | K8 | Insurance was **absent from the model entirely**: ~PKR 2.4m/yr on 200 machines, Karachi rated higher-risk, and **no insurer's approach to a zero-cc lithium vehicle was found.** | same | nothing — K8 cost base raised |
+| 28-Aug-2026 | K10 | Generic e-bike residuals: 15–25%/yr, 50–60% retained at three years, *"depreciation can be high due to concerns about battery life."* ⚠️ Not Pakistani data. | same | nothing — superseded 01-Sep |
+| 29-Aug-2026 | K5 | 🔴 **K5 QUANTIFIED. Pakistani competitors warrant 2–5 years** (ELFA 3yr/50,000 km, Okla 5yr, Yadea 24mo/20,000 km); **the reachable supplier warrants 1 year.** On 200 machines a 15% failure between years 1–3 at ~PKR 60,000 is **PKR 1.8m unfunded** — and 15% is a guess, no failure data exists. | `02-supply/warranty-gap-and-coming-standards.md` | 🔴 **FIRES for import-and-sell** |
+| 29-Aug-2026 | K5 | 🟢 The remedy K5 anticipates, found: **a rental/BaaS operator warrants nothing to a rider — it keeps the fleet running.** Contingent liability becomes a forecastable operating cost. | same | nothing — this is K5's documented remedy |
+| 29-Aug-2026 | K6 | 🔴 **The value duty is charged on is not necessarily the invoice.** Valuation Ruling 1964/2025 sets a floor by IP rating; at IP-65 it **bites on two of three candidate packs** (+6.3% and +12.4% of tax base). | `05-numbers/customs-valuation-floor.md` | nothing — K6 corrected, not killed |
+| 29-Aug-2026 | K7 | 🔴 **NEW EXPOSURE. PAVE supplies only EDB-approved models**, so the subsidy makes approved machines cheaper than anything an uncertified importer can land. **This converts EDB certification from a duty-rate question into a market-access question.** | `03-pakistan/pave-supply-answered.md` | 🔴 **kills uncertified CBU import on price** |
+| 30-Aug-2026 | K9 | Market is **supply-constrained** — +173–191% growth with *"almost all dealers in short supply."* Entry need not displace anyone. | `03-pakistan/market-size-corrected.md` | nothing — favourable to K9 |
+| 01-Sep-2026 | K1 | 🔴 **CHALLENGES THE 25-AUG CLEARANCE.** NCGCL CEO, named, in Dawn: **PKR 200m working capital per 1,000 units/month before a single bike is sold.** PKR 50m supports ~250 units/month pro-rata — **and only by consuming the entire ceiling**, leaving nothing for K8's 7.5m, premises or losses. A named, operating, catalogued OEM (Elfa) *"is scrambling to get money to order more material."* | `03-pakistan/dawn-29aug-named-operators.md` | 🔴 **kills 1,000-unit/month assembly. Does NOT kill the project** — see note below |
+| 01-Sep-2026 | K9 | 🔴 **THE FLEET BEACHHEAD, TESTED IN THE MARKET AND FAILED.** foodpanda: **~40,000 riders, ~150 electric = 0.375%.** The reason is **charging time, not price** — ~30 minutes is one lost delivery for a piece-rate worker. | same | 🔴 **kills fleet-without-swapping** |
+| 01-Sep-2026 | K9 | ~**100 DC chargers nationally**; ChargePK has 2,500 users of whom **two** are for bikes; many DC units exclude bikes and many bikes cannot use the standard. 🟢 Charging is solved **socially** instead — extension leads, ground-floor neighbours, kiryana stores. | same | caps K9; does not kill |
+| 01-Sep-2026 | K10 | 🔴 **~50% of value lost the moment it leaves the showroom.** A lender's security is worth half the loan on delivery. **Supersedes the 28-Aug generic figure** — this one is Pakistani and named-source. | same | 🔴 **kills asset-backed lending. Does NOT kill the project** — finance against cash flow instead |
+| 01-Sep-2026 | K10 | 🟢 The structural answer already exists: **Wasl (SECP NBFC) lends cash-flow-based with no hard collateral**, foodpanda built it, NCGCL is building a 2W EV model. Collect from platform earnings before payout. | same · `05-numbers/rider-affordability.md` | nothing — pre-selects rental over sale |
+| 01-Sep-2026 | K8 | Road Prince/Yadea is spending **~US$10m on 3S dealerships** — sales, service, spare parts. **The world's largest e-2W maker, entering Pakistan, is spending on precisely the variable India says decides the outcome.** Against a PKR 7.5m ceiling this is not a contest. | `02-supply/warranty-gap-and-coming-standards.md` | 🔴 **kills retail-network competition; not a self-serviced fleet** |
+| 04-Sep-2026 | K3 | 8 days on: **1 of 5 replied — and it is a battery supplier, not a vehicle OEM. Both CKD suppliers silent.** ⚠️ **K3's own evidence rule requires a recorded position from each OEM, not an inference. Silence does not meet it.** Earlier framing that "a non-reply answers K3" was too strong. | `02-supply/rfq-and-supplier-contacts.md` | nothing — **K3 remains UNRESOLVED, not answered** |
+| 04-Sep-2026 | K5 | The one reply **did not answer warranty at all** — question 6 of 9, unanswered, along with price and cells-only. Re-asked in the 04-Sep follow-up. | same | K5 stays fired |
+| 07-Sep-2026 | K5 | 🔴 **EVE qualifies its own cell to 1,000 cycles at 45 °C against 2,500 at 25 °C** — identical method, ambient the only difference. At fleet duty that is 2.0–3.2 years, not 3.0–4.8. **Raises the claim rate K5's 10-unit ratio is built on.** ⚠️ Test protocols, not a declared end-of-life. | EVE cell doc §3.5.3.3/§3.5.3.4 via Hunan CTS | **worsens K5; does not change what it kills** |
+
+**Log brought current 07-Sep-2026, covering 26-Aug → 07-Sep.** 🔴 **No threshold was moved.**
+Findings were logged against criteria; every number in the table above is still the one set on
+25-Aug. Rule 2's one allowed move per threshold remains unspent on all five.
+
+---
+
+## Where each criterion actually stands — 07-Sep-2026
+
+### 🔴 K1 — the 25-Aug clearance no longer stands as written
+
+The log records *"Ceiling set at PKR 50m floor. Capital does not bind."* **That was true of the
+question asked on 25-Aug and is not true of the business as now understood.** A named lender puts
+working capital at **PKR 200m per 1,000 units/month**, and a named, operating OEM cannot fund its
+next order.
+
+**But read K1's own scope before concluding anything.** It kills the project only if *"minimum
+viable entry in **every remaining mode** needs more than PKR 50m."* It does not:
+a 50-kit first order is **~PKR 2.75m**, and a 200-machine fleet sits inside the ceiling.
+
+🔴 **The honest restatement: capital does not kill the project, but it now selects the mode — and
+it eliminates the mode a reader would otherwise default to.** Scale assembly is out on capital
+alone. That is a real result, and it is exactly the mode-specific NO rule 3 exists to protect.
+**Do not let it read as project-wide, and do not let it quietly disappear either.**
+
+### ⚠️ K2 — untouched, and the untested clause now matters more
+
+**No evidence was gathered against K2 in this period.** The income clause flagged on 25-Aug is
+still unanswered.
+
+🔴 **And the mode that survives everything else is the operationally heaviest one.** A rental/BaaS
+fleet means daily collection, uptime obligations, swapping logistics and asset recovery — not a
+30-hours-a-week business alongside two existing commitments. **K2's own note anticipated this:
+*"If K2 is tight it may not kill the project so much as pre-select the mode."* It is now the other
+way round — the surviving mode is testing K2, not the reverse.** Settle the income clause before
+this goes further.
+
+### 🔴 K3 — UNRESOLVED. Not cleared, not fired, and not answered by silence
+
+Eight days, then a shortened three-question follow-up, and **one reply out of five — from a
+battery supplier, not a vehicle OEM. Both CKD suppliers are silent.**
+
+⚠️ **A correction to this project's own framing.** `CLAUDE.md` recorded that *"a non-reply is data
+too — it answers K3."* **Measured against K3 as written, it does not.** The criterion demands
+*"a written or clearly-recorded position from each OEM — not an inference from the fact that a
+brand is already on sale here."* **Silence is an inference. K3's evidence standard has not been
+met, and the criterion cannot be closed on it in either direction.**
+
+### ⚠️ K4 — two favourable indicators, but the actual test has not been run
+
+Tycorun accepts L/C; HBL and Meezan are named lending against EV assets behind the MAF guarantee.
+🔴 **Neither is the test.** K4 says *"your bank, plus the current State Bank position"*, and adds
+*"never carry this answer forward from memory."* **No bank has been contacted.** K4 is open, and
+its `[VERIFY]` is unresolved.
+
+### 🔴 K5 — FIRED for import-and-sell, with its own remedy already identified
+
+The gap is measured: competitors warrant **2–5 years**, the reachable supplier **1 year on exactly
+the relevant pack size**, and no OEM has stated a warranty chain in writing. The 04-Sep reply did
+not answer warranty at all. The 07-Sep EVE finding **raises the claim rate the 10-unit ratio rests
+on**, because a pack qualified to 1,000 cycles at 45 °C in a city above 40 °C will fail more often
+than one qualified to 2,500 at 25 °C.
+
+🟢 **K5's own text says accepting the exposure is never correct and that the criterion has a
+remedy. The remedy is in hand: a rental/BaaS operator warrants nothing to a rider — it keeps the
+fleet running, converting a contingent liability into a forecastable operating cost.** Four
+independent lines of evidence now converge on owning the battery rather than selling it.
+
+### ⚠️ K6 — advanced to primary-source depth, but NOT complete and NOT cleared
+
+Tariff law, four battery routes, statutory rates, the ACD exemption and the valuation floor are
+all read from primary documents. 🔴 **But K6's test is a cost stack for ONE NAMED MODEL under its
+actual tariff line, end to end — and that has not been built.** No total incidence exists anywhere
+(*"do not invent one"*), and **Valuation Ruling 2061/2026, which governs Route B's cells, has still
+not been obtained.** **K9 cannot be set until this closes.**
+
+### ⚠️ K7 — favourable on unit economics, newly exposed on market access
+
+🟢 **The demand case survives concession withdrawal**, which is what K7 asks: 13–18 months consumer
+payback and 4.0–6.4 months fleet payback **with no subsidy at all**.
+🔴 **But a second policy dependence appeared that K7 did not anticipate. PAVE routes only through
+EDB-approved models**, so an uncertified entrant cannot compete on price regardless of its own
+economics. **That is policy dependence on the market-access side rather than the margin side, and
+it is not cured by the unit economics being sound.** ⚠️ Also: the current opex advantage carries a
+war premium (15% of petrol cost now, ~25% before) — **run both.**
+
+### 🔴 K8 — fires for retail-network competition; does not fire for a self-serviced fleet
+
+Against a **PKR 7.5m** ceiling, Road Prince/Yadea is spending **~US$10m** on a 3S network and Atlas
+Honda already runs 500+ dealers. **Competing on dealer service coverage is not fundable and should
+be treated as closed.** A fleet that services its own machines is a different and much smaller
+requirement — but it has not been costed, and insurance (~PKR 2.4m/yr on 200 machines) was missing
+from the model entirely.
+
+🔴 **The ceiling itself deserves the owner's attention.** It was set by Claude as a *capital* limit;
+India says underspending here is the failure mode, not the saving. **K8 is one of the two thresholds
+this document says may be overridden without ceremony.**
+
+### ⚠️ K9 — cannot be closed, but one variant of it is dead
+
+The threshold `[SET]` still depends on K6. **What is settled is narrower and sharper: the fleet
+channel without battery swapping is dead**, tested at 40,000-rider scale and failing at **0.375%**
+on charging time. Public DC charging is effectively zero for two-wheelers. 🟢 Charging is being
+solved socially, so adoption does not wait on a network — **but a rider's tolerance for downtime
+does, and swapping is the only answer found.**
+
+### 🔴 K10 — asset-backed lending is dead; cash-flow lending is the answer
+
+**~50% of value lost at the showroom door** means a lender's security is worth half the loan on
+delivery. That kills conventional auto finance for this asset and explains why two of the five
+named operators in the Dawn piece are financiers building bespoke models. 🟢 **The structural answer
+exists and is already operating**: cash-flow-based lending with no hard collateral, collected from
+platform earnings before payout. **K10 does not kill the project; it eliminates one financing
+structure and points at another.**
+
+### 🔴 K11 — still the criterion doing most of the work, and still open
+
+🟢 **The gap is real and confirmed by the only firm that could have closed it**: Atlas Honda's
+ICON e is a 65 km fixed-pack premium consumer machine, useless to a rider doing 80–128 km/day.
+🔴 **But the competitors who matter are not weak**: ELFA is a 37-year multinational's subsidiary
+holding Bykea in Karachi; Zyp is funded with its own factory. And a market of ~40 operational OEMs
+with no quality signal means **the scarce asset is credibility, not capacity.**
+
+**K11's test is to name the advantage in one sentence without using "service" or "quality".**
+The best candidate the evidence currently supports:
+
+> *We own the battery and rent it by the day, collected from platform earnings before payout, so a
+> rider with no deposit, no savings and no credit history can switch without financing anything.*
+
+⚠️ **That is a candidate, not a cleared criterion.** It is defensible against Atlas Honda, which
+has said it will not invest here — and **not obviously defensible against ELFA or Zyp, who are
+already doing versions of it.** K11 stays open.
+
+---
+
+## What the log now says about the shape of the decision
+
+**Nothing has killed the project. Four things have killed four modes**, which is the log working
+as designed:
+
+| Mode | Status | Killed by |
+|---|---|---|
+| Scale assembly at ~1,000 units/month | 🔴 out | **K1** — needs PKR 200m |
+| Uncertified CBU import | 🔴 out | **K7** — PAVE prices it out |
+| Import-and-sell with retained warranty | 🔴 out | **K5** — 1-year backstop vs 2–5-year competitors |
+| Competing on a retail service network | 🔴 out | **K8** — US$10m vs PKR 7.5m |
+| Fleet **without** swapping | 🔴 out | **K9** — foodpanda at 0.375% on charging time |
+| **Fleet + swapping + battery-as-a-service** | 🟢 **survives** | — |
+
+🔴 **The surviving mode is not surviving because it is the last one standing. It is the one every
+independent line of evidence has pointed at** — warranty exposure, residual value, grey-market
+quality signalling, the showroom cliff, and now the charging-time failure all argue for the same
+structure. **That convergence is the strongest thing in this document.**
+
+🔴 **And it is gated on three things no amount of desk research will settle:** whether a platform
+will partner (K3-adjacent, and both foodpanda and Bykea already have EV partners), whether a bank
+or NBFC will fund it (K4/K10), and whether the PKR 200m working-capital figure holds for a rental
+fleet as it does for an assembler (K1). **All three are phone calls.**
