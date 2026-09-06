@@ -5,3 +5,16 @@ Sync-Workspace.log
 
 # Obsidian, if this folder is ever opened as a vault.
 .obsidian/
+
+# Plugin runtime state. The healthcare Contracts Analyzer keeps a scratch SQLite database
+# here; nothing under .claude/data/ is project content. Three reasons it must not be tracked:
+#   1. The -wal is a write-ahead log and the -shm a shared-memory index. Both are meaningless
+#      outside a live connection, so a commit of them stores a torn mid-transaction state.
+#   2. They are rewritten on every run, so the hourly sync's `git add -A` re-commits them
+#      forever - the same endless-loop problem as Sync-Workspace.log above.
+#   3. SQLite memory-maps them, and Windows then refuses to let git unlink them. On
+#      07-Sep-2026 this aborted a `git reset --hard` half-way and left the tree inconsistent
+#      ("unable to unlink old '...data.sqlite-shm': Invalid argument"). A tracked file that a
+#      running process can lock will break checkout, reset and merge without warning.
+# Only .claude/data/ is ignored, so .claude/settings.json or project skills stay trackable.
+.claude/data/
