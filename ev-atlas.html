@@ -194,6 +194,27 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
 .changed .jump:hover{text-decoration:underline}
 @media(max-width:620px){.changed li{grid-template-columns:1fr;gap:6px}
   .changed .rank{font-size:20px}}
+
+/* ---- gate status pills + mode verdict table (07-Sep-2026) ---- */
+.st{font-family:Archivo,sans-serif;font-size:10px;font-weight:700;letter-spacing:.07em;
+  text-transform:uppercase;padding:3px 8px;border-radius:3px;white-space:nowrap;display:inline-block}
+.st-dead{background:var(--crit);color:var(--panel);box-shadow:none}
+.st-open{background:var(--warn-soft);color:var(--warn);box-shadow:inset 0 0 0 1px currentColor}
+.st-ok{background:var(--good-soft);color:var(--good);box-shadow:inset 0 0 0 1px currentColor}
+.modes{margin-top:22px;border:1px solid var(--line);border-radius:5px;overflow:hidden;
+  background:var(--panel)}
+.modes-hd{padding:15px 20px;background:var(--sunk);border-bottom:1px solid var(--line)}
+.modes-hd b{font-family:Archivo,sans-serif;font-size:15px;font-weight:700;display:block;margin-bottom:5px}
+.modes-hd span{font-size:14px;color:var(--ink2)}
+.moderow{display:grid;grid-template-columns:1fr 180px 150px;gap:14px;align-items:center;
+  padding:12px 20px;border-bottom:1px solid var(--line);max-width:none}
+.moderow:last-child{border-bottom:0}
+.moderow.alive{background:var(--good-soft)}
+.moderow .m{font-family:Archivo,sans-serif;font-size:14.5px;font-weight:600}
+.moderow .m small{display:block;font-family:"JetBrains Mono",monospace;font-size:11.5px;
+  font-weight:400;color:var(--muted);margin-top:3px;letter-spacing:0}
+.moderow .by{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--ink2)}
+@media(max-width:700px){.moderow{grid-template-columns:1fr;gap:6px}}
 </style>
 
 <button class="themebtn ui" id="tbtn" aria-label="Toggle colour theme">◐ Theme</button>
@@ -257,7 +278,7 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
   <div class="changed-hd">
     <span class="ce">Revised 7 September 2026 &middot; since the 1 September version</span>
     <h2>What changed, and what it costs the case</h2>
-    <p>Four items, ranked by how much each moves the decision rather than by when it arrived.
+    <p>Five items, ranked by how much each moves the decision rather than by when it arrived.
     Everything further down this page still stands except where an item below says otherwise.</p>
   </div>
   <ol>
@@ -322,6 +343,22 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
         immobilisation &mdash; the collection mechanism this page identifies as the whole solve. It was not in
         the model at any price.</p>
         <a class="jump" href="#fleet">Fleet &amp; rider &rarr;</a>
+      </div>
+    </li>
+    <li class="sev-crit">
+      <div class="rank">5</div>
+      <div>
+        <h3>The decision gates were brought current &mdash; five entry modes are now dead</h3>
+        <p>The kill criteria were written on 25 August, before any research, and their decision log had not been
+        touched since. <strong>Twelve days of evidence have now been logged against them, and no threshold was
+        moved.</strong> The result is not a verdict on the project &mdash; nothing has killed it &mdash; but it
+        does close five of the six ways in.</p>
+        <p><strong>Out:</strong> scale assembly (K1, needs PKR 200m) &middot; uncertified CBU import (K7, PAVE
+        undercuts it) &middot; import-and-sell with warranty retained (K5) &middot; competing on a retail service
+        network (K8) &middot; <strong>fleet without swapping (K9, foodpanda at 0.375%)</strong>.
+        <strong>Surviving: fleet + swapping + battery-as-a-service</strong> &mdash; and it survives because five
+        independent lines of evidence arrived at it separately, not because it is last standing.</p>
+        <a class="jump" href="#gates">Decision gates &rarr;</a>
       </div>
     </li>
   </ol>
@@ -2130,23 +2167,140 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
 
 <!-- ================= GATES ================= -->
 <section id="gates">
-  <p class="eyebrow">21 — decision gates</p>
+  <p class="eyebrow">21 &mdash; decision gates</p>
   <h2>Criteria written before the research, so they could not bend to it</h2>
+  <p class="sub">Eleven criteria fixed on 25 August 2026, before any research. Status below is as of
+  7 September, when the decision log was brought current across twelve days of evidence.
+  <strong>No threshold has been moved</strong> &mdash; every number is still the one set on day one.</p>
+
   <div class="tw"><table>
     <thead><tr><th>Gate</th><th>Status</th><th>Position</th></tr></thead>
     <tbody>
-      <tr><td class="co">K1 · Capital</td><td><span class="tag t-a">Cleared</span></td><td>PKR 50m ceiling — not binding for a fleet entry needing ~200 machines</td></tr>
-      <tr><td class="co">K2 · Attention</td><td><span class="tag t-a">Cleared</span></td><td>30 hrs/week — not binding; income clause remains untested</td></tr>
-      <tr><td class="co">K3 · Supply</td><td><span class="tag t-b">Open</span></td><td>Yadea's territory taken; Huaihai's MOQ is 20× the ceiling. <strong>RFQs sent 27 Aug; a non-reply is also an answer</strong></td></tr>
-      <tr><td class="co">K4 · Import ability</td><td><span class="tag t-b">Open</span></td><td>Whether an LC can be opened at required volumes — asked in the RFQs, and a bank conversation besides</td></tr>
-      <tr><td class="co">K5 · Battery backstop</td><td><span class="tag t-c">At risk &mdash; now quantified</span></td><td><strong>Competitors warrant 2&ndash;5 years; the reachable supplier warrants 1 year</strong> on the relevant pack size. A two-year gap on a PKR 59&ndash;115k component, fleet-wide. 🟢 <strong>Rental converts it from contingent liability to operating cost</strong> &mdash; the strongest structural argument for renting rather than selling</td></tr>
-      <tr><td class="co">K6 · Landed cost</td><td><span class="tag t-a">Largely closed</span></td><td>Duty rates, tariff lines, kit prices, battery prices, freight and a dated FX rate all in hand — <strong>CIF ≈ PKR 121,000–123,200</strong></td></tr>
-      <tr><td class="co">K7 · Policy</td><td><span class="tag t-c">Firing</span></td><td><strong>30 June 2027, confirmed in primary law.</strong> ~10 months. Successor unapproved; subsidy tapers. India proves the downside</td></tr>
-      <tr><td class="co">K8 · Parts &amp; service</td><td><span class="tag t-c">Decisive</span></td><td>India's largest player destroyed by this from 50% share. <strong>For a fleet, uptime is the product</strong></td></tr>
-      <tr><td class="co">K9 · Volume</td><td><span class="tag t-a">Favourable</span></td><td>Fleet needs under 1% of 50,000+ known riders</td></tr>
-      <tr><td class="co">K11 · Defensible position</td><td><span class="tag t-c">Hard</span></td><td>~88% incumbent share, 500+ dealers. <strong>Only answerable via a segment the incumbent will not serve</strong></td></tr>
+      <tr><td class="co">K1 &middot; Capital</td><td><span class="st st-open">Restated</span></td>
+        <td>🔴 <strong>The 25-Aug reading &ldquo;capital does not bind&rdquo; no longer stands as written.</strong>
+        A named lender puts working capital at <strong>PKR 200m per 1,000 units/month</strong>. But K1 kills only if
+        <em>every</em> remaining mode exceeds PKR 50m, and a 50-kit order is ~PKR 2.75m.
+        <strong>Capital now selects the mode rather than killing the project</strong></td></tr>
+
+      <tr><td class="co">K2 &middot; Attention</td><td><span class="st st-open">Open</span></td>
+        <td>30 hrs/week not binding on paper. 🔴 <strong>But the surviving mode is the operationally heaviest</strong>
+        &mdash; daily collection, uptime, swapping logistics. The income clause has been untested since 25 August</td></tr>
+
+      <tr><td class="co">K3 &middot; Territory</td><td><span class="st st-open">Unresolved</span></td>
+        <td><strong>One of five replied, and it is a battery supplier, not a vehicle OEM. Both CKD suppliers silent.</strong>
+        ⚠️ K3 demands <em>a recorded position from each OEM, not an inference</em> &mdash; so silence does not close it
+        in either direction. An earlier framing here that &ldquo;a non-reply is also an answer&rdquo; was wrong against
+        the criterion as written</td></tr>
+
+      <tr><td class="co">K4 &middot; Import ability</td><td><span class="st st-open">Open</span></td>
+        <td>Tycorun accepts L/C; <strong>HBL and Meezan</strong> lend against EV assets behind first-loss guarantees.
+        🔴 <strong>Neither is the test.</strong> K4 says &ldquo;your bank, plus the current State Bank position&rdquo;
+        &mdash; and no bank has been contacted</td></tr>
+
+      <tr><td class="co">K5 &middot; Battery backstop</td><td><span class="st st-dead">Fired</span></td>
+        <td>🔴 <strong>Fires for import-and-sell.</strong> Competitors warrant <strong>2&ndash;5 years</strong>;
+        the reachable supplier warrants <strong>1 year</strong> on exactly the relevant pack size. The one reply
+        <strong>did not answer warranty at all</strong>, and EVE&rsquo;s 45&nbsp;&deg;C number raises the claim rate the
+        10-unit ratio rests on. 🟢 <strong>K5&rsquo;s own remedy is in hand: rent, do not sell</strong></td></tr>
+
+      <tr><td class="co">K6 &middot; Landed cost</td><td><span class="st st-open">Advanced</span></td>
+        <td>Tariff law, four battery routes, the ACD exemption and the valuation floor all read from primary
+        documents. 🔴 <strong>But no end-to-end stack for one named model exists</strong>, no total incidence is
+        stated anywhere, and <strong>Valuation Ruling 2061/2026 &mdash; which governs Route B&rsquo;s cells &mdash; has
+        not been obtained.</strong> K9 cannot be set until this closes</td></tr>
+
+      <tr><td class="co">K7 &middot; Policy</td><td><span class="st st-open">Two-sided</span></td>
+        <td>🟢 <strong>The case works with no concession at all</strong> &mdash; 13&ndash;18 months consumer payback,
+        4.0&ndash;6.4 months fleet, unsubsidised. That is what K7 asks.
+        🔴 <strong>But a second dependence appeared that K7 did not anticipate: PAVE supplies only EDB-approved
+        models</strong>, so certification became a <em>market-access</em> question, not a duty-rate one.
+        Sunset stands at 30 June 2027 in primary law</td></tr>
+
+      <tr><td class="co">K8 &middot; Parts &amp; service</td><td><span class="st st-dead">Fired</span></td>
+        <td>🔴 <strong>Fires for retail-network competition.</strong> Road Prince/Yadea is spending
+        <strong>~US$10m on a 3S network</strong> and Atlas Honda runs 500+ dealers, against a
+        <strong>PKR 7.5m</strong> ceiling. A fleet servicing its own machines is a different and much smaller
+        requirement &mdash; <strong>but it has not been costed</strong>, and insurance (~PKR 2.4m/yr on 200 machines)
+        was missing from the model entirely</td></tr>
+
+      <tr><td class="co">K9 &middot; Chargeable segment</td><td><span class="st st-dead">Fired</span></td>
+        <td>🔴 <strong>Fires for fleet-without-swapping.</strong> foodpanda ran the thesis at 40,000-rider scale and
+        sits at <strong>0.375%</strong> &mdash; and the cause is <strong>charging time, not price</strong>.
+        Public DC is effectively zero for two-wheelers. 🟢 Charging is solved socially, so adoption does not wait on
+        a network &mdash; but a rider&rsquo;s tolerance for downtime does. Threshold still unset; depends on K6</td></tr>
+
+      <tr><td class="co">K10 &middot; Finance &amp; residual</td><td><span class="st st-dead">Fired</span></td>
+        <td>🔴 <strong>Fires for asset-backed lending.</strong> ~<strong>50% of value is lost at the showroom
+        door</strong>, so a lender&rsquo;s security is worth half the loan on delivery. 🟢 <strong>The answer already
+        operates</strong>: cash-flow lending with no hard collateral, collected from platform earnings before payout</td></tr>
+
+      <tr><td class="co">K11 &middot; Defensible position</td><td><span class="st st-open">Open</span></td>
+        <td>🟢 The gap is real and confirmed by the only firm that could have closed it &mdash; <strong>ICON e is a
+        65 km fixed-pack premium consumer machine</strong>. 🔴 But ELFA is a 37-year multinational&rsquo;s subsidiary
+        holding Bykea, and Zyp is funded with its own factory. <strong>In a market of ~40 operational OEMs the scarce
+        asset is credibility, not capacity</strong></td></tr>
     </tbody>
   </table></div>
+
+  <div class="modes">
+    <div class="modes-hd">
+      <b>Nothing has killed the project. Five modes are dead.</b>
+      <span>That is the log working as designed &mdash; a criterion that kills one entry mode is not a
+      project-wide no, and must not be read as one.</span>
+    </div>
+    <div class="moderow">
+      <div class="m">Scale assembly, ~1,000 units/month<small>the mode a reader defaults to</small></div>
+      <div><span class="st st-dead">Out</span></div>
+      <div class="by">K1 &middot; needs PKR 200m</div>
+    </div>
+    <div class="moderow">
+      <div class="m">Uncertified CBU import<small>buy finished, sell on</small></div>
+      <div><span class="st st-dead">Out</span></div>
+      <div class="by">K7 &middot; PAVE undercuts it</div>
+    </div>
+    <div class="moderow">
+      <div class="m">Import and sell, warranty retained<small>the conventional distributor</small></div>
+      <div><span class="st st-dead">Out</span></div>
+      <div class="by">K5 &middot; 1yr vs 2&ndash;5yr</div>
+    </div>
+    <div class="moderow">
+      <div class="m">Competing on a retail service network<small>dealer coverage</small></div>
+      <div><span class="st st-dead">Out</span></div>
+      <div class="by">K8 &middot; US$10m vs 7.5m</div>
+    </div>
+    <div class="moderow">
+      <div class="m">Fleet <em>without</em> swapping<small>rent machines, riders charge them</small></div>
+      <div><span class="st st-dead">Out</span></div>
+      <div class="by">K9 &middot; 0.375% at foodpanda</div>
+    </div>
+    <div class="moderow alive">
+      <div class="m">Fleet + swapping + battery-as-a-service<small>own the pack, rent the service, collect from platform earnings</small></div>
+      <div><span class="st st-ok">Survives</span></div>
+      <div class="by">&mdash;</div>
+    </div>
+  </div>
+
+  <div class="note"><span class="lbl">Why the surviving mode is not merely the last one standing</span>
+    <p><strong>Five independent lines of evidence arrived at it separately</strong> &mdash; warranty exposure,
+    residual value, grey-market quality signalling, the 50% showroom cliff, and the charging-time failure at
+    foodpanda. None of them was looking for this answer. <strong>That convergence is the strongest thing in this
+    document.</strong></p>
+    <p>🔴 <strong>And it is gated on three things no amount of desk research will settle:</strong> whether a
+    delivery platform will partner &mdash; both foodpanda and Bykea already have EV partners; whether a bank or
+    NBFC will fund it; and whether the PKR 200m working-capital figure holds for a rental fleet as it does for an
+    assembler. <strong>All three are phone calls.</strong></p>
+  </div>
+
+  <div class="note"><span class="lbl">K11&rsquo;s own test, attempted &mdash; and recorded as a candidate, not a pass</span>
+    <p>K11 says: name the advantage in one sentence, <em>without using the words &ldquo;service&rdquo; or
+    &ldquo;quality&rdquo;</em>. The best the evidence currently supports:</p>
+    <p style="border-left:3px solid var(--accent);padding-left:14px;font-style:italic">We own the battery and rent
+    it by the day, collected from platform earnings before payout, so a rider with no deposit, no savings and no
+    credit history can switch without financing anything.</p>
+    <p>⚠️ <strong>That is defensible against Atlas Honda, which has said it will not invest here. It is not
+    obviously defensible against ELFA or Zyp, who are already building versions of it.</strong> K11 stays open,
+    and it remains the criterion doing most of the real work.</p>
+  </div>
 </section>
 
 <!-- ================= LIMITS ================= -->
