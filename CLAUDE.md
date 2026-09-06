@@ -1571,6 +1571,13 @@ should be retired or explicitly marked with their date.** The `PDF/` set is stal
 🔴 **The atlas is PUBLISHED AND SHARED WITH OTHER PEOPLE**, under a standing instruction from
 Sheheryar (28-Aug-2026): *"keep upgrading the published artifact from now on, so everyone i shared
 this with can see."*
+
+🔴 **PUBLISHING IS NOT SHARING — AND OBEYING THAT INSTRUCTION TAKES TWO STEPS, NOT ONE.** The Share
+panel pins a **specific version**, and it does **not** advance when you publish. It sat on
+**Version 1 for nine days across eighteen publishes**, so the instruction above was inert and
+nothing surfaced it. **`Latest` cannot be selected while access is *Anyone with the link*.**
+**After every publish, re-pin the shared version by hand and verify it** — see the 07-Sep-2026
+entry at the end of this file for the exact steps, the refusal message, and the browser gotchas.
 🔴 **Its URL, its favicon (🛵⚡ — a REQUIRED publish parameter, not stored in the HTML, and not
 recoverable by reading the artifact back), the re-bake rule for the 147-row model table, the
 verification method, and the CVD-validated chart palette are all recorded in this workspace's memory
@@ -1813,3 +1820,107 @@ history. **The commit survives; only the label is gone.** `main` is now the only
 The git remote, the sync script's hardcoded guard, and the documentation in this file all have to
 move together. **Two of the three are silent when wrong** — the guard fails only on the next
 scheduled run, and the documentation never fails at all.
+
+---
+
+## 07-Sep-2026 — 🔴 THE ATLAS HAD BEEN SHARED TO AN AUDIENCE OF ONE FOR NINE DAYS
+
+**The most consequential finding of the day is not research. It is that the research was not
+reaching anyone.**
+
+### 🔴 THE SHARE WAS PINNED TO VERSION 1
+The published EV Atlas has a **`Shared version`** control in its Share panel, **separate from
+`General access`**. It was pinned to **Version 1 — the original 28-Aug-2026 publish — while
+eighteen versions had been published.**
+
+🔴 **So every republish between 28-Aug and 07-Sep reached exactly one person: the owner.** The
+standing instruction of 28-Aug — *"keep upgrading the published artifact from now on, so everyone
+i shared this with can see"* — **was structurally inert from the day it was given, and nothing
+surfaced that.**
+
+**What viewers were actually reading for nine days:** the 28-Aug page, which predates every
+correction this project has made. **The PAVE two-tier subsidy correction (29-Aug), the "5.2×
+national production" retraction (30-Aug), the import-gap self-correction, the Dawn named-operators
+source (01-Sep) and the EVE battery finding (04-Sep) were all invisible to them.** They were not
+merely reading a stale page — **they were reading figures this project had already withdrawn as
+wrong, with no indication anything had changed.**
+
+**Now set to `Version 18`**, the 07-Sep build. ⚠️ **Access was NOT changed** — still
+*Anyone with the link*, still one named owner.
+
+### 🔴 `Latest` IS MUTUALLY EXCLUSIVE WITH `Anyone with the link` — AND THIS WILL RECUR
+There is a **`Latest`** option — *"Everyone with access sees new versions as soon as you publish
+them"* — and selecting it was **REFUSED**, verbatim:
+
+> *"Can't switch to Latest while people outside your organization can open this artifact.
+> Change who has access first."*
+
+**So while the atlas is publicly link-shared, the shared version is a STATIC PIN that does not
+advance on publish.**
+
+🔴 **THEREFORE, AND THIS IS THE RULE TO CARRY: PUBLISHING IS NOT SHARING.** After every publish of
+this artifact the shared version must be **re-pinned by hand**, or viewers stay on the previous
+one. **Re-pin in the same task as the publish, and verify it** — the Share button's own accessible
+label states the state, e.g. *"Share, shared with anyone who has the link, sharing pinned version
+1"*. **When no version clause appears in that label, no pin is set.**
+
+**The standing alternative, not taken and the owner's call:** narrowing `General access` to
+organization-only unlocks `Latest` and makes it self-maintaining — **but it breaks the existing
+link for whoever it was already shared with.**
+
+### 🟢 TOOLING — a real exception to a rule this project already recorded
+🔴 This workspace records that **"neither browser tool can inspect a published artifact"** because
+it renders in a cross-origin `*.frame.claudeuse` iframe. **That limitation does NOT extend to the
+sharing controls.** The Share menu lives on the **claude.ai HOST page**, not inside the iframe, so
+**real Chrome (`claude-in-chrome`) reads and operates it normally.** The earlier finding was about
+the artifact's *content*; do not let it stop you checking its *sharing state*.
+
+**How to check or change it:** navigate to the artifact URL → click **Share** → `find` the
+**Shared version** combobox → click it → **scroll UP inside the list**; the newest version is at
+the top and the list opens scrolled to the currently-pinned item.
+⚠️ **Home and the arrow keys snap back to the selected item — scrolling works, keyboard does not.**
+⚠️ **CDP `Page.captureScreenshot` times out on this page often** — wait 3–4 s and retry rather than
+re-clicking, or a stray click lands somewhere unintended.
+
+---
+
+## 07-Sep-2026 — the atlas caught up, with the new findings made visible first
+
+**The atlas had been frozen at 01-Sep while four days of evidence landed**, including one finding
+that contradicted a figure the page itself stated. Verified two ways before touching it: the local
+`ev-atlas.html` was last written 01-Sep 20:29, and the published artifact's own record said
+*updated 2026-09-01*. **The local file was byte-identical to the live artifact** — the only delta
+being the `</body></html>` the publish pipeline appends.
+
+🔴 **Publishing to it required `action:"read"` first**, because this conversation had never
+published the atlas. **A publish to an artifact the conversation has not read or published is
+refused.** And from any conversation that did not publish it, **`url:` must be passed explicitly**
+or a SEPARATE artifact is created and the shared link goes stale.
+
+### What was added — a ranked *What changed* band
+A dated band directly under the nav, with a **What's new** nav link ahead of *Verdict*. **Four
+items ranked by how much each moves the decision, not by arrival order** — battery life at 45 °C,
+the first supplier reply, three specification corrections, two newly-computed costs. Each carries
+a mono **"Was on this page:"** line naming the figure it supersedes, and a jump link to the
+section holding the detail. **Item 1 carries its caveat inline and unmissable** — test protocols,
+not a declared end-of-life — because on a page other people read, "the battery dies in two years"
+is the wrong thing to carry away and it is not what the document says.
+
+### 🔴 THREE PLACES THE PAGE WAS ASSERTING SOMETHING FALSE
+Not merely stale — **wrong**, which matters more on a shared page:
+- The hero read **"no reply yet"**
+- The Verdict's *"Three gates cannot be closed from a desk"* note said the same. **It now states
+  that the one reply closed none of K3, K4 or K5** — no price, nothing on payment terms, nothing
+  on warranty.
+- The RFQ section carried no outcome at all
+- The battery table's lithium row now shows the 45 °C figure beside the 25 °C one
+
+### ⚠️ Two layout defects the render caught that structural validation would not
+The band **inherited the page's `section` padding** (a dead strip inside its own top border) and a
+global **`li{max-width:72ch}`** that left half the band empty while the `li` border-bottoms stopped
+short. **Both were invisible in the markup and obvious in a headless render.** The method this
+workspace already records — headless Chrome full-page screenshot of the LOCAL file, throwaway
+`--user-data-dir`, crop with PIL before reading — **found them in one look. Keep using it.**
+
+**Committed `3bb77e1`.** The 147-row model table was NOT re-baked, correctly: **no model data
+changed**, and the re-bake rule applies only to that.
