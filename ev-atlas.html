@@ -161,12 +161,45 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
   .bar-val{text-align:left;min-width:0}
   section{padding:38px 0}
 }
+
+/* ---- what changed band (added 07-Sep-2026) ---- */
+.changed{margin:26px 0 34px;padding:0;border:1px solid var(--crit);border-radius:6px;
+  background:var(--panel);box-shadow:var(--shadow);overflow:hidden}
+.changed>*:first-child{margin-top:0}
+.changed-hd{padding:20px 24px 18px;border-bottom:1px solid var(--line);background:var(--crit-soft)}
+.changed-hd .ce{font-family:Archivo,sans-serif;font-size:10.5px;font-weight:700;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--crit);display:block;margin-bottom:8px}
+.changed-hd h2{margin:0 0 8px;font-size:23px;line-height:1.15;border:0;padding:0}
+.changed-hd p{margin:0;font-size:14.5px;color:var(--ink2);max-width:82ch}
+.changed ol{list-style:none;margin:0;padding:0;counter-reset:ch}
+.changed li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:16px;padding:18px 24px;
+  border-bottom:1px solid var(--line);max-width:none}
+.changed li:last-child{border-bottom:0}
+.changed .rank{font-family:Archivo,sans-serif;font-size:26px;font-weight:800;line-height:1;
+  color:var(--line2);font-variant-numeric:tabular-nums;padding-top:2px}
+.changed li.sev-crit .rank{color:var(--crit)}
+.changed li.sev-warn .rank{color:var(--warn)}
+.changed li.sev-good .rank{color:var(--good)}
+.changed h3{font-family:Archivo,sans-serif;font-size:16.5px;font-weight:700;margin:0 0 7px;
+  line-height:1.3;letter-spacing:-.01em}
+.changed li p{margin:0 0 8px;font-size:14.5px;line-height:1.6;color:var(--ink2);max-width:76ch}
+.changed li p:last-child{margin-bottom:0}
+.changed .was{font-family:"JetBrains Mono",monospace;font-size:12.5px;
+  background:var(--sunk);border-left:2px solid var(--line2);padding:7px 12px;
+  display:block;margin:9px 0;color:var(--ink2)}
+.changed .caveat{font-size:13.5px;color:var(--muted);border-left:2px solid var(--warn);
+  padding-left:12px;margin-top:9px}
+.changed .jump{font-family:Archivo,sans-serif;font-size:12px;font-weight:600;
+  color:var(--accent);text-decoration:none;letter-spacing:.02em}
+.changed .jump:hover{text-decoration:underline}
+@media(max-width:620px){.changed li{grid-template-columns:1fr;gap:6px}
+  .changed .rank{font-size:20px}}
 </style>
 
 <button class="themebtn ui" id="tbtn" aria-label="Toggle colour theme">◐ Theme</button>
 
 <header class="hero"><div class="wrap">
-  <p class="eyebrow">China · India · Pakistan &nbsp;·&nbsp; electric two-wheelers &nbsp;·&nbsp; compiled 27 August 2026</p>
+  <p class="eyebrow">China · India · Pakistan &nbsp;·&nbsp; electric two-wheelers &nbsp;·&nbsp; compiled 27 August 2026 &nbsp;·&nbsp; <strong>revised 7 September 2026</strong></p>
   <h1>Three-Market EV Atlas</h1>
   <p class="lede">
     Everything gathered on electric two-wheelers across the source market, the comparable market and the
@@ -187,11 +220,12 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
     <span class="tag t-b">Primary law</span> statute or gazette &nbsp;
     <span class="tag t-c">Press</span> unverified &nbsp;
     <span class="tag t-d">Declared</span> self-reported<br>
-    Five supplier RFQs sent 27 Aug 2026 · no reply yet · no bank, delivery platform or regulator contacted
+    Five supplier RFQs sent 27 Aug 2026 · <strong>one reply, four silent</strong> · five shortened follow-ups sent 4 Sep · no bank, delivery platform or regulator contacted
   </p>
 </div></header>
 
 <nav class="sticky"><div class="wrap" id="nav">
+  <a href="#whatsnew">What’s new</a>
   <a href="#verdict">Verdict</a>
   <a href="#models">All models</a>
   <a href="#economics">Economics</a>
@@ -217,6 +251,81 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
 </div></nav>
 
 <div class="wrap">
+
+<!-- ================= WHAT CHANGED ================= -->
+<section id="whatsnew" class="changed">
+  <div class="changed-hd">
+    <span class="ce">Revised 7 September 2026 &middot; since the 1 September version</span>
+    <h2>What changed, and what it costs the case</h2>
+    <p>Four items, ranked by how much each moves the decision rather than by when it arrived.
+    Everything further down this page still stands except where an item below says otherwise.</p>
+  </div>
+  <ol>
+    <li class="sev-crit">
+      <div class="rank">1</div>
+      <div>
+        <h3>Battery life at Karachi temperature is roughly half what this page assumed</h3>
+        <p>The supplier named its cell manufacturer &mdash; <strong>EVE</strong> &mdash; and EVE&rsquo;s own
+        qualification document runs two cycle-life protocols. Identical method, 0.5C charge to 3.65&nbsp;V and
+        1.0C discharge to 2.5&nbsp;V. <strong>Only the ambient differs: 2,500 cycles logged at 25&nbsp;&deg;C,
+        1,000 at 45&nbsp;&deg;C.</strong> Karachi sits above 40&nbsp;&deg;C for much of the year, so the
+        45&nbsp;&deg;C column is the one that applies &mdash; not the 25&nbsp;&deg;C headline every supplier
+        quotes. At the fleet duty modelled here, 312&ndash;500 charge cycles a year, that is
+        <strong>2.0&ndash;3.2 years</strong>.</p>
+        <span class="was">Was on this page: lithium fleet life 3.0&ndash;4.8 years, on 1,500&ndash;2,000+ rated cycles</span>
+        <p class="caveat">State it precisely: these are <em>test protocols</em> &mdash; &ldquo;record the capacity
+        after N cycles&rdquo; &mdash; not a declared end-of-life, and the excerpt gives no retained-capacity
+        threshold. This is <strong>not</strong> &ldquo;the cell dies at 1,000 cycles.&rdquo; The finding is the
+        <em>asymmetry</em>, and it is the manufacturer&rsquo;s own. The absolute number is pending the supplier
+        stating retained capacity at that point.</p>
+        <a class="jump" href="#battery">Battery layer &rarr;</a>
+      </div>
+    </li>
+    <li class="sev-crit">
+      <div class="rank">2</div>
+      <div>
+        <h3>The first supplier reply arrived &mdash; one of five, and it is the expensive one</h3>
+        <p>Hunan CTS answered after seven days, and answered <strong>two of nine questions</strong> &mdash;
+        specification and cycle life, with <strong>no price at any quantity</strong>. Wuxi Keyway, Wuxi SAIGE,
+        BENLG and Koyosonic were silent for eight days; five shortened follow-ups went out on 4 September.</p>
+        <p><strong>Two things in that pattern matter more than the reply itself.</strong> Both CKD suppliers are
+        silent, and they were the entire vehicle-supply side of this evaluation &mdash; the battery layer
+        answered, the machine layer did not. And the cheap battery supplier is silent while the dear one
+        engaged, which inverts the 2&times; spread this page leans on: <strong>the half that answers the phone
+        is the expensive half.</strong></p>
+        <a class="jump" href="#rfq">Suppliers &amp; RFQ &rarr;</a>
+      </div>
+    </li>
+    <li class="sev-warn">
+      <div class="rank">3</div>
+      <div>
+        <h3>Three specification corrections from the datasheet</h3>
+        <p>The pack is <strong>76.8&nbsp;V / 2.30&nbsp;kWh</strong>, not the 72&nbsp;V / 2.16&nbsp;kWh recorded
+        here. <strong>IP65 is confirmed</strong>, which puts it in the top customs-valuation band &mdash;
+        $9/kg or $90/kWh, whichever is higher &mdash; giving an assessed floor of <strong>$207</strong> against
+        a $410 invoice, so the floor still does not bite. And the datasheet
+        <strong>leaves operating temperature blank</strong>: &ldquo;to be confirmed according to cell and BMS
+        configuration.&rdquo; The one question this market turns on is unanswered in the supplier&rsquo;s own
+        document.</p>
+        <a class="jump" href="#landed">Landed cost &rarr;</a>
+      </div>
+    </li>
+    <li class="sev-good">
+      <div class="rank">4</div>
+      <div>
+        <h3>Two costs nobody had computed &mdash; one of them helps</h3>
+        <p>At 18&nbsp;kg and 0.0182&nbsp;m&sup3; a pack, <strong>a 20ft container weighs out before it cubes
+        out</strong>: about 1,550 packs on payload against roughly 1,800 on volume. That settles an open caveat
+        in the freight working.</p>
+        <p>And the pack ships with <strong>CAN, Bluetooth and 4G at no stated premium</strong>. A rental
+        operator collecting daily from riders with no credit history needs remote location, state-of-charge and
+        immobilisation &mdash; the collection mechanism this page identifies as the whole solve. It was not in
+        the model at any price.</p>
+        <a class="jump" href="#fleet">Fleet &amp; rider &rarr;</a>
+      </div>
+    </li>
+  </ol>
+</section>
 
 <!-- ================= VERDICT ================= -->
 <section id="verdict">
@@ -257,8 +366,7 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
 
   <div class="note w"><span class="lbl">Three gates cannot be closed from a desk</span>
     <p>Whether a manufacturer will supply at this scale (K3), whether a letter of credit can be opened today (K4),
-    and whether an enforceable battery warranty backstop exists (K5). <strong>RFQs went to five suppliers on
-    27 August; no reply yet.</strong></p>
+    and whether an enforceable battery warranty backstop exists (K5). <strong>RFQs went to five suppliers on 27 August. One replied &mdash; and it did not close any of the three.</strong> Hunan CTS answered specification and cycle life but <strong>quoted no price</strong> (K3 open), said nothing on payment terms or letters of credit (K4 open), and said nothing on warranty (K5 open). The other four, including both CKD suppliers, were silent for eight days. Five shortened follow-ups went out on 4 September.</p>
   </div>
 </section>
 
@@ -1591,7 +1699,7 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
     <thead><tr><th>Chemistry</th><th class="n">Pack price PKR</th><th class="n">Rated cycles</th><th class="n">Consumer life</th><th class="n">Fleet life</th></tr></thead>
     <tbody>
       <tr><td class="co">Lead-acid / graphene</td><td class="n">10,000–20,000</td><td class="n">300–400</td><td class="n">12–15 months</td><td class="n"><strong>8–13 months</strong></td></tr>
-      <tr><td class="co">Lithium-ion</td><td class="n">40,000–120,000</td><td class="n">1,500–2,000+</td><td class="n">3–5 years</td><td class="n"><strong>3.0–4.8 years</strong></td></tr>
+      <tr><td class="co">Lithium-ion</td><td class="n">40,000–120,000</td><td class="n">1,500–2,000+<br><span class="small">EVE cell: 2,500 @ 25&deg;C &middot; <strong>1,000 @ 45&deg;C</strong></span></td><td class="n">3–5 years</td><td class="n"><strong>3.0–4.8 years</strong><br><span class="small">at 45&deg;C: <strong>2.0–3.2 years</strong></span></td></tr>
       <tr><td class="co">NiMH</td><td class="n">25,000–50,000</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
     </tbody>
   </table></div>
@@ -1908,7 +2016,12 @@ footer{padding:44px 0 60px;color:var(--muted);font-size:12.5px}
 <section id="rfq">
   <p class="eyebrow">19 &mdash; supply chain</p>
   <h2>Who was approached, and what was asked</h2>
-  <p class="sub">Five RFQs went out on 27 August 2026 to companies' own published addresses. No platform account was created &mdash; Alibaba and Made-in-China RFQ forms require a login, so that route was closed.</p>
+  <p class="sub">Five RFQs went out on 27 August 2026 to companies' own published addresses. No platform account was created &mdash; Alibaba and Made-in-China RFQ forms require a login, so that route was closed. <strong>Eight days later, one of the five had replied.</strong> Five shortened follow-ups &mdash; three questions each, with an explicit easy out &mdash; went out on 4 September; a second silence against those is a far stronger signal than the first.</p>
+
+  <div class="note"><span class="lbl">Where the round actually stands</span>
+    <p><strong>Hunan CTS &mdash; replied twice.</strong> A handoff at ten hours, then substance at seven days: pack specification and cell-level cycle life, naming <strong>EVE</strong> as the cell manufacturer &mdash; the first time any supplier in this evaluation has identified its cells. It answered <strong>two of nine questions</strong> and quoted <strong>no price at any quantity</strong>, so it is a qualification conversation rather than a quotation.</p>
+    <p><strong>Wuxi Keyway, Wuxi SAIGE, BENLG and Koyosonic &mdash; silent.</strong> Read the pattern rather than the count: <strong>both CKD suppliers are silent</strong>, and they were the entire vehicle-supply side of this evaluation. The battery layer answered; the machine layer did not. And the cheap battery supplier is silent while the dear one engaged &mdash; <strong>the half of the 2&times; spread that answers the phone is the expensive half.</strong> The likeliest cause is length, not disinterest: nine numbered questions from a buyer claiming no company, no volume and no premises is a lot of unpaid work for a sales desk.</p>
+  </div>
 
   <div class="tw"><table>
     <thead><tr><th>Supplier</th><th>Role</th><th class="n">Reference price</th><th>Why this one</th></tr></thead>
