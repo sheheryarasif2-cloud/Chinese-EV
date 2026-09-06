@@ -56,6 +56,26 @@ workspace that does not have one.
 went red (`ARCHIVE MISMATCH: local 5b5bebc, archive missing`, exit 1); restored, it went green
 with all four VERIFIED lines. **Re-prove it the same way if this block is ever changed.**
 
+🔴 **STANDING RULE — PUSH BOTH REMOTES, EVERY TIME. Owner's instruction, 07-Sep-2026.**
+In this workspace `git push origin <branch>` is only **HALF a push.** Anything pushed to `origin`
+must reach `archive` in the same breath, in **both** repos — the project folder and the memory
+folder:
+
+```bash
+git push origin <branch> && git push archive <branch>
+```
+
+🟢 **Running `Sync-Workspace.ps1` (WITHOUT `-Check`) also satisfies this**, because it mirrors to
+`archive` after origin verifies. Prefer it when there is anything to commit.
+⚠️ **`-Check` pushes NOTHING.** It only tells you the mirror has already lagged.
+
+**Why this is a rule and not a preference:** on 07-Sep-2026 a manual `git push origin main` left
+the mirror one commit behind, and the very next `-Check` went red —
+`ARCHIVE MISMATCH: local faca2f0, archive 8adf157 - mirror is stale`, exit 1.
+🔴 **The guard caught it within minutes, but a guard only REPORTS; it does not repair.** The
+window between a half-push and the next hourly run is a window in which the backup is silently
+incomplete, and that is exactly the state this whole block exists to prevent.
+
 🔴 **`Sync-Workspace.ps1` line 29 hardcodes the expected remote, and its origin guard refuses
 to push anywhere it does not recognise.** That line was updated in the same change; had it not
 been, the hourly task would have gone red on the next run. **If the remote ever moves again,
